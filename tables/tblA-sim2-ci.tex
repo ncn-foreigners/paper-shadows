@@ -1,0 +1,74 @@
+\begin{table}[ht!]
+\caption{\label{tbl-sim2-ci-comparison}Simulation 2: analytical vs bootstrap CI coverage and width, by scenario and estimator.} 
+\fontsize{8.0pt}{9.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llrr}
+\toprule
+CI & Model & Coverage (\%) & CI width (\%) \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{4}{l}{NB(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+Analytical & NB & 91.8 & 178.6 \\ 
+Bootstrap & NB & 93.3 & 190.0 \\ 
+Analytical & NB (c) & 91.4 & 181.2 \\ 
+Bootstrap & NB (c) & 93.0 & 190.5 \\ 
+Analytical & NLS & 89.2 & 4599.0 \\ 
+Bootstrap & NLS & 65.9 & 1023.8 \\ 
+Analytical & OLS & 0.0 & 27.3 \\ 
+Bootstrap & OLS & 0.0 & 22.3 \\ 
+Analytical & Poisson & 88.2 & 422.5 \\ 
+Bootstrap & Poisson & 75.8 & 201.5 \\ 
+Analytical & Poisson (c) & 88.0 & 420.4 \\ 
+Bootstrap & Poisson (c) & 75.4 & 200.5 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{4}{l}{NB(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+Analytical & NB & 91.8 & 34.7 \\ 
+Bootstrap & NB & 92.8 & 36.1 \\ 
+Analytical & NB (c) & 91.8 & 34.7 \\ 
+Bootstrap & NB (c) & 93.0 & 36.2 \\ 
+Analytical & NLS & 94.4 & 79.0 \\ 
+Bootstrap & NLS & 82.6 & 40.7 \\ 
+Analytical & OLS & 0.0 & 23.2 \\ 
+Bootstrap & OLS & 0.0 & 18.5 \\ 
+Analytical & Poisson & 95.7 & 42.1 \\ 
+Bootstrap & Poisson & 92.8 & 35.5 \\ 
+Analytical & Poisson (c) & 95.7 & 42.1 \\ 
+Bootstrap & Poisson (c) & 92.3 & 35.6 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{4}{l}{Po(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+Analytical & NB & 92.8 & 178.8 \\ 
+Bootstrap & NB & 93.6 & 185.8 \\ 
+Analytical & NB (c) & 92.8 & 181.5 \\ 
+Bootstrap & NB (c) & 93.6 & 185.6 \\ 
+Analytical & NLS & 84.6 & 3000.4 \\ 
+Bootstrap & NLS & 60.8 & 670.7 \\ 
+Analytical & OLS & 0.2 & 28.2 \\ 
+Bootstrap & OLS & 0.0 & 24.1 \\ 
+Analytical & Poisson & 83.7 & 392.2 \\ 
+Bootstrap & Poisson & 71.8 & 193.6 \\ 
+Analytical & Poisson (c) & 83.8 & 391.3 \\ 
+Bootstrap & Poisson (c) & 71.8 & 193.3 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{4}{l}{Po(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+Analytical & NB & 77.4 & 33.7 \\ 
+Bootstrap & NB & 92.8 & 36.4 \\ 
+Analytical & NB (c) & 93.1 & 34.7 \\ 
+Bootstrap & NB (c) & 92.6 & 35.7 \\ 
+Analytical & NLS & 93.0 & 84.7 \\ 
+Bootstrap & NLS & 87.2 & 52.0 \\ 
+Analytical & OLS & 0.0 & 22.9 \\ 
+Bootstrap & OLS & 0.0 & 19.7 \\ 
+Analytical & Poisson & 95.1 & 40.3 \\ 
+Bootstrap & Poisson & 92.8 & 36.1 \\ 
+Analytical & Poisson (c) & 95.3 & 40.4 \\ 
+Bootstrap & Poisson (c) & 93.1 & 35.5 \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: coverage is the share of replications whose 95\% CI contains $\xi$; CI width is the median width as a percentage of $\xi$. Bootstrap CIs use $R_{\text{boot}} = 499$ per replicate without clustering. NLS CI widths can be very large under NB-generated scenarios.\\
+\end{minipage}
+\end{table}
+

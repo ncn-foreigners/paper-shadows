@@ -1,0 +1,50 @@
+\begin{table}[ht!]
+\caption{\label{tbl-sim2-analytical}Simulation 2: bias, RMSE, coverage and CI width with zeros allowed ($\gamma$ estimated). Analytical CIs. $R = 2{,}000$ replications.} 
+\fontsize{7.0pt}{8.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrr}
+\toprule
+Model & Bias (\%) & Bias BC (\%) & Bias med (\%) & RMSE & Coverage (\%) & CI width (\%) & $R_{\text{ok}}$ \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{8}{l}{NB(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & 10.9 & -0.6 & 10.0 & 24,405 & 91.8 & 178.6 & 2000 \\ 
+NB (c) & 10.9 & 1.2 & 10.0 & 24,418 & 91.4 & 181.2 & 2000 \\ 
+NLS & -7.6 & -21.9 & -5.0 & 27,405 & 89.2 & 4599.0 & 1979 \\ 
+OLS & -80.5 & -81.6 & -80.8 & 35,348 & 0.0 & 27.3 & 2000 \\ 
+Poisson & 70.6 & 69.8 & 56.5 & 144,046 & 88.2 & 422.5 & 2000 \\ 
+Poisson (c) & 66.4 & 74.8 & 55.4 & 117,479 & 88.0 & 420.4 & 2000 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{8}{l}{NB(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & 0.8 & 0.3 & 0.9 & 4,412 & 91.8 & 34.7 & 2000 \\ 
+NB (c) & 0.9 & 0.4 & 0.8 & 4,418 & 91.8 & 34.7 & 2000 \\ 
+NLS & 0.4 & 0.2 & 0.6 & 2,896 & 94.4 & 79.0 & 1984 \\ 
+OLS & -75.2 & -75.7 & -75.3 & 32,577 & 0.0 & 23.2 & 2000 \\ 
+Poisson & 0.8 & 0.3 & 0.8 & 4,392 & 95.7 & 42.1 & 2000 \\ 
+Poisson (c) & 0.8 & 0.4 & 0.8 & 4,392 & 95.7 & 42.1 & 2000 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{8}{l}{Po(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & 6.9 & -4.7 & 5.4 & 20,226 & 92.8 & 178.8 & 2000 \\ 
+NB (c) & 6.9 & -2.9 & 5.4 & 20,222 & 92.8 & 181.5 & 2000 \\ 
+NLS & -41.2 & -62.0 & -40.4 & 25,595 & 84.6 & 3000.4 & 1980 \\ 
+OLS & -77.9 & -79.0 & -78.3 & 33,975 & 0.2 & 28.2 & 2000 \\ 
+Poisson & 77.8 & 76.3 & 53.5 & 534,916 & 83.7 & 392.2 & 2000 \\ 
+Poisson (c) & 63.5 & 64.4 & 50.2 & 165,647 & 83.8 & 391.3 & 2000 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{8}{l}{Po(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & -3.9 & -4.4 & -0.6 & 9,076 & 77.4 & 33.7 & 2000 \\ 
+NB (c) & -0.3 & -0.7 & -0.6 & 3,465 & 93.1 & 34.7 & 2000 \\ 
+NLS & -6.8 & -7.3 & -6.6 & 3,886 & 93.0 & 84.7 & 1997 \\ 
+OLS & -70.3 & -70.9 & -70.7 & 31,600 & 0.0 & 22.9 & 2000 \\ 
+Poisson & -0.4 & -0.9 & -0.7 & 3,899 & 95.1 & 40.3 & 2000 \\ 
+Poisson (c) & -0.3 & -0.7 & -0.6 & 3,413 & 95.3 & 40.4 & 2000 \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: bias and CI width as a percentage of true $\xi$; RMSE on the original scale. NLS bias, bias BC, bias med and RMSE use median-based summaries (root-median-squared error) under NB-generated data; other estimators use mean-based summaries.\\
+\end{minipage}
+\end{table}
+

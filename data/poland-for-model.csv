@@ -1,0 +1,2173 @@
+year,sex,country_code,country,border,police_id_no,police_id_yes,police,prison,pop_insured,pop_register,continent,wbd_region7,schengen,ukr,simplified_proc
+2019,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,AFG,Afghanistan,0,0,0,0,0,269,15,Asia,South Asia,non-Schengen,0,0
+2019,f,AGO,Angola,2,0,0,0,0,15,34,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,ALB,Albania,0,1,0,1,0,64,90,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,AND,Andorra,0,0,0,0,0,0,2,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,unknown/stateless,unknown/stateless,0,0,1,1,0,3159,9208,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2019,f,ARE,United Arab Emirates,0,1,0,1,0,0,0,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,ARG,Argentina,0,1,0,1,0,52,68,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,ARM,Armenia,8,1,16,17,1,1089,530,Asia,Europe & Central Asia,non-Schengen,0,1
+2019,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2019,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,AUS,Australia,2,0,0,0,0,44,47,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,AZE,Azerbaijan,2,1,0,1,0,219,337,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,BDI,Burundi,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,BEN,Benin,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,BFA,Burkina Faso,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,BGD,Bangladesh,1,0,1,1,0,47,98,Asia,South Asia,non-Schengen,0,0
+2019,f,BHR,Bahrain,0,0,0,0,0,0,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,BHS,Bahamas,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,23,36,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,BLR,Belarus,55,40,19,59,5,11023,11565,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,f,BLZ,Belize,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,BOL,Bolivia,0,0,0,0,0,3,13,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,BRA,Brazil,6,0,0,0,2,248,517,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,BRB,Barbados,0,0,0,0,0,6,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,BRN,Brunei,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,BTN,Bhutan,0,0,0,0,0,0,4,Asia,South Asia,non-Schengen,0,0
+2019,f,BWA,Botswana,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,CAF,Central African Republic,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,CAN,Canada,1,2,0,2,0,66,110,Americas,North America,non-Schengen,0,0
+2019,f,CHL,Chile,1,0,1,1,0,7,28,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,CHN,China,16,2,17,19,0,1807,2473,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,CIV,Côte d’Ivoire,0,0,0,0,0,9,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,CMR,Cameroon,1,0,0,0,0,39,51,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,COD,Congo - Kinshasa,0,0,0,0,0,0,30,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,COG,Congo - Brazzaville,1,0,0,0,1,32,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,COL,Colombia,0,1,0,1,0,73,104,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,COM,Comoros,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,CPV,Cape Verde,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,CRI,Costa Rica,0,0,0,0,0,9,19,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,CUB,Cuba,1,0,0,0,0,32,35,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,CYP,Cyprus,0,0,0,0,0,3,35,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,DJI,Djibouti,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,DMA,Dominica,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,DOM,Dominican Republic,0,0,0,0,0,6,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,DZA,Algeria,2,0,0,0,0,23,36,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,ECU,Ecuador,1,0,1,1,0,11,39,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,EGY,Egypt,1,0,0,0,0,49,103,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,ERI,Eritrea,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,ETH,Ethiopia,2,2,0,2,0,36,100,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,FJI,Fiji,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,GAB,Gabon,0,0,0,0,0,4,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GBR,United Kingdom,0,4,1,5,1,373,1794,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,GEO,Georgia,70,19,3,22,2,1837,1970,Asia,Europe & Central Asia,non-Schengen,0,1
+2019,f,GHA,Ghana,0,0,0,0,0,6,33,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GIN,Guinea,0,0,0,0,0,3,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GMB,Gambia,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GNB,Guinea-Bissau,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,GRD,Grenada,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,GTM,Guatemala,0,0,0,0,0,0,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,GUY,Guyana,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,HND,Honduras,0,0,0,0,0,0,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,HTI,Haiti,0,0,0,0,0,0,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,IDN,Indonesia,5,0,0,0,0,239,308,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,IND,India,11,1,0,1,0,1036,2320,Asia,South Asia,non-Schengen,0,0
+2019,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,IRL,Ireland,0,1,0,1,0,46,300,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,IRN,Iran,0,0,1,1,0,88,230,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,IRQ,Iraq,1,0,0,0,0,27,86,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,ISR,Israel,1,0,0,0,0,40,79,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,JAM,Jamaica,0,0,0,0,0,3,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,JOR,Jordan,3,0,0,0,0,10,37,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,JPN,Japan,0,0,0,0,0,145,324,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,KAZ,Kazakhstan,10,0,1,1,0,817,938,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,KEN,Kenya,1,0,0,0,0,52,73,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,KGZ,Kyrgyzstan,3,0,0,0,0,152,245,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,KHM,Cambodia,0,0,0,0,0,4,13,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,KOR,South Korea,0,1,0,1,0,56,580,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,KOSOVO,KOSOVO,0,0,0,0,0,0,30,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,KWT,Kuwait,0,0,0,0,0,0,2,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,LAO,Laos,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,LBN,Lebanon,0,0,0,0,0,24,31,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,LBR,Liberia,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,LBY,Libya,1,0,0,0,0,0,12,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,LKA,Sri Lanka,2,0,0,0,0,16,44,Asia,South Asia,non-Schengen,0,0
+2019,f,LSO,Lesotho,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,MAR,Morocco,1,0,0,0,0,67,124,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,MDA,Moldova,31,12,4,16,1,2781,4940,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,f,MDG,Madagascar,0,0,0,0,0,0,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MDV,Maldives,0,0,0,0,0,0,0,Asia,South Asia,non-Schengen,0,0
+2019,f,MEX,Mexico,0,0,0,0,0,137,189,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,MKD,North Macedonia,0,0,0,0,0,31,48,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,MLI,Mali,0,0,0,0,0,3,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MMR,Myanmar (Burma),0,0,0,0,0,4,9,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,MNE,Montenegro,0,0,0,0,0,9,20,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,MNG,Mongolia,7,0,2,2,0,232,169,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,MOZ,Mozambique,0,0,0,0,0,0,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MRT,Mauritania,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MUS,Mauritius,0,0,0,0,0,6,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MWI,Malawi,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,MYS,Malaysia,1,0,1,1,0,26,52,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,NAM,Namibia,0,0,0,0,0,0,12,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,NER,Niger,1,0,0,0,0,9,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,NGA,Nigeria,3,0,1,1,1,62,97,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,NIC,Nicaragua,0,0,0,0,0,3,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,NPL,Nepal,3,0,0,0,0,368,516,Asia,South Asia,non-Schengen,0,0
+2019,f,NZL,New Zealand,0,0,0,0,0,10,9,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,OMN,Oman,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,PAK,Pakistan,2,0,1,1,0,109,131,Asia,South Asia,non-Schengen,0,0
+2019,f,PAN,Panama,0,0,0,0,0,3,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,PER,Peru,1,0,0,0,0,41,38,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,PHL,Philippines,3,1,0,1,0,768,720,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,PNG,Papua New Guinea,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,PRY,Paraguay,1,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,PSE,Palestinian Territories,0,0,0,0,0,0,2,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,QAT,Qatar,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,RUS,Russia,88,11,9,20,4,4343,3836,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,f,RWA,Rwanda,0,0,0,0,0,51,67,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SAU,Saudi Arabia,1,0,0,0,0,3,78,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,SRB,Serbia,0,1,0,1,0,136,169,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,SDN,Sudan,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SEN,Senegal,1,0,0,0,0,4,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SGP,Singapore,0,0,0,0,0,4,25,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,SLE,Sierra Leone,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SLV,El Salvador,0,0,0,0,0,3,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,SOM,Somalia,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,STP,São Tomé & Príncipe,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SUR,Suriname,0,0,0,0,0,7,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,SWZ,Eswatini,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SYC,Seychelles,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,SYR,Syria,2,0,0,0,0,59,88,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,TCD,Chad,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,TGO,Togo,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,THA,Thailand,12,1,0,1,0,382,393,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,TJK,Tajikistan,5,0,0,0,0,50,90,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,TKM,Turkmenistan,1,0,0,0,0,46,44,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,TON,Tonga,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,TTO,Trinidad & Tobago,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,TUN,Tunisia,1,0,0,0,0,55,86,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,f,TUR,Turkey,5,0,0,0,0,368,2392,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,TWN,Taiwan,0,0,0,0,0,54,53,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,TZA,Tanzania,0,0,0,0,0,3,26,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,UGA,Uganda,0,0,0,0,0,19,27,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,UKR,Ukraine,1109,331,190,521,27,171232,230539,Europe,Europe & Central Asia,non-Schengen,1,1
+2019,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,URY,Uruguay,0,0,0,0,0,8,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,USA,United States,6,3,1,4,0,385,680,Americas,North America,non-Schengen,0,0
+2019,f,UZB,Uzbekistan,8,1,0,1,0,196,252,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,f,VAT,Vatican City,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,VEN,Venezuela,3,0,0,0,1,48,68,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,f,VNM,Vietnam,29,4,19,23,4,2936,1710,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,f,VUT,Vanuatu,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,f,YEM,Yemen,1,0,0,0,0,0,23,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,f,ZAF,South Africa,0,0,0,0,0,67,104,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,ZMB,Zambia,0,0,0,0,0,10,20,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,f,ZWE,Zimbabwe,1,1,0,1,0,180,323,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,AFG,Afghanistan,9,0,0,0,0,333,81,Asia,South Asia,non-Schengen,0,0
+2019,m,AGO,Angola,3,1,2,3,0,66,62,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,ALB,Albania,19,2,1,3,2,209,195,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,AND,Andorra,0,1,0,1,0,0,1,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,unknown/stateless,unknown/stateless,7,0,1,1,18,3153,5473,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2019,m,ARE,United Arab Emirates,1,1,0,1,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,ARG,Argentina,1,0,0,0,0,166,107,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,ARM,Armenia,19,32,119,151,40,1621,904,Asia,Europe & Central Asia,non-Schengen,0,1
+2019,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2019,m,ATF,French Southern Territories,0,0,0,0,0,9,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,ATG,Antigua & Barbuda,0,1,0,1,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,AUS,Australia,4,6,2,8,1,130,137,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,AZE,Azerbaijan,30,19,15,34,3,983,1631,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,BDI,Burundi,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,BEN,Benin,1,2,0,2,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,BFA,Burkina Faso,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,BGD,Bangladesh,23,4,4,8,1,1607,1366,Asia,South Asia,non-Schengen,0,0
+2019,m,BHR,Bahrain,1,0,0,0,0,0,9,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,BHS,Bahamas,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,BIH,Bosnia & Herzegovina,1,1,1,2,1,110,184,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,BLR,Belarus,137,395,117,512,69,31639,25708,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,m,BLZ,Belize,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,BOL,Bolivia,0,0,1,1,0,17,12,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,BRA,Brazil,17,3,3,6,1,823,729,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,BRB,Barbados,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,BRN,Brunei,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,BTN,Bhutan,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2019,m,BWA,Botswana,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,CAF,Central African Republic,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,CAN,Canada,1,1,2,3,2,210,224,Americas,North America,non-Schengen,0,0
+2019,m,CHL,Chile,2,2,0,2,0,71,60,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,CHN,China,35,21,34,55,10,2614,2530,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,CIV,Côte d’Ivoire,1,0,0,0,0,18,20,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,CMR,Cameroon,4,6,2,8,0,152,97,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,COD,Congo - Kinshasa,3,1,1,2,0,0,55,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,COG,Congo - Brazzaville,5,0,1,1,0,142,57,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,COL,Colombia,8,5,1,6,4,208,189,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,COM,Comoros,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,CPV,Cape Verde,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,CRI,Costa Rica,0,1,0,1,1,34,32,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,CUB,Cuba,4,0,0,0,0,130,95,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,CYP,Cyprus,0,0,0,0,0,31,105,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,DJI,Djibouti,0,0,0,0,0,0,1,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,DMA,Dominica,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,DOM,Dominican Republic,0,0,0,0,0,18,29,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,DZA,Algeria,20,2,10,12,6,531,424,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,ECU,Ecuador,0,1,0,1,0,38,45,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,EGY,Egypt,18,5,15,20,2,1018,777,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,ERI,Eritrea,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,ETH,Ethiopia,3,0,2,2,0,110,191,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,FJI,Fiji,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,GAB,Gabon,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GBR,United Kingdom,0,62,14,76,4,2265,6969,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,GEO,Georgia,732,688,104,792,113,8713,10426,Asia,Europe & Central Asia,non-Schengen,0,1
+2019,m,GHA,Ghana,2,1,0,1,0,68,89,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GIN,Guinea,2,1,1,2,0,29,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GMB,Gambia,2,0,1,1,0,16,20,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GNB,Guinea-Bissau,1,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GNQ,Equatorial Guinea,1,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,GRD,Grenada,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,GTM,Guatemala,0,0,1,1,0,21,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,GUY,Guyana,0,0,0,0,0,4,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,HND,Honduras,0,0,0,0,0,6,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,HTI,Haiti,0,0,0,0,0,3,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,IDN,Indonesia,1,0,0,0,0,415,460,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,IND,India,162,26,50,76,7,6142,7475,Asia,South Asia,non-Schengen,0,0
+2019,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,IRL,Ireland,0,13,0,13,0,400,1175,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,IRN,Iran,12,7,2,9,3,268,405,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,IRQ,Iraq,8,1,2,3,0,330,384,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,ISR,Israel,4,7,1,8,4,198,301,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,JAM,Jamaica,0,0,0,0,0,8,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,JOR,Jordan,10,1,3,4,0,195,169,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,JPN,Japan,0,1,1,2,0,281,477,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,KAZ,Kazakhstan,24,13,6,19,3,750,792,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,KEN,Kenya,2,2,1,3,1,73,91,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,KGZ,Kyrgyzstan,18,4,5,9,1,116,233,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,KHM,Cambodia,0,0,0,0,0,11,13,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,KIR,Kiribati,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,KOR,South Korea,22,7,10,17,2,164,1030,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,KOSOVO,KOSOVO,1,3,1,4,0,0,132,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,KWT,Kuwait,0,0,0,0,0,0,17,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,LAO,Laos,0,0,0,0,0,12,4,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,LBN,Lebanon,5,1,3,4,0,195,150,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,LBR,Liberia,1,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,LBY,Libya,4,1,3,4,2,99,97,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,LKA,Sri Lanka,5,1,1,2,0,96,127,Asia,South Asia,non-Schengen,0,0
+2019,m,LSO,Lesotho,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,MAR,Morocco,8,6,4,10,3,503,396,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,MCO,Monaco,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,MDA,Moldova,146,165,47,212,29,6023,10613,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,m,MDG,Madagascar,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2019,m,MEX,Mexico,2,5,2,7,0,362,324,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,MKD,North Macedonia,4,8,4,12,3,163,84,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,MLI,Mali,0,0,0,0,0,19,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MMR,Myanmar (Burma),0,0,0,0,0,0,3,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,MNE,Montenegro,1,1,0,1,0,55,46,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,MNG,Mongolia,8,1,5,6,1,218,164,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,MOZ,Mozambique,1,0,1,1,0,3,13,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MRT,Mauritania,0,0,0,0,0,4,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MUS,Mauritius,0,0,0,0,0,21,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MWI,Malawi,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,MYS,Malaysia,1,0,0,0,0,35,48,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,NAM,Namibia,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,NER,Niger,0,0,1,1,0,52,41,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,NGA,Nigeria,19,16,13,29,11,420,453,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,NIC,Nicaragua,0,0,0,0,0,4,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,NPL,Nepal,31,6,2,8,1,2081,2207,Asia,South Asia,non-Schengen,0,0
+2019,m,NZL,New Zealand,1,1,1,2,1,37,31,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,OMN,Oman,0,0,1,1,0,0,7,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,PAK,Pakistan,30,8,14,22,3,653,854,Asia,South Asia,non-Schengen,0,0
+2019,m,PAN,Panama,0,0,0,0,1,8,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,PER,Peru,0,0,0,0,0,94,72,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,PHL,Philippines,12,1,1,2,0,1120,863,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,PNG,Papua New Guinea,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,PRY,Paraguay,8,0,0,0,5,0,7,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,PSE,Palestinian Territories,0,3,3,6,2,133,14,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,QAT,Qatar,0,0,0,0,0,0,3,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,RUS,Russia,163,141,113,254,81,4734,4463,Europe,Europe & Central Asia,non-Schengen,0,1
+2019,m,RWA,Rwanda,5,0,0,0,0,76,117,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SAU,Saudi Arabia,15,4,1,5,1,8,108,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,SRB,Serbia,8,15,6,21,9,970,729,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,SDN,Sudan,1,1,1,2,0,27,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SEN,Senegal,2,0,0,0,0,60,36,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SGP,Singapore,0,0,0,0,0,5,43,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,SLE,Sierra Leone,0,0,0,0,0,3,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SLV,El Salvador,0,0,0,0,0,8,15,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,SMR,San Marino,0,0,0,0,0,0,1,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,SOM,Somalia,1,1,1,2,0,13,13,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,STP,São Tomé & Príncipe,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SUR,Suriname,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,SWZ,Eswatini,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SYC,Seychelles,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,SYR,Syria,13,4,6,10,2,597,276,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,TCD,Chad,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,TGO,Togo,0,0,0,0,0,14,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,THA,Thailand,2,0,1,1,0,219,137,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,TJK,Tajikistan,47,12,3,15,0,254,423,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,TKM,Turkmenistan,2,0,4,4,0,59,79,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,TON,Tonga,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,TTO,Trinidad & Tobago,0,0,0,0,0,0,7,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,TUN,Tunisia,18,5,16,21,2,699,366,Africa,Middle East & North Africa,non-Schengen,0,0
+2019,m,TUR,Turkey,52,37,67,104,12,3430,4598,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,TWN,Taiwan,2,3,0,3,1,30,63,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,TZA,Tanzania,0,0,0,0,1,34,27,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,UGA,Uganda,2,1,0,1,1,19,16,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,UKR,Ukraine,2892,4535,1807,6342,468,304656,343022,Europe,Europe & Central Asia,non-Schengen,1,1
+2019,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,URY,Uruguay,0,1,0,1,0,16,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,USA,United States,6,18,15,33,3,1062,1445,Americas,North America,non-Schengen,0,0
+2019,m,UZB,Uzbekistan,57,12,9,21,2,1246,1469,Asia,Europe & Central Asia,non-Schengen,0,0
+2019,m,VAT,Vatican City,0,0,0,0,0,3,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2019,m,VCT,St. Vincent & Grenadines,1,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,VEN,Venezuela,2,0,1,1,0,146,104,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2019,m,VNM,Vietnam,113,36,53,89,56,5463,2828,Asia,East Asia & Pacific,non-Schengen,0,0
+2019,m,VUT,Vanuatu,0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2019,m,YEM,Yemen,1,0,1,1,0,115,69,Asia,Middle East & North Africa,non-Schengen,0,0
+2019,m,ZAF,South Africa,3,0,3,3,0,131,131,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,ZMB,Zambia,0,0,0,0,0,9,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2019,m,ZWE,Zimbabwe,12,3,0,3,0,180,259,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,AFG,Afghanistan,0,0,0,0,0,308,19,Asia,South Asia,non-Schengen,0,0
+2020,f,AGO,Angola,0,0,0,0,0,18,43,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,ALB,Albania,0,0,0,0,0,71,126,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,AND,Andorra,0,0,0,0,0,0,2,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,unknown/stateless,unknown/stateless,1,0,0,0,1,3119,9224,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2020,f,ARE,United Arab Emirates,0,0,0,0,0,0,2,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,ARG,Argentina,0,0,0,0,0,59,86,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,ARM,Armenia,6,2,12,14,2,1104,663,Asia,Europe & Central Asia,non-Schengen,0,1
+2020,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2020,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,AUS,Australia,0,0,0,0,0,34,57,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,AZE,Azerbaijan,1,1,0,1,0,260,470,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,BDI,Burundi,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,BEN,Benin,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,BFA,Burkina Faso,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,BGD,Bangladesh,2,1,0,1,0,57,120,Asia,South Asia,non-Schengen,0,0
+2020,f,BHR,Bahrain,0,0,0,0,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,BHS,Bahamas,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,23,50,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,BLR,Belarus,18,23,39,62,3,13184,17810,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,f,BLZ,Belize,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,BOL,Bolivia,0,0,0,0,0,6,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,BRA,Brazil,0,0,1,1,2,291,645,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,BRB,Barbados,0,0,0,0,0,3,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,BRN,Brunei,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,BTN,Bhutan,0,0,0,0,0,0,5,Asia,South Asia,non-Schengen,0,0
+2020,f,BWA,Botswana,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,CAF,Central African Republic,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,CAN,Canada,2,1,0,1,0,65,154,Americas,North America,non-Schengen,0,0
+2020,f,CHL,Chile,1,0,0,0,0,14,41,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,CHN,China,7,2,15,17,0,1682,2849,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,CIV,Côte d’Ivoire,0,0,0,0,0,6,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,CMR,Cameroon,1,0,0,0,0,44,72,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,COD,Congo - Kinshasa,1,0,0,0,0,0,40,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,COG,Congo - Brazzaville,0,0,0,0,1,34,26,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,COL,Colombia,0,0,0,0,0,113,151,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,COM,Comoros,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,CPV,Cape Verde,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,CRI,Costa Rica,0,0,0,0,0,28,45,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,CUB,Cuba,2,0,0,0,0,42,42,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,CYP,Cyprus,0,0,0,0,0,3,48,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,DJI,Djibouti,0,0,0,0,0,0,1,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,DMA,Dominica,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,DOM,Dominican Republic,0,0,1,1,0,8,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,DZA,Algeria,0,0,0,0,0,38,50,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,ECU,Ecuador,0,0,0,0,0,14,46,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,EGY,Egypt,1,0,0,0,0,49,140,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,ERI,Eritrea,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,ETH,Ethiopia,0,0,0,0,0,53,179,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,FJI,Fiji,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,GAB,Gabon,0,0,0,0,0,4,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GBR,United Kingdom,0,3,0,3,1,404,2015,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,GEO,Georgia,25,9,4,13,2,2415,3184,Asia,Europe & Central Asia,non-Schengen,0,1
+2020,f,GHA,Ghana,0,0,0,0,0,18,52,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GIN,Guinea,0,0,0,0,0,3,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GMB,Gambia,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GNB,Guinea-Bissau,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,GRD,Grenada,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,GTM,Guatemala,0,0,0,0,0,3,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,GUY,Guyana,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,HND,Honduras,0,0,0,0,0,0,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,HTI,Haiti,0,0,0,0,0,0,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,IDN,Indonesia,1,0,0,0,0,355,465,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,IND,India,3,1,1,2,0,1160,2790,Asia,South Asia,non-Schengen,0,0
+2020,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,IRL,Ireland,0,1,0,1,0,59,341,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,IRN,Iran,0,0,1,1,0,119,300,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,IRQ,Iraq,0,0,0,0,0,31,94,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,ISR,Israel,0,0,0,0,0,51,107,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,JAM,Jamaica,0,0,0,0,0,3,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,JOR,Jordan,0,0,0,0,0,15,44,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,JPN,Japan,0,1,0,1,0,153,395,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,KAZ,Kazakhstan,2,1,0,1,1,893,1367,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,KEN,Kenya,3,0,0,0,0,75,112,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,KGZ,Kyrgyzstan,2,0,0,0,0,169,358,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,KHM,Cambodia,0,0,0,0,0,3,14,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,KOR,South Korea,1,0,0,0,0,51,831,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,KOSOVO,KOSOVO,0,0,0,0,0,0,47,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,KWT,Kuwait,0,0,0,0,0,0,2,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,LAO,Laos,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,LBN,Lebanon,0,0,0,0,0,15,46,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,LBR,Liberia,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,LBY,Libya,0,1,0,1,0,0,15,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,LKA,Sri Lanka,0,0,0,0,0,17,56,Asia,South Asia,non-Schengen,0,0
+2020,f,LSO,Lesotho,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,MAR,Morocco,1,1,0,1,0,77,169,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,MDA,Moldova,25,12,1,13,0,3318,7203,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,f,MDG,Madagascar,0,0,0,0,0,6,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2020,f,MEX,Mexico,0,0,0,0,0,183,264,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,MKD,North Macedonia,0,0,0,0,0,32,55,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,MLI,Mali,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MMR,Myanmar (Burma),0,0,0,0,0,0,10,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,MNE,Montenegro,0,0,0,0,0,13,25,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,MNG,Mongolia,0,0,1,1,0,232,208,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,MOZ,Mozambique,0,0,0,0,0,4,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MRT,Mauritania,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MUS,Mauritius,0,0,0,0,0,0,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MWI,Malawi,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,MYS,Malaysia,0,0,0,0,0,24,66,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,NAM,Namibia,0,0,0,0,0,0,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,NER,Niger,0,0,0,0,0,9,16,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,NGA,Nigeria,2,0,0,0,1,77,166,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,NIC,Nicaragua,0,0,0,0,0,5,7,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,NPL,Nepal,4,0,0,0,0,364,585,Asia,South Asia,non-Schengen,0,0
+2020,f,NZL,New Zealand,0,0,0,0,0,10,10,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,OMN,Oman,0,0,0,0,0,0,2,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,PAK,Pakistan,1,0,0,0,0,131,164,Asia,South Asia,non-Schengen,0,0
+2020,f,PAN,Panama,0,0,0,0,0,3,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,PER,Peru,0,0,0,0,0,62,58,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,PHL,Philippines,5,0,0,0,0,1111,1362,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,PNG,Papua New Guinea,0,0,0,0,0,0,6,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,PRY,Paraguay,0,0,0,0,0,3,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,PSE,Palestinian Territories,0,0,0,0,0,0,3,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,QAT,Qatar,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,RUS,Russia,40,4,18,22,3,4738,5304,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,f,RWA,Rwanda,0,0,0,0,0,78,149,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SAU,Saudi Arabia,0,0,0,0,0,6,95,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,SRB,Serbia,0,0,0,0,0,146,220,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,SDN,Sudan,0,0,0,0,0,3,12,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SEN,Senegal,0,0,0,0,0,4,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SGP,Singapore,0,0,0,0,0,11,33,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,SLE,Sierra Leone,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SLV,El Salvador,0,0,0,0,0,4,12,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,SOM,Somalia,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,STP,São Tomé & Príncipe,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SUR,Suriname,0,0,0,0,0,4,15,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,SWZ,Eswatini,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SYC,Seychelles,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,SYR,Syria,0,0,0,0,0,61,109,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,TCD,Chad,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,TGO,Togo,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,THA,Thailand,0,0,1,1,0,368,506,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,TJK,Tajikistan,4,0,0,0,0,47,120,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,TKM,Turkmenistan,1,0,0,0,0,48,63,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,TON,Tonga,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,TTO,Trinidad & Tobago,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,TUN,Tunisia,1,0,0,0,0,69,117,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,f,TUR,Turkey,3,0,3,3,0,428,2901,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,TWN,Taiwan,1,0,0,0,0,56,87,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,TZA,Tanzania,0,0,0,0,0,12,46,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,UGA,Uganda,0,0,0,0,0,26,45,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,UKR,Ukraine,505,222,284,506,27,194375,315066,Europe,Europe & Central Asia,non-Schengen,1,1
+2020,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,URY,Uruguay,0,0,0,0,0,17,15,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,USA,United States,3,1,1,2,1,382,891,Americas,North America,non-Schengen,0,0
+2020,f,UZB,Uzbekistan,2,0,2,2,0,241,356,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,f,VAT,Vatican City,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,VEN,Venezuela,1,0,0,0,0,62,91,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,f,VNM,Vietnam,14,3,10,13,4,2937,2101,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,f,VUT,Vanuatu,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,f,YEM,Yemen,0,0,0,0,0,0,35,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,f,ZAF,South Africa,0,0,1,1,0,84,142,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,ZMB,Zambia,0,0,0,0,0,15,27,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,f,ZWE,Zimbabwe,6,0,1,1,0,204,533,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,AFG,Afghanistan,4,1,1,2,0,370,109,Asia,South Asia,non-Schengen,0,0
+2020,m,AGO,Angola,1,0,0,0,0,71,77,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,ALB,Albania,3,2,3,5,1,338,346,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,AND,Andorra,0,0,0,0,0,3,5,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,unknown/stateless,unknown/stateless,3,0,1,1,27,3223,5507,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2020,m,ARE,United Arab Emirates,0,1,0,1,0,0,6,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,ARG,Argentina,0,0,0,0,0,171,144,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,ARM,Armenia,14,22,93,115,32,1672,1135,Asia,Europe & Central Asia,non-Schengen,0,1
+2020,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2020,m,ATF,French Southern Territories,0,0,0,0,0,5,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,ATG,Antigua & Barbuda,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,AUS,Australia,0,1,0,1,1,137,182,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,AZE,Azerbaijan,14,16,20,36,3,1157,2298,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,BDI,Burundi,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,BEN,Benin,0,0,1,1,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,BFA,Burkina Faso,4,0,0,0,0,3,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,BGD,Bangladesh,8,3,10,13,2,1761,1737,Asia,South Asia,non-Schengen,0,0
+2020,m,BHR,Bahrain,0,1,0,1,0,0,11,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,BHS,Bahamas,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,BIH,Bosnia & Herzegovina,0,1,3,4,1,128,219,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,BLR,Belarus,98,320,201,521,53,37308,39453,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,m,BLZ,Belize,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,BOL,Bolivia,0,0,1,1,0,36,35,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,BRA,Brazil,8,0,4,4,0,890,914,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,BRB,Barbados,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,BRN,Brunei,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,BTN,Bhutan,0,0,0,0,0,0,2,Asia,South Asia,non-Schengen,0,0
+2020,m,BWA,Botswana,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,CAF,Central African Republic,0,1,0,1,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,CAN,Canada,2,3,1,4,1,223,307,Americas,North America,non-Schengen,0,0
+2020,m,CHL,Chile,1,1,1,2,0,94,85,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,CHN,China,26,14,24,38,15,2433,3145,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,CIV,Côte d’Ivoire,0,1,2,3,0,26,24,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,CMR,Cameroon,2,3,6,9,3,171,135,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,COD,Congo - Kinshasa,1,0,0,0,0,0,79,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,COG,Congo - Brazzaville,0,0,1,1,0,148,76,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,COL,Colombia,3,1,0,1,4,264,283,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,COM,Comoros,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,CPV,Cape Verde,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,CRI,Costa Rica,0,0,0,0,1,67,69,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,CUB,Cuba,0,0,0,0,0,163,134,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,CYP,Cyprus,0,0,0,0,0,42,121,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,DJI,Djibouti,0,0,0,0,0,0,1,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,DMA,Dominica,0,0,0,0,0,0,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,DOM,Dominican Republic,0,0,0,0,0,23,33,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,DZA,Algeria,20,3,6,9,1,601,561,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,ECU,Ecuador,0,1,0,1,0,38,59,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,EGY,Egypt,15,5,20,25,3,1123,987,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,ERI,Eritrea,2,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,ETH,Ethiopia,1,0,0,0,0,142,410,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,FJI,Fiji,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,GAB,Gabon,0,0,0,0,0,3,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GBR,United Kingdom,0,38,9,47,5,2393,7849,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,GEO,Georgia,365,546,303,849,103,10474,16423,Asia,Europe & Central Asia,non-Schengen,0,1
+2020,m,GHA,Ghana,3,1,0,1,0,71,125,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GIN,Guinea,0,0,1,1,0,32,31,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GMB,Gambia,3,0,1,1,0,25,26,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GNB,Guinea-Bissau,1,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GNQ,Equatorial Guinea,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,GRD,Grenada,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,GTM,Guatemala,0,0,1,1,0,30,22,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,GUY,Guyana,0,0,0,0,0,7,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,HND,Honduras,0,0,0,0,0,6,12,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,HTI,Haiti,0,0,0,0,0,0,7,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,IDN,Indonesia,2,0,0,0,0,1275,1276,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,IND,India,64,17,39,56,11,7103,9074,Asia,South Asia,non-Schengen,0,0
+2020,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,IRL,Ireland,0,7,2,9,0,420,1328,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,IRN,Iran,9,6,6,12,2,318,517,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,IRQ,Iraq,4,6,7,13,3,332,461,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,ISR,Israel,1,5,2,7,2,299,472,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,JAM,Jamaica,0,1,0,1,0,9,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,JOR,Jordan,1,2,2,4,2,210,229,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,JPN,Japan,0,0,0,0,0,279,603,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,KAZ,Kazakhstan,7,9,10,19,4,872,1195,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,KEN,Kenya,1,0,1,1,0,111,131,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,KGZ,Kyrgyzstan,5,7,3,10,2,134,314,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,KHM,Cambodia,0,0,0,0,0,8,13,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,KIR,Kiribati,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,KOR,South Korea,5,6,5,11,1,134,1761,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,KOSOVO,KOSOVO,1,1,1,2,1,0,275,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,KWT,Kuwait,0,0,0,0,0,3,18,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,LAO,Laos,0,0,0,0,0,12,6,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,LBN,Lebanon,4,3,7,10,1,204,221,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,LBR,Liberia,1,0,1,1,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,LBY,Libya,2,0,4,4,2,95,118,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,LKA,Sri Lanka,4,1,1,2,0,115,161,Asia,South Asia,non-Schengen,0,0
+2020,m,LSO,Lesotho,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,MAR,Morocco,9,9,4,13,1,535,529,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,MCO,Monaco,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,MDA,Moldova,103,182,105,287,41,7337,15518,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,m,MDG,Madagascar,0,0,0,0,0,3,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2020,m,MEX,Mexico,3,0,3,3,0,476,464,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,MKD,North Macedonia,1,3,2,5,1,165,110,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,MLI,Mali,0,1,0,1,0,20,25,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MMR,Myanmar (Burma),0,0,0,0,0,3,6,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,MNE,Montenegro,0,0,2,2,0,56,64,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,MNG,Mongolia,5,1,4,5,1,182,195,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,MOZ,Mozambique,0,0,0,0,0,6,25,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MRT,Mauritania,0,0,0,0,0,3,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MUS,Mauritius,0,0,0,0,0,17,24,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MWI,Malawi,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,MYS,Malaysia,1,0,0,0,0,32,70,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,NAM,Namibia,0,0,0,0,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,NER,Niger,0,1,1,2,0,60,64,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,NGA,Nigeria,16,16,27,43,22,500,711,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,NIC,Nicaragua,0,0,0,0,0,6,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,NPL,Nepal,12,0,1,1,0,1971,2542,Asia,South Asia,non-Schengen,0,0
+2020,m,NZL,New Zealand,0,0,0,0,1,35,44,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,OMN,Oman,0,0,0,0,0,0,8,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,PAK,Pakistan,21,10,15,25,3,687,1036,Asia,South Asia,non-Schengen,0,0
+2020,m,PAN,Panama,0,0,0,0,1,4,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,PER,Peru,0,0,1,1,0,142,99,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,PHL,Philippines,3,0,1,1,0,1694,1586,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,PNG,Papua New Guinea,0,0,0,0,0,0,5,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,PRY,Paraguay,1,0,0,0,0,4,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,PSE,Palestinian Territories,2,1,2,3,1,137,15,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,QAT,Qatar,0,1,1,2,0,0,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,RUS,Russia,84,88,122,210,66,5564,6442,Europe,Europe & Central Asia,non-Schengen,0,1
+2020,m,RWA,Rwanda,3,2,1,3,0,107,252,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SAU,Saudi Arabia,1,2,0,2,1,11,125,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,SRB,Serbia,4,8,8,16,9,943,1119,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,SDN,Sudan,0,1,0,1,0,33,30,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SEN,Senegal,1,0,3,3,0,55,40,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SGP,Singapore,0,0,0,0,0,8,52,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,SLE,Sierra Leone,2,0,0,0,0,3,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SLV,El Salvador,0,0,0,0,0,3,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,SMR,San Marino,0,0,0,0,0,0,1,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,SOM,Somalia,3,1,0,1,0,12,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,STP,São Tomé & Príncipe,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SUR,Suriname,0,0,0,0,0,4,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,SWZ,Eswatini,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SYC,Seychelles,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,SYR,Syria,10,2,11,13,4,610,322,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,TCD,Chad,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,TGO,Togo,0,0,0,0,0,14,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,THA,Thailand,1,0,0,0,0,196,196,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,TJK,Tajikistan,26,12,6,18,0,324,626,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,TKM,Turkmenistan,0,0,2,2,2,123,150,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,TON,Tonga,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,TTO,Trinidad & Tobago,0,0,0,0,0,0,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,TUN,Tunisia,10,3,23,26,1,745,470,Africa,Middle East & North Africa,non-Schengen,0,0
+2020,m,TUR,Turkey,23,27,57,84,5,3695,5680,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,TWN,Taiwan,1,1,1,2,1,36,101,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,TZA,Tanzania,1,0,1,1,1,37,42,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,UGA,Uganda,1,0,0,0,0,32,28,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,UKR,Ukraine,1542,3224,2800,6024,467,334937,467791,Europe,Europe & Central Asia,non-Schengen,1,1
+2020,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,URY,Uruguay,0,0,0,0,0,30,20,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,USA,United States,4,9,8,17,2,1084,1860,Americas,North America,non-Schengen,0,0
+2020,m,UZB,Uzbekistan,49,29,15,44,2,1454,2627,Asia,Europe & Central Asia,non-Schengen,0,0
+2020,m,VAT,Vatican City,0,0,1,1,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2020,m,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,VEN,Venezuela,1,0,0,0,0,161,146,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2020,m,VNM,Vietnam,37,14,48,62,52,5535,3616,Asia,East Asia & Pacific,non-Schengen,0,0
+2020,m,VUT,Vanuatu,0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2020,m,YEM,Yemen,1,0,0,0,0,121,88,Asia,Middle East & North Africa,non-Schengen,0,0
+2020,m,ZAF,South Africa,2,0,1,1,0,151,182,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,ZMB,Zambia,0,0,0,0,0,8,22,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2020,m,ZWE,Zimbabwe,9,8,2,10,1,213,430,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,AFG,Afghanistan,1,0,0,0,0,331,147,Asia,South Asia,non-Schengen,0,0
+2021,f,AGO,Angola,1,0,0,0,0,31,57,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,ALB,Albania,0,1,0,1,0,93,188,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,AND,Andorra,0,0,0,0,0,3,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,unknown/stateless,unknown/stateless,0,0,0,0,1,3096,9253,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2021,f,ARE,United Arab Emirates,0,0,0,0,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,ARG,Argentina,0,0,0,0,0,88,136,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,ARM,Armenia,4,1,18,19,1,1187,929,Asia,Europe & Central Asia,non-Schengen,0,1
+2021,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2021,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,AUS,Australia,0,0,0,0,0,36,78,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,AZE,Azerbaijan,0,1,2,3,0,373,773,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,BDI,Burundi,0,0,0,0,0,0,20,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,BEN,Benin,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,BFA,Burkina Faso,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,BGD,Bangladesh,1,0,0,0,0,76,187,Asia,South Asia,non-Schengen,0,0
+2021,f,BHR,Bahrain,0,0,0,0,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,BHS,Bahamas,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,25,61,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,BLR,Belarus,12,35,44,79,7,18925,34773,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,f,BLZ,Belize,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,BOL,Bolivia,0,0,0,0,0,16,29,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,BRA,Brazil,1,0,0,0,2,366,842,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,BRB,Barbados,0,0,0,0,0,4,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,BRN,Brunei,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,BTN,Bhutan,0,0,0,0,0,0,8,Asia,South Asia,non-Schengen,0,0
+2021,f,BWA,Botswana,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,CAF,Central African Republic,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,CAN,Canada,0,0,0,0,0,74,244,Americas,North America,non-Schengen,0,0
+2021,f,CHL,Chile,0,0,1,1,0,16,59,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,CHN,China,4,6,9,15,0,1687,3482,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,CIV,Côte d’Ivoire,0,0,0,0,0,11,15,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,CMR,Cameroon,0,0,0,0,0,61,115,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,COD,Congo - Kinshasa,1,0,0,0,0,0,57,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,COG,Congo - Brazzaville,0,0,0,0,0,46,52,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,COL,Colombia,1,1,0,1,0,150,261,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,COM,Comoros,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,CPV,Cape Verde,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,CRI,Costa Rica,0,0,0,0,0,28,58,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,CUB,Cuba,1,0,0,0,0,62,78,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,CYP,Cyprus,0,0,0,0,0,3,57,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,DJI,Djibouti,0,0,0,0,0,0,2,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,DMA,Dominica,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,DOM,Dominican Republic,1,0,0,0,0,10,23,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,DZA,Algeria,0,0,0,0,0,49,79,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,ECU,Ecuador,0,0,0,0,0,27,68,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,EGY,Egypt,0,0,0,0,0,54,194,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,ERI,Eritrea,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,ETH,Ethiopia,1,0,0,0,0,142,456,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,FJI,Fiji,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,GAB,Gabon,0,0,0,0,0,5,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GBR,United Kingdom,0,3,1,4,0,392,2201,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,GEO,Georgia,18,14,14,28,0,4284,6511,Asia,Europe & Central Asia,non-Schengen,0,1
+2021,f,GHA,Ghana,0,0,0,0,0,49,86,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GIN,Guinea,0,0,0,0,0,5,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GMB,Gambia,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GNB,Guinea-Bissau,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,GRD,Grenada,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,GTM,Guatemala,0,0,0,0,0,6,13,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,GUY,Guyana,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,HND,Honduras,0,0,0,0,0,0,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,HTI,Haiti,0,0,0,0,0,0,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,IDN,Indonesia,0,0,0,0,0,621,844,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,IND,India,5,3,1,4,0,1563,3949,Asia,South Asia,non-Schengen,0,0
+2021,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,IRL,Ireland,0,0,2,2,0,56,413,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,IRN,Iran,1,1,0,1,0,180,460,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,IRQ,Iraq,7,17,0,17,0,43,113,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,ISR,Israel,0,1,0,1,0,55,166,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,JAM,Jamaica,0,0,0,0,0,4,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,JOR,Jordan,0,0,0,0,0,26,69,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,JPN,Japan,0,0,0,0,0,153,515,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,KAZ,Kazakhstan,1,2,1,3,0,1056,1982,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,KEN,Kenya,0,0,1,1,0,141,221,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,KGZ,Kyrgyzstan,0,0,3,3,0,197,498,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,KHM,Cambodia,0,0,0,0,0,4,16,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,KOR,South Korea,1,0,0,0,0,43,1198,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,KOSOVO,KOSOVO,0,0,0,0,0,0,90,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,KWT,Kuwait,0,0,0,0,0,0,3,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,LAO,Laos,0,0,0,0,0,0,4,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,LBN,Lebanon,0,0,0,0,0,36,86,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,LBR,Liberia,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,LBY,Libya,1,0,0,0,0,0,20,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,LKA,Sri Lanka,1,0,0,0,0,31,68,Asia,South Asia,non-Schengen,0,0
+2021,f,LSO,Lesotho,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,MAR,Morocco,1,0,0,0,0,111,233,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,MDA,Moldova,18,20,10,30,0,3770,10042,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,f,MDG,Madagascar,0,0,0,0,0,6,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2021,f,MEX,Mexico,0,0,0,0,0,222,410,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,MKD,North Macedonia,0,0,0,0,0,42,78,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,MLI,Mali,0,0,0,0,0,68,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MMR,Myanmar (Burma),0,0,0,0,0,0,17,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,MNE,Montenegro,0,0,0,0,0,9,36,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,MNG,Mongolia,4,0,0,0,0,214,239,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,MOZ,Mozambique,0,0,0,0,0,6,34,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MRT,Mauritania,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MUS,Mauritius,0,0,0,0,0,3,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MWI,Malawi,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,MYS,Malaysia,0,0,0,0,0,29,101,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,NAM,Namibia,0,0,0,0,0,0,20,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,NER,Niger,0,0,0,0,0,9,29,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,NGA,Nigeria,1,1,0,1,1,195,475,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,NIC,Nicaragua,0,0,0,0,0,0,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,NPL,Nepal,0,0,0,0,0,397,714,Asia,South Asia,non-Schengen,0,0
+2021,f,NZL,New Zealand,0,0,0,0,0,13,18,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,OMN,Oman,0,0,0,0,0,0,3,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,PAK,Pakistan,3,0,0,0,0,145,248,Asia,South Asia,non-Schengen,0,0
+2021,f,PAN,Panama,0,0,0,0,0,0,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,PER,Peru,0,0,0,0,0,71,110,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,PHL,Philippines,0,0,0,0,0,1714,2508,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,PNG,Papua New Guinea,0,0,0,0,0,0,6,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,PRY,Paraguay,0,0,0,0,0,0,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,PSE,Palestinian Territories,1,0,0,0,0,3,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,QAT,Qatar,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,RUS,Russia,30,14,12,26,3,5827,8528,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,f,RWA,Rwanda,0,0,0,0,0,175,388,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SAU,Saudi Arabia,0,0,0,0,0,11,119,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,SRB,Serbia,0,0,0,0,0,175,270,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,SDN,Sudan,0,0,0,0,0,4,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SEN,Senegal,1,0,0,0,0,3,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SGP,Singapore,0,0,0,0,0,9,42,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,SLE,Sierra Leone,0,1,0,1,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SLV,El Salvador,0,0,0,0,0,3,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,SOM,Somalia,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,STP,São Tomé & Príncipe,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SUR,Suriname,0,0,0,0,0,4,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,SWZ,Eswatini,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SYC,Seychelles,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,SYR,Syria,2,1,0,1,1,74,144,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,TCD,Chad,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,TGO,Togo,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,THA,Thailand,0,0,0,0,0,423,706,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,TJK,Tajikistan,1,0,0,0,0,68,179,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,TKM,Turkmenistan,0,0,1,1,0,85,123,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,TON,Tonga,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,TTO,Trinidad & Tobago,0,0,0,0,0,3,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,TUN,Tunisia,0,0,0,0,0,91,182,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,f,TUR,Turkey,2,3,0,3,0,597,3985,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,TWN,Taiwan,0,1,0,1,0,55,158,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,TZA,Tanzania,0,0,0,0,0,43,83,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,UGA,Uganda,0,0,0,0,0,50,104,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,UKR,Ukraine,339,222,448,670,29,229525,440160,Europe,Europe & Central Asia,non-Schengen,1,1
+2021,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,URY,Uruguay,0,0,0,0,0,18,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,USA,United States,0,4,0,4,0,418,1288,Americas,North America,non-Schengen,0,0
+2021,f,UZB,Uzbekistan,0,1,0,1,0,274,534,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,f,VAT,Vatican City,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,VEN,Venezuela,1,0,0,0,0,81,140,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,f,VNM,Vietnam,14,3,9,12,2,3027,2592,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,f,VUT,Vanuatu,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,f,YEM,Yemen,0,0,0,0,0,3,50,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,f,ZAF,South Africa,0,0,0,0,0,110,250,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,ZMB,Zambia,0,0,0,0,0,30,36,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,f,ZWE,Zimbabwe,3,1,0,1,2,443,1472,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,AFG,Afghanistan,29,6,0,6,2,434,314,Asia,South Asia,non-Schengen,0,0
+2021,m,AGO,Angola,0,1,3,4,0,97,98,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,ALB,Albania,3,5,1,6,2,362,610,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,AND,Andorra,0,0,0,0,0,3,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,unknown/stateless,unknown/stateless,14,0,0,0,29,3298,5563,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2021,m,ARE,United Arab Emirates,0,0,1,1,0,0,18,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,ARG,Argentina,0,0,3,3,0,295,298,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,ARM,Armenia,15,25,132,157,26,2021,1815,Asia,Europe & Central Asia,non-Schengen,0,1
+2021,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2021,m,ATF,French Southern Territories,0,0,0,0,0,10,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,ATG,Antigua & Barbuda,0,1,0,1,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,AUS,Australia,0,0,2,2,2,159,241,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,AZE,Azerbaijan,14,16,24,40,9,1780,3686,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,BDI,Burundi,0,0,0,0,0,3,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,BEN,Benin,0,1,0,1,0,6,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,BFA,Burkina Faso,0,0,0,0,0,4,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,BGD,Bangladesh,20,3,13,16,3,2212,2357,Asia,South Asia,non-Schengen,0,0
+2021,m,BHR,Bahrain,0,0,0,0,0,0,12,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,BHS,Bahamas,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,BIH,Bosnia & Herzegovina,1,2,2,4,1,157,283,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,BLR,Belarus,77,435,374,809,97,52123,72233,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,m,BLZ,Belize,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,BOL,Bolivia,0,0,0,0,0,45,58,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,BRA,Brazil,1,1,5,6,0,913,1167,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,BRB,Barbados,0,0,0,0,0,6,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,BRN,Brunei,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,BTN,Bhutan,0,0,0,0,0,0,3,Asia,South Asia,non-Schengen,0,0
+2021,m,BWA,Botswana,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,CAF,Central African Republic,0,2,0,2,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,CAN,Canada,1,1,6,7,2,239,469,Americas,North America,non-Schengen,0,0
+2021,m,CHL,Chile,0,2,0,2,0,118,118,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,CHN,China,10,15,44,59,11,2370,3898,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,CIV,Côte d’Ivoire,0,0,0,0,0,26,34,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,CMR,Cameroon,3,5,3,8,4,217,204,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,COD,Congo - Kinshasa,1,1,0,1,0,0,102,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,COG,Congo - Brazzaville,0,1,1,2,0,178,101,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,COL,Colombia,2,0,1,1,4,360,449,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,COM,Comoros,0,0,0,0,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,CPV,Cape Verde,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,CRI,Costa Rica,0,0,0,0,1,70,87,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,CUB,Cuba,2,1,3,4,0,222,230,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,CYP,Cyprus,0,0,0,0,0,40,139,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,DJI,Djibouti,0,0,0,0,0,0,3,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,DMA,Dominica,0,0,0,0,0,0,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,DOM,Dominican Republic,1,0,1,1,0,31,46,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,DZA,Algeria,20,2,8,10,3,686,768,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,ECU,Ecuador,0,1,2,3,0,59,95,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,EGY,Egypt,16,2,15,17,1,1255,1370,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,ERI,Eritrea,1,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,ETH,Ethiopia,2,4,4,8,0,279,915,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,FJI,Fiji,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,GAB,Gabon,0,1,0,1,0,3,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GBR,United Kingdom,4,27,16,43,6,2464,8701,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,GEO,Georgia,342,902,609,1511,193,18896,31958,Asia,Europe & Central Asia,non-Schengen,0,1
+2021,m,GHA,Ghana,0,5,0,5,0,344,213,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GIN,Guinea,0,0,1,1,0,40,38,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GMB,Gambia,0,0,0,0,0,28,42,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GNB,Guinea-Bissau,1,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GNQ,Equatorial Guinea,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,GRD,Grenada,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,GTM,Guatemala,0,0,0,0,0,35,38,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,GUY,Guyana,0,0,0,0,0,4,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,HKG,Hong Kong SAR China,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,HND,Honduras,0,0,1,1,0,16,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,HTI,Haiti,0,0,1,1,0,3,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,IDN,Indonesia,1,2,2,4,0,2261,2835,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,IND,India,59,22,57,79,14,9161,13128,Asia,South Asia,non-Schengen,0,0
+2021,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,IRL,Ireland,0,6,3,9,0,457,1561,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,IRN,Iran,11,6,5,11,4,398,747,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,IRQ,Iraq,112,99,1,100,10,363,563,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,ISR,Israel,0,5,1,6,3,329,606,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,JAM,Jamaica,0,1,0,1,0,11,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,JOR,Jordan,1,3,6,9,0,260,333,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,JPN,Japan,0,0,1,1,0,281,754,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,KAZ,Kazakhstan,2,10,13,23,6,1279,2172,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,KEN,Kenya,0,0,1,1,0,206,274,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,KGZ,Kyrgyzstan,4,4,5,9,2,365,641,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,KHM,Cambodia,0,0,0,0,0,8,13,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,KIR,Kiribati,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,KOR,South Korea,2,13,11,24,0,105,2945,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,KOSOVO,KOSOVO,0,1,1,2,0,0,583,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,KWT,Kuwait,0,0,0,0,0,3,24,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,LAO,Laos,0,0,0,0,0,14,8,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,LBN,Lebanon,5,3,4,7,0,267,361,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,LBR,Liberia,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,LBY,Libya,1,2,4,6,2,95,140,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,LCA,St. Lucia,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,LKA,Sri Lanka,4,4,0,4,3,152,220,Asia,South Asia,non-Schengen,0,0
+2021,m,LSO,Lesotho,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,MAR,Morocco,14,8,11,19,4,632,758,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,MCO,Monaco,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,MDA,Moldova,76,208,203,411,55,9009,22222,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,m,MDG,Madagascar,0,0,0,0,0,7,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MDV,Maldives,0,0,0,0,0,0,3,Asia,South Asia,non-Schengen,0,0
+2021,m,MEX,Mexico,0,0,4,4,0,521,716,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,MKD,North Macedonia,0,6,4,10,0,186,165,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,MLI,Mali,1,0,0,0,0,114,28,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MMR,Myanmar (Burma),0,0,0,0,0,3,7,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,MNE,Montenegro,0,1,1,2,0,54,76,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,MNG,Mongolia,5,2,7,9,1,170,233,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,MOZ,Mozambique,0,0,0,0,0,15,45,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MRT,Mauritania,0,0,0,0,0,4,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MUS,Mauritius,0,0,0,0,0,21,39,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MWI,Malawi,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,MYS,Malaysia,0,0,0,0,0,47,111,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,NAM,Namibia,0,0,1,1,0,3,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,NER,Niger,0,1,1,2,0,90,111,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,NGA,Nigeria,12,16,24,40,28,920,1503,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,NIC,Nicaragua,0,0,0,0,0,7,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,NPL,Nepal,3,0,2,2,0,2195,3232,Asia,South Asia,non-Schengen,0,0
+2021,m,NZL,New Zealand,1,1,1,2,0,35,61,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,OMN,Oman,0,0,0,0,0,0,10,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,PAK,Pakistan,16,6,13,19,2,856,1420,Asia,South Asia,non-Schengen,0,0
+2021,m,PAN,Panama,0,0,0,0,1,12,21,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,PER,Peru,0,1,4,5,0,181,182,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,PHL,Philippines,1,1,2,3,1,3309,3758,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,PNG,Papua New Guinea,0,0,0,0,0,0,5,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,PRY,Paraguay,0,0,0,0,0,5,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,PSE,Palestinian Territories,6,2,1,3,3,148,17,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,PYF,French Polynesia,0,0,0,0,1,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,QAT,Qatar,0,0,1,1,0,0,8,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,RUS,Russia,58,104,148,252,91,7996,11961,Europe,Europe & Central Asia,non-Schengen,0,1
+2021,m,RWA,Rwanda,1,4,7,11,0,283,590,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SAU,Saudi Arabia,2,2,1,3,0,34,159,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,SRB,Serbia,5,7,3,10,5,1222,1746,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,SDN,Sudan,1,1,0,1,0,37,50,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SEN,Senegal,1,0,1,1,0,57,52,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SGP,Singapore,0,0,0,0,0,7,61,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,SLE,Sierra Leone,0,0,1,1,0,9,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SLV,El Salvador,0,0,0,0,0,9,25,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,SMR,San Marino,0,0,0,0,0,0,1,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,SOM,Somalia,3,1,0,1,2,18,22,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,STP,São Tomé & Príncipe,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SUR,Suriname,0,0,0,0,0,4,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,SWZ,Eswatini,0,0,0,0,0,0,1,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SYC,Seychelles,0,0,0,0,0,0,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,SYR,Syria,114,42,9,51,20,602,416,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,TCD,Chad,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,TGO,Togo,0,0,0,0,0,19,13,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,THA,Thailand,0,0,0,0,0,203,277,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,TJK,Tajikistan,20,13,11,24,6,454,1092,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,TKM,Turkmenistan,2,4,6,10,1,364,487,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,TON,Tonga,0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,TTO,Trinidad & Tobago,0,0,0,0,0,0,13,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,TUN,Tunisia,9,2,26,28,4,797,643,Africa,Middle East & North Africa,non-Schengen,0,0
+2021,m,TUR,Turkey,40,27,66,93,13,4646,8371,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,TWN,Taiwan,0,0,1,1,1,37,179,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,TZA,Tanzania,0,1,0,1,1,53,73,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,UGA,Uganda,0,0,1,1,0,59,82,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,UKR,Ukraine,1285,3222,4549,7771,698,393614,666984,Europe,Europe & Central Asia,non-Schengen,1,1
+2021,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,URY,Uruguay,0,0,0,0,0,32,26,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,USA,United States,3,15,9,24,5,1159,2493,Americas,North America,non-Schengen,0,0
+2021,m,UZB,Uzbekistan,50,34,34,68,11,2210,4783,Asia,Europe & Central Asia,non-Schengen,0,0
+2021,m,VAT,Vatican City,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2021,m,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,VEN,Venezuela,1,1,0,1,0,193,241,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2021,m,VNM,Vietnam,103,25,42,67,38,5411,4626,Asia,East Asia & Pacific,non-Schengen,0,0
+2021,m,VUT,Vanuatu,0,0,0,0,0,0,5,Oceania,East Asia & Pacific,non-Schengen,0,0
+2021,m,YEM,Yemen,3,1,1,2,0,130,118,Asia,Middle East & North Africa,non-Schengen,0,0
+2021,m,ZAF,South Africa,0,1,1,2,0,166,277,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,ZMB,Zambia,0,0,0,0,0,17,37,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2021,m,ZWE,Zimbabwe,7,5,10,15,2,456,1099,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,AFG,Afghanistan,1,0,0,0,0,205,287,Asia,South Asia,non-Schengen,0,0
+2022,f,AGO,Angola,2,1,0,1,0,58,177,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,ALB,Albania,1,0,0,0,0,90,390,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,AND,Andorra,0,0,0,0,0,6,4,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,unknown/stateless,unknown/stateless,2,0,0,0,2,2,10832,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2022,f,ARE,United Arab Emirates,0,0,0,0,0,0,9,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,ARG,Argentina,0,0,0,0,0,102,280,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,ARM,Armenia,9,0,12,12,0,952,2855,Asia,Europe & Central Asia,non-Schengen,0,1
+2022,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2022,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,AUS,Australia,0,0,0,0,0,34,350,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,AZE,Azerbaijan,1,2,0,2,0,612,1488,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,BDI,Burundi,0,0,0,0,0,18,50,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,BEN,Benin,0,0,0,0,0,4,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,BFA,Burkina Faso,0,0,0,0,0,0,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,BGD,Bangladesh,0,0,0,0,0,104,336,Asia,South Asia,non-Schengen,0,0
+2022,f,BHR,Bahrain,0,0,0,0,0,0,7,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,BHS,Bahamas,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,45,123,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,BLR,Belarus,26,27,73,100,6,30647,67099,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,f,BLZ,Belize,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,BOL,Bolivia,0,0,0,0,0,20,80,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,BRA,Brazil,0,0,0,0,1,411,1399,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,BRB,Barbados,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,BRN,Brunei,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,BTN,Bhutan,0,0,0,0,0,0,11,Asia,South Asia,non-Schengen,0,0
+2022,f,BWA,Botswana,0,0,0,0,0,7,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,CAF,Central African Republic,0,0,0,0,0,1,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,CAN,Canada,0,0,0,0,0,98,869,Americas,North America,non-Schengen,0,0
+2022,f,CHL,Chile,0,1,0,1,0,25,106,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,CHN,China,4,2,8,10,0,1634,8214,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,CIV,Côte d’Ivoire,0,0,0,0,0,11,26,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,CMR,Cameroon,0,0,1,1,0,89,217,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,COD,Congo - Kinshasa,1,0,0,0,0,0,114,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,COG,Congo - Brazzaville,0,0,1,1,0,87,130,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,COL,Colombia,2,0,0,0,0,442,838,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,COM,Comoros,1,0,0,0,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,CPV,Cape Verde,0,0,0,0,0,1,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,CRI,Costa Rica,0,0,0,0,0,43,100,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,CUB,Cuba,1,0,0,0,0,92,207,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,CYP,Cyprus,0,0,0,0,0,16,71,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,DJI,Djibouti,0,0,0,0,0,0,5,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,DMA,Dominica,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,DOM,Dominican Republic,0,0,1,1,0,11,54,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,DZA,Algeria,0,0,0,0,0,68,173,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,ECU,Ecuador,0,0,0,0,0,38,114,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,EGY,Egypt,0,0,0,0,0,97,430,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,ERI,Eritrea,0,0,0,0,0,5,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,ETH,Ethiopia,4,0,1,1,0,249,698,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,FJI,Fiji,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,GAB,Gabon,0,0,0,0,0,8,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GBR,United Kingdom,1,4,0,4,0,381,2363,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,GEO,Georgia,19,24,25,49,0,5769,11555,Asia,Europe & Central Asia,non-Schengen,0,1
+2022,f,GHA,Ghana,1,0,0,0,0,40,127,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GIN,Guinea,0,0,0,0,0,9,25,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GMB,Gambia,0,0,0,0,0,1,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GNB,Guinea-Bissau,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,GRD,Grenada,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,GTM,Guatemala,0,0,0,0,0,59,96,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,GUY,Guyana,0,0,0,0,0,2,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,HND,Honduras,0,0,0,0,0,10,26,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,HTI,Haiti,0,0,0,0,0,6,20,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,IDN,Indonesia,1,0,0,0,0,1092,1732,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,IND,India,4,3,4,7,0,2519,7356,Asia,South Asia,non-Schengen,0,0
+2022,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,IRL,Ireland,0,1,0,1,0,65,486,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,IRN,Iran,0,0,0,0,0,295,803,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,IRQ,Iraq,2,1,0,1,0,50,345,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,ISR,Israel,0,0,0,0,0,53,408,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,JAM,Jamaica,0,0,0,0,0,8,25,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,JOR,Jordan,0,1,0,1,0,44,148,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,JPN,Japan,0,0,0,0,0,181,1756,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,KAZ,Kazakhstan,2,1,3,4,0,1140,4195,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,KEN,Kenya,1,0,1,1,0,261,491,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,KGZ,Kyrgyzstan,1,0,3,3,0,277,846,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,KHM,Cambodia,0,0,0,0,0,8,25,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,KOR,South Korea,0,0,0,0,0,163,3445,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,KOSOVO,KOSOVO,0,0,0,0,0,0,142,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,KWT,Kuwait,0,0,0,0,0,1,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,LAO,Laos,0,0,0,0,0,1,16,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,LBN,Lebanon,0,0,0,0,0,59,179,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,LBR,Liberia,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,LBY,Libya,0,0,0,0,0,7,145,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,LCA,St. Lucia,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,LKA,Sri Lanka,1,0,0,0,0,56,155,Asia,South Asia,non-Schengen,0,0
+2022,f,LSO,Lesotho,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,MAR,Morocco,0,0,0,0,0,153,419,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,MDA,Moldova,34,49,26,75,5,4630,15140,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,f,MDG,Madagascar,0,0,0,0,0,9,35,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2022,f,MEX,Mexico,1,0,0,0,0,251,752,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,MKD,North Macedonia,0,0,0,0,0,54,155,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,MLI,Mali,0,0,0,0,0,6,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MMR,Myanmar (Burma),0,0,0,0,0,9,46,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,MNE,Montenegro,0,0,0,0,0,0,71,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,MNG,Mongolia,0,0,4,4,0,179,940,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,MOZ,Mozambique,0,0,0,0,0,19,58,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MRT,Mauritania,0,0,0,0,0,5,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MUS,Mauritius,8,0,0,0,0,11,54,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MWI,Malawi,0,0,0,0,0,0,15,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,MYS,Malaysia,0,0,0,0,0,58,396,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,NAM,Namibia,0,0,0,0,0,7,33,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,NER,Niger,0,0,0,0,0,29,48,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,NGA,Nigeria,2,1,1,2,0,373,887,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,NIC,Nicaragua,0,0,0,0,0,8,12,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,NPL,Nepal,1,0,0,0,0,492,1226,Asia,South Asia,non-Schengen,0,0
+2022,f,NZL,New Zealand,0,1,0,1,0,9,70,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,OMN,Oman,0,0,0,0,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,PAK,Pakistan,2,0,1,1,0,161,491,Asia,South Asia,non-Schengen,0,0
+2022,f,PAN,Panama,0,0,0,0,0,3,22,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,PER,Peru,0,0,0,0,0,93,250,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,PHL,Philippines,3,0,0,0,0,2749,4876,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,PNG,Papua New Guinea,0,0,0,0,0,2,13,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,PRY,Paraguay,0,0,0,0,0,10,30,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,PSE,Palestinian Territories,0,0,0,0,0,13,11,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,QAT,Qatar,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,RUS,Russia,40,8,18,26,0,5436,21063,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,f,RWA,Rwanda,5,2,1,3,0,381,647,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SAU,Saudi Arabia,0,0,0,0,0,12,356,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,SRB,Serbia,0,0,1,1,0,0,493,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,SDN,Sudan,0,0,0,0,0,13,35,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SEN,Senegal,0,0,0,0,0,13,40,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SGP,Singapore,0,0,0,0,0,14,93,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,SLE,Sierra Leone,0,0,0,0,0,7,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SLV,El Salvador,0,0,0,0,0,10,32,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,SOM,Somalia,0,0,0,0,0,6,36,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SSD,South Sudan,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,STP,São Tomé & Príncipe,0,0,0,0,0,1,2,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SUR,Suriname,0,0,0,0,0,8,20,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,SWZ,Eswatini,0,0,0,0,0,0,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SYC,Seychelles,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,SYR,Syria,0,0,0,0,0,77,423,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,TCD,Chad,0,0,0,0,0,2,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,TGO,Togo,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,THA,Thailand,0,1,0,1,0,514,1431,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,TJK,Tajikistan,5,0,0,0,0,108,312,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,TKM,Turkmenistan,0,0,0,0,0,253,518,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,TON,Tonga,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,TTO,Trinidad & Tobago,0,0,0,0,0,5,23,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,TUN,Tunisia,0,0,0,0,0,123,323,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,f,TUR,Turkey,0,5,2,7,0,895,9516,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,TWN,Taiwan,0,1,0,1,0,75,513,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,TZA,Tanzania,0,0,0,0,0,78,189,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,UGA,Uganda,0,0,0,0,0,120,240,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,UKR,Ukraine,106,166,885,1051,32,414422,1238372,Europe,Europe & Central Asia,non-Schengen,1,1
+2022,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,URY,Uruguay,0,0,0,0,0,26,34,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,USA,United States,0,2,2,4,0,461,4309,Americas,North America,non-Schengen,0,0
+2022,f,UZB,Uzbekistan,4,0,0,0,0,417,1117,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,f,VAT,Vatican City,0,0,0,0,0,0,12,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,VEN,Venezuela,0,0,0,0,0,83,232,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,VGB,British Virgin Islands,0,0,0,0,0,2,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,f,VNM,Vietnam,19,1,19,20,1,2807,6778,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,f,VUT,Vanuatu,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,f,YEM,Yemen,0,0,0,0,0,8,118,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,f,ZAF,South Africa,0,0,0,0,0,152,455,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,ZMB,Zambia,0,0,0,0,0,36,68,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,f,ZWE,Zimbabwe,1,0,1,1,0,849,2388,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,AFG,Afghanistan,27,5,3,8,1,388,710,Asia,South Asia,non-Schengen,0,0
+2022,m,AGO,Angola,0,1,1,2,0,138,291,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,ALB,Albania,6,7,7,14,2,381,1338,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,AND,Andorra,0,0,0,0,0,2,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,unknown/stateless,unknown/stateless,13,1,3,4,36,12,6887,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2022,m,ARE,United Arab Emirates,0,2,0,2,0,0,27,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,ARG,Argentina,0,2,5,7,0,390,636,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,ARM,Armenia,19,20,115,135,29,1893,4671,Asia,Europe & Central Asia,non-Schengen,0,1
+2022,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2022,m,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,ATG,Antigua & Barbuda,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,AUS,Australia,1,1,1,2,0,137,686,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,AZE,Azerbaijan,36,38,49,87,12,2894,6701,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,BDI,Burundi,0,0,0,0,0,17,49,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,BEN,Benin,0,0,0,0,0,6,16,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,BFA,Burkina Faso,0,0,0,0,0,5,18,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,BGD,Bangladesh,10,3,29,32,3,2873,4192,Asia,South Asia,non-Schengen,0,0
+2022,m,BHR,Bahrain,0,0,0,0,0,0,17,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,BHS,Bahamas,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,BIH,Bosnia & Herzegovina,0,2,3,5,1,127,691,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,BLR,Belarus,172,420,705,1125,98,86056,133766,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,m,BLZ,Belize,0,0,0,0,0,0,7,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,BOL,Bolivia,0,0,2,2,0,61,124,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,BRA,Brazil,3,3,8,11,0,901,2063,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,BRB,Barbados,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,BRN,Brunei,0,0,0,0,0,0,5,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,BTN,Bhutan,0,0,0,0,0,0,3,Asia,South Asia,non-Schengen,0,0
+2022,m,BWA,Botswana,0,0,0,0,0,2,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,CAF,Central African Republic,0,0,0,0,0,6,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,CAN,Canada,1,4,2,6,2,213,1394,Americas,North America,non-Schengen,0,0
+2022,m,CHL,Chile,0,1,0,1,0,124,253,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,CHN,China,12,7,21,28,8,2118,11375,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,CIV,Côte d’Ivoire,0,0,0,0,1,36,65,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,CMR,Cameroon,7,5,8,13,5,235,446,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,COD,Congo - Kinshasa,7,0,0,0,0,0,196,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,COG,Congo - Brazzaville,1,1,5,6,1,194,278,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,COL,Colombia,9,6,6,12,5,1252,2040,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,COM,Comoros,0,0,0,0,0,0,38,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,CPV,Cape Verde,0,0,0,0,0,2,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,CRI,Costa Rica,0,0,0,0,0,95,167,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,CUB,Cuba,2,0,0,0,0,271,511,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,CYP,Cyprus,0,1,0,1,0,46,187,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,DJI,Djibouti,0,0,0,0,0,0,6,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,DMA,Dominica,0,0,0,0,0,0,18,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,DOM,Dominican Republic,0,0,2,2,0,29,82,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,DZA,Algeria,8,5,16,21,4,766,1836,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,ECU,Ecuador,0,2,2,4,0,66,175,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,EGY,Egypt,14,9,21,30,6,1348,3172,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,ERI,Eritrea,0,0,0,0,0,5,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,ETH,Ethiopia,9,1,6,7,0,509,1422,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,FJI,Fiji,0,0,0,0,0,0,4,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,FRO,Faroe Islands,0,1,0,1,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,GAB,Gabon,0,0,1,1,0,2,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GBR,United Kingdom,2,59,26,85,5,2145,9409,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,GEO,Georgia,571,1323,1420,2743,282,26730,53989,Asia,Europe & Central Asia,non-Schengen,0,1
+2022,m,GHA,Ghana,5,0,2,2,0,178,395,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GIN,Guinea,8,1,0,1,0,38,97,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GMB,Gambia,4,0,2,2,0,27,117,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GNB,Guinea-Bissau,0,1,0,1,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GNQ,Equatorial Guinea,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,GRD,Grenada,0,0,0,0,0,1,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,GTM,Guatemala,2,1,1,2,0,151,245,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,GUY,Guyana,0,0,0,0,0,3,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,HND,Honduras,0,0,0,0,0,23,48,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,HTI,Haiti,0,0,0,0,0,11,25,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,IDN,Indonesia,2,0,2,2,0,3737,5132,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,IND,India,66,22,107,129,14,14424,27262,Asia,South Asia,non-Schengen,0,0
+2022,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,IRL,Ireland,0,13,4,17,0,413,1728,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,IRN,Iran,4,8,5,13,4,572,1380,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,IRQ,Iraq,15,15,8,23,2,311,1355,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,ISR,Israel,1,8,0,8,3,291,1199,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,JAM,Jamaica,0,2,1,3,0,15,37,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,JOR,Jordan,4,1,9,10,1,280,748,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,JPN,Japan,1,0,1,1,0,316,2509,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,KAZ,Kazakhstan,16,10,17,27,9,1950,4732,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,KEN,Kenya,0,0,4,4,0,393,645,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,KGZ,Kyrgyzstan,11,4,8,12,2,1269,2025,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,KHM,Cambodia,0,0,0,0,0,8,32,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,KIR,Kiribati,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,13,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,KOR,South Korea,2,12,16,28,0,535,6487,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,KOSOVO,KOSOVO,1,0,1,1,0,0,982,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,KWT,Kuwait,0,0,1,1,0,13,61,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,LAO,Laos,0,0,0,0,0,7,40,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,LBN,Lebanon,0,0,4,4,1,309,854,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,LBR,Liberia,0,0,0,0,0,5,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,LBY,Libya,4,2,3,5,1,74,453,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,LCA,St. Lucia,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,LKA,Sri Lanka,13,0,3,3,0,263,482,Asia,South Asia,non-Schengen,0,0
+2022,m,LSO,Lesotho,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,MAR,Morocco,30,8,11,19,2,806,1652,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,MCO,Monaco,0,0,0,0,0,0,5,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,MDA,Moldova,173,193,346,539,74,11836,33498,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,m,MDG,Madagascar,0,0,0,0,0,24,33,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MDV,Maldives,0,0,0,0,0,0,6,Asia,South Asia,non-Schengen,0,0
+2022,m,MEX,Mexico,7,5,7,12,0,654,1407,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,MKD,North Macedonia,2,1,2,3,0,168,433,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,MLI,Mali,2,1,1,2,0,32,47,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MMR,Myanmar (Burma),0,0,0,0,0,12,43,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,MNE,Montenegro,0,0,1,1,0,0,172,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,MNG,Mongolia,1,2,6,8,1,144,856,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,MOZ,Mozambique,0,1,1,2,0,24,80,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MRT,Mauritania,0,0,0,0,0,11,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MUS,Mauritius,4,0,0,0,0,40,95,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MWI,Malawi,0,0,0,0,0,0,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,MYS,Malaysia,1,0,0,0,0,72,321,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,NAM,Namibia,0,0,0,0,0,3,27,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,NER,Niger,0,0,0,0,0,107,185,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,NGA,Nigeria,23,10,26,36,14,1306,3029,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,NIC,Nicaragua,0,0,0,0,0,20,46,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,NPL,Nepal,10,0,9,9,0,2723,5808,Asia,South Asia,non-Schengen,0,0
+2022,m,NZL,New Zealand,0,0,0,0,0,38,177,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,OMN,Oman,0,0,0,0,0,0,29,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,PAK,Pakistan,29,10,15,25,10,973,3032,Asia,South Asia,non-Schengen,0,0
+2022,m,PAN,Panama,0,0,0,0,0,22,40,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,PER,Peru,0,0,1,1,0,204,403,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,PHL,Philippines,6,0,6,6,0,4636,6443,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,PNG,Papua New Guinea,0,0,0,0,0,1,10,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,PRY,Paraguay,5,1,0,1,0,19,43,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,PSE,Palestinian Territories,2,1,3,4,2,143,77,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,QAT,Qatar,0,0,0,0,0,31,10,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,RUS,Russia,88,65,162,227,81,7325,23615,Europe,Europe & Central Asia,non-Schengen,0,1
+2022,m,RWA,Rwanda,7,1,10,11,1,549,970,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SAU,Saudi Arabia,1,3,0,3,0,41,859,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,SRB,Serbia,2,16,5,21,6,0,2658,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,SDN,Sudan,5,4,0,4,1,47,117,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SEN,Senegal,0,0,1,1,1,57,143,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SGP,Singapore,0,1,0,1,0,16,117,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,SLE,Sierra Leone,0,0,0,0,0,11,35,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SLV,El Salvador,0,0,0,0,0,23,47,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,SMR,San Marino,0,0,0,0,0,0,2,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,SOM,Somalia,0,1,2,3,0,21,81,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SSD,South Sudan,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,STP,São Tomé & Príncipe,0,0,0,0,0,2,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SUR,Suriname,0,0,0,0,0,8,14,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,SWZ,Eswatini,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SYC,Seychelles,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,SYR,Syria,43,8,5,13,4,413,1298,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,TCD,Chad,0,0,0,0,0,3,13,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,TGO,Togo,0,0,0,0,0,22,42,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,THA,Thailand,0,0,0,0,0,218,902,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,TJK,Tajikistan,56,23,25,48,4,767,2218,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,TKM,Turkmenistan,57,20,28,48,7,1601,2715,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,TON,Tonga,0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,TTO,Trinidad & Tobago,0,0,0,0,0,4,22,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,TUN,Tunisia,11,9,37,46,3,730,1910,Africa,Middle East & North Africa,non-Schengen,0,0
+2022,m,TUR,Turkey,47,42,82,124,14,6811,22214,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,TWN,Taiwan,0,1,0,1,1,49,630,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,TZA,Tanzania,1,2,1,3,2,107,205,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,UGA,Uganda,2,2,1,3,0,136,214,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,UKR,Ukraine,729,1905,7285,9190,701,420246,964301,Europe,Europe & Central Asia,non-Schengen,1,1
+2022,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,URY,Uruguay,0,0,1,1,0,45,46,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,USA,United States,2,17,15,32,6,1151,7345,Americas,North America,non-Schengen,0,0
+2022,m,UZB,Uzbekistan,101,38,80,118,18,4927,10855,Asia,Europe & Central Asia,non-Schengen,0,0
+2022,m,VAT,Vatican City,0,0,0,0,0,4,65,Europe,Europe & Central Asia,non-Schengen,0,0
+2022,m,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,VEN,Venezuela,4,0,6,6,0,219,442,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,VGB,British Virgin Islands,0,0,0,0,0,7,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2022,m,VNM,Vietnam,92,13,44,57,27,4732,11768,Asia,East Asia & Pacific,non-Schengen,0,0
+2022,m,VUT,Vanuatu,0,0,0,0,0,0,7,Oceania,East Asia & Pacific,non-Schengen,0,0
+2022,m,YEM,Yemen,3,1,1,2,0,106,298,Asia,Middle East & North Africa,non-Schengen,0,0
+2022,m,ZAF,South Africa,0,1,0,1,0,181,559,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,ZMB,Zambia,1,1,0,1,0,38,66,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2022,m,ZWE,Zimbabwe,6,4,29,33,2,796,1949,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,AFG,Afghanistan,0,0,0,0,0,211,317,Asia,South Asia,non-Schengen,0,0
+2023,f,AGO,Angola,0,0,0,0,0,57,191,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,ALB,Albania,0,0,0,0,0,104,443,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,AND,Andorra,0,0,0,0,0,7,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,unknown/stateless,unknown/stateless,1,0,0,0,2,3,10873,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2023,f,ARE,United Arab Emirates,0,0,0,0,0,0,11,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,ARG,Argentina,1,0,0,0,0,191,413,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,ARM,Armenia,5,0,18,18,0,1038,3181,Asia,Europe & Central Asia,non-Schengen,0,1
+2023,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2023,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,AUS,Australia,0,0,0,0,0,30,375,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,AZE,Azerbaijan,3,0,0,0,0,805,2088,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,BDI,Burundi,0,0,0,0,0,26,68,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,BEN,Benin,0,0,0,0,0,3,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,BFA,Burkina Faso,0,0,0,0,0,1,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,BGD,Bangladesh,0,0,0,0,0,137,515,Asia,South Asia,non-Schengen,0,0
+2023,f,BHR,Bahrain,0,0,0,0,0,0,7,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,BHS,Bahamas,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,37,138,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,BLR,Belarus,63,24,100,124,10,36582,83636,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,f,BLZ,Belize,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,BOL,Bolivia,0,0,0,0,0,19,92,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,BRA,Brazil,2,1,0,1,1,423,1530,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,BRB,Barbados,0,0,0,0,0,0,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,BRN,Brunei,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,BTN,Bhutan,0,0,0,0,0,0,13,Asia,South Asia,non-Schengen,0,0
+2023,f,BWA,Botswana,0,0,0,0,0,9,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,CAF,Central African Republic,0,0,0,0,0,2,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,CAN,Canada,1,0,0,0,0,93,938,Americas,North America,non-Schengen,0,0
+2023,f,CHL,Chile,1,2,0,2,0,29,119,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,CHN,China,9,5,10,15,0,1694,9058,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,CIV,Côte d’Ivoire,0,0,0,0,0,11,27,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,CMR,Cameroon,1,0,3,3,0,101,243,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,COD,Congo - Kinshasa,2,0,0,0,0,0,154,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,COG,Congo - Brazzaville,0,0,2,2,0,100,152,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,COL,Colombia,35,0,4,4,0,1464,2695,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,COM,Comoros,0,0,0,0,0,0,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,CPV,Cape Verde,0,0,0,0,0,1,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,CRI,Costa Rica,0,0,0,0,0,56,121,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,CUB,Cuba,2,0,0,0,0,135,268,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,CYP,Cyprus,0,0,0,0,0,12,90,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,DJI,Djibouti,0,0,0,0,0,0,5,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,DMA,Dominica,0,0,0,0,0,0,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,DOM,Dominican Republic,0,0,0,0,0,10,67,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,DZA,Algeria,0,1,1,2,0,103,254,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,ECU,Ecuador,0,0,0,0,0,44,129,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,EGY,Egypt,0,1,0,1,0,126,553,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,ERI,Eritrea,0,0,0,0,0,4,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,ETH,Ethiopia,2,1,1,2,0,301,814,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,FJI,Fiji,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,GAB,Gabon,0,0,0,0,0,10,12,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GBR,United Kingdom,0,4,1,5,0,335,2518,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,GEO,Georgia,63,12,24,36,4,5544,14695,Asia,Europe & Central Asia,non-Schengen,0,1
+2023,f,GHA,Ghana,0,0,0,0,0,55,149,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GIN,Guinea,0,0,0,0,0,13,29,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GMB,Gambia,0,0,0,0,0,5,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GNB,Guinea-Bissau,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,GRD,Grenada,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,GTM,Guatemala,1,0,0,0,0,53,114,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,GUY,Guyana,0,0,0,0,0,2,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,HND,Honduras,0,0,0,0,0,10,33,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,HTI,Haiti,0,0,0,0,0,16,23,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,IDN,Indonesia,3,0,0,0,0,1375,2377,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,IND,India,5,2,6,8,0,2860,8992,Asia,South Asia,non-Schengen,0,0
+2023,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,IRL,Ireland,0,0,0,0,0,71,572,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,IRN,Iran,0,0,0,0,0,347,1008,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,IRQ,Iraq,1,0,1,1,0,58,380,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,ISR,Israel,0,1,0,1,0,63,534,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,JAM,Jamaica,0,1,0,1,0,4,28,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,JOR,Jordan,0,0,0,0,0,47,173,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,JPN,Japan,0,1,0,1,0,174,1899,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,KAZ,Kazakhstan,8,1,6,7,2,1426,5356,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,KEN,Kenya,3,0,0,0,0,313,614,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,KGZ,Kyrgyzstan,4,0,0,0,0,399,1218,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,KHM,Cambodia,0,0,0,0,0,8,29,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,KOR,South Korea,0,0,1,1,0,208,3825,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,KOSOVO,KOSOVO,0,0,0,0,0,0,161,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,KWT,Kuwait,0,0,0,0,0,1,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,LAO,Laos,0,0,0,0,0,2,18,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,LBN,Lebanon,1,1,0,1,0,71,221,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,LBR,Liberia,0,0,0,0,0,1,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,LBY,Libya,0,0,0,0,0,8,156,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,LCA,St. Lucia,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,LKA,Sri Lanka,0,0,0,0,0,72,189,Asia,South Asia,non-Schengen,0,0
+2023,f,LSO,Lesotho,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,MAR,Morocco,2,0,0,0,0,186,545,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,MDA,Moldova,44,30,34,64,4,4609,17817,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,f,MDG,Madagascar,0,0,0,0,0,10,43,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2023,f,MEX,Mexico,0,0,0,0,0,249,853,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,MKD,North Macedonia,0,0,0,0,0,52,165,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,MLI,Mali,0,0,0,0,0,7,22,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MMR,Myanmar (Burma),0,0,0,0,0,22,90,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,MNE,Montenegro,0,0,0,0,0,0,83,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,MNG,Mongolia,4,0,4,4,0,249,1108,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,MOZ,Mozambique,0,0,0,0,0,29,84,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MRT,Mauritania,0,0,0,0,0,3,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MUS,Mauritius,1,0,0,0,0,13,66,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MWI,Malawi,0,0,0,0,0,0,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,MYS,Malaysia,0,0,0,0,0,63,423,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,NAM,Namibia,1,0,0,0,0,4,37,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,NER,Niger,0,0,0,0,0,41,65,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,NGA,Nigeria,12,4,0,4,0,461,1207,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,NIC,Nicaragua,0,0,0,0,0,7,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,NPL,Nepal,3,1,0,1,0,1096,2084,Asia,South Asia,non-Schengen,0,0
+2023,f,NZL,New Zealand,0,0,0,0,0,9,79,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,OMN,Oman,0,0,0,0,0,0,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,PAK,Pakistan,0,0,0,0,0,230,648,Asia,South Asia,non-Schengen,0,0
+2023,f,PAN,Panama,0,0,0,0,0,5,26,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,PER,Peru,1,0,0,0,0,157,356,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,PHL,Philippines,10,0,1,1,0,3954,7330,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,PNG,Papua New Guinea,0,0,0,0,0,2,12,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,PRY,Paraguay,0,0,0,0,0,11,31,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,PSE,Palestinian Territories,0,0,0,0,0,15,21,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,QAT,Qatar,0,0,0,0,0,0,1,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,RUS,Russia,67,3,20,23,0,5067,22201,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,f,RWA,Rwanda,3,0,1,1,0,403,816,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SAU,Saudi Arabia,0,0,0,0,0,12,360,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,SRB,Serbia,0,0,2,2,0,0,549,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,SDN,Sudan,1,0,0,0,0,12,49,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SEN,Senegal,0,0,0,0,0,11,47,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SGP,Singapore,0,0,0,0,0,13,112,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,SLE,Sierra Leone,0,2,0,2,0,6,22,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SLV,El Salvador,0,0,0,0,0,13,39,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,SOM,Somalia,0,0,0,0,0,8,43,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SSD,South Sudan,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,STP,São Tomé & Príncipe,0,0,0,0,0,1,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SUR,Suriname,0,0,0,0,0,9,21,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,SWZ,Eswatini,0,0,0,0,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SYC,Seychelles,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,SYR,Syria,3,2,0,2,0,86,467,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,TCD,Chad,0,0,0,0,0,3,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,TGO,Togo,0,0,0,0,0,1,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,THA,Thailand,7,2,1,3,0,623,1665,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,TJK,Tajikistan,4,1,0,1,0,118,375,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,TKM,Turkmenistan,4,3,0,3,0,282,694,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,TON,Tonga,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,TTO,Trinidad & Tobago,0,0,0,0,0,10,26,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,TUN,Tunisia,0,0,1,1,0,137,400,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,f,TUR,Turkey,5,4,1,5,0,1167,11157,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,TWN,Taiwan,0,0,0,0,0,86,586,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,TZA,Tanzania,3,0,0,0,0,102,275,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,UGA,Uganda,1,0,0,0,0,130,293,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,UKR,Ukraine,79,143,1271,1414,57,414485,1371528,Europe,Europe & Central Asia,non-Schengen,1,1
+2023,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,URY,Uruguay,1,0,0,0,0,30,39,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,USA,United States,1,1,2,3,2,435,4679,Americas,North America,non-Schengen,0,0
+2023,f,UZB,Uzbekistan,5,0,4,4,0,473,1446,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,f,VAT,Vatican City,0,0,0,0,0,3,12,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,VEN,Venezuela,1,0,0,0,0,114,313,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,VGB,British Virgin Islands,0,0,0,0,0,4,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,f,VNM,Vietnam,22,0,12,12,0,3128,7601,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,f,VUT,Vanuatu,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,f,YEM,Yemen,0,0,0,0,0,14,127,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,f,ZAF,South Africa,0,0,0,0,0,159,536,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,ZMB,Zambia,0,0,0,0,0,48,85,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,f,ZWE,Zimbabwe,23,1,4,5,0,1137,3136,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,AFG,Afghanistan,16,18,10,28,2,395,779,Asia,South Asia,non-Schengen,0,0
+2023,m,AGO,Angola,1,3,2,5,0,147,319,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,ALB,Albania,6,6,6,12,5,486,1841,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,AND,Andorra,0,0,1,1,0,2,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,unknown/stateless,unknown/stateless,12,1,1,2,49,10,6918,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2023,m,ARE,United Arab Emirates,0,1,0,1,0,0,30,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,ARG,Argentina,13,1,6,7,0,706,1085,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,ARM,Armenia,28,18,141,159,34,2066,5643,Asia,Europe & Central Asia,non-Schengen,0,1
+2023,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2023,m,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,ATG,Antigua & Barbuda,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,AUS,Australia,3,1,0,1,0,133,756,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,AZE,Azerbaijan,66,31,103,134,12,3871,9950,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,BDI,Burundi,1,0,3,3,0,31,83,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,BEN,Benin,1,0,0,0,0,5,19,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,BFA,Burkina Faso,1,0,1,1,0,5,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,BGD,Bangladesh,23,2,20,22,5,4513,7122,Asia,South Asia,non-Schengen,0,0
+2023,m,BHR,Bahrain,0,0,0,0,0,0,18,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,BHS,Bahamas,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,BIH,Bosnia & Herzegovina,2,3,1,4,0,119,742,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,BLR,Belarus,301,269,860,1129,139,99636,168586,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,m,BLZ,Belize,0,0,0,0,0,0,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,BOL,Bolivia,0,0,2,2,0,55,135,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,BRA,Brazil,7,3,4,7,0,908,2256,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,BRB,Barbados,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,BRN,Brunei,0,0,0,0,0,0,5,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,BTN,Bhutan,0,0,0,0,0,0,5,Asia,South Asia,non-Schengen,0,0
+2023,m,BWA,Botswana,0,0,0,0,0,3,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,CAF,Central African Republic,0,0,0,0,0,6,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,CAN,Canada,3,3,4,7,2,211,1511,Americas,North America,non-Schengen,0,0
+2023,m,CHL,Chile,1,3,1,4,0,137,295,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,CHN,China,20,10,41,51,4,2290,12680,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,CIV,Côte d’Ivoire,1,0,0,0,0,36,78,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,CMR,Cameroon,4,1,7,8,1,264,498,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,COD,Congo - Kinshasa,3,0,0,0,0,1,251,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,COG,Congo - Brazzaville,2,1,2,3,0,230,301,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,COL,Colombia,91,10,25,35,12,4071,7008,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,COM,Comoros,0,0,1,1,0,0,47,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,CPV,Cape Verde,0,0,0,0,0,4,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,CRI,Costa Rica,0,0,0,0,0,107,191,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,CUB,Cuba,6,0,2,2,0,361,646,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,CYP,Cyprus,0,1,1,2,0,47,221,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,DJI,Djibouti,0,0,0,0,0,0,8,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,DMA,Dominica,0,0,0,0,0,0,25,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,DOM,Dominican Republic,0,1,0,1,0,36,93,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,DZA,Algeria,21,6,25,31,3,953,2293,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,ECU,Ecuador,1,1,1,2,0,77,201,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,EGY,Egypt,15,6,27,33,7,1496,3710,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,ERI,Eritrea,1,2,0,2,0,11,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,ETH,Ethiopia,6,1,10,11,1,582,1671,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,FJI,Fiji,0,0,0,0,0,0,4,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,GAB,Gabon,0,0,1,1,0,2,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GBR,United Kingdom,3,49,17,66,4,2079,10069,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,GEO,Georgia,973,934,1641,2575,345,24882,67770,Asia,Europe & Central Asia,non-Schengen,0,1
+2023,m,GHA,Ghana,6,1,1,2,0,201,495,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GIN,Guinea,1,1,1,2,0,46,110,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GMB,Gambia,4,2,0,2,0,48,139,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GNB,Guinea-Bissau,1,0,1,1,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GNQ,Equatorial Guinea,0,0,1,1,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,GRD,Grenada,0,0,0,0,0,2,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,GTM,Guatemala,2,0,0,0,0,139,310,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,GUY,Guyana,0,0,0,0,0,5,9,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,HKG,Hong Kong SAR China,1,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,HND,Honduras,0,0,0,0,0,25,57,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,HTI,Haiti,0,0,1,1,0,16,30,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,IDN,Indonesia,28,0,6,6,0,4825,7138,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,IND,India,140,20,115,135,14,19166,35596,Asia,South Asia,non-Schengen,0,0
+2023,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,IRL,Ireland,0,3,10,13,2,416,1949,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,IRN,Iran,8,2,7,9,2,635,1586,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,IRQ,Iraq,16,9,9,18,1,325,1455,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,ISR,Israel,1,15,4,19,5,334,1462,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,JAM,Jamaica,1,0,1,1,0,16,46,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,JOR,Jordan,1,1,5,6,1,279,851,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,JPN,Japan,1,1,0,1,0,326,2710,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,KAZ,Kazakhstan,24,11,36,47,6,2561,6913,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,KEN,Kenya,14,0,6,6,0,507,840,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,KGZ,Kyrgyzstan,30,14,7,21,1,1823,3665,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,KHM,Cambodia,0,0,0,0,0,6,32,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,KIR,Kiribati,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,27,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,KOR,South Korea,0,6,18,24,1,779,7295,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,KOSOVO,KOSOVO,1,0,1,1,0,0,1144,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,KWT,Kuwait,0,0,2,2,0,7,62,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,LAO,Laos,0,0,0,0,0,7,40,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,LBN,Lebanon,1,0,6,6,1,328,961,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,LBR,Liberia,1,0,1,1,0,2,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,LBY,Libya,1,2,6,8,1,76,464,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,LCA,St. Lucia,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,LKA,Sri Lanka,5,0,2,2,0,462,730,Asia,South Asia,non-Schengen,0,0
+2023,m,LSO,Lesotho,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,MAR,Morocco,20,9,22,31,3,889,2009,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,MCO,Monaco,0,0,0,0,0,0,5,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,MDA,Moldova,284,173,416,589,72,11331,40230,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,m,MDG,Madagascar,0,0,0,0,0,28,39,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MDV,Maldives,0,0,0,0,0,0,7,Asia,South Asia,non-Schengen,0,0
+2023,m,MEX,Mexico,2,4,4,8,0,634,1546,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,MKD,North Macedonia,2,4,2,6,0,167,479,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,MLI,Mali,1,0,2,2,0,35,56,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MMR,Myanmar (Burma),0,0,0,0,0,27,81,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,MNE,Montenegro,0,1,3,4,0,0,183,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,MNG,Mongolia,3,1,4,5,1,219,1026,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,MOZ,Mozambique,0,2,0,2,0,30,112,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MRT,Mauritania,0,0,0,0,0,9,15,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MUS,Mauritius,0,0,0,0,0,45,111,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MWI,Malawi,0,0,0,0,0,0,26,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,MYS,Malaysia,0,0,1,1,0,70,360,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,NAM,Namibia,0,0,1,1,0,3,36,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,NER,Niger,0,0,0,0,0,105,225,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,NGA,Nigeria,48,14,46,60,16,1505,3515,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,NIC,Nicaragua,1,1,0,1,0,45,74,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,NPL,Nepal,26,4,9,13,0,5732,10496,Asia,South Asia,non-Schengen,0,0
+2023,m,NZL,New Zealand,1,0,1,1,0,33,190,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,OMN,Oman,0,0,0,0,0,0,33,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,PAK,Pakistan,21,6,27,33,6,1277,3756,Asia,South Asia,non-Schengen,0,0
+2023,m,PAN,Panama,0,0,0,0,0,26,47,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,PCN,Pitcairn Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,PER,Peru,2,3,4,7,3,379,669,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,PHL,Philippines,19,1,13,14,0,6842,9715,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,PNG,Papua New Guinea,0,1,0,1,0,1,11,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,PRY,Paraguay,0,0,0,0,6,16,60,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,PSE,Palestinian Territories,1,1,4,5,2,159,137,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,QAT,Qatar,0,0,0,0,0,23,13,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,RUS,Russia,127,59,179,238,88,6357,25046,Europe,Europe & Central Asia,non-Schengen,0,1
+2023,m,RWA,Rwanda,16,1,19,20,1,661,1303,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SAU,Saudi Arabia,3,2,1,3,0,39,872,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,SRB,Serbia,6,22,5,27,3,0,3113,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,SDN,Sudan,3,1,1,2,1,59,145,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SEN,Senegal,4,1,2,3,1,54,159,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SGP,Singapore,0,0,0,0,0,17,141,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,SLE,Sierra Leone,0,0,0,0,0,15,39,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SLV,El Salvador,0,0,0,0,0,23,56,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,SMR,San Marino,0,0,0,0,0,0,2,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,SOM,Somalia,1,1,0,1,0,28,100,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SSD,South Sudan,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,STP,São Tomé & Príncipe,0,0,0,0,0,2,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SUR,Suriname,0,0,0,0,0,9,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,SWZ,Eswatini,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SYC,Seychelles,0,0,2,2,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,SYR,Syria,23,58,13,71,14,429,1360,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,TCD,Chad,1,0,0,0,0,4,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,TGO,Togo,1,0,0,0,0,24,48,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,THA,Thailand,0,1,1,2,0,283,999,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,TJK,Tajikistan,91,42,34,76,6,1027,3380,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,TKM,Turkmenistan,167,22,56,78,13,2505,4794,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,TON,Tonga,0,0,0,0,0,0,6,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,TTO,Trinidad & Tobago,0,0,0,0,0,4,23,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,TUN,Tunisia,14,7,39,46,7,797,2118,Africa,Middle East & North Africa,non-Schengen,0,0
+2023,m,TUR,Turkey,86,45,121,166,11,8519,30121,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,TWN,Taiwan,2,1,2,3,1,58,698,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,TZA,Tanzania,3,0,2,2,1,129,282,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,UGA,Uganda,3,0,1,1,0,189,281,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,UKR,Ukraine,556,1205,8499,9704,1015,411728,1064290,Europe,Europe & Central Asia,non-Schengen,1,1
+2023,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,URY,Uruguay,0,0,0,0,0,44,45,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,USA,United States,3,21,9,30,5,1147,8052,Americas,North America,non-Schengen,0,0
+2023,m,UZB,Uzbekistan,253,49,148,197,26,7461,16894,Asia,Europe & Central Asia,non-Schengen,0,0
+2023,m,VAT,Vatican City,0,0,0,0,0,5,60,Europe,Europe & Central Asia,non-Schengen,0,0
+2023,m,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,VEN,Venezuela,1,0,1,1,0,323,581,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,VGB,British Virgin Islands,0,0,0,0,0,4,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2023,m,VNM,Vietnam,79,8,49,57,24,5462,13782,Asia,East Asia & Pacific,non-Schengen,0,0
+2023,m,VUT,Vanuatu,0,0,0,0,0,0,9,Oceania,East Asia & Pacific,non-Schengen,0,0
+2023,m,YEM,Yemen,6,4,1,5,0,103,330,Asia,Middle East & North Africa,non-Schengen,0,0
+2023,m,ZAF,South Africa,6,2,3,5,0,183,668,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,ZMB,Zambia,5,0,0,0,0,64,85,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2023,m,ZWE,Zimbabwe,37,5,36,41,2,1655,3317,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,ABW,Aruba,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,AFG,Afghanistan,1,0,1,1,0,457,343,Asia,South Asia,non-Schengen,0,0
+2024,f,AGO,Angola,2,0,0,0,0,50,203,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,ALB,Albania,0,0,0,0,0,114,487,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,AND,Andorra,0,0,0,0,0,7,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,unknown/stateless,unknown/stateless,1,0,0,0,2,2820,10925,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2024,f,ARE,United Arab Emirates,0,0,0,0,0,0,11,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,ARG,Argentina,3,0,3,3,0,223,535,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,ARM,Armenia,10,0,17,17,1,1319,3311,Asia,Europe & Central Asia,non-Schengen,0,1
+2024,f,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2024,f,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,ATG,Antigua & Barbuda,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,AUS,Australia,0,0,0,0,0,33,390,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,AZE,Azerbaijan,9,0,4,4,0,879,2520,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,BDI,Burundi,0,0,0,0,0,29,81,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,BEN,Benin,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,BFA,Burkina Faso,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,BGD,Bangladesh,3,0,1,1,0,153,719,Asia,South Asia,non-Schengen,0,0
+2024,f,BHR,Bahrain,0,0,0,0,0,0,9,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,BHS,Bahamas,0,0,0,0,0,4,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,BIH,Bosnia & Herzegovina,0,0,0,0,0,0,145,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,BLR,Belarus,106,15,89,104,8,37221,87017,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,f,BLZ,Belize,0,0,0,0,0,22,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,BOL,Bolivia,0,0,0,0,0,15,96,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,BRA,Brazil,3,2,0,2,1,449,1665,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,BRB,Barbados,0,0,0,0,0,5,2,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,BRN,Brunei,0,0,0,0,0,0,2,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,BTN,Bhutan,0,0,0,0,0,3,15,Asia,South Asia,non-Schengen,0,0
+2024,f,BWA,Botswana,0,0,0,0,0,4,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,CAF,Central African Republic,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,CAN,Canada,0,0,1,1,0,89,1030,Americas,North America,non-Schengen,0,0
+2024,f,CHL,Chile,0,0,0,0,0,25,135,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,CHN,China,11,2,20,22,0,1845,9827,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,CIV,Côte d’Ivoire,0,0,0,0,0,28,29,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,CMR,Cameroon,2,1,0,1,0,89,270,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,COD,Congo - Kinshasa,0,0,0,0,0,0,168,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,COG,Congo - Brazzaville,2,0,0,0,0,94,164,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,COL,Colombia,117,0,8,8,0,3963,9994,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,COM,Comoros,0,0,0,0,0,0,17,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,CPV,Cape Verde,0,0,0,0,0,0,8,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,CRI,Costa Rica,0,0,0,0,0,47,141,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,CUB,Cuba,2,0,0,0,0,162,355,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,CYP,Cyprus,0,0,0,0,0,11,112,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,DJI,Djibouti,0,0,0,0,0,0,5,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,DMA,Dominica,0,0,0,0,0,0,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,DOM,Dominican Republic,0,0,0,0,0,13,80,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,DZA,Algeria,1,0,1,1,0,123,314,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,ECU,Ecuador,0,0,0,0,0,35,146,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,EGY,Egypt,3,0,0,0,0,126,649,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,ERI,Eritrea,0,0,0,0,0,0,16,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,ETH,Ethiopia,4,0,1,1,0,289,894,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,FJI,Fiji,0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,GAB,Gabon,0,0,0,0,0,4,13,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GBR,United Kingdom,2,5,0,5,0,373,2688,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,GEO,Georgia,107,9,16,25,0,4829,17223,Asia,Europe & Central Asia,non-Schengen,0,1
+2024,f,GHA,Ghana,2,0,0,0,0,49,180,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GIN,Guinea,1,0,0,0,0,6,32,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GMB,Gambia,0,0,1,1,0,5,21,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GNB,Guinea-Bissau,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GNQ,Equatorial Guinea,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,GRD,Grenada,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,GTM,Guatemala,2,0,0,0,0,47,206,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,GUY,Guyana,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,HKG,Hong Kong SAR China,0,0,0,0,0,0,3,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,HND,Honduras,0,0,0,0,0,3,39,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,HTI,Haiti,0,0,0,0,0,4,23,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,IDN,Indonesia,34,0,0,0,0,1617,2983,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,IND,India,13,0,3,3,0,2829,10460,Asia,South Asia,non-Schengen,0,0
+2024,f,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,IRL,Ireland,0,0,0,0,0,66,669,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,IRN,Iran,2,1,1,2,0,290,1127,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,IRQ,Iraq,0,0,0,0,0,51,410,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,ISR,Israel,0,0,0,0,0,70,681,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,JAM,Jamaica,0,0,0,0,0,3,31,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,JOR,Jordan,0,0,0,0,0,45,209,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,JPN,Japan,0,1,0,1,0,180,1996,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,KAZ,Kazakhstan,23,0,5,5,1,1622,6630,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,KEN,Kenya,6,0,1,1,0,326,720,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,KGZ,Kyrgyzstan,14,1,1,2,0,415,1787,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,KHM,Cambodia,0,0,0,0,0,5,32,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,KIR,Kiribati,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,KNA,St. Kitts & Nevis,0,0,0,0,0,0,12,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,KOR,South Korea,0,1,2,3,0,236,4231,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,KOSOVO,KOSOVO,0,0,0,0,0,0,178,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,KWT,Kuwait,0,0,0,0,0,0,4,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,LAO,Laos,0,0,0,0,0,0,18,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,LBN,Lebanon,0,0,0,0,0,65,250,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,LBR,Liberia,0,0,0,0,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,LBY,Libya,0,0,0,0,0,3,158,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,LCA,St. Lucia,0,0,0,0,0,0,3,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,LKA,Sri Lanka,0,0,0,0,0,180,442,Asia,South Asia,non-Schengen,0,0
+2024,f,LSO,Lesotho,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MAC,Macao SAR China,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,MAR,Morocco,3,1,0,1,0,202,639,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,MCO,Monaco,0,0,0,0,0,0,3,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,MDA,Moldova,73,17,35,52,7,4086,20254,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,f,MDG,Madagascar,0,0,0,0,0,13,50,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MDV,Maldives,0,0,0,0,0,0,1,Asia,South Asia,non-Schengen,0,0
+2024,f,MEX,Mexico,1,0,0,0,0,276,956,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,MKD,North Macedonia,0,0,0,0,0,54,176,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,MLI,Mali,0,0,0,0,0,73,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MMR,Myanmar (Burma),0,0,0,0,0,19,133,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,MNE,Montenegro,0,0,0,0,0,15,96,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,MNG,Mongolia,10,0,2,2,0,327,1304,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,MOZ,Mozambique,0,0,0,0,0,33,115,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MRT,Mauritania,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MUS,Mauritius,0,0,0,0,0,11,91,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MWI,Malawi,0,0,0,0,0,4,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,MYS,Malaysia,2,0,0,0,0,59,460,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,NAM,Namibia,0,0,0,0,0,3,41,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,NER,Niger,0,1,0,1,0,28,77,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,NGA,Nigeria,14,2,1,3,0,455,1419,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,NIC,Nicaragua,0,0,0,0,0,10,20,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,NPL,Nepal,15,0,0,0,0,1475,3117,Asia,South Asia,non-Schengen,0,0
+2024,f,NZL,New Zealand,0,0,0,0,0,14,92,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,OMN,Oman,0,0,0,0,0,18,5,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,PAK,Pakistan,2,1,1,2,0,272,791,Asia,South Asia,non-Schengen,0,0
+2024,f,PAN,Panama,0,0,0,0,0,4,30,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,PCN,Pitcairn Islands,0,0,0,0,0,3,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,PER,Peru,3,1,0,1,0,181,514,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,PHL,Philippines,62,0,3,3,0,4776,9556,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,PLW,Palau,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,PNG,Papua New Guinea,0,0,0,0,0,0,12,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,PRY,Paraguay,0,0,0,0,0,29,109,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,PSE,Palestinian Territories,0,0,0,0,0,9,32,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,QAT,Qatar,0,0,0,0,0,0,3,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,RUS,Russia,78,6,29,35,2,5652,22066,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,f,RWA,Rwanda,6,0,1,1,0,358,902,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SAU,Saudi Arabia,0,0,0,0,0,10,366,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,SRB,Serbia,2,1,1,2,1,0,628,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,SDN,Sudan,1,0,0,0,0,3,60,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SEN,Senegal,0,0,0,0,0,8,52,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SGP,Singapore,0,0,0,0,0,11,123,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,SLB,Solomon Islands,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,SLE,Sierra Leone,0,0,0,0,0,4,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SLV,El Salvador,0,0,0,0,0,12,51,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,SMR,San Marino,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,SOM,Somalia,0,0,0,0,0,5,52,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,STP,São Tomé & Príncipe,0,0,0,0,0,0,4,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SUR,Suriname,0,0,0,0,0,6,22,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,SWZ,Eswatini,0,0,0,0,0,0,14,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SYC,Seychelles,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,SYR,Syria,0,4,0,4,0,93,495,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,TCD,Chad,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,TGO,Togo,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,THA,Thailand,10,0,0,0,0,679,1904,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,TJK,Tajikistan,8,0,1,1,0,120,473,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,TKM,Turkmenistan,12,0,1,1,0,289,834,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,TLS,Timor-Leste,0,0,0,0,0,0,1,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,TON,Tonga,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,TTO,Trinidad & Tobago,1,0,0,0,0,0,33,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,TUN,Tunisia,1,0,0,0,0,148,440,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,f,TUR,Turkey,8,2,2,4,0,1275,12753,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,TWN,Taiwan,0,0,0,0,0,76,656,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,TZA,Tanzania,5,0,0,0,0,99,352,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,UGA,Uganda,3,0,0,0,0,141,322,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,UKR,Ukraine,69,134,1483,1617,83,375392,1460317,Europe,Europe & Central Asia,non-Schengen,1,1
+2024,f,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,2,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,URY,Uruguay,0,0,0,0,0,23,42,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,USA,United States,4,0,0,0,0,447,5104,Americas,North America,non-Schengen,0,0
+2024,f,UZB,Uzbekistan,10,3,1,4,0,488,1715,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,f,VAT,Vatican City,0,0,0,0,0,3,11,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,f,VCT,St. Vincent & Grenadines,0,0,0,0,0,0,1,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,VEN,Venezuela,7,0,0,0,0,157,494,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,f,VNM,Vietnam,40,0,7,7,1,3649,8250,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,f,VUT,Vanuatu,0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,f,YEM,Yemen,0,0,0,0,0,12,133,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,f,ZAF,South Africa,2,0,1,1,0,180,627,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,ZMB,Zambia,1,0,0,0,0,64,98,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,f,ZWE,Zimbabwe,20,0,3,3,0,1217,3785,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,ABW,Aruba,0,0,0,0,0,3,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,AFG,Afghanistan,17,8,3,11,1,653,809,Asia,South Asia,non-Schengen,0,0
+2024,m,AGO,Angola,4,0,3,3,0,138,321,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,AIA,Anguilla,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,ALB,Albania,10,6,2,8,5,570,2215,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,AND,Andorra,0,0,2,2,0,3,6,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,unknown/stateless,unknown/stateless,8,1,4,5,57,3990,6900,unknown/stateless,unknown/stateless,non-Schengen,0,0
+2024,m,ARE,United Arab Emirates,1,2,1,3,0,6,33,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,ARG,Argentina,37,2,17,19,0,679,1456,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,ARM,Armenia,41,21,139,160,39,2480,6304,Asia,Europe & Central Asia,non-Schengen,0,1
+2024,m,ASM,American Samoa,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,ATA,Antarctica,0,0,0,0,0,0,0,Antarctica,unknown/stateless,non-Schengen,0,0
+2024,m,ATF,French Southern Territories,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,ATG,Antigua & Barbuda,0,0,0,0,0,0,4,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,AUS,Australia,1,0,0,0,0,159,819,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,AZE,Azerbaijan,96,17,143,160,12,3826,11991,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,BDI,Burundi,1,0,1,1,0,26,92,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,BEN,Benin,0,0,0,0,0,3,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,BFA,Burkina Faso,2,0,0,0,0,3,25,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,BGD,Bangladesh,95,1,40,41,3,5938,9499,Asia,South Asia,non-Schengen,0,0
+2024,m,BHR,Bahrain,1,0,0,0,0,0,18,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,BHS,Bahamas,0,0,0,0,0,0,6,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,BIH,Bosnia & Herzegovina,2,2,0,2,0,0,772,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,BLR,Belarus,350,183,944,1127,130,97987,182850,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,m,BLZ,Belize,0,0,0,0,0,35,8,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,BOL,Bolivia,2,0,0,0,0,67,146,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,BRA,Brazil,6,3,3,6,0,956,2451,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,BRB,Barbados,0,0,0,0,0,3,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,BRN,Brunei,0,0,0,0,0,0,5,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,BTN,Bhutan,0,0,0,0,0,3,5,Asia,South Asia,non-Schengen,0,0
+2024,m,BWA,Botswana,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,CAF,Central African Republic,0,0,0,0,0,9,9,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,CAN,Canada,3,6,2,8,3,239,1642,Americas,North America,non-Schengen,0,0
+2024,m,CHL,Chile,0,1,1,2,0,152,324,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,CHN,China,27,10,45,55,3,2613,13898,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,CIV,Côte d’Ivoire,1,0,0,0,0,37,87,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,CMR,Cameroon,12,1,3,4,2,242,527,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,COD,Congo - Kinshasa,5,1,3,4,0,0,288,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,COG,Congo - Brazzaville,4,1,3,4,0,248,310,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,COL,Colombia,366,38,130,168,18,10569,24471,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,COM,Comoros,0,0,0,0,0,7,55,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,CPV,Cape Verde,0,0,0,0,0,0,11,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,CRI,Costa Rica,0,0,0,0,0,110,246,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,CUB,Cuba,5,2,4,6,0,420,804,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,CYM,Cayman Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,CYP,Cyprus,0,0,0,0,0,63,265,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,DJI,Djibouti,0,0,0,0,0,0,8,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,DMA,Dominica,1,0,0,0,0,0,31,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,DOM,Dominican Republic,0,0,2,2,0,44,106,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,DZA,Algeria,42,5,24,29,4,1193,2619,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,ECU,Ecuador,1,1,0,1,0,87,230,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,EGY,Egypt,37,13,31,44,2,1769,3966,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,ERI,Eritrea,0,0,0,0,0,9,44,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,ESH,Western Sahara,0,0,0,0,0,0,0,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,ETH,Ethiopia,17,0,7,7,1,545,1927,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,FJI,Fiji,0,0,0,0,0,0,4,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,FLK,Falkland Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,FRO,Faroe Islands,0,0,0,0,0,0,0,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,FSM,Micronesia (Federated States of),0,0,0,0,0,0,1,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,GAB,Gabon,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GBR,United Kingdom,7,34,16,50,7,2362,10386,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,GEO,Georgia,1144,488,1376,1864,314,21348,77682,Asia,Europe & Central Asia,non-Schengen,0,1
+2024,m,GHA,Ghana,17,2,3,5,1,211,609,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GIN,Guinea,8,0,1,1,0,44,118,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GMB,Gambia,2,1,2,3,1,47,150,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GNB,Guinea-Bissau,0,0,1,1,0,0,12,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GNQ,Equatorial Guinea,0,0,0,0,0,0,5,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,GRD,Grenada,0,0,0,0,0,0,11,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,GTM,Guatemala,0,0,0,0,0,155,546,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,GUY,Guyana,0,0,0,0,0,4,10,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,HKG,Hong Kong SAR China,0,0,0,0,0,3,3,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,HND,Honduras,1,0,0,0,0,22,74,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,HTI,Haiti,0,0,0,0,0,0,31,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,IDN,Indonesia,168,0,4,4,0,5545,9426,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,IND,India,294,14,89,103,9,19752,43025,Asia,South Asia,non-Schengen,0,0
+2024,m,IOT,British Indian Ocean Territory,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,IRL,Ireland,0,13,5,18,2,520,2131,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,IRN,Iran,13,2,5,7,1,588,1707,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,IRQ,Iraq,12,4,8,12,3,383,1549,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,ISR,Israel,5,5,3,8,0,305,1736,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,JAM,Jamaica,1,0,0,0,0,18,49,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,JOR,Jordan,4,2,7,9,2,321,951,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,JPN,Japan,3,0,0,0,0,307,2880,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,KAZ,Kazakhstan,36,7,30,37,12,2576,8748,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,KEN,Kenya,5,1,6,7,0,513,941,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,KGZ,Kyrgyzstan,79,3,16,19,2,1731,5755,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,KHM,Cambodia,0,0,0,0,0,7,34,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,KIR,Kiribati,0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,KNA,St. Kitts & Nevis,0,0,0,0,0,0,36,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,KOR,South Korea,0,8,11,19,2,792,7986,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,KOSOVO,KOSOVO,4,4,0,4,1,0,1252,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,KWT,Kuwait,0,0,1,1,0,3,65,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,LAO,Laos,0,0,0,0,0,13,40,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,LBN,Lebanon,2,0,2,2,1,359,1004,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,LBR,Liberia,0,0,0,0,0,0,23,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,LBY,Libya,4,1,6,7,2,93,479,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,LCA,St. Lucia,0,0,0,0,0,4,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,LKA,Sri Lanka,22,1,5,6,0,1285,2457,Asia,South Asia,non-Schengen,0,0
+2024,m,LSO,Lesotho,0,0,0,0,0,0,7,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MAC,Macao SAR China,0,0,0,0,0,11,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,MAR,Morocco,26,2,21,23,3,982,2220,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,MCO,Monaco,0,0,0,0,0,0,5,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,MDA,Moldova,379,112,439,551,87,10573,45707,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,m,MDG,Madagascar,0,0,0,0,0,20,41,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MDV,Maldives,0,0,0,0,0,0,9,Asia,South Asia,non-Schengen,0,0
+2024,m,MEX,Mexico,4,5,3,8,5,662,1682,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,MKD,North Macedonia,5,4,0,4,1,179,511,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,MLI,Mali,4,1,1,2,0,121,62,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MMR,Myanmar (Burma),1,0,0,0,0,23,98,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,MNE,Montenegro,1,0,2,2,0,46,206,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,MNG,Mongolia,13,1,5,6,0,309,1231,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,MOZ,Mozambique,2,0,2,2,0,32,144,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MRT,Mauritania,0,0,0,0,0,3,15,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MUS,Mauritius,1,0,0,0,0,54,164,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MWI,Malawi,0,0,0,0,0,14,34,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,MYS,Malaysia,1,2,1,3,2,84,418,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,NAM,Namibia,0,0,0,0,0,0,40,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,NER,Niger,0,0,0,0,0,155,257,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,NGA,Nigeria,55,16,47,63,21,1500,3854,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,NIC,Nicaragua,1,1,0,1,0,45,81,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,NPL,Nepal,120,1,12,13,1,7823,15008,Asia,South Asia,non-Schengen,0,0
+2024,m,NZL,New Zealand,0,1,0,1,0,42,209,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,OMN,Oman,0,0,0,0,0,15,37,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,PAK,Pakistan,27,10,24,34,4,1471,4500,Asia,South Asia,non-Schengen,0,0
+2024,m,PAN,Panama,0,0,0,0,0,23,57,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,PCN,Pitcairn Islands,0,0,0,0,0,4,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,PER,Peru,11,1,9,10,0,443,1045,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,PHL,Philippines,161,2,18,20,3,9833,15083,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,PLW,Palau,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,PNG,Papua New Guinea,0,0,0,0,0,0,11,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,PRI,Puerto Rico,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,PRY,Paraguay,5,6,1,7,0,89,133,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,PSE,Palestinian Territories,2,3,3,6,2,188,179,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,PYF,French Polynesia,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,QAT,Qatar,0,0,1,1,0,0,14,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,RUS,Russia,157,47,169,216,82,6467,25334,Europe,Europe & Central Asia,non-Schengen,0,1
+2024,m,RWA,Rwanda,15,1,15,16,1,578,1453,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SAU,Saudi Arabia,0,3,0,3,0,40,892,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,SRB,Serbia,9,11,6,17,5,0,3557,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,SDN,Sudan,4,0,2,2,1,63,192,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SEN,Senegal,1,0,1,1,1,72,178,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SGP,Singapore,0,0,1,1,0,9,153,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,SLB,Solomon Islands,0,0,0,0,0,0,0,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,SLE,Sierra Leone,0,0,0,0,0,13,48,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SLV,El Salvador,1,0,0,0,0,29,97,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,SMR,San Marino,0,0,0,0,0,0,2,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,SOM,Somalia,3,2,0,2,0,28,140,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SSD,South Sudan,0,0,0,0,0,0,0,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,STP,São Tomé & Príncipe,0,0,0,0,0,0,3,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SUR,Suriname,0,0,0,0,0,0,16,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,SWZ,Eswatini,1,1,0,1,0,0,6,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SYC,Seychelles,0,0,0,0,0,0,10,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,SYR,Syria,18,16,12,28,11,627,1425,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,TCD,Chad,0,0,0,0,0,4,25,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,TGO,Togo,0,0,0,0,0,20,57,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,THA,Thailand,2,0,0,0,0,321,1111,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,TJK,Tajikistan,126,23,39,62,4,1392,5395,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,TKM,Turkmenistan,139,7,64,71,11,2840,5893,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,TLS,Timor-Leste,0,0,0,0,0,0,0,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,TON,Tonga,0,0,0,0,0,0,7,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,TTO,Trinidad & Tobago,0,0,0,0,0,0,24,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,TUN,Tunisia,20,5,32,37,8,994,2206,Africa,Middle East & North Africa,non-Schengen,0,0
+2024,m,TUR,Turkey,123,71,143,214,16,8492,35153,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,TWN,Taiwan,0,0,1,1,0,56,733,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,TZA,Tanzania,4,1,2,3,1,150,349,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,UGA,Uganda,8,0,1,1,0,157,314,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,UKR,Ukraine,690,820,8968,9788,1220,395275,1135187,Europe,Europe & Central Asia,non-Schengen,1,1
+2024,m,UMI,United States Minor Outlying Islands (the),0,0,0,0,0,0,3,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,URY,Uruguay,0,0,0,0,0,34,47,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,USA,United States,6,22,15,37,5,1272,8851,Americas,North America,non-Schengen,0,0
+2024,m,UZB,Uzbekistan,386,20,158,178,19,7750,23007,Asia,Europe & Central Asia,non-Schengen,0,0
+2024,m,VAT,Vatican City,0,0,0,0,0,3,56,Europe,Europe & Central Asia,non-Schengen,0,0
+2024,m,VCT,St. Vincent & Grenadines,0,0,1,1,0,0,5,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,VEN,Venezuela,8,0,8,8,0,412,894,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,VGB,British Virgin Islands,0,0,0,0,0,0,0,Americas,Latin America & Caribbean,non-Schengen,0,0
+2024,m,VNM,Vietnam,115,8,46,54,13,6835,15600,Asia,East Asia & Pacific,non-Schengen,0,0
+2024,m,VUT,Vanuatu,0,0,0,0,0,0,13,Oceania,East Asia & Pacific,non-Schengen,0,0
+2024,m,YEM,Yemen,2,0,1,1,0,158,373,Asia,Middle East & North Africa,non-Schengen,0,0
+2024,m,ZAF,South Africa,15,0,1,1,0,245,772,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,ZMB,Zambia,1,0,2,2,0,87,100,Africa,Sub-Saharan Africa,non-Schengen,0,0
+2024,m,ZWE,Zimbabwe,55,2,53,55,5,2195,4637,Africa,Sub-Saharan Africa,non-Schengen,0,0

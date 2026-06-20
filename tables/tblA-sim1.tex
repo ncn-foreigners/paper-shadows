@@ -1,0 +1,50 @@
+\begin{table}[ht!]
+\caption{\label{tbl-sim1}Simulation 1: bias, RMSE, coverage and CI width across four DGP scenarios under aggregation (all $m>0$, $n>0$). Analytical (delta-method) CIs. $R = 2{,}000$ replications.} 
+\fontsize{8.0pt}{9.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrr}
+\toprule
+Model & Bias (\%) & Bias BC (\%) & RMSE & Coverage (\%) & CI width (\%) & $R_{\text{ok}}$ \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{NB(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & -31.1 & -39.0 & 19,604 & 70.6 & 112.5 & 1950 \\ 
+NB (c) & -31.1 & -38.2 & 19,605 & 70.9 & 113.4 & 1950 \\ 
+NLS & -47.9 & -53.3 & 21,494 & 81.8 & 766.4 & 1950 \\ 
+OLS & -34.0 & -43.9 & 20,499 & 74.4 & 127.2 & 1950 \\ 
+Poisson & 11.6 & 11.2 & 103,375 & 79.6 & 253.3 & 1950 \\ 
+Poisson (c) & 11.4 & 4998.1 & 101,745 & 79.5 & 253.5 & 1950 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{NB(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & -39.9 & -40.7 & 21,184 & 40.9 & 57.8 & 1292 \\ 
+NB (c) & -39.9 & -40.7 & 21,184 & 41.2 & 57.8 & 1292 \\ 
+NLS & -34.5 & -34.7 & 8,897 & 56.6 & 66.7 & 1292 \\ 
+OLS & -21.8 & -24.9 & 12,835 & 83.0 & 82.4 & 1292 \\ 
+Poisson & -31.6 & -31.9 & 16,643 & 46.4 & 52.1 & 1292 \\ 
+Poisson (c) & -31.6 & -31.8 & 16,643 & 46.5 & 52.1 & 1292 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{Po(n)-NB(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & -15.8 & -26.6 & 20,216 & 82.7 & 144.1 & 1974 \\ 
+NB (c) & -15.8 & -25.4 & 20,219 & 82.7 & 145.8 & 1974 \\ 
+NLS & -32.9 & -47.9 & 26,258 & 83.9 & 4587.2 & 1971 \\ 
+OLS & -17.6 & -30.6 & 21,171 & 87.1 & 160.0 & 1974 \\ 
+Poisson & 155.0 & 153.5 & 1,368,824 & 83.4 & 490.3 & 1974 \\ 
+Poisson (c) & 103.3 & 24749.5 & 218,537 & 82.8 & 481.5 & 1974 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{Po(n)-Po(m)} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB & -2.1 & -2.8 & 7,752 & 93.5 & 47.4 & 1465 \\ 
+NB (c) & -2.1 & -2.7 & 7,752 & 93.4 & 47.5 & 1465 \\ 
+NLS & 9.3 & 9.0 & 3,612 & 92.2 & 86.2 & 1465 \\ 
+OLS & 7.7 & 3.8 & 11,130 & 96.1 & 116.0 & 1465 \\ 
+Poisson & -0.4 & -1.0 & 7,599 & 95.7 & 54.2 & 1465 \\ 
+Poisson (c) & -0.4 & -0.9 & 7,599 & 95.7 & 54.3 & 1465 \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: bias and CI width as a percentage of true $\xi$; RMSE on the original scale; coverage is the share of replications whose 95\% analytical CI contains $\xi$; $R_{\text{ok}}$ is the number of finite replications out of 2,000. NLS bias, bias BC and RMSE use median-based summaries (root-median-squared error) because a few replicates are numerically extreme under NB-generated data; the other estimators use mean-based summaries.\\
+\end{minipage}
+\end{table}
+

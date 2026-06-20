@@ -1,0 +1,32 @@
+\begin{table}[ht!]
+\caption{\label{tbl-beta-comparison}Effect of beta specification on AIC across three registers. S8 is the primary specification. All specifications share alpha = year x UKR + sex; k = number of parameters.} 
+\fontsize{8.0pt}{10.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lclrrrl}
+\toprule
+Model & Spec & Covariates in beta & AIC & BIC & k & alpha > 1 \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{ZUS} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB-MLE & S8 & year & 5,265.2 & 5,375.0 & 21 & No \\ 
+NB-MLE & S9 & year + sex & 5,266.3 & 5,381.3 & 22 & No \\ 
+NB-MLE & S10 & year + UKR & 5,267.1 & 5,382.2 & 22 & No \\ 
+NB-MLE & S11 & year + sex + UKR & 5,268.3 & 5,388.6 & 23 & No \\ 
+Poisson PMLE & S8 & year & 11,535.6 & 11,640.2 & 20 & No \\ 
+Poisson PMLE & S9 & year + sex & 11,527.7 & 11,637.5 & 21 & No \\ 
+Poisson PMLE & S10 & year + UKR & 11,497.4 & 11,607.2 & 21 & No \\ 
+Poisson PMLE & S11 & year + sex + UKR & 11,402.3 & 11,517.4 & 22 & No \\ 
+\midrule\addlinespace[2.5pt]
+\multicolumn{7}{l}{PESEL} \\[2.5pt] 
+\midrule\addlinespace[2.5pt]
+NB-MLE & S8 & year & 5,629.1 & 5,745.2 & 21 & No \\ 
+NB-MLE & S9 & year + sex & 5,628.5 & 5,750.1 & 22 & No \\ 
+NB-MLE & S10 & year + UKR & 5,631.0 & 5,752.6 & 22 & No \\ 
+NB-MLE & S11 & year + sex + UKR & 5,630.4 & 5,757.6 & 23 & No \\ 
+Poisson PMLE & S8 & year & 12,533.8 & 12,644.4 & 20 & No \\ 
+Poisson PMLE & S9 & year + sex & 12,532.0 & 12,648.1 & 21 & No \\ 
+Poisson PMLE & S10 & year + UKR & 12,368.3 & 12,484.4 & 21 & No \\ 
+Poisson PMLE & S11 & year + sex + UKR & 12,295.7 & 12,417.3 & 22 & No \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
+

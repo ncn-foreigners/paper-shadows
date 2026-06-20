@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{\label{tbl-sim-summary}Simulation results, 2000 replications. Bias relative to $\xi = \sum_{i=1}^{100} \xi_i$. RMSE, root mean squared error. Coverage of $\xi$. Confidence interval (CI) of $\xi$ by \eqref{eq-xi-confint}, CI width relative to $\xi$.}
+\begin{tabular}{llrrrr} \toprule
+& \multicolumn{5}{c}{Setup-I: $\gamma =0$, regrouped `rest' community to void $m_i n_i =0$} \\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po(n)-Po(m) & Po-PMLE & -0.4 & 7,599 & 95.7 & 54.2 \\
+Po(n)-Po(m) & NB-MLE & -2.1 & 7,752 & 93.5 & 47.4 \\
+NB(n)-NB(m) & Po-PMLE & 11.6 & 103,375 & 79.6 & 253.3 \\
+NB(n)-NB(m) & NB-MLE & -31.1 & 19,604 & 70.6 & 112.5 \\
+\bottomrule
+& \multicolumn{5}{c}{Setup-II: $\gamma >0$, communities with $m_i n_i =0$ allowed}\\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po(n)-Po(m) & Po-PMLE & -0.4 & 3,899 & 95.1 & 40.3 \\
+Po(n)-Po(m) & NB-MLE & -3.9 & 9,076 & 77.4 & 33.7 \\
+NB(n)-NB(m) & Po-PMLE & 70.6 & 144,046 & 88.2 & 422.5 \\
+NB(n)-NB(m) & NB-MLE & 10.9 & 24,405 & 91.8 & 178.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

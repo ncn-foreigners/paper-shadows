@@ -1,0 +1,673 @@
+
+\input{settings}
+
+\title{Counting Shadows: A Community-Anchored Modelling Framework for
+Estimating Unauthorised Population
+Size\thanks{Part of this work is based on the working paper by Beręsewicz \& Pawlukiewicz (2020, \url{https://arxiv.org/abs/2008.09407}), also available via the UNECE Conference of European Statisticians (\url{https://unece.org/sites/default/files/2024-04/4.Undoc\%20migr\%20WP3\%20POL\%20Beresewicz\%20ENG_1.pdf}). We thank the participants of the following conferences and seminars for their feedback: the UNECE Group of Experts on Migration Statistics (Geneva, 2024), the Shadow 2025 conference, the University of Oxford's Centre on Migration, Policy \& Society, the University of Manchester's Cathie Marsh Institute for Social Research, the Centre of Migration Research at the University of Warsaw, Statistics Poland, the Office for Foreigners in Poland, the UK Home Office, and the Office for National Statistics. We thank Sławomir Nałęcz, Karsten Staehr, and Tomasz Klimanek for comments on previous versions of this manuscript, and the Polish Border Guard and Police Headquarters for providing the administrative data. Maciej Beręsewicz and Aniela Czerniawska acknowledge support from the National Science Centre in Poland under OPUS 20 grant no.\ 2020/39/B/HS4/00941. The views expressed are those of the authors alone and not of the National Statistical Institutes they represent.}}
+\author{Maciej Beręsewicz\thanks{Poznań University of Economics and Business, Statistical Office in Poznań; correspondence author: maciej.beresewicz@ue.poznan.pl} \and 
+Brendan Georgeson\thanks{Office for National Statistics} \and 
+Peter Walsh\thanks{University of Oxford} \and 
+Aniela Czerniawska\thanks{Adam Mickiewicz University} \and 
+Li-Chun Zhang\thanks{University of Southampton, Statistics Norway}}
+\date{April 15, 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We estimate the unauthorised foreign population using aggregated administrative data on detected migrants, the authorised population, and
+enforcement intensity. A general community-anchored modelling framework is proposed, which allows covariate-varying power-law relationships between authorised and unauthorised stocks to be estimated under suitable specifications. Analytical and bootstrap confidence intervals are available for inference. Application to Poland (2019--2024) puts the estimated adult non-Schengen unauthorised population size at about 98,000 (80\% interval: 38,000--227,000) in 2019 and 108,000 (80\% interval: 48,000--188,000) in 2024. While the authorised reference population almost doubled over this period (from 612,000 to 1,134,000), the estimated unauthorised population stayed broadly flat, so its share fell from 16.0\% to 9.5\%; the trends diverge by origin, with the Ukrainian component declining from 63,000 to 12,000 after the 2022 Temporary Protection Directive while non-Ukrainians rise from 35,000 to 96,000. The modelling frame work and application template are transferable to other countries.
+\end{abstract}
+
+
+%\doublespacing
+
+\section{Introduction}\label{introduction}
+
+In 2025, YouGov conducted a~survey in France, Germany, Italy, Spain, Denmark, Poland, and the UK, finding that support for reducing
+immigration is high and that these sentiments may be influenced by misperceptions about the scale of irregular migration. For example, in
+Poland, 36\% believed that there are more illegal than legal migrants, compared to 28\% who think the opposite, and 22\% who believe the
+numbers are roughly equal \citep{yougov2025immigration}. At the same time, close to 5 million migrants were registered in the Polish
+population register (PESEL) at the end of 2025, while those detected by Polish authorities as staying illegally numbered only about 10,000,
+though this figure captures only detected cases, not the total unauthorised population.
+
+This type of mistaken belief is not new and is driven by various factors \citep[cf.][]{alesina2023immigration, ajzenman2023immigration, lutz2023misperceptions}. Given that misperceptions stem from being misinformed and uninformed, plausible estimates of the hidden population size are essential for designing public policies, allocating public funding, and planning public services. 
+
+The size of the native-born population in a~given country may be reasonably well-known  at the national level, although the methods vary greatly across countries due to differences in statistical infrastructure: presence or absence of population registers (as in the UK and USA), variation in register quality, reliance on large-scale sample surveys (such as the American Community Survey; ACS) or population censuses. See e.g. \citet{skinner2018issues} or \citet{dunne2024system}.
+
+Foreign nationals can be generally divided into two main groups: those who stay or reside legally with valid permits, and those who are unauthorised---staying or residing without valid documentation. The latter group, in particular, is widely recognised as hard-to-reach and hard-to-measure
+\citep{mckenzie2009surveying,mendez2013surveying}, including the countries that have high-quality population registers \citep{danko2024assessing,monti2020over, careja2018using}, as by definition these people are excluded from the population register or other important registers, and also have incentives to avoid detection. In this paper, we focus on the unauthorised population.
+
+Poland provides a~case-in-point that illustrates the estimation challenge. First, between 2015 and 2024, the registered foreign nationals increased from 200,000 to nearly 4.5 million\footnote{These figures are based on the popilation (PESEL hereinafter) register and indicate the number of people who registered for a~PESEL identifier, not how many actually reside in Poland. We discuss other registers later in the paper.}. Second, between 2018 and 2023, Poland issued over 6 million visas\footnote{This number refers to all visas type: includes short-term visas, renewals, and all consular visa issuances. For more details see \citet{nik2024fullreport_en}.} (about 3.8 million of which were work visas), placing it among the EU countries issuing the most visas of this type. Third, following Russia's invasion of Ukraine in February 2022, over 3.5 million refugees transited through Poland between February and mid-May 2022, with about 1 million remaining under temporary protection as of 31 December 2024 (cf. \cite{stats-poland-2024, duszczyk2022war, duszczyk2023war}, and \url{https://ukraincywpolsce.stat.gov.pl}).
+Finally, from 2021, Russia and Belarus have placed pressure on the Belarusian-Polish-EU border through politically instrumentalised migration, influencing the scale of unauthorised entry, but with limited political implications \citep{Charasz2025}. This combination of rapid demographic change, high visa issuance, humanitarian flows, and border pressures creates conditions where unauthorised populations are likely substantial but hard to estimate.
+
+In this paper, we propose a~general modelling framework for estimating the size of the unauthorised foreign population, building on the community-anchored model introduced by \citet{Zhang2008} for a~one-off application to Norwegian data. \citet{Zhang2008} established identifiability of the power-law relationship between authorised and unauthorised populations under Poisson log-linearity; we extend it into a~framework that accommodates data over multiple years and subpopulations, with covariate-varying parameters, robust inference of uncertainty, and estimator choice guided by simulation evidence. 
+
+Unlike other existing approaches --- such as the residual method 
+\citep[cf.][]{warren1987count, chassamboulli2015labor, van2021uncertainty},
+capture-recapture or multiple systems estimation
+\citep[cf.][]{chipperfield2024robust, bohning2024one, aleshin2024central},
+and deductive or digital-trace methods \citep{recchi2026overstayers} --- which require linkage across multiple data sources or unit-level micro data at specific time points, our method requires only aggregated data. We develop a~model grounded in demographic and behavioural assumptions that uses three inputs: \emph{aggregated counts} of detected unauthorised migrants, the size of the authorised foreign nationals, and a~covariate proxying for detection intensity. 
+
+Our key assumptions include: (1) there exists a~structural relationship between unauthorised and authorised foreign nationals due to the former's reliance on communities or networks for survival; (2) it is valid to target a~theoretical size of unauthorised population without spurious day-to-day variations; and (3) the detection rate of unauthorised foreigners can be modelled statistically as a~function of known features that proxy the relevant channels or mechanisms.
+
+Support of such a~theoretical model can be found in two earlier EU-funded research programmes. The CLANDESTINO project
+\citep{CLANDESTINO2009} documented the extent to which unauthorised migrants depend on established co-ethnic communities for housing,
+employment, and social support --- the same network mechanism is captured by the community anchor parameter in our model. The MIrreM project \citep{kierans2025handbook} highlighted severe biases of sizing by raw apprehension data directly, which reflect enforcement priorities and capacity constraints rather than the underlying unauthorised population --- the insight is reflected in our detection intensity parameter which connects to the observed counts of unauthorised people to the unobserved population sizes. Our modelling framework thus answers a~call form both these projects for methods that move beyond the contested administrative counts toward credible population estimates.
+ 
+Applied to the Polish data from 2019 to 2024, our approach yields plausible trajectory of estimates despite the structural shock caused by the Ukraine war.  Our estimate of the adult (18+) non-Schengen unauthorised population size in Poland stands at about 98,000 (80\% interval: 38,000--227,000) in 2019 and 108,000 (80\% interval: 48,000--188,000) in 2024.\footnote{In the abstract and introduction we report 80\% intervals; the tables report both 80\% and 95\% intervals. Because the bootstrap distribution is right-skewed, the interval bounds indicate estimation uncertainty rather than equally plausible population sizes, and the central (median) estimate is the most probable value. Point estimates and interval bounds for unauthorised population sizes are rounded to the nearest 1,000; detailed tables retain finer precision.} A central message is one of relative decline: even as Poland's registered foreign population surged and the ZUS reference population almost doubled (from 612,000 to 1,134,000), the estimated unauthorised population remained broadly stable, so its share of the ZUS reference population fell from 16.0\% in 2019 to 9.5\% in 2024. This relative finding is robust to the considerable width of the underlying confidence intervals.
+
+Moreover, our estimates capture divergent dynamics by the country of origin. The estimated Ukrainian unauthorised population declines from 63,000 in 2019 to 12,000 in 2024, consistent with the mass regularisation under the 2022 EU Temporary Protection Directive, while the non-Ukrainian component moves in the opposite direction, rising from 35,000 to 96,000 over the same period. 
+
+Sensitivity analyses suggest that these estimates are robust against model mis-specifications that are unavoidable, and aligns plausibly with other administrative data used in the estimation. In particular, the wide confidence intervals reflect the inherent uncertainty in estimating hidden populations, and it is important for users and policy makers to pay attention to the range of plausible values rather than relying too much on any single point estimate.
+
+Finally, our approach is easily transferable to other countries, since it relies only on aggregated administrative data that exist commonly, and its efficacy has already been demonstrated in quite different situations from Norway to Poland. The relevant methodology has the potential for National Statistical Offices to improve migration estimates by adding the \emph{uncounted} component.
+
+In the rest of the paper, Section~\ref{sec-theory} presents the theoretical model, Section~\ref{sec-empirical} the empirical specification, 
+Sections~\ref{sec-simulation}--\ref{sec-results} describe the application to Polish data, and the conclusions are drawn in Section~\ref{sec-conclusions}. Additional details are given in the Supplementary Materials.
+
+
+\section{Theoretical model}\label{sec-theory}
+
+To formalise our theoretical model, let $M_{it}$ be the size of the unauthorised population of \emph{community} $i$ $(i=1,\ldots,I)$ in period $t$ $(t=1,\ldots,T)$, and let $N_{it}$ denote the size of a~corresponding authorised \emph{reference population}. Let $m_{it}$ be the \emph{detected} count of unauthorised migrants (among the $M_{it}$), and let $n_{it}$ denote a~known count which may or may not correspond to a~subset among the $N_{it}$, such that $n_{it}/N_{it}$ provides a~feature for \emph{detection-intensity} related to $m_{it}/M_{it}$.
+
+We define the \emph{theoretical} size of unauthorised population as the conditional expectation of $M_{it}$‚
+\begin{equation}
+\xi_{it} = \mathbb{E}(M_{it} \mid N_{it}).
+\label{eq-xi-expectation}
+\end{equation} 
+Let the conditional expectation of the \emph{detection rate} $p_{it} = m_{it}/M_{it}$ given the others be 
+\begin{equation}
+\rho_{it} = \mathbb{E}(p_{it} \mid M_{it}, N_{it}, n_{it}).
+\label{eq-rho-expectation}
+\end{equation}
+Combining \eqref{eq-xi-expectation} and \eqref{eq-rho-expectation} under the assumptions (i) $M_{it}$ and $p_{it}$ are conditionally independent given $(N_{it}, n_{it})$, and (ii) $n_{it}$ provides no additional information about $M_{it}$ beyond $N_{it}$, we obtain the expectation of the detected count $m_{it} = M_{it} p_{it}$ as 
+\begin{equation}
+\mu_{it} = \mathbb{E}\{ M_{it}\cdot \mathbb{E}(p_{it} \mid M_{it}) \mid N_{it}, n_{it}\} 
+= \mathbb{E}(M_{it} \mid N_{it}) \cdot \mathbb{E}(p_{it} \mid N_{it},n_{it}) = \xi_{it} \cdot \rho_{it}
+\label{eq-counts-expectation}
+\end{equation}
+The functional forms of $\xi_{it}$ and $\rho_{it}$, as well as the distributional assumptions of $m_{it}$, will be treated later as part of our empirical model in Section \ref{sec-empirical}. Below we discuss first the motivation and justification of the theoretical model defined by \eqref{eq-xi-expectation}--\eqref{eq-counts-expectation}.
+
+First, our core assumption is that the size of the unauthorised population is structurally related to the authorised population via communities, which typically concur with the country of origin, ethnicity, or similar characteristics. This is supported by migration research showing that unauthorised migrants depend heavily on co-ethnic and kin-based networks for survival and incorporation into host societies
+\citep{Hagan1998, Engbersen2000, Ambrosini2023}. Such networks serve multiple functions: providing accommodation, information, informal
+employment, and emotional support, and often substitute for formal welfare and labour market institutions that unauthorised migrants cannot
+access \citep{Anderson2007, McDowell2009}. Consequently, we expect the unauthorised population from a~given origin country to scale with the
+corresponding authorised population, which serves as the foundation for these support networks.
+
+Moreover, unlike the residual or capture-recapture methods, which treat the unauthorised population size as an unknown constant, we view $M_{it}$ as a~random variable arsing from processes driven by economic, political, and demographic factors, and model its theoretical size $\xi_{it}$ in relation to a~suitable reference population size $N_{it}$, i.e. \eqref{eq-xi-expectation}. This allows us to capture how the two populations co-evolve: as authorised communities grow, they provide expanded networks that support larger unauthorised populations from the same origin or ethnicity. Conditioning on $N_{it}$ also makes it possible to interpret the estimate of $\xi_{it}$ without spurious day-to-day variations, just like how standard official population statistics are received.   
+
+Regarding the detection rate $p_{it}$ that connects the observed count $m_{it}$ and the unobserved population size $M_{it}$, the factorisation in \eqref{eq-counts-expectation} requires that $\mathbb{E}(p_{it} \mid M_{it}, N_{it}, n_{it}) = \mathbb{E}(p_{it} \mid N_{it}, n_{it})$,
+meaning the detection rate does not depend on the size of the unauthorised population. This assumption rules out feedback
+effects whereby detection intensity $\rho_{it}$ responds endogenously to $M_{it}$. Although it cannot be tested directly since $M_{it}$ is unobserved, the data of staffing and enforcement activities in Poland (see Table~\ref{tbl-appen-border-guard} in Supplementary Materials) show that legality-of-stay inspections fluctuated over 2019--2024 without a~systematic trend, Police and Border Guard staffing remained broadly stable despite substantial growth of the presence of foreign nationals, whereas employment legality inspections actually declined over the period. Altogether they suggest that detection intensity is shaped by supply-side factors (budget cycles, staffing constraints, pandemic disruptions) rather than by endogenous responses to $M_{it}$, rendering the no-feedback assumption empirically plausible.
+
+Of course, we must caution against taking this for granted. For example, congestion effects may arise when enforcement resources are fixed relative to the unauthorised population, causing the detection rate to decline as $M_{it}$ increases \citep{fender1999general, hanson1999illegal}. Conversely, concentration effects may cause detection rate to increase with $M_{it}$ if larger populations are more visible to enforcement \citep{ethier1986illegal}. However, without additional data or instrumental variables, it is infeasible to distinguish the variation in $p_{it}$ from that in $M_{it}$ when the former depends on the latter  \citep{link2003nonidentifiability}. In other words, different approaches will be necessary in such situations. 
+
+Finally, by way of introduction to the empirical model, we notice the flexibility of this theoretical model. On the one hand, it allows one to estimate the total size of unauthorised population without decomposing the counts $m_{it}$ into visa overstayers, border apprehensions, and so on. Attempts to deal with these subgroups separately, originated from different data sources, may cause complications and aggregation inconsistencies \citep{warren1987count}. On the other hand, it is possible to disaggregate $m_{it}$ by relevant covariates such as gender and age categories, when it comes to the empirical model specification, provided this is sensible and supported by the available data. 
+
+
+
+\section{Empirical model}\label{sec-empirical}
+
+\subsection{Parametric specification}\label{parametric-specification}
+
+As the first part of our empirical model, we now specify the functional forms for \eqref{eq-xi-expectation} and \eqref{eq-rho-expectation}. For the theoretical size of unauthorised population, a~power-law relationship is given as
+\begin{equation}\label{eq-xi-form}
+\xi_{it} = \mathbb{E}(M_{it} \mid N_{it}) = N_{it}^{\alpha_{it}},
+\end{equation}
+where $\alpha_{it} > 0$ is an unknown \emph{Community Anchor} parameter, capturing how the unauthorised population scales with the reference population for the given community and time. Let the corresponding detection intensity $\rho_{it}$ be given as
+\begin{equation}\label{eq-rho-form}
+\rho_{it} = \mathbb{E}(p_{it} \mid N_{it}, n_{it}) = \left( \gamma + \frac{n_{it}}{N_{it}}\right)^{\beta_{it}},
+\end{equation}
+where $\beta_{it} >0$ is an unknown parameter of \emph{Exposure Elasticity}, regulating how the detection intensity responds to the chosen feature  $n_{it} / N_{it}$, and $\gamma > 0$ represents a~\emph{(baseline) offset} even when $n_{it} = 0$. Notice that $\rho_{it} \in (0,1)$ as long as $0< \gamma + n_{it} / N_{it} <1$.
+
+The community-anchored model of \citet{Zhang2008} is a~special case that uses the simplest parameterisation $(\alpha_{it}, \beta_{it}, \gamma) \equiv (\alpha, \beta, 0)$  for a~one-off application in Norway, where $t$ refers to a~single year 2006 and $i$ refers to the countries of citizenship. In particular, all the countries with $m_i n_i =0$ are \emph{regrouped} into a~`rest' community, so that $\rho_{it} >0$ everywhere even with $\gamma \equiv 0$. The parameterisation here in terms of \eqref{eq-xi-form} and \eqref{eq-rho-form} is more general and principled.
+
+Firstly, to accommodate multiple periods and flexible formulation of communities, we allow $\alpha_{it}$ to vary with $(x_i, t)$, where $x_i$ denotes the relevant covariates of the communities. For example, let $x_i =1$ for males and $x_i = 2$ for females from country $i$. By suitable dummy-coding of $(x_i, t)$, we can allow distinct $\alpha$-values from crossing $x_i$ and $t$ directly, or as the sum of a~gender effect and a~year effect but without any interaction of the two. Similarly for $\beta_{it}$, with a~separate parameterisation, such as $\beta(t)$ and $\alpha(x_i, t)$ at the same time. 
+
+Next, conceptually speaking, the detection intensity $\rho_{it}$ is never zero since, even when the feature count is $n_{it} = 0$, it is still possible to detect unauthorised migrants through various channels, such as border guards, hospital admissions, rejected visa or asylum applications, employer
+inspections. Introducing the offset $\gamma$ is a~more principled approach than regrouping to form ad hoc `rest' communities, because the composition of such `rest' communities will not be the same over time. Moreover, it allows one to make better use of the data points with $m_{it} >0$ and $n_{it} =0$.
+
+
+\subsection{Motivation and justification of the parametric specification}\label{sec-emp-just}
+
+Various functional forms could relate $\xi_{it}$ to $N_{it}$. Our choice of the power-law specification \eqref{eq-xi-form} is consistent with the 
+considerations underlying the theoretical assumption \eqref{eq-xi-expectation}. Unauthorised migrants lack access to regular employment and welfare services, requiring a~network of contacts to survive \citep{Hagan1998, Engbersen2000}. These contacts most likely include usual residents in established socio-economic situations, which provides the ``existence basis'' for the unauthorised population, analogous to how a~reproductive
+population supports offspring in demographic models.
+
+It is therefore natural to expect a~relationship where $\xi_{it}$ increases with $N_{it}$, but the rate of increase declines as $N_{it}$ becomes
+larger\footnote{\citet{massey1990social} introduced the idea of
+  cumulative causation in migration, emphasising how migrant networks
+  create self-reinforcing migration processes. \citet{fussell2004limits}
+  show that these mechanisms are much weaker in large urban settings
+  than in smaller communities. \citet{carrington1996migration} provide a
+  model in which moving costs decline as migrant networks expand,
+  generating gradual self-reinforcing migration dynamics.}. In particular, our
+specification closely relates to the \cite{beverton_holt_1957} model, which is a~discrete-time population model given by
+\[
+R = \frac{\nu S}{1 + \kappa S},
+\]
+where $S$ is the current population size, $R$ is the next-generation population, $\kappa$ is the density dependence parameter, and $\nu/\kappa$ is the carrying capacity. The power curve $N^{\alpha}$ and the Beverton-Holt curve exhibit similar density-dependent behaviour, particularly over empirically relevant ranges of $N$. The key difference is that the Beverton-Holt model assumes an asymptotic ceiling $\nu/\kappa$, whereas the power-law specification allows $\xi_{it} \to \infty$ as $N_{it} \to \infty$. An absolute ceiling of the unauthorised population size is not necessary in our context.
+
+In contrast, the power-law specification \eqref{eq-rho-form} does not suggest a~direct connection from the chosen feature rate $n_{it}/N_{it}$ to the detection rate $m_{it}/M_{it}$ of unauthorised migrants. The count $n_{it}$ should be chosen such that the corresponding rate $n_{it}/N_{it}$ may proxy for detection intensity through various mechanisms, the elasticity of which can be tuned by the parameter $\beta_{it}$. For instance, if $n_{it}$ is based on police records of foreign nationals facing criminal charges, there is no direct connection between criminal behaviour and unauthorised status---rather, contact with law enforcement creates opportunities for detection regardless of criminality. Similarly, when $n_{it}$ is derived from events recorded in administrative systems, it may proxy the degree to which migrants interact with the relevant institutions or agencies that may detect unauthorised foreigners (e.g., hospital admissions, rejections of visa/asylum applications from the previous year).
+
+We notice that it is possible to adopt logistic functions to ensure $\alpha_{it} <1$ or $\rho_{it} <1$; see Supplementary Materials Section~\ref{sec-appendix-ommited-proofs}. However, log transformation corresponding to the power-specification is preferable because it enables us to combine equations \eqref{eq-xi-form} and \eqref{eq-rho-form} directly on the log scale, as long as the restrictions are empirically unnecessary for the data at hand.
+
+We obtain straightforward model diagnostics as one of the benefits. Plugging in $m_{it}$ for $\mu_{it} = \xi_{it} \rho_{it}$ given by \eqref{eq-xi-form} and \eqref{eq-rho-form}, dividing both sides by $N_{it}$ and taking logarithms for the data points with $n_{it} > 0$ yields, for each period $t$ with $(\alpha_{it}, \beta_{it}, \gamma) = (\alpha_t, \beta_t, 0)$, 
+\begin{equation}\label{eq-diagnostic-model}
+\log\left(\frac{m_{it}}{N_{it}}\right) = (\alpha_t - 1) \log N_{it} + \beta_t \log\left(\frac{n_{it}}{N_{it}}\right).
+\end{equation}
+Plotting $\log(m_{it}/N_{it})$ against each covariate on the right side provides a~diagnostic check: by the considerations above, we expect $\alpha_t - 1 < 0$, i.e., a~negative relationship with $\log N_{it}$, and $\beta_t > 0$, i.e., a~positive relationship with $\log(n_{it}/N_{it})$. Furthermore, stratifying these plots by country groups (e.g., by continent or migration corridor) allows us to assess whether a~single pattern holds uniformly or systematic differences exist to warrant more disaggregated parameterisation. Similarly with other partitions of all the data points for exploratory data analysis. 
+
+Finally, although the model can be tested empirically for goodness-of-fit to observed counts $m_{it}$, the specifications \eqref{eq-xi-form} and \eqref{eq-rho-form} cannot be separately verified. In other words, it is logically possible for other empirical models of $\mu_{it}$ to fit equally well to the observed counts $m_{it}$, such that a~choice must rely on certain considerations that cannot be directly tested. This is a~fundamental limitation inherent to estimating hidden populations, and we would caution against overconfidence in the results. Nevertheless, we have not found decisive evidence against specifications \eqref{eq-xi-form} and \eqref{eq-rho-form} in our applications, and the motivations outlined above provide a~coherent rationale.
+
+
+\subsection{Parameter estimation}\label{estimation}
+ 
+To estimate the mean structure \eqref{eq-xi-form}--\eqref{eq-rho-form}, it suffices to assume independent Poisson distributions of $m_{it}$, denoted by  
+\begin{equation}\label{eq-poisson-model}
+m_{it} \sim \text{Poisson}(\mu_{it}), \quad \log(\mu_{it}) = \alpha_{it}(\eta) \log N_{it} + \beta_{it}(\eta) \log\left(\gamma + \frac{n_{it}}{N_{it}}\right),
+\end{equation}
+where $\eta$ contains all the unknown constants in the specifications of $(\alpha_{it}, \beta_{it})$, and $\Pr(m_{it}=0) >0$ exists by the Poisson distribution such that all the data points can be used in the estimation directly. However, since the variance structure of $m_{it}$ is most likely misspecified in this way, we shall refer to the resulting estimator as a~pseudo maximum likelihood estimator (PMLE), instead of MLE given the Poisson distribution. The Poisson PMLE would coincide with the MLE when the Poisson distribution holds, but it requires only correct mean specification for consistency regardless of the true variance structure \citep{SantosSilvaTenreyro2006}. 
+
+Notice that \citet{Zhang2008} accommodates over-dispersion of $m_{it}$ by explicitly assuming 
+\[
+m_{it} \sim \text{Poisson}(\mu_{it} u_{it}) \quad\text{and}\quad u_{it} \sim \text{Gamma}(1, \phi),
+\]
+where $\text{Gamma}(1, \phi)$ denotes the gamma distribution with expectation 1 and variance $1/\phi$. The Poisson-Gamma mixture yields the Negative Binomial (NB) likelihood on integrating out the unobserved random effects $u_{it}$, and the corresponding NB-MLE. In Norway applications, the NB-MLE was obtained with $\gamma \equiv 0$ in \eqref{eq-rho-form} and regrouping of data points to avoid $m_i n_i =0$.  
+
+Given non-trivial offset $\gamma >0$, the NB-MLE is feasible without regrouping data points. Due to its ability to accommodate over-dispersion of $m_{it}$, which exists commonly in real data, the formal model-selection criteria such as AIC or BIC tend to favour NB-MLE to Poisson PMLE. However, as we explain below, there are several reasons for preferring the Poisson PMLE to NB-MLE in practice, specially when non-trivial offset $\gamma >0$ is allowed in \eqref{eq-rho-form}. 
+
+\emph{Offset-Gamma confounding.} A manifestation of over-dispersion in the present context is the data points with $m_{it} >0$ but $n_{it} =0$. This can be partly dealt with by the non-trivial offset $\gamma$, and partly by the random effects $u_{it}$ in the Poisson-Gamma mixture. This confounding would affect the estimated mean structure through $\gamma$. As we document in Supplementary Materials Section~\ref{sec-appendix-cov-gamma}, the profile log-likelihood of $\gamma$ can be rather flat for the NB-MLE, whilst it peaks sharply for the Poisson PMLE in comparison. More on this in the simulation study in Section \ref{sec-simulation}.
+
+\emph{Small-counts sensitivity.} The ability of NB-MLE to accommodate over-dispersion carries a~drawback as it becomes sensitive to the effects of small counts $m_{it}$. See the relevant measures in Supplementary Materials Section~\ref{sec-appendix-diagnostics}, and the consequences on population size estimation. When NB-MLE is applied with $t$-specific parameter \eqref{eq-xi-form}, it can lead to implausible spikes and disruptions of the estimated population size over time, compared to the Poisson PMLE. Notice that, since the extent of small counts is much reduced when `rest' communities are created from the data points with $m_{it} n_{it} =0$, this problem is somewhat related to offset-Gamma confounding above. 
+
+\emph{Robustness of PMLE.} The Poisson PMLE requires only correct specification of the mean of $m_{it}$ for consistency \citep{SantosSilvaTenreyro2006}; however, see Supplementary Materials Section~\ref{sec-appendix-sim-study} and Section~\ref{sec-simulation} for finite-sample caveats. A useful indication of robust mean estimation by Poisson PMLE is whether the associated confidence interval includes the NB-MLE. Notice that, in practice, one may find the trajectory of unauthorised population size estimates to be more reliable by Poisson PMLE than NB-MLE, even when the former is not more `correct' for each given period.   
+
+ 
+\subsection{Estimation of unauthorised population size}\label{estimating-the-unauthorised-population-size-and-its-variance}
+
+Given the estimates $\hat{\alpha}_{it} = \alpha_{it}(\hat{\eta})$ from \eqref{eq-poisson-model}, we can estimate the overall size of unauthorised population for a~period $t$ as
+\begin{equation}\label{eq-estimators}
+\hat{\xi}_{t} = \sum_{i=1}^{I} N_{it}^{\hat{\alpha}_{it}} 
+\end{equation}
+Consistency of $\hat{\xi}_t$ follows from the Continuous Mapping Theorem applied to $g(\hat{\eta})$. Meanwhile, in finite-sample applications, one may consider to reduce the potential bias due to the non-linear transformation involved, which would result in an estimator given as  
+\begin{equation}\label{eq-bias-correction}
+\hat{\xi}_t^{\text{BC}} = \sum_{i=1}^{I} N_{it}^{\hat{\alpha}_{it}} \exp\left(-\frac{1}{2} (\log N_{it})^2 \sigma_{it}^2 \right),
+\end{equation}
+where $\sigma_{it}^2$ is a~term related to the variance of $\hat{\eta}$ --- see Supplementary Materials Section~\ref{sec-appendix-ommited-proofs} for the full derivation and Supplementary Materials Section~\ref{sec-appendix-sim-study} for finite-sample simulation results. However, the adjustment is typically small compared to the width of confidence interval.  
+
+A confidence interval of $\alpha_{it}$, denoted by $(\hat{\alpha}_{it}^{\text{lower}}, \hat{\alpha}_{it}^{\text{upper}})$, can be obtained using heteroskedasticity-consistent (HC) standard errors  \citep{mackinnon1985some}. Since $g(\alpha) = \sum_{i=1}^{I} N_{it}^{\alpha}$ is monotonically increasing in $\alpha$ given $N_{it} \geq 1$, a~confidence level of $\xi_t$ is given directly as
+\begin{equation}\label{eq-xi-confint}
+\left( \sum_{i=1}^{I} N_{it}^{\hat{\alpha}_{it}^{\text{lower}}}, \;
+\sum_{i=1}^{I} N_{it}^{\hat{\alpha}_{it}^{\text{upper}}} \right).
+\end{equation}
+However, in practice, one may still encounter situations where the interval can be excessively wide due to ill-behaving $(\hat{\alpha}_{it}^{\text{lower}}, \hat{\alpha}_{it}^{\text{upper}})$ for a~subset of all $\alpha_{it}$.
+
+We therefore prefer the fractional weighted bootstrap {[}FWB; \citet{XuEtAl2020}{]} with clustering by country-of-origin.
+The approach simultaneously accounts for within-country correlation across years and covariates, the nonlinear transformation of parameter estimates, and their skewed distributions. In particular, one may consider the bootstrap median of $\{\hat{\xi}_t\}$ as the point estimate, which is more robust to skewness than either a~plug-in estimator or the bootstrap mean.
+
+It is worth noting that, in applications, wide confidence intervals are a~well-documented feature of unauthorised population estimation, reflecting the inherent uncertainty in estimating hidden populations. This has been discussed extensively in the migration literature, including \citet{van2021uncertainty}, the Centre on
+Migration, Policy and Society (COMPAS) estimates at the University of Oxford\footnote{See
+  \url{https://migrationobservatory.ox.ac.uk/resources/briefings/unauthorised-migration-in-the-uk/}}, the CLANDESTINO project \citep[cf.][]{CLANDESTINO2009}, and the MIrreM project \citep{kierans2025handbook}.
+
+
+
+\section{Simulation study}\label{sec-simulation}
+
+We assess the properties of estimation methods by simulations motivated from the 2024 Polish data. The main objective is to choose the suitable estimator for the application later. 
+
+For each replication, we generate $(N_i, n_i, m_i)$ independently across the communities, where the number of communities is fixed at 100. First, let $N_i \sim \text{LogNormal}(5.5, 2.75)$, truncated to $N_i \geq 3$. Next, generate $n_i$ from either the Poisson or NB distribution, where $\log \mathbb{E}(n_i \mid N_i) = c_0 + c_1 \log N_i$, and the parameters of either distribution are derived from the police data $n_i$ and the ZUS register $N_i$ --- see Section \ref{auxiliary-detection-covariate} for details of these data sources. Finally, the mean of $m_i$ is given by \eqref{eq-xi-form} and \eqref{eq-rho-form} with $(\alpha, \beta, \gamma) = (0.7, 0.5, 0.005)$, and $m_i$ follows either the Poisson or NB distribution, derived from the Polish data --- see Supplementary Materials Section~\ref{sec-appendix-sim-study} for the details. Notice that the dispersion of $m_i$ under repeated simulation of $(N_i, n_i, m_i)$ in this way is actually larger than that observed in the 2024 Polish data, because $(N_i,n_i)$ are not constants in the simulation.
+ 
+Crossing the two data-generating processes of $n_i$ and $m_i$ yields four scenarios: 
+Po($n$)--Po($m$), Po($n$)--NB($m$), NB($n$)--Po($m$), NB($n$)--NB($m$).  
+In addition, we consider two estimation setups. 
+\begin{itemize} 
+\item In Setup-I, we apply regrouping to create an ad hoc `rest' community from all the data points with $m_i n_i =0$, such that the detection intensity is modelled without the offset, i.e. $\gamma \equiv 0$ in \eqref{eq-rho-form}. Notice that the mean structure of Poisson PMLE or NB-MLE is misspecified in this setup, since all the data are generated with $\gamma =0.005$. 
+\item In Setup-II, we allow for non-trivial offset $\gamma >0$ in \eqref{eq-rho-form}, such that the communities with $m_i n_i =0$ are used directly in estimation. Notice that the mean structure of Poisson PMLE or NB-MLE is correct in this setup, but neither the Poisson nor the NB likelihood is correct in any scenario since $(N_i,n_i)$ are not constants in the simulation.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{\label{tbl-sim-summary}Simulation results, 2000 replications. Bias relative to $\xi = \sum_{i=1}^{100} \xi_i$. RMSE, root mean squared error. Coverage of $\xi$. Confidence interval (CI) of $\xi$ by \eqref{eq-xi-confint}, CI width relative to $\xi$.}
+\begin{tabular}{llrrrr} \toprule
+& \multicolumn{5}{c}{Setup-I: $\gamma =0$, regrouped `rest' community to avoid $m_i n_i =0$} \\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po(n)-Po(m) & Po-PMLE & -0.4 & 7,599 & 95.7 & 54.2 \\
+Po(n)-Po(m) & NB-MLE & -2.1 & 7,752 & 93.5 & 47.4 \\
+NB(n)-NB(m) & Po-PMLE & 11.6 & 103,375 & 79.6 & 253.3 \\
+NB(n)-NB(m) & NB-MLE & -31.1 & 19,604 & 70.6 & 112.5 \\
+\bottomrule
+& \multicolumn{5}{c}{Setup-II: $\gamma >0$, communities with $m_i n_i =0$ allowed}\\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po(n)-Po(m) & Po-PMLE & -0.4 & 3,899 & 95.1 & 40.3 \\
+Po(n)-Po(m) & NB-MLE & -3.9 & 9,076 & 77.4 & 33.7 \\
+NB(n)-NB(m) & Po-PMLE & 70.6 & 144,046 & 88.2 & 422.5 \\
+NB(n)-NB(m) & NB-MLE & 10.9 & 24,405 & 91.8 & 178.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Some simulation results based on 2000 replications are highlighted in Table \ref{tbl-sim-summary}; see Supplementary Materials Section~\ref{sec-appendix-sim-study} for the full results. Both the Poisson PMLE (``Po-PMLE'' in Table \ref{tbl-sim-summary}) and the NB-MLE are calculated for each data generation scenario and estimation setup. 
+
+Consider the Poisson PMLE. First, given Po($n$)--Po($m$), it is essentially unbiased in Setup-II and has the correct coverage at the 95\% level; although the mean structure is misspecified in Setup-I, it causes little bias given an offset of the magnitude $\gamma =0.005$, such that the larger RMSE in Setup-I is rather due to the loss of efficiency from regrouping to create the `rest' community. 
+
+Next, given NB($n$)--NB($m$), Poisson PMLE does suffer from bias as well as a~very large variance (either in terms of the CI width or RMSE). This serves as a~warning that, despite the asymptotic consistency, the performance of Poisson PMLE can deteriorate greatly given small sample size, such as 100 here, and excessive over-dispersion, such as by LogN($N$)-NB($n$)--NB($m$). 
+
+Consider now the NB-MLE. First, given Po($n$)--Po($m$), it is biased despite the correct mean structure in Setup-II: in fact, the low coverage of 77.4\% suggests that the bias is relatively large compared to the standard error. It suffers a~loss of efficiency in Setup-I due to regrouping, just like Poisson PMLE. Meanwhile, its bias is somewhat reduced from -3.9\% in Setup-II to -2.1\% Setup-I, which suggests that the sensitivity of estimating $\gamma$ (in Setup-II) can possibly be more damaging to NB-MLE than mean-mis-specification (in Setup-I) which avoids the need to estimate $\gamma$.  
+
+Next, given NB($n$)–NB($m$), NB-MLE also suffers from bias but with a much smaller variance than Poisson PMLE; its bias is smaller in Setup-II (10.9\% vs -31.1\%) yet still large enough to lower the coverage, reflecting the sensitivity of estimating $\gamma$. This sensitivity is most severe when the data carry no over-dispersion: under Po(n)–Po(m), NB-MLE overestimates $\gamma = 0.005$ by a~factor of 24 ($\hat{\gamma}$ averages 0.12, hitting the upper boundary in 16\% of replications).
+
+In summary, these results point to the following choices for the application to the Polish data: (i) allow offset $\gamma >0$ to avoid ad hoc regrouping of data over time, and the associated loss of efficiency; (ii) adopt Poisson PMLE as the primary estimator, but be aware of any excessive over-dispersion; (iii) NB-MLE is unstable due to offset-Gamma confounding and small-counts sensitivity, although it can still provide sensitivity checks with or without non-trivial offset $\gamma$, i.e. whether the NB-MLE is included in the confidence intervals based on the Poisson PMLE.  
+
+
+%%% Section 5
+\section{Data sources} \label{sec-data}
+
+
+\subsection{Definition of an unauthorised
+stay}\label{definition-of-an-unauthorised-stay}
+
+In our study, we use Polish Border Guard reports, which distinguish
+three groups of migrants: (1) refusals of entry at the border, (2)
+detections during irregular border crossings, and (3) detections for
+illegal stay within the country or at the border when leaving. We focus
+on the third group, and in particular those who were identified
+\emph{within the country}. Groups 1 and 2 capture border-level
+encounters (attempted or actual irregular crossings), whereas group 3
+reflects detections of unauthorised residents already present on Polish
+territory, which corresponds to the target population $M_{it}$ in our
+theoretical model. Within group 3, we exclude those detected at the
+border upon departure, as they are in the process of leaving the
+unauthorised population and their inclusion could conflate exit flows
+with the resident stock. Detailed definitions of each group are provided
+in Supplementary Materials Section~\ref{sec-appen-definitions}.
+
+Under Polish law, an unauthorised stay encompasses any presence that
+violates entry or residence regulations---ranging from expired visas and
+overstayed permits to illegal employment and Schengen Information System 
+flagged individuals.
+Two authorities verify legality of stay: the Border Guard (at the border
+and within the country) and the Police. Note that a~person who crossed
+the border illegally but was subsequently detected within the country
+falls into our analysis sample under group 3. For the full legal
+definition, consequences, and recent legislative changes, see
+Supplementary Materials Section~\ref{sec-appen-definitions} and
+Section~\ref{sec-appen-changes-law}. For a~comprehensive overview of the
+forms and drivers of migrant irregularity in Poland---including visa
+overstaying, fictitious employment declarations, and expired
+pandemic-era permits---see \citet{yeliseyeu2024poland}. Finally, The Police record foreigners mainly in pre-trial criminal proceedings, which cover offences prosecuted
+\emph{ex officio} and not unauthorised stay, a~petty offence handled by
+the Border Guard; the two sources therefore overlap only marginally (see \ref{sec-appen-police}).
+
+\subsection{Data sources}\label{data-sources}
+
+\subsubsection{Observed unauthorised
+population}\label{observed-unauthorised-population}
+
+The first dataset, on the number of unauthorised migrants detected for
+illegal stay, was prepared by representatives of the Polish Border
+Guards on a~half-year basis with information on people who were
+identified multiple times, along with their country of citizenship, sex
+and age group.
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig1-border.pdf}
+
+}
+
+\caption{\label{fig-within-country}Number of unauthorised migrants aged
+18+ apprehended by the Polish Border Guard, by place of apprehension,
+2014--2024, aggregated by half-year periods. These data refer to
+individuals detained or detected by the Border Guard for illegal stay.
+Identification at the border refers to foreigners identified as
+unauthorised when leaving Poland (not on legal or illegal entry to
+Poland).}
+
+\end{figure}%
+
+Figure~\ref{fig-within-country} presents the number of observed
+unauthorised migrants by place of apprehension by the Polish Border
+Guard for the period 2014--2024, aggregated by half-year periods. The
+observed pattern is dominated by apprehensions at the Polish-Ukrainian
+border, which rose sharply from around 1,500 in early 2014 to a~peak
+exceeding 10,000 in the first half of 2018, before declining after 2020
+to levels comparable to those at other borders. This surge likely
+reflects the aftermath of the 2014 conflict in eastern Ukraine and
+subsequent economic migration pressures. Interior apprehensions
+(``Interior'') show a~steadier upward trend, becoming the dominant
+category by 2023--2024, suggesting a~shift in migration patterns or
+enforcement priorities toward identifying unauthorised migrants already
+within Poland rather than at exit. 
+The Belarusian border
+shows modest increases around 2021--2022, possibly reflecting the
+well-documented migrant crisis orchestrated by Russian and Belarusian
+authorities during that period. Apprehensions at the Russian border and
+via air/sea routes remain consistently low throughout the entire period.
+The COVID-19 pandemic (2020) coincides with a~sharp drop across all
+categories. After the Russian invasion of Ukraine in 2022, apprehensions
+at exit from Poland fell further and the Ukrainian border never regained
+its earlier prominence, as Ukrainians did not return to Ukraine during
+the war, while interior identifications continued to grow.
+
+
+\subsubsection{Lawful foreign population counts}\label{lawful-population-counts}
+
+The second dataset refers to the reference, lawful population. Poland's
+population register (PESEL) reliably records the assignment of personal
+identifiers but not actual residence or stay, as de-registration is rarely
+reported---evident in Figure~\ref{fig-population-registers}, where PESEL
+shows the highest counts (peaking at 4.1 million in 2024) but limited
+decline thereafter despite likely outflows\footnote{\citet{gorny2023ukraine}
+report mobile phone estimates of 3.2--3.8 million Ukrainians in Poland
+  in spring 2022 versus about 1.5~million PESEL UKR (special protection) registrations at
+  that time. \citet{strzelecki2025nbp} estimate that about 1~million
+  Ukrainian refugees settled in Poland by 2024 on top of 1.5~million
+  pre-war Ukrainian immigrants and 0.9~million from other countries,
+  contributing about 0.5 percentage points to annual GDP growth.}.
+
+
+\begin{figure}[H]
+
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig2-pop-registers.pdf}
+}
+
+\caption{\label{fig-population-registers}Number of 18+ foreign nationals
+by register, country of citizenship (Schengen, non-Schengen) and sex.
+Data from the Tax register were available only for the 2019--2024
+period. All reference populations are as of the end of these years.}
+
+\end{figure}%
+
+We therefore also considered Tax and Social Insurance (ZUS) registers,
+which better capture economic presence and show more modest figures
+(about 2.5 million and 1.2 million by 2023, respectively). For 2024, the
+number of foreigners in ZUS and Tax registers stagnated. Across all
+registers, non-Schengen nationals (predominantly Ukrainians) dominate
+and increased sharply after 2021, reflecting both labour migration and
+the post-February 2022 refugee influx. The concurrent shift from male to
+female predominance among non-Schengen migrants mirrors the demographic
+composition of war refugees.
+
+
+\subsubsection{Detection covariate, reference population}\label{auxiliary-detection-covariate}
+
+The third source provides the feature for detection intensity. We use
+anonymised individual-level data from the Polish Police's National
+Police Information System (KSIP), which records foreign nationals who
+came into contact with law enforcement---including background
+information on sex, age, place of residence (if provided), and PESEL
+identifier. These records are aggregated by country of origin, year, and
+sex to produce the covariate $n_{it}$ used in estimation. Contact with
+police does not imply unauthorised status; rather, it proxies the degree
+to which a~country's migrants are visible to institutional detection
+mechanisms. 
+
+\begin{table}[H]
+\caption{\label{tbl-yearly-data}Yearly information on the observed unauthorised, auxiliary and reference 18+ populations for non-Schengen countries between 2019 and 2024 by sex (in thousands)} 
+\fontsize{12.0pt}{14.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rrrrrrr}
+\toprule
+ &  &  &  & \multicolumn{3}{c}{{Register}} \\ 
+\cmidrule(lr){5-7}
+Year & Sex & Border\textsuperscript{\textit{a}} & Police\textsuperscript{\textit{b}} & PESEL\textsuperscript{\textit{c}} & Tax\textsuperscript{\textit{c}} & ZUS\textsuperscript{\textit{c}} \\ 
+\midrule\addlinespace[2.5pt]
+2019 & Females & 1.5 & 0.7 & 283.6 & 299.2 & 208.8 \\ 
+ & Males & 5.1 & 9.2 & 449.9 & 544.6 & 403.4 \\ 
+{\itshape } & {\itshape Total} & {\itshape 6.6} & {\itshape 9.9} & {\itshape 733.5} & {\itshape 843.8} & {\itshape 612.1} \\ 
+2020 & Females & 0.7 & 0.7 & 385.6 & 381.9 & 236.8 \\ 
+ & Males & 2.7 & 8.8 & 617.2 & 684.4 & 448.1 \\ 
+{\itshape } & {\itshape Total} & {\itshape 3.4} & {\itshape 9.5} & {\itshape 1,002.7} & {\itshape 1,066.3} & {\itshape 685.0} \\ 
+2021 & Females & 0.5 & 0.9 & 549.5 & 491.9 & 284.7 \\ 
+ & Males & 2.6 & 12.0 & 908.7 & 872.1 & 546.8 \\ 
+{\itshape } & {\itshape Total} & {\itshape 3.1} & {\itshape 12.9} & {\itshape 1,458.2} & {\itshape 1,364.1} & {\itshape 831.4} \\ 
+2022 & Females & 0.3 & 1.4 & 1,451.5 & 593.9 & 485.6 \\ 
+ & Males & 2.6 & 15.4 & 1,426.0 & 1,046.8 & 633.6 \\ 
+{\itshape } & {\itshape Total} & {\itshape 3.0} & {\itshape 16.8} & {\itshape 2,877.5} & {\itshape 1,640.7} & {\itshape 1,119.2} \\ 
+2023 & Females & 0.5 & 1.8 & 1,628.0 & 961.5 & 497.3 \\ 
+ & Males & 3.8 & 16.3 & 1,650.7 & 1,382.4 & 663.4 \\ 
+{\itshape } & {\itshape Total} & {\itshape 4.4} & {\itshape 18.0} & {\itshape 3,278.7} & {\itshape 2,343.9} & {\itshape 1,160.7} \\ 
+2024 & Females & 1.0 & 2.0 & 1,749.8 & 963.2 & 467.1 \\ 
+ & Males & 5.8 & 15.6 & 1,828.0 & 1,385.1 & 666.6 \\ 
+{\itshape } & {\itshape Total} & {\itshape 6.7} & {\itshape 17.6} & {\itshape 3,577.7} & {\itshape 2,348.3} & {\itshape 1,133.7} \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+\small
+\textsuperscript{\textit{a}}Observed unauthorised population according to Polish Border Guard inspections within the country (excluding airports); this is $m$ in our model. \textsuperscript{\textit{b}} Auxiliary population used to model the detection rate $\rho$; this is $n$ in our model. \textsuperscript{\textit{c}}Reference population registers; serve as $N$ in our model. Data recorded as of 31 December of each study year. Note: All numbers are in thousands. Data from Border Guard and Police are counts of persons within the year, while reference populations are stocks as of year-end.
+\end{minipage}
+\end{table}
+
+
+
+A summary of the datasets used in this study is presented in Table
+\ref{tbl-yearly-data}. A detailed summary of zero-counts in terms of $N_{it}$, $m_{it}$ or $n_{it}$ can be found in the Supplementary Materials (Table~\ref{tbl-zero-counts-assumptions} and~\ref{tbl-zero-counts}). Discussion on alternative auxiliary counts $n$ is presented in Supplementary Materials Section \ref{sec-appendix-auxiliary-counts}. As can be seen, large differences exist between males and females in all the datasets. 
+
+The choice of reference population counts $N$ affects primarily the community-anchor parameter $\alpha$ and secondarily the exposure-elasticity parameter $\beta$. We decided to use the ZUS (Social Insurance Institution) register as the source of reference population counts $N$ for several reasons. First,
+this register is updated monthly, providing timely information on the
+foreign nationals. Second, it contains records of foreign individuals
+registered for social insurance by their employers, which provides a~strong signal of actual presence; since registration implies active
+employment, we can be reasonably certain that these foreigners are
+indeed residing, working or insured in Poland. In contrast, the Tax
+register is updated only annually, limiting its temporal resolution.
+Furthermore, the PESEL register suffers from well-documented
+deregistration issues, where individuals who have left the country may
+remain in the database, leading to overestimation of the resident
+population. 
+
+
+\section{Results}\label{sec-results}
+
+\subsection{Exploratory analysis and estimation}\label{sec-assumptions}
+
+We use diagnostic plots to explore directly the two key empirical model assumptions:  a~sub-proportional scaling of unauthorised population with the reference (ZUS) population (community anchor $\alpha <1$) and a~positive elasticity to the auxiliary covariate (exposure elasticity $\beta > 0$). 
+
+\begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig3-zus-alpha.pdf}
+}
+
+\caption{\label{fig-diagnostics-alpha}Relation between standardised positive detection count $m/N$ and reference (ZUS) population size $N$ on log scale. Size of country codes  proportional to $N$, regression lines separately by (year, sex).}
+\end{figure}%
+
+
+Figure~\ref{fig-diagnostics-alpha} depicts the relationship between $\log(m/N)$ and $\log(N)$, as explained for \eqref{eq-diagnostic-model} earlier. Separate regression lines by (year, sex) are added to enhance the impression. The consistently negative slopes confirm the anticipated sub-proportional scaling above, which indicates that the community-anchor parameter takes a~value between 0.5 to 0.8.
+
+
+\begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig4-zus-beta.pdf}
+}
+
+\caption{\label{fig-diagnostics-beta}Relation between standardised positive detection count $m/N$ and detection feature $n/N$ on log scale. Size of country codes  proportional to $N$, regression lines separately by (year, sex)}
+\end{figure}%
+
+Similarly, Figure~\ref{fig-diagnostics-beta} shows the relationship between $\log(m/N)$ and $\log(n/N)$, including separate regression lines. The
+positive slopes confirm the anticipated positivity of exposure-elasticity parameter $\beta$. Their angles are close to 45 degrees in most cases, with values of $\beta$ close to 0.8 up to 2023 with a decrease to about 0.4 in 2024, which shows that the police records can provide useful feature counts $n$ in this application. 
+
+The diagnostics above are stratified by year and sex. Supplementary Materials Section~\ref{sec-appendix-model-details} contains similar diagnostic plots for all three possible sources of reference population (ZUS, Tax, PESEL), as well as stratification by continent, which confirm that the two key empirical model assumptions hold broadly for alternative choices of $N$ and partitions of communities.
+
+Next, we conduct exploratory estimation separately for each year, without any parameterisations that connect the parameter values of $(\alpha, \beta)$ over time. Three estimators are used to this end: the original NB-MLE of \citet{Zhang2008}, with a~different `rest' community in each year but without offset ($\gamma \equiv 0$), the Poisson PMLE allowing for a~non-trivial offset $\gamma>0$, the NB-MLE with $\gamma >0$ and Poisson-Gamma mixture at the same time. 
+
+\begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig5-init-estimates.pdf}
+}
+
+\caption{\label{fig-baseline-yearly}Separate yearly estimation of unauthorised population total by NB-MLE without offset, Poisson PMLE with offset, and NB-MLE with offset. Two confidence intervals by \eqref{eq-xi-confint} reported}
+\end{figure}%
+
+
+Figure~\ref{fig-baseline-yearly} compares the three. The associated confidence intervals are all given by \eqref{eq-xi-confint}, where the Y-axis is clipped at 450,000 for readability. Clearly, the NB-MLE with offset is too unstable to be acceptable, due to the reasons that have been explained and illustrated earlier. Separate yearly NB-MLE without offset and Poisson PMLE with offset are in better agreement with each other. However, NB-MLE without offset makes less efficient use of the positive counts $m$ when $n=0$, which amounts to 155 out of 1,382 data points here. Moreover, the Poisson PMLE shows a~decreasing trajectory from 2022 onwards, which is plausible in light of the 2022 EU Temporary Protection Directive concerning the Ukraines. The fact that this is achieved with `free' parameters over time lends considerable plausibility to the mean structure of Poisson PMLE, which is untampered by data regrouping required for NB-MLE without offset.   
+
+
+\subsection{Parameter specification and estimation}\label{sec-cov-selection}
+
+Of the parameters in the mean structure defined by \eqref{eq-xi-form} and \eqref{eq-rho-form}, the community-anchor $\alpha_{it}$ affects directly the target population size $\xi_{it}$ and their trajectory over time. Table~\ref{tbl-aic-specs} presents the AIC and BIC for eight specifications of $\alpha_{it}$, given yearly $\beta_t$ and constant $\gamma$, based on all the data 2019--2024. See Supplementary Materials Section~\ref{sec-appendix-covariate-comparison} for the full results related to the specification of all the parameters, some of which may be referred to below.
+
+\begin{table}[H]
+\centering
+\caption{\label{tbl-aic-specs}AIC and BIC by community anchor parameter $\alpha_{it}$, given yearly $\beta_t$ and constant $\gamma$.}
+\begin{tabular}{llrr|rr} \toprule
+& & \multicolumn{2}{c|}{Poisson PMLE} & \multicolumn{2}{c}{NB-MLE} \\
+Specification & Label & AIC & BIC & AIC & BIC \\ \midrule
+S1 & Intercept only & 22,769 & 22,785 & 5,398 & 5,419 \\
+S2 & Year & 16,871 & 16,939 & 5,283 & 5,356 \\
+S3 & Year + sex & 16,447 & 16,520 & 5,274 & 5,353 \\
+S4 & Year x UKR & 11,557 & 11,657 & 5,274 & 5,379 \\
+S5 & Year x simplified & 14,322 & 14,421 & 5,284 & 5,388 \\
+S6 & Year + continent & 12,860 & 12,954 & 5,246 & 5,345 \\
+S7 & Year + sex + UKR & 14,231 & 14,310 & 5,273 & 5,357 \\
+S8 & Year x UKR + sex & 11,536 & 11,640 & 5,265 & 5,375 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Although NB-MLE with offset has been rejected as the primary estimator for this application, their results are included here to illustrate that formal model-selection criteria such as AIC and BIC do not handle random-effects models in the same way as fixed-effects models. In particular, the ability to accommodate over-dispersion may unduly favour random-effects models. A related problem is the much narrower range of AIC (or BIC) values as the specification of $\alpha_{it}$ varies, which shows that less information about the mean structure is captured by these criteria. 
+
+When it comes to Poisson PMLE with offset, which is our focus here, there is a~large drop of AIC (or BIC) from yearly $\alpha$ (as in exploratory estimation above) to our preferred S8 specification. On the one hand, the interaction between year and Ukraine (separated from the other countries of origin) is the most important reason, as can be seen by comparing S8 to S4 specification. On the other hand, as described in Section \ref{sec-data}, sex is a~factor by which all the counts vary; the small change of AIC (or BIC) from S4 to S8 is simply due to the overwhelming mass of males in these data. 
+
+The year-by-Ukrainian interaction in the community anchor is motivated by the 2022 EU Temporary Protection Directive, which expanded the regularised 
+Ukrainian population $N$ without a~similar effect on the unauthorised counts $m$. Without this interaction, the community anchor would have to absorb this structural break as a~declining trend that affects the non-Ukrainians as well. 
+
+In addition to the S8 specification of $\alpha_{it}$, with yearly $\beta_t$ and constant $\gamma$, we have also considered other specifications of $\beta$ and $\gamma$. Regarding the exposure elasticity $\beta_{it}$, adding sex or Ukrainian origin to yearly $\beta_t$ does not improve AIC/BIC and introduces instability, whereas holding $\beta$ constant across years would produce nearly identical population size trajectories by Poisson PMLE and NB-MLE, and misses the structural break noted above. Regarding the offset $\gamma$, allowing it to vary by covariates or time has a~larger effect on Poisson PMLE than NB-MLE, in the sense that AIC/BIC differs more for the former than the latter, which is similar to the contrast between them in Table \ref{tbl-aic-specs}, although the resulting population size estimates still fall within the confidence intervals by the S8 specification. In short, the S8 specification here balances responsiveness to structural break with estimation stability and model parsimony.  
+
+
+%% without uncertainty (below)
+% \begin{figure}[H]
+% \centering{
+% \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig6-alpha-trajectories.pdf}
+% }
+% \caption{\label{fig-alpha-ukr}Estimated trajectory of community anchor ($\alpha$) by sex and Ukrainian origin, based on Poisson PMLE with S8 specification}
+% \end{figure}%
+
+%% with uncertainty (below)
+
+ \begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig6-alpha-trajectories-bounds.pdf}
+}
+\caption{\label{fig-alpha-ukr-bounds}Estimated trajectory of the community anchor ($\alpha$) by sex and Ukrainian origin, Poisson PMLE with the S8 specification. Lines are  bootstrap medians; shaded bands are 80\% (dark) and 95\% (light) percentile CIs}
+\end{figure}
+  
+
+Figure~\ref{fig-alpha-ukr-bounds} displays the trajectory of the estimated community anchor ($\alpha$) based on Poisson PMLE with the S8 specification. See Supplementary Materials Section~\ref{sec-appendix-coefficients} for the full results of parameter estimation and $\alpha$-trajectory, including those by NB-MLE with offset. 
+
+All the estimated $\alpha_{it}$ lie below unity, without any need of constraining. The estimated $\alpha$-value for non-Ukrainians is stable at about 0.83--0.85 throughout 2019--2024, while that for Ukrainians tracks a~similar level until 2021 and then declines sharply to about 0.67 by 2024 --- consistent with the 2022 Temporary Protection Directive that greatly reduces the extent of unauthorised Ukrainians. The sex effect shifts the trajectories downward for females by a~constant (about 0.03), reflecting a~lower prevalence of unauthorised female migrants, which is also as anticipated. 
+
+
+\subsection{Unauthorised population size estimates, sensitivity analyses}\label{sec-popsize}
+
+Table~\ref{tbl-xi-estimates} presents the estimates of the unauthorised adult (18+) non-Schengen population in Poland from 2019 to 2024, stratified by sex, whereas Figure~\ref{fig-ukr-estimates} shows the estimates by year and origin (Ukrainian vs non-Ukrainian). The mean structure is the S8 specification described in Section \ref{sec-cov-selection}. The point estimates are given as the medians of cluster FWB, together with the 80\% and 95\% confidence intervals. Poisson PMLE provides the primary estimates, while the results by NB-MLE are included for the purpose of sensitivity analysis. 
+
+\begin{table}[H]
+\centering
+\caption{\label{tbl-xi-estimates}Estimated size of unauthorised 18+ non-Schengen population by year and sex. Observed counts (Border). Reference population (Ref. pop.) by ZUS register. Model with S8 specification. Cluster FWB median with 80\% and 95\% percentile CIs for Poisson PMLE or NB-MLE. All figures in thousands.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrr rcc rcc} \toprule
+& & & & \multicolumn{3}{c}{Poisson PMLE} & \multicolumn{3}{c}{NB-MLE} \\ \cline{5-7} \cline{8-10}
+Year & Sex & Border & Ref. pop. & Median & 80\% CI & 95\% CI & Median & 80\% CI & 95\% CI \\ \midrule
+2019 & Female & 1.5 & 209 & 31 & (12, 70) & (8, 93) & 31 & (20, 46) & (17, 55) \\
+ & Male & 5.1 & 403 & 67 & (26, 154) & (18, 205) & 94 & (62, 140) & (50, 164) \\
+{\itshape } & {\itshape Total} & {\itshape 6.6} & {\itshape 612} & {\itshape 98} & {\itshape (38, 227)} & {\itshape (26, 296)} & {\itshape 125} & {\itshape (83, 183)} & {\itshape (67, 216)} \\
+\addlinespace
+2020 & Female & 0.7 & 237 & 32 & (14, 63) & (9, 80) & 25 & (14, 42) & (10, 54) \\
+ & Male & 2.7 & 448 & 69 & (30, 138) & (20, 187) & 71 & (43, 118) & (30, 158) \\
+{\itshape } & {\itshape Total} & {\itshape 3.4} & {\itshape 685} & {\itshape 101} & {\itshape (44, 200)} & {\itshape (29, 265)} & {\itshape 97} & {\itshape (57, 160)} & {\itshape (41, 204)} \\
+\addlinespace
+2021 & Female & 0.5 & 285 & 35 & (18, 62) & (12, 81) & 74 & (41, 137) & (29, 186) \\
+ & Male & 2.6 & 547 & 76 & (40, 150) & (27, 218) & 236 & (129, 468) & (95, 638) \\
+{\itshape } & {\itshape Total} & {\itshape 3.1} & {\itshape 831} & {\itshape 112} & {\itshape (58, 211)} & {\itshape (40, 294)} & {\itshape 312} & {\itshape (171, 603)} & {\itshape (128, 819)} \\
+\addlinespace
+2022 & Female & 0.3 & 486 & 28 & (17, 41) & (13, 49) & 26 & (11, 57) & (7, 87) \\
+ & Male & 2.6 & 634 & 57 & (37, 85) & (30, 106) & 77 & (32, 189) & (20, 279) \\
+{\itshape } & {\itshape Total} & {\itshape 3.0} & {\itshape 1,119} & {\itshape 85} & {\itshape (55, 125)} & {\itshape (43, 155)} & {\itshape 103} & {\itshape (45, 247)} & {\itshape (27, 362)} \\
+\addlinespace
+2023 & Female & 0.5 & 497 & 35 & (20, 49) & (15, 59) & 33 & (17, 56) & (12, 74) \\
+ & Male & 3.8 & 663 & 86 & (54, 134) & (39, 174) & 116 & (61, 209) & (44, 293) \\
+{\itshape } & {\itshape Total} & {\itshape 4.4} & {\itshape 1,161} & {\itshape 122} & {\itshape (74, 182)} & {\itshape (54, 230)} & {\itshape 149} & {\itshape (79, 264)} & {\itshape (57, 359)} \\
+\addlinespace
+2024 & Female & 1.0 & 467 & 30 & (13, 49) & (9, 59) & 49 & (27, 79) & (22, 103) \\
+ & Male & 5.8 & 667 & 77 & (35, 141) & (23, 190) & 192 & (107, 314) & (81, 434) \\
+{\itshape } & {\itshape Total} & {\itshape 6.7} & {\itshape 1,134} & {\itshape 108} & {\itshape (48, 188)} & {\itshape (32, 248)} & {\itshape 241} & {\itshape (135, 390)} & {\itshape (101, 530)} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+
+Our estimates of the adult non-Schengen unauthorised population size is 98,000 (80\% interval: 38,000--227,000; 95\% CI: 26,000--296,000) in 2019 and 108,000
+(80\% interval: 48,000--188,000; 95\% CI: 32,000--248,000) in 2024. The ratio to the ZUS reference population size is 16.0\% in 2019 and 9.5\% in 2024. The trajectory of these estimates over time, including the breakdown by either sex or origin, are as can be expected from that of the community anchor parameter $\alpha$ shown in Figure~\ref{fig-alpha-ukr}.  According to our Poisson PMLE estimates the unauthorised population rose by about 10\% between 2019 and 2024, while reference population almost doubled.  
+
+As shown in the Figure \ref{fig-ukr-estimates}, the estimated median number of unauthorised non-Ukrainian residents rose from about 35,000 in 2019 to about 96,000 in 2024, almost tripling over the period and closely matching the growth of the corresponding ZUS reference population, which increased from roughly 136,000 to 363,000. The estimated median for unauthorised Ukrainians moved in the opposite direction, falling from about 63,000 to 12,000, even though the Ukrainian reference population grew from about 476,000 to 771,000. The modest overall increase therefore conceals a pronounced change in composition, with the unauthorised population shifting away from Ukrainian nationals and towards other non-Schengen nationals. All figures reported here are estimated medians obtained from the cluster bootstrap.
+
+
+\begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs/fig7-ukr-estimates.pdf}
+}
+\caption{\label{fig-ukr-estimates}Estimated unauthorised population by origin (Ukrainian vs non-Ukrainian) and estimation method. Cluster bootstrap (by country) median with 80\% and 95\% percentile CI}
+\end{figure}%
+
+
+In comparison, the NB-MLE is unstable and can give implausibly high estimates from time to time, such as in 2021 (the year after covid outbreak) and 2024. Notice that the reference population size has a~steady increase from 2019 to 2022, after which it has remained stable till 2024. Meanwhile, the total of detected unauthorised persons went first down from 6,600 in 2019 to about 3,000 in 2021--2022, before it climbed back to about the same level in 2024 as in 2019. The surge of NB-MLE in 2021 and 2024 has thus no obvious justification in these data. 
+
+Nevertheless, the ability of NB-MLE to accommodate over-dispersion in the data makes it possible to use these estimates for sensitivity analysis. In other words, had excessive over-dispersion been present and caused bias to the Poisson PMLE, how might the estimate have looked like by a~method that accommodates over-dispersion? Our reported estimates are robust in this respect, since --- apart from the implausible 2021 and 2024 spikes discussed above --- the NB-MLE point estimates lie within the 95\% confidence intervals by Poisson PMLE, whether or not one finds this necessary given the stable and plausible trajectory of Poisson PMLE. 
+
+Finally, as another plausibility check following \citet{Zhang2008}, we compare our population size estimates with independent administrative indicators from the Office for Foreigners that are not used in estimation. Table~\ref{tbl-comparison-ukr} presents the numbers of refused temporary residence decisions and foreigner return obligations, respectively, alongside the Poisson PMLE, which are broken down by Ukrainian vs non-Ukrainian origin. Notice that the population estimates here are the Poisson PMLE cluster-FWB medians broken down by origin, on the same basis as the sex breakdown in Table~\ref{tbl-xi-estimates}.
+
+\begin{table}[H]
+\centering
+\caption{\label{tbl-comparison-ukr}Estimated unauthorised population size (Estimate; bootstrap median), number of refused temporary residence decisions (Refusal) or foreigner return obligations (Return), by origin (Ukrainian vs non-Ukrainian).}
+\begin{tabular}{lrrr|rrr} \toprule
+& \multicolumn{3}{c|}{Ukrainian} & \multicolumn{3}{c}{Non-Ukrainian} \\
+Year & Estimate & Refusal & Return & Estimate & Refusal & Return \\ \midrule
+2019 & 63,000 & 19,700 & 21,700 & 34,600 & 13,200 & 7,400 \\
+2020 & 65,500 & 24,500 & 8,700 & 35,200 & 14,500 & 3,300 \\
+2021 & 65,800 & 25,400 & 5,400 & 45,900 & 12,300 & 4,700 \\
+2022 & 29,900 & 15,100 & 1,200 & 55,500 & 18,800 & 7,200 \\
+2023 & 21,200 & 2,300 & 500 & 100,600 & 21,600 & 10,000 \\
+2024 & 12,200 & 1,900 & 600 & 95,600 & 27,500 & 11,600 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+The most notable pattern is the sharp decline in Ukrainian return obligations after 2021 (from 5,400 to 1,200 in 2022 and 500 in 2023), reflecting the Temporary Protection Directive that regularised the status of many Ukrainian nationals. Similarly with the number of refused temporary residence decisions for Ukraines. Non-Ukrainian return obligations, by contrast, increased from 4,700 in 2021 to 11,600 in 2024, which is consistent with the growing non-Ukrainian population size estimate. Similarly with the number of refused temporary residence decisions for Non-Ukraines.  
+
+
+\section{Conclusions}\label{sec-conclusions}
+
+This paper proposes a~general community-anchored modelling framework for estimating the size of unauthorised populations using only aggregated
+administrative data. The method requires three inputs: counts of detected unauthorised migrants, the size of an authorised foreign population (as a~reference), and a~covariate proxying detection intensity. 
+
+The framework is applied to the Polish data from 2019 to 2024. Our primary specification allows the community anchor ($\alpha$) to vary by year, Ukrainian origin (with interaction), and sex, while the exposure elasticity ($\beta$) varies by year only, and the offset ($\gamma$) of the detection intensity is constant throughout. In particular, our reported estimate of the adult non-Schengen unauthorised population size is 108,000 (80\% interval: 48,000--188,000; 95\% CI: 32,000--248,000) in 2024, which stands at 9.5\% compared with the ZUS reference population. Males constitute the majority of the authorised population. The reported estimates are robust against potential model mis-specification, not least when one takes into account their associated confidence intervals. 
+
+
+The 2022 EU Temporary Protection Directive massively expanded Ukraine's reference population without a~proportional increase in unauthorised Ukrainians. Our model captures this structural break naturally in terms of the year-by-Ukrainian interaction in the mean specification. This results in plausible as well as stable trajectory of the target population size over the entire period from 2019 to 2024. The framework is applicable to other large-scale regularisation or protection programmes that selectively inflates the lawful reference populations for specific communities. 
+
+Several limitations should be noted for practitioners. First, the wide confidence intervals reflect the inherent uncertainty in estimating hidden or hard-to-reach populations. Second, the method assumes a~structural relationship between authorised and unauthorised populations that holds across a~number of communities, in order for the model to be identifiable. Abrupt policy changes (such as the Temporary Protection Directive) can violate this assumption, which would require careful effort to revise any existing model. Third, the approach estimates the \emph{stock} of unauthorised individuals at a~given time, not \emph{gross flows}; year-to-year changes in the stock reflect the net balance of entries, exits, regularisations, and removals. Fourth, the
+restriction to non-Schengen nationals excludes EU citizens who may overstay or work without authorisation.
+
+The progression from separate yearly NB-MLE, which may produce volatile estimates sensitive to ad hoc regrouping (Section~\ref{sec-assumptions}), to Poisson PMLE with covariate-varying $\alpha$, baseline offset $\gamma$, and clustered bootstrap provides a~general template for applying the community-anchored models to multi-year administrative data. The framework transfers easily to other countries, just as it has been from Norway in 2006 to Poland in 2024: it requires only aggregated counts that already exist in administrative systems and can be implemented without individual-level data linkage or new data collection. The accompanying R package \texttt{uncounted} provides a~complete
+implementation, including estimation, inference, diagnostics, and sensitivity analysis tools.
+
+
+\renewcommand{\refname}{References}
+\bibliography{references}
+
+\let\oldbibliography\bibliography
+\renewcommand{\bibliography}[1]{}
+
+\appendix
+
+\include{appendix}
+
+\end{document}

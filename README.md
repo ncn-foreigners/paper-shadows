@@ -89,10 +89,11 @@ public package.
 
 ## Notes on classifications
 
-+ Bulgaria, Romania, and Croatia joined the Schengen Area in 2024
++ Croatia joined the Schengen Area in 2023; Bulgaria and Romania joined for
+  air/sea borders in March 2024 and fully (land borders) on 1 January 2025
 + Cyprus and Ireland are EU members but not in Schengen
 + Iceland, Liechtenstein, Norway, and Switzerland are non-EU Schengen members
-+ The United Kingdom left the Schengen Area with Brexit
++ The United Kingdom was never in the Schengen Area; Brexit removed it from the EU
 
 Country codes:
 

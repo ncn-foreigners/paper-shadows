@@ -1,4 +1,5 @@
-# Public replication package (restricted micro-data excluded)
+# Public replication package (restricted micro-data excluded) [![DOI](https://zenodo.org/badge/1275071083.svg)](https://doi.org/10.5281/zenodo.20788358)
+
 
 This is the **public** replication package for the paper on estimating the size of the
 unauthorised (irregular) foreign population in Poland from aggregated administrative data.

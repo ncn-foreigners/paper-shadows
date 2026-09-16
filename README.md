@@ -84,7 +84,9 @@ Notes:
 
 ## Manuscript
 
-`paper/` contains the manuscript sources. The published version was produced from the full
+`paper/` contains the manuscript sources and the submitted PDF:
+[**paper_counting_shadows_submission.pdf**](paper/paper_counting_shadows_submission.pdf)
+(main text with the supplementary materials). The manuscript was produced from the full
 data, so the few tax-based items above appear there but cannot be regenerated from this
 public package.
 

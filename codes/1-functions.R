@@ -69,3 +69,20 @@ register_diag_plots <- function(reg_col, reg_label, file_alpha, file_beta,
 
   invisible(pos)
 }
+
+
+## ---- dispersion and quasi-AIC for `uncounted` fits (Burnham & Anderson 2002, Sec. 2.5) ----
+## c_hat(): Pearson chi-square / residual df of a Poisson PMLE fit -- the over-dispersion
+##   factor (1 under a correctly specified Poisson).
+## qaic(): -2 logLik / c_hat + 2 (K + 1), where K is the parameter count AIC() uses for the
+##   fit (coefficients plus the offset gamma) and the +1 counts c_hat itself. c_hat is taken
+##   from the most general model of the set being compared and applied to every member of
+##   the set. Defined for Poisson PMLE only (NB-MLE models the dispersion itself).
+c_hat <- function(fit) {
+  mu <- pmax(fit$fitted.values, 1e-8)
+  sum((fit$m - mu)^2 / mu) / fit$df.residual
+}
+qaic <- function(fit, chat) {
+  ll <- logLik(fit)
+  -2 * as.numeric(ll) / chat + 2 * (attr(ll, "df") + 1)
+}

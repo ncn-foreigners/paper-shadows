@@ -189,24 +189,6 @@ administrative proceedings to \textbf{oblige the foreigner to return}
 \end{itemize}
 
 
-\subsection{Police records and unauthorised stay}\label{sec-appen-police}
-
-The Police maintain the National Police Information System
-(pol. \emph{Krajowy System Informacyjny Policji}, KSIP), which includes criminal records, person searches, process registrations, and traffic offences. 
-We use the first and third, criminal
-records (\emph{notowania kryminalne}) and process registrations
-(\emph{rejestracja procesowa}), since both concern crime: process
-registration records a~suspect or accused person in an offence prosecuted
-\emph{ex officio}, entered during pre-trial proceedings, while a criminal
-record links a person to a crime gathered in the course of police work.
-
-Unauthorised stay is not such an offence but a petty offence under
-Article~465 of the Act on Foreigners, adjudicated under the Code of
-Procedure in Cases of Petty Offences and handled by the Border Guard, so
-it appears in neither register. KSIP therefore records irregular migrants
-only when they were also linked to a crime, and its overlap with the
-Border Guard's within-country detections is small.
-
 \clearpage
 
 
@@ -254,6 +236,7 @@ Year & Legal act & Document type & Extension mechanism & Group\\
 
 \end{table}%
 
+
 \clearpage
 
 \begin{table}[ht!]
@@ -291,6 +274,27 @@ Year & Legal act & Work authorisation type & Extension / new duration & Group\\
 }
 
 \end{table}%
+
+
+\clearpage
+
+\subsection{Police records and an unauthorised stay}\label{sec-appen-police}
+
+The Polish Police maintain the National Police Information System
+(pol. \emph{Krajowy System Informacyjny Policji}, KSIP), which includes criminal records, person searches, process registrations, and traffic offenses. 
+
+In our study we use the first and third, i.e. criminal
+records (pol. \emph{notowania kryminalne}) and process registrations
+(pol. \emph{rejestracja procesowa}), since both concern crime: process
+registration records a~suspect or accused person in an offense prosecuted
+\emph{ex officio}, entered during pre-trial proceedings, while a~criminal
+record links a~person to a~crime gathered during police work.
+
+Unauthorized stay is not such an offense but a petty offense under
+Article~465 of the Act on Foreigners, adjudicated under the Code of
+Procedure in Cases of Petty Offenses and handled by the Border Guard. KSIP therefore records irregular migrants only when they were also linked to a~crime.
+
+It should be noted that the two registers are separate, but the services cooperate. Under the 2004 agreement between the Commanders-in-Chief of the Police and the Border Guard\footnote{See legal basis here \url{https://sip.lex.pl/akty-prawne/dzienniki-resortowe/wykazy-obowiazujacych-aktow-prawnych-komendanta-glownego-strazy-34506321}. } they exchange information and share databases, and under the Act on Foreigners a~foreigner detained by the Police is transferred to the Border Guard. Police contact can therefore lead to detection, which is why the police count is a~natural proxy for institutional exposure, while the two counts remain registrations of different events.
 
 \clearpage
 
@@ -358,28 +362,45 @@ The table reports annual staffing stocks and enforcement outcomes for the Polish
 \section{Model assumptions and
 details}\label{sec-appendix-model-details}
 
+
+
+\subsection{Restriction of the population}\label{sec-appen-restriction}
+
+The following countries are excluded from the model:
+
+\begin{itemize}
+  \item Croatia, Bulgaria and Romania (EU members, outside
+        Schengen for all or part of 2019--2024)
+  \item Ireland and Cyprus (EU members outside Schengen);
+  \item United Kingdom: excluded for 2019--2020, retained from 2021.
+\end{itemize}
+
+Every excluded country has zero $m$ and a~positive $N$. 
+
 \subsection{Zero-count prevalence}\label{sec-appendix-zero-counts}
 
 
+Table \ref{tbl-zero-counts-assumptions} presents verifications of assumptions on whether reference, lawful population is zero while unauthorised is present. 
 
-\begin{table}[H]
-\caption{\label{tbl-zero-counts-assumptions}Country-year cells with a zero reference count ($N = 0$) despite observed apprehensions ($m > 0$), for 18+ non-Schengen countries} 
-\fontsize{12.0pt}{14.0pt}\selectfont
+
+\begin{table}[ht!]
+\caption{\label{tbl-zero-counts-assumptions}Country-year cells with a zero reference count (N = 0) despite observed apprehensions (m > 0), for 18+ non-Schengen countries.} 
+\fontsize{9.0pt}{11.0pt}\selectfont
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr}
 \toprule
 Year & Number of Countries & Total apprehensions (Sum of $m$) & Sum $n$ (Police) \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{4}{c}{PESEL register} \\[2.5pt] 
+\multicolumn{4}{l}{PESEL} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
 2023 & 1 & 1 & 0 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{4}{c}{Tax register} \\[2.5pt] 
+\multicolumn{4}{l}{Tax} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
 2019 & 2 & 35 & 12 \\ 
 2020 & 1 & 1 & 2 \\ 
 2023 & 2 & 2 & 1 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{4}{c}{ZUS register} \\[2.5pt] 
+\multicolumn{4}{l}{ZUS} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
 2019 & 10 & 20 & 10 \\ 
 2020 & 5 & 7 & 3 \\ 
@@ -391,11 +412,11 @@ Year & Number of Countries & Total apprehensions (Sum of $m$) & Sum $n$ (Police)
 \end{tabular*}
 \begin{minipage}{\linewidth}
 \vspace{.05em}
-Note: m = border apprehensions; n = police records; N = reference register count. Missing countries -- PESEL register: Only Hong Kong (2023) is absent.
+Note: m = border apprehensions; n = police records; N = reference register count. Missing countries -- PESEL register: Only Hong Kong (2023) is absent.\\
 \end{minipage}
 \end{table}
 
-Table \ref{tbl-zero-counts-assumptions} presents verifications of assumptions on whether reference, lawful population is zero while unauthorised is present. 
+
 
 The Tax register omits very few origins: only Nepal (2019, with 34 apprehensions), Kosovo (one apprehension in each of three years) and Hong Kong (2023). The ZUS gaps are broader and cluster regionally, in particular
 
@@ -405,16 +426,15 @@ The Tax register omits very few origins: only Nepal (2019, with 34 apprehensions
     \item Isolated, single cases: Paraguay (9 in 2019), UAE, Bahrain, St Vincent \& Grenadines, Dominica, Trinidad \& Tobago, Hong Kong.
 \end{itemize}
 
- Some of these discrepancies may also reflect differences in how citizenship is coded across sources rather than genuine absence from a register: the Border Guard, police and reference data use different country-coding schemes, so an origin recorded explicitly in the apprehension data can be folded into a residual category in a register and appear as a zero. This matters most for ZUS, which assigned a sizeable share of insured foreigners to an "other/unknown" citizenship category, mechanically depressing the counts for individually named countries and inflating the apparent number of zero-reference cells.
+ Some of these discrepancies may also reflect differences in how citizenship is coded across sources rather than genuine absence from a register: the Border Guard, police and reference data may use different country-coding schemes, so an origin recorded explicitly in the apprehension data can be folded into a residual category in a register and appear as a zero. This matters most for ZUS, which assigned a sizeable share of insured foreigners to an "other/unknown" citizenship category, mechanically depressing the counts for individually named countries and inflating the apparent number of zero-reference cells.
 
-  
 
 
 Table~\ref{tbl-zero-counts} reports the share of country-of-origin
 groups with zero counts in apprehension ($m$) and police ($n$)
 records, by sex and year. Females have higher zero rates than males:
-only 17--26\% of countries have positive counts in both sources for
-females, compared to 50--64\% for males. This sparsity motivates the
+only 17--31\% of countries have positive counts in both sources for
+females, compared to 50--65\% for males. This sparsity motivates the
 $\gamma$ offset, which allows cells with $n_{it} = 0$ to enter the
 likelihood without the regrouping required by \citet{Zhang2008}.
 
@@ -426,31 +446,32 @@ likelihood without the regrouping required by \citet{Zhang2008}.
 \toprule
 Year & Sex & m=0 (\%) & m=0 (C) & n=0 (\%) & n=0 (C) & Both>0 (\%) & Both>0 (C) & Countries \\ 
 \midrule\addlinespace[2.5pt]
-2019 & Males & 29.6 & 32 & 27.8 & 30 & 63.0 & 68 & 108 \\ 
- & Females & 45.3 & 43 & 64.2 & 61 & 26.3 & 25 & 95 \\ 
-{\itshape } & {\itshape Total} & {\itshape 36.9} & {\itshape 75} & {\itshape 44.8} & {\itshape 91} & {\itshape 45.8} & {\itshape 93} & {\itshape 203} \\ 
-2020 & Males & 39.5 & 45 & 34.2 & 39 & 50.9 & 58 & 114 \\ 
- & Females & 62.9 & 61 & 72.2 & 70 & 18.6 & 18 & 97 \\ 
-{\itshape } & {\itshape Total} & {\itshape 50.2} & {\itshape 106} & {\itshape 51.7} & {\itshape 109} & {\itshape 36.0} & {\itshape 76} & {\itshape 211} \\ 
-2021 & Males & 49.6 & 59 & 27.7 & 33 & 48.7 & 58 & 119 \\ 
- & Females & 67.0 & 67 & 71.0 & 71 & 17.0 & 17 & 100 \\ 
-{\itshape } & {\itshape Total} & {\itshape 57.5} & {\itshape 126} & {\itshape 47.5} & {\itshape 104} & {\itshape 34.2} & {\itshape 75} & {\itshape 219} \\ 
-2022 & Males & 46.1 & 59 & 31.2 & 40 & 51.6 & 66 & 128 \\ 
- & Females & 71.3 & 87 & 73.0 & 89 & 17.2 & 21 & 122 \\ 
-{\itshape } & {\itshape Total} & {\itshape 58.4} & {\itshape 146} & {\itshape 51.6} & {\itshape 129} & {\itshape 34.8} & {\itshape 87} & {\itshape 250} \\ 
-2023 & Males & 31.0 & 40 & 25.6 & 33 & 63.6 & 82 & 129 \\ 
- & Females & 61.9 & 78 & 68.3 & 86 & 23.8 & 30 & 126 \\ 
-{\itshape } & {\itshape Total} & {\itshape 46.3} & {\itshape 118} & {\itshape 46.7} & {\itshape 119} & {\itshape 43.9} & {\itshape 112} & {\itshape 255} \\ 
-2024 & Males & 30.7 & 39 & 31.5 & 40 & 60.6 & 77 & 127 \\ 
- & Females & 52.1 & 61 & 64.1 & 75 & 30.8 & 36 & 117 \\ 
-{\itshape } & {\itshape Total} & {\itshape 41.0} & {\itshape 100} & {\itshape 47.1} & {\itshape 115} & {\itshape 46.3} & {\itshape 113} & {\itshape 244} \\ 
+2019 & Males & 27.6 & 29 & 27.6 & 29 & 64.8 & 68 & 105 \\ 
+ & Females & 43.5 & 40 & 65.2 & 60 & 27.2 & 25 & 92 \\ 
+{\itshape } & {\itshape Total} & {\itshape 27.5} & {\itshape 30} & {\itshape 28.4} & {\itshape 31} & {\itshape 66.1} & {\itshape 72} & {\itshape 109} \\ 
+2020 & Males & 37.8 & 42 & 34.2 & 38 & 52.3 & 58 & 111 \\ 
+ & Females & 61.7 & 58 & 73.4 & 69 & 19.1 & 18 & 94 \\ 
+{\itshape } & {\itshape Total} & {\itshape 36.6} & {\itshape 41} & {\itshape 32.1} & {\itshape 36} & {\itshape 53.6} & {\itshape 60} & {\itshape 112} \\ 
+2021 & Males & 48.7 & 57 & 27.4 & 32 & 49.6 & 58 & 117 \\ 
+ & Females & 66.3 & 65 & 71.4 & 70 & 17.3 & 17 & 98 \\ 
+{\itshape } & {\itshape Total} & {\itshape 48.3} & {\itshape 57} & {\itshape 28.0} & {\itshape 33} & {\itshape 50.0} & {\itshape 59} & {\itshape 118} \\ 
+2022 & Males & 45.2 & 57 & 31.7 & 40 & 52.4 & 66 & 126 \\ 
+ & Females & 70.8 & 85 & 73.3 & 88 & 17.5 & 21 & 120 \\ 
+{\itshape } & {\itshape Total} & {\itshape 43.7} & {\itshape 55} & {\itshape 30.2} & {\itshape 38} & {\itshape 54.0} & {\itshape 68} & {\itshape 126} \\ 
+2023 & Males & 29.9 & 38 & 26.0 & 33 & 64.6 & 82 & 127 \\ 
+ & Females & 61.3 & 76 & 67.7 & 84 & 24.2 & 30 & 124 \\ 
+{\itshape } & {\itshape Total} & {\itshape 26.8} & {\itshape 34} & {\itshape 25.2} & {\itshape 32} & {\itshape 66.1} & {\itshape 84} & {\itshape 127} \\ 
+2024 & Males & 29.6 & 37 & 31.2 & 39 & 61.6 & 77 & 125 \\ 
+ & Females & 51.3 & 59 & 63.5 & 73 & 31.3 & 36 & 115 \\ 
+{\itshape } & {\itshape Total} & {\itshape 32.1} & {\itshape 42} & {\itshape 32.8} & {\itshape 43} & {\itshape 59.5} & {\itshape 78} & {\itshape 131} \\ 
 \bottomrule
 \end{tabular*}
 \begin{minipage}{\linewidth}
 \vspace{.05em}
-Note: $m$ denotes border apprehensions; $n$ denotes police records. Reference population: ZUS. C = number of countries. The last column denotes the total number of countries for a given sex in a given year.\\
+Note: $m$ denotes border apprehensions; $n$ denotes police records. Reference population: ZUS. C = number of countries. The last column denotes the number of countries with a positive ZUS count for a given sex in a given year. Total rows aggregate $m$ and $n$ over sex within a country, so a country counts as $m=0$ ($n=0$) only if it has no apprehensions (police records) of either sex; the last column is then the number of countries with a positive ZUS count for at least one sex. Country includes also categories such as stateless or unknown.\\
 \end{minipage}
 \end{table}
+
 
 
 
@@ -543,130 +564,179 @@ registers)}\label{year-and-continent-all-registers}
 
 \section{Details about the models}\label{sec-appendix-covariate-comparison}
 
+\subsection{Why do we prefer the Poisson model over the Negative Binomial model?}\label{sec-append-why-poisson}
+
+Below we present several reasons for preferring the Poisson PMLE to NB-MLE in practice, specially when non-trivial offset $\gamma >0$ is allowed in \eqref{eq-rho-form}. 
+
+
+\emph{Offset-Gamma confounding.} A manifestation of over-dispersion in the present context is the data points with $m_{it} >0$ but $n_{it} =0$. This can be partly dealt with by the non-trivial offset $\gamma$, and partly by the random effects $u_{it}$ in the Poisson-Gamma mixture. This confounding would affect the estimated mean structure through $\gamma$. As we document in Supplementary Materials Section~\ref{sec-appendix-cov-gamma}, the profile log-likelihood of $\gamma$ can be rather flat for the NB-MLE, whilst it peaks sharply for the Poisson PMLE in comparison. More on this in the simulation study in Section \ref{sec-simulation}.
+
+\emph{Small-counts sensitivity.} The ability of NB-MLE to accommodate over-dispersion carries a~drawback as it becomes sensitive to the effects of small counts $m_{it}$. See the relevant measures in Supplementary Materials Section~\ref{sec-appendix-diagnostics}, and the consequences on population size estimation. When NB-MLE is applied with $t$-specific parameter \eqref{eq-xi-form}, it can lead to implausible spikes and disruptions of the estimated population size over time, compared to the Poisson PMLE. Notice that, since the extent of small counts is much reduced when `rest' communities are created from the data points with $m_{it} n_{it} =0$, this problem is somewhat related to offset-Gamma confounding above. 
+
+\emph{Robustness of PMLE.} The Poisson PMLE requires only correct specification of the mean of $m_{it}$ for consistency \citep{SantosSilvaTenreyro2006}; however, see Supplementary Materials Section~\ref{sec-appendix-sim-study} and Section~\ref{sec-simulation} for finite-sample caveats. A useful indication of robust mean estimation by Poisson PMLE is whether the associated confidence interval includes the NB-MLE. Notice that, in practice, one may find the trajectory of unauthorized population size estimates to be more reliable by Poisson PMLE than NB-MLE, even when the former is not more `correct' for each given period. 
+
+
+We conducted exploratory estimation separately for each year, without any parameterizations that connect the parameter values of $(\alpha, \beta)$ over time. Three estimators are used to this end: the original NB-MLE of \citet{Zhang2008}, with a~different `rest' community in each year but without offset ($\gamma \equiv 0$), the Poisson PMLE allowing for a~non-trivial offset $\gamma>0$, the NB-MLE with $\gamma >0$ and Poisson-Gamma mixture at the same time. 
+
+Figure~\ref{fig-baseline-yearly} compares the three. The associated confidence intervals are all given by \eqref{eq-xi-confint}, where the Y-axis is clipped at 450,000 for readability. Clearly, the NB-MLE with offset is too unstable to be acceptable, due to the reasons that have been explained and illustrated earlier. Separate yearly NB-MLE without offset and Poisson PMLE with offset are in better agreement with each other. However, NB-MLE without offset makes less efficient use of the positive counts $m$ when $n=0$, which amounts to 155 out of 1,354 data points here. Moreover, the Poisson PMLE shows a~decreasing trajectory from 2022 onwards, which is plausible in light of the 2022 EU Temporary Protection Directive concerning the Ukrainian. The fact that this is achieved with `free' parameters over time lends considerable plausibility to the mean structure of Poisson PMLE, which is untampered by data regrouping required for NB-MLE without offset. 
+
+
+\begin{figure}[H]
+\centering{
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{figs-appen/figA-init-estimates.pdf}
+}
+
+\caption{\label{fig-baseline-yearly}Separate yearly estimation of unauthorized population total by NB-MLE without offset, Poisson PMLE with offset, and NB-MLE with offset. Two confidence intervals by \eqref{eq-xi-confint} reported}
+\end{figure}%
+
+
+\clearpage
+
 \subsection{AIC/BIC across eight specifications and three 
 registers}\label{aicbic-across-eight-specifications-and-three-registers}
 
 \begin{table}[ht!]
-\caption{AIC and BIC for eight covariate specifications (S1--S8) across three registers and two estimation methods.} 
-\fontsize{12.0pt}{14.0pt}\selectfont
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llrrrr}
+\caption{\label{tbl-full-aic}AIC, BIC and QAIC for eight covariate specifications (S1--S8) across three registers and two estimation methods.} 
+\fontsize{8.0pt}{10.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llrrrrrr}
 \toprule
- &  & \multicolumn{2}{c}{{Poisson PMLE}} & \multicolumn{2}{c}{{NB-MLE}} \\ 
-\cmidrule(lr){3-4} \cmidrule(lr){5-6}
-Spec & Label & AIC & BIC & AIC & BIC \\ 
+ &  & \multicolumn{4}{c}{{Poisson PMLE}} & \multicolumn{2}{c}{{NB-MLE}} \\ 
+\cmidrule(lr){3-6} \cmidrule(lr){7-8}
+Spec & Label & AIC & BIC & QAIC & $\hat c$ & AIC & BIC \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{6}{l}{ZUS} \\[2.5pt] 
+\multicolumn{8}{l}{ZUS} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-S1 & Intercept only & 22,769.5 & 22,785.2 & 5,397.7 & 5,418.7 \\ 
-S2 & Year & 16,870.9 & 16,938.9 & 5,283.0 & 5,356.3 \\ 
-S3 & Year + sex & 16,447.0 & 16,520.2 & 5,274.5 & 5,353.0 \\ 
-S4 & Year x UKR & 11,557.4 & 11,656.8 & 5,274.2 & 5,378.8 \\ 
-S5 & Year x simplified & 14,321.7 & 14,421.1 & 5,283.7 & 5,388.4 \\ 
-S6 & Year + continent & 12,859.7 & 12,953.9 & 5,245.8 & 5,345.2 \\ 
-S7 & Year + sex + UKR & 14,231.3 & 14,309.8 & 5,272.8 & 5,356.5 \\ 
-S8 & Year x UKR + sex & \textbf{11,535.6} & \textbf{11,640.2} & \textbf{5,265.2} & \textbf{5,375.0} \\ 
+S1 & Intercept only & 22,405.8 & 22,421.4 & 2,484.7 & 18.53 & 5,329.4 & 5,350.2 \\ 
+S2 & Year & 16,471.3 & 16,539.1 & 1,846.3 & 14.11 & 5,205.8 & 5,278.8 \\ 
+S3 & Year + sex & 16,050.1 & 16,123.1 & 1,801.6 & 12.74 & 5,197.2 & 5,275.4 \\ 
+S4 & Year x UKR & 11,198.2 & 11,297.2 & 1,274.0 & 9.38 & 5,195.1 & 5,299.3 \\ 
+S5 & Year x simplified & 13,960.8 & 14,059.8 & 1,579.4 & 14.50 & 5,206.2 & 5,310.4 \\ 
+S6 & Year + continent & 12,628.1 & 12,721.9 & 1,430.3 & 10.17 & 5,175.7 & 5,274.7 \\ 
+S7 & Year + sex + UKR & 13,876.5 & 13,954.6 & 1,563.0 & 11.55 & 5,194.8 & 5,278.2 \\ 
+S8 & Year x UKR + sex & 11,176.0 & 11,280.2 & 1,273.3 & 9.04 & 5,186.0 & 5,295.4 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{6}{l}{Tax} \\[2.5pt] 
+\multicolumn{8}{l}{Tax} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-S1 & Intercept only & 24,688.2 & 24,704.7 & 5,833.1 & 5,855.2 \\ 
-S2 & Year & 18,618.7 & 18,690.3 & 5,717.9 & 5,795.1 \\ 
-S3 & Year + sex & 18,517.7 & 18,594.9 & 5,712.2 & 5,794.9 \\ 
-S4 & Year x UKR & 13,509.4 & 13,614.2 & 5,715.8 & 5,826.1 \\ 
-S5 & Year x simplified & 16,449.9 & 16,554.7 & 5,718.4 & 5,828.6 \\ 
-S6 & Year + continent & 14,625.1 & 14,724.3 & 5,635.6 & 5,740.4 \\ 
-S7 & Year + sex + UKR & 16,846.4 & 16,929.1 & 5,714.2 & 5,802.4 \\ 
-S8 & Year x UKR + sex & \textbf{13,488.5} & \textbf{13,598.8} & \textbf{5,709.4} & \textbf{5,825.2} \\ 
+S1 & Intercept only & 24,257.4 & 24,273.9 & 2,265.4 & 17.81 & 5,758.9 & 5,780.9 \\ 
+S2 & Year & 18,116.4 & 18,187.8 & 1,711.9 & 14.37 & 5,636.3 & 5,713.3 \\ 
+S3 & Year + sex & 17,992.8 & 18,069.8 & 1,702.2 & 13.15 & 5,629.9 & 5,712.4 \\ 
+S4 & Year x UKR & 13,060.5 & 13,164.9 & 1,252.2 & 10.23 & 5,633.2 & 5,743.2 \\ 
+S5 & Year x simplified & 16,034.7 & 16,139.2 & 1,529.0 & 14.85 & 5,637.7 & 5,747.7 \\ 
+S6 & Year + continent & 14,282.7 & 14,381.7 & 1,364.1 & 8.83 & 5,557.8 & 5,662.2 \\ 
+S7 & Year + sex + UKR & 16,339.1 & 16,421.6 & 1,550.1 & 12.50 & 5,631.7 & 5,719.7 \\ 
+S8 & Year x UKR + sex & 13,046.4 & 13,156.3 & 1,252.7 & 10.74 & 5,626.1 & 5,741.6 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{6}{l}{PESEL} \\[2.5pt] 
+\multicolumn{8}{l}{PESEL} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-S1 & Intercept only & 24,604.3 & 24,620.9 & 5,820.0 & 5,842.1 \\ 
-S2 & Year & 17,782.6 & 17,854.4 & 5,653.6 & 5,731.0 \\ 
-S3 & Year + sex & 17,473.8 & 17,551.1 & 5,638.1 & 5,721.0 \\ 
-S4 & Year x UKR & 12,561.5 & 12,666.5 & 5,645.5 & 5,756.1 \\ 
-S5 & Year x simplified & 15,765.5 & 15,870.6 & 5,651.4 & 5,762.0 \\ 
-S6 & Year + continent & 14,507.2 & 14,606.7 & 5,598.9 & 5,703.9 \\ 
-S7 & Year + sex + UKR & 15,704.9 & 15,787.8 & 5,639.2 & 5,727.7 \\ 
-S8 & Year x UKR + sex & \textbf{12,533.8} & \textbf{12,644.4} & \textbf{5,629.1} & \textbf{5,745.2} \\ 
+S1 & Intercept only & 24,188.6 & 24,205.1 & 3,550.6 & 17.08 & 5,746.4 & 5,768.4 \\ 
+S2 & Year & 17,226.2 & 17,297.8 & 2,547.7 & 11.65 & 5,569.5 & 5,646.6 \\ 
+S3 & Year + sex & 16,875.2 & 16,952.3 & 2,498.0 & 10.05 & 5,552.4 & 5,635.1 \\ 
+S4 & Year x UKR & 12,078.3 & 12,183.0 & 1,803.8 & 7.23 & 5,559.7 & 5,670.0 \\ 
+S5 & Year x simplified & 15,312.4 & 15,417.1 & 2,277.6 & 10.16 & 5,567.6 & 5,677.8 \\ 
+S6 & Year + continent & 14,114.7 & 14,213.9 & 2,100.4 & 8.29 & 5,523.5 & 5,628.2 \\ 
+S7 & Year + sex + UKR & 15,144.3 & 15,227.0 & 2,246.1 & 9.01 & 5,552.8 & 5,641.0 \\ 
+S8 & Year x UKR + sex & 12,042.0 & 12,152.2 & 1,800.2 & 6.83 & 5,541.7 & 5,657.4 \\ 
 \bottomrule
 \end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: $\hat c$ = Pearson dispersion (chi-square over residual df) of the Poisson PMLE fit. QAIC $= -2\ell/\hat c_{S8} + 2(K+1)$, with $K$ the number of parameters (including $\gamma$) and $\hat c_{S8}$ the dispersion of the most general specification in each register (ZUS: 9.0; Tax: 10.7; PESEL: 6.8). Not defined for NB-MLE, which models the dispersion.\\
+\end{minipage}
 \end{table}
 
-Across all three registers, S8 ($\alpha$ varying by year $\times$ Ukrainian origin plus a sex effect) has the lowest Poisson PMLE AIC and BIC. The NB-MLE criteria differ little across specifications, with S8 within a few units of the best NB fit in every register, so we adopt S8 for both methods.
+
+Across all three registers, S8 ($\alpha$ varying by year $\times$ Ukrainian origin plus a sex effect) has the lowest Poisson PMLE information criteria. The NB-MLE criteria differ little across specifications, with S8 within a~few units of the best NB fit in every register, so we adopt S8 for both methods.
   
 
 \clearpage
 
 \subsection{Beta covariate selection}\label{sec-appendix-beta-selection}
 
-The primary specification (S8) allows the exposure elasticity to vary by
-year only. Here we examine whether enriching $\beta$ with sex and/or
-Ukrainian origin improves the model. All specifications below share the
-same S8 community anchor structure ($\alpha$ varying by year
+The primary specification (S8) allows the exposure elasticity to vary by year only. Here we examine whether extending $\beta$ with sex and/or Ukrainian origin improves the model. All specifications below share the same S8 community anchor structure ($\alpha$ varying by year
 $\times$ Ukrainian origin, plus a sex effect).
 
 
 \begin{table}[ht!]
-\caption{Effect of beta specification on AIC across three registers. S8 is the primary specification. All specifications share alpha = year x UKR + sex; k = number of parameters.} 
+\caption{\label{tbl-beta-comparison}Effect of beta specification on AIC, BIC and QAIC across three registers. S8 is the primary specification. All specifications share alpha = year x UKR + sex; k = number of parameters.} 
 \fontsize{8.0pt}{10.0pt}\selectfont
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lclrrrl}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lclrrrrr}
 \toprule
-Model & Spec & Covariates in beta & AIC & BIC & k & alpha > 1 \\ 
+Model & Spec & Covariates in beta & AIC & BIC & QAIC & $\hat c$ & k \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{7}{l}{ZUS} \\[2.5pt] 
+\multicolumn{8}{l}{ZUS} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-NB-MLE & S8 & year & 5,265.2 & 5,375.0 & 21 & No \\ 
-NB-MLE & S9 & year + sex & 5,266.3 & 5,381.3 & 22 & No \\ 
-NB-MLE & S10 & year + UKR & 5,267.1 & 5,382.2 & 22 & No \\ 
-NB-MLE & S11 & year + sex + UKR & 5,268.3 & 5,388.6 & 23 & No \\ 
-Poisson PMLE & S8 & year & 11,535.6 & 11,640.2 & 20 & No \\ 
-Poisson PMLE & S9 & year + sex & 11,527.7 & 11,637.5 & 21 & No \\ 
-Poisson PMLE & S10 & year + UKR & 11,497.4 & 11,607.2 & 21 & No \\ 
-Poisson PMLE & S11 & year + sex + UKR & 11,402.3 & 11,517.4 & 22 & No \\ 
+NB-MLE & S8 & year & 5,186.0 & 5,295.4 &  &  & 21 \\ 
+NB-MLE & S9 & year + sex & 5,186.8 & 5,301.5 &  &  & 22 \\ 
+NB-MLE & S10 & year + UKR & 5,187.9 & 5,302.6 &  &  & 22 \\ 
+NB-MLE & S11 & year + sex + UKR & 5,188.8 & 5,308.7 &  &  & 23 \\ 
+Poisson PMLE & S8 & year & 11,176.0 & 11,280.2 & 1,273.3 & 9.04 & 20 \\ 
+Poisson PMLE & S9 & year + sex & 11,169.1 & 11,278.6 & 1,274.3 & 8.97 & 21 \\ 
+Poisson PMLE & S10 & year + UKR & 11,134.7 & 11,244.2 & 1,270.5 & 8.95 & 21 \\ 
+Poisson PMLE & S11 & year + sex + UKR & 11,040.3 & 11,154.9 & 1,261.8 & 8.59 & 22 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{7}{l}{Tax} \\[2.5pt] 
+\multicolumn{8}{l}{Tax} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-NB-MLE & S8 & year & 5,709.4 & 5,825.2 & 21 & No \\ 
-NB-MLE & S9 & year + sex & 5,711.4 & 5,832.7 & 22 & No \\ 
-NB-MLE & S10 & year + UKR & 5,711.4 & 5,832.7 & 22 & No \\ 
-NB-MLE & S11 & year + sex + UKR & 5,713.4 & 5,840.2 & 23 & No \\ 
-Poisson PMLE & S8 & year & 13,488.5 & 13,598.8 & 20 & No \\ 
-Poisson PMLE & S9 & year + sex & 13,471.5 & 13,587.3 & 21 & No \\ 
-Poisson PMLE & S10 & year + UKR & 13,352.4 & 13,468.2 & 21 & No \\ 
-Poisson PMLE & S11 & year + sex + UKR & 13,118.0 & 13,239.4 & 22 & No \\ 
+NB-MLE & S8 & year & 5,626.1 & 5,741.6 &  &  & 21 \\ 
+NB-MLE & S9 & year + sex & 5,628.1 & 5,749.1 &  &  & 22 \\ 
+NB-MLE & S10 & year + UKR & 5,628.1 & 5,749.1 &  &  & 22 \\ 
+NB-MLE & S11 & year + sex + UKR & 5,630.1 & 5,756.6 &  &  & 23 \\ 
+Poisson PMLE & S8 & year & 13,046.4 & 13,156.3 & 1,252.7 & 10.74 & 20 \\ 
+Poisson PMLE & S9 & year + sex & 13,029.5 & 13,145.0 & 1,252.9 & 10.73 & 21 \\ 
+Poisson PMLE & S10 & year + UKR & 12,909.4 & 13,024.9 & 1,241.7 & 10.37 & 21 \\ 
+Poisson PMLE & S11 & year + sex + UKR & 12,677.9 & 12,798.9 & 1,222.0 & 10.38 & 22 \\ 
 \midrule\addlinespace[2.5pt]
-\multicolumn{7}{l}{PESEL} \\[2.5pt] 
+\multicolumn{8}{l}{PESEL} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-NB-MLE & S8 & year & 5,629.1 & 5,745.2 & 21 & No \\ 
-NB-MLE & S9 & year + sex & 5,628.5 & 5,750.1 & 22 & No \\ 
-NB-MLE & S10 & year + UKR & 5,631.0 & 5,752.6 & 22 & No \\ 
-NB-MLE & S11 & year + sex + UKR & 5,630.4 & 5,757.6 & 23 & No \\ 
-Poisson PMLE & S8 & year & 12,533.8 & 12,644.4 & 20 & No \\ 
-Poisson PMLE & S9 & year + sex & 12,532.0 & 12,648.1 & 21 & No \\ 
-Poisson PMLE & S10 & year + UKR & 12,368.3 & 12,484.4 & 21 & No \\ 
-Poisson PMLE & S11 & year + sex + UKR & 12,295.7 & 12,417.3 & 22 & No \\ 
+NB-MLE & S8 & year & 5,541.7 & 5,657.4 &  &  & 21 \\ 
+NB-MLE & S9 & year + sex & 5,541.3 & 5,662.5 &  &  & 22 \\ 
+NB-MLE & S10 & year + UKR & 5,543.6 & 5,664.9 &  &  & 22 \\ 
+NB-MLE & S11 & year + sex + UKR & 5,543.2 & 5,670.0 &  &  & 23 \\ 
+Poisson PMLE & S8 & year & 12,042.0 & 12,152.2 & 1,800.2 & 6.83 & 20 \\ 
+Poisson PMLE & S9 & year + sex & 12,038.8 & 12,154.5 & 1,801.4 & 6.84 & 21 \\ 
+Poisson PMLE & S10 & year + UKR & 11,881.1 & 11,996.8 & 1,778.3 & 6.66 & 21 \\ 
+Poisson PMLE & S11 & year + sex + UKR & 11,819.4 & 11,940.6 & 1,771.0 & 6.61 & 22 \\ 
 \bottomrule
 \end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: $\hat c$ = Pearson dispersion of the Poisson PMLE fit; QAIC $= -2\ell/\hat c_{S8} + 2(k+1)$ with $\hat c_{S8}$ the dispersion of the adopted specification S8 in each register (ZUS: 9.0; Tax: 10.7; PESEL: 6.8). Not defined for NB-MLE, which models the dispersion.\\
+\end{minipage}
 \end{table}
 
 
+Extending $\beta$ with sex and Ukrainian origin (S9–S11) lowers the Poisson AIC and BIC in every register, but not all QAIC and leaves the NB AIC essentially unchanged (and marginally higher). Because the additional $\beta$ terms improve only the Poisson fit while S8 already minimises or nearly minimises the NB AIC, we keep $\beta$ varying by year only, giving a parsimonious specification that is comparable across both methods and all three registers. Figure~\ref{fig-all-specs-ukr-estimates} shows the comparison to all
+S1-S11 specifications.
 
-
-Extending $\beta$ with sex and Ukrainian origin (S9–S11) lowers the Poisson AIC in every register, but leaves the NB AIC essentially unchanged (and marginally higher). Because the additional $\beta$ terms improve only the Poisson fit while S8 already minimises or nearly minimises the NB AIC, we keep $\beta$ varying by year only, giving a parsimonious specification that is comparable across both methods and all three registers.
-
-\clearpage
-
-\subsection{UKR vs non-UKR alpha trajectories across
-specifications}\label{ukr-vs-non-ukr-alpha-trajectories-across-specifications}
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.9\textwidth]{figs-appen/figA-alpha-ukr-appendix.pdf}
-    \caption{\label{fig-alpha-ukr-appendix}UKR vs non-UKR alpha trajectories
-across three specifications (S4, S8, S11) and three registers. Under S8
-and S11, the sex covariate shifts both trajectories. Under S11, the
-extended beta coefficients change the jointly estimated alpha values. The Poisson
-trajectories are more stable across specifications.}
+    \includegraphics[width=\textwidth]{figs-appen/figA-all-specs-ukr-estimates.pdf}
+    \caption{Estimated unauthorised population by year and origin under specifications S1--S11 (Poisson PMLE, ZUS reference population). Points are cluster fractional-weighted bootstrap medians (R = 999, clustered by country) with 80\% (thick) and 95\% (thin) percentile confidence intervals, on a logarithmic scale. Each panel header gives the specification of $\alpha$ and $\beta$ and the AIC and BIC of the fit. The S8 median (line) and its 80\% interval (grey band) are repeated in every panel as the reference; solid for Ukrainian and dashed for non-Ukrainian origin.}
+    \label{fig-all-specs-ukr-estimates}
 \end{figure}
+
+\clearpage
+
+Despite S11 has the lowest AIC, BIC and QAIC among the $\beta$ specifications, yet we do not adopt it. Figure~\ref{fig-all-specs-ukr-estimates} and Table~\ref{tbl-s11-identification} shows why. 
+
+\begin{table}[ht!]
+\caption{\label{tbl-s11-identification}S8 versus S11 (Poisson PMLE, ZUS reference): fit, the Ukrainian term in the exposure elasticity, the range of the fitted Ukrainian detection rate, and cluster-FWB estimates (median with 95\% percentile CI, thousands) by origin.} 
+\fontsize{8.0pt}{9.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrr}
+\toprule
+Spec & QAIC & $\hat\beta_{\text{UKR}}$ (SE) & $\hat\rho$, UKR cells & $\hat\xi$ UKR 2019 & $\hat\xi$ UKR 2024 & $\hat\xi$ non-UKR 2024 & Failed replicates \\ 
+\midrule\addlinespace[2.5pt]
+S8 & 1,273.3 & -- & 0.01--0.09 & 60 (16, 180) & 11 (4, 24) & 89 (25, 229) & 5 \\ 
+S11 & 1,261.8 & -0.54 (0.51) & 0.23--1.26 & 10 (2, 152) & 1 (0, 19) & 78 (27, 178) & 315 \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: QAIC with $\hat c$ from S8. SE = HC1 robust. $\hat\rho$ is admissible only if at most 1. Failed replicates = bootstrap draws (of 999) in which the fit did not converge. S8: $\alpha \sim$ year $\times$ UKR + sex, $\beta \sim$ year; S11: same $\alpha$, $\beta \sim$ year + sex + UKR.\\
+\end{minipage}
+\end{table}
+
+The coefficient $\beta$ is not insignificant ($-0.54$, SE $0.51$), but it raises the fitted Ukrainian detection rate $\beta$ from at most $0.09$ to between $0.23$ and $1.26$, exceeding one for Ukrainian women in 2024, and correspondingly reduces the Ukrainian estimate from 60 to 10 thousand in 2019 and from 11 to 1 thousand in 2024. Furthermore, 315 of 999 bootstrap replicates fail to converge, against 5 under S8, while the non-Ukrainian estimates are essentially unchanged. The improvement in fit therefore comes from a~part of the model in which the decomposition of $m$ into $\xi$ and $\rho$ is no longer identified. 
 
 \clearpage
 
@@ -691,35 +761,37 @@ direct comparison.
 \midrule\addlinespace[2.5pt]
 \multicolumn{3}{l}{Community anchor ($\hat{\alpha}$)} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-Intercept (2019, female, non-UKR) & 0.822 (0.627, 0.967) & 0.813 (0.708, 0.900) \\ 
-Year 2020 & -0.012 (-0.061, 0.036) & -0.049 (-0.159, 0.051) \\ 
-Year 2021 & -0.010 (-0.110, 0.145) & 0.097 (-0.012, 0.220) \\ 
-Year 2022 & -0.012 (-0.133, 0.148) & 0.012 (-0.178, 0.150) \\ 
-Year 2023 & 0.037 (-0.077, 0.190) & 0.044 (-0.049, 0.148) \\ 
-Year 2024 & 0.014 (-0.073, 0.168) & 0.097 (0.012, 0.190) \\ 
-Ukrainian origin & 0.008 (-0.059, 0.094) & 0.018 (-0.031, 0.075) \\ 
-Male & 0.018 (-0.010, 0.043) & 0.046 (0.015, 0.080) \\ 
-Year 2020 $\times$ Ukrainian & 0.007 (-0.016, 0.026) & 0.023 (-0.020, 0.070) \\ 
-Year 2021 $\times$ Ukrainian & -0.005 (-0.077, 0.040) & -0.056 (-0.120, -0.002) \\ 
-Year 2022 $\times$ Ukrainian & -0.082 (-0.152, -0.030) & -0.122 (-0.196, -0.040) \\ 
-Year 2023 $\times$ Ukrainian & -0.158 (-0.224, -0.112) & -0.187 (-0.243, -0.143) \\ 
-Year 2024 $\times$ Ukrainian & -0.177 (-0.242, -0.145) & -0.244 (-0.297, -0.201) \\ 
+Intercept (2019, female, non-UKR) & 0.816 (0.617, 0.959) & 0.819 (0.724, 0.911) \\ 
+Year 2020 & -0.016 (-0.058, 0.024) & -0.050 (-0.168, 0.039) \\ 
+Year 2021 & -0.013 (-0.114, 0.121) & 0.086 (-0.021, 0.212) \\ 
+Year 2022 & -0.014 (-0.128, 0.147) & 0.003 (-0.168, 0.139) \\ 
+Year 2023 & 0.035 (-0.077, 0.169) & 0.038 (-0.060, 0.137) \\ 
+Year 2024 & 0.012 (-0.073, 0.147) & 0.086 (-0.001, 0.177) \\ 
+Ukrainian origin & 0.004 (-0.056, 0.094) & 0.013 (-0.039, 0.068) \\ 
+Male & 0.017 (-0.010, 0.042) & 0.043 (0.011, 0.074) \\ 
+Year 2020 $\times$ Ukrainian & 0.009 (-0.011, 0.027) & 0.024 (-0.013, 0.075) \\ 
+Year 2021 $\times$ Ukrainian & -0.000 (-0.069, 0.043) & -0.048 (-0.114, 0.007) \\ 
+Year 2022 $\times$ Ukrainian & -0.077 (-0.142, -0.028) & -0.116 (-0.184, -0.036) \\ 
+Year 2023 $\times$ Ukrainian & -0.154 (-0.214, -0.111) & -0.182 (-0.233, -0.132) \\ 
+Year 2024 $\times$ Ukrainian & -0.174 (-0.231, -0.143) & -0.237 (-0.287, -0.192) \\ 
 \midrule\addlinespace[2.5pt]
 \multicolumn{3}{l}{Exposure elasticity ($\hat{\beta}$)} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-Intercept (2019) & 0.730 (0.360, 1.220) & 0.887 (0.653, 1.183) \\ 
-Year 2020 & 0.166 (0.057, 0.307) & 0.132 (-0.097, 0.368) \\ 
-Year 2021 & 0.246 (0.023, 0.570) & 0.516 (0.290, 0.805) \\ 
-Year 2022 & 0.208 (-0.064, 0.539) & 0.261 (-0.150, 0.582) \\ 
-Year 2023 & 0.193 (-0.072, 0.500) & 0.240 (0.035, 0.493) \\ 
-Year 2024 & -0.009 (-0.219, 0.290) & 0.180 (0.002, 0.368) \\ 
+Intercept (2019) & 0.718 (0.342, 1.155) & 0.863 (0.661, 1.202) \\ 
+Year 2020 & 0.155 (0.058, 0.275) & 0.128 (-0.108, 0.323) \\ 
+Year 2021 & 0.253 (0.026, 0.539) & 0.492 (0.270, 0.764) \\ 
+Year 2022 & 0.210 (-0.043, 0.513) & 0.251 (-0.120, 0.540) \\ 
+Year 2023 & 0.199 (-0.053, 0.473) & 0.228 (0.029, 0.431) \\ 
+Year 2024 & -0.007 (-0.211, 0.292) & 0.159 (-0.010, 0.348) \\ 
 \midrule\addlinespace[2.5pt]
 \multicolumn{3}{l}{Fit statistics} \\[2.5pt] 
 \midrule\addlinespace[2.5pt]
-Num.Obs. & 1,382 & 1,382 \\ 
-AIC & 11535.6 & 5265.2 \\ 
-BIC & 11640.2 & 5375.0 \\ 
-Log.Lik. & -5747.784 & -2611.580 \\ 
+Num.Obs. & 1,354 & 1,354 \\ 
+AIC & 11176.0 & 5186.0 \\ 
+BIC & 11280.2 & 5295.4 \\ 
+QAIC & 1273.3 &  \\ 
+Dispersion ($\hat c$) & 9.04 &  \\ 
+Log.Lik. & -5568.003 & -2572.003 \\ 
 \bottomrule
 \end{tabular*}
 \end{table}
@@ -734,7 +806,7 @@ Table~\ref{tbl-alpha-cells} shows the actual $\alpha$ values per cell
 specifications: Poisson PML, unconstrained NB, and constrained NB
 (back-transformed via $\text{logit}^{-1}$). Reporting all three on a
 common scale makes the constrained-vs-unconstrained NB comparison
-transparent: the constraint barely binds on Polish data (the
+clear: the constraint barely binds on Polish data (the
 unconstrained NB already produces $\alpha < 1$ in every cell). The
 unconstrained NB nonetheless pushes $\alpha$ close to 1 for
 non-Ukrainian males in recent years (0.96 in 2024), which is the primary
@@ -743,36 +815,36 @@ text.
 
 
 \begin{table}[ht!]
-\caption{\label{tbl-alpha-cells}$\alpha$ values per (year, Ukrainian origin, sex) cell under three specifications. Constrained NB back-transformed via logit-inverse.} 
+\caption{\label{tbl-alpha-cells}Alpha values per (year, Ukrainian origin, sex) cell under three specifications. Constrained NB back-transformed via logit-inverse.} 
 \fontsize{8.0pt}{10.0pt}\selectfont
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rllrrr}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rlcrrr}
 \toprule
 Year & Origin & Sex & NB & NB (constrained) & Poisson \\ 
 \midrule\addlinespace[2.5pt]
-2019 & UKR & Females & 0.8311 & 0.8391 & 0.8297 \\ 
-2019 & UKR & Males & 0.8758 & 0.8896 & 0.8406 \\ 
-2019 & Non-UKR & Females & 0.8137 & 0.8416 & 0.8222 \\ 
-2019 & Non-UKR & Males & 0.8583 & 0.8914 & 0.8331 \\ 
-2020 & UKR & Females & 0.8032 & 0.8095 & 0.8238 \\ 
-2020 & UKR & Males & 0.8478 & 0.8679 & 0.8348 \\ 
-2020 & Non-UKR & Females & 0.7618 & 0.7575 & 0.8072 \\ 
-2020 & Non-UKR & Males & 0.8065 & 0.8283 & 0.8182 \\ 
-2021 & UKR & Females & 0.8699 & 0.8597 & 0.8117 \\ 
-2021 & UKR & Males & 0.9146 & 0.9045 & 0.8226 \\ 
-2021 & Non-UKR & Females & 0.9075 & 0.8840 & 0.8040 \\ 
-2021 & Non-UKR & Males & 0.9522 & 0.9217 & 0.8150 \\ 
-2022 & UKR & Females & 0.7095 & 0.6669 & 0.7383 \\ 
-2022 & UKR & Males & 0.7542 & 0.7557 & 0.7493 \\ 
-2022 & Non-UKR & Females & 0.8090 & 0.7638 & 0.8072 \\ 
-2022 & Non-UKR & Males & 0.8537 & 0.8333 & 0.8182 \\ 
-2023 & UKR & Females & 0.6871 & 0.6626 & 0.7091 \\ 
-2023 & UKR & Males & 0.7318 & 0.7522 & 0.7201 \\ 
-2023 & Non-UKR & Females & 0.8576 & 0.8639 & 0.8554 \\ 
-2023 & Non-UKR & Males & 0.9023 & 0.9075 & 0.8663 \\ 
-2024 & UKR & Females & 0.6829 & 0.6596 & 0.6642 \\ 
-2024 & UKR & Males & 0.7276 & 0.7496 & 0.6751 \\ 
-2024 & Non-UKR & Females & 0.9104 & 0.9430 & 0.8320 \\ 
-2024 & Non-UKR & Males & 0.9551 & 0.9623 & 0.8429 \\ 
+2019 & UKR & Females & 0.8302 & 0.8404 & 0.8239 \\ 
+2019 & UKR & Males & 0.8734 & 0.8880 & 0.8349 \\ 
+2019 & Non-UKR & Females & 0.8171 & 0.8319 & 0.8180 \\ 
+2019 & Non-UKR & Males & 0.8603 & 0.8817 & 0.8290 \\ 
+2020 & UKR & Females & 0.8021 & 0.8067 & 0.8158 \\ 
+2020 & UKR & Males & 0.8453 & 0.8627 & 0.8268 \\ 
+2020 & Non-UKR & Females & 0.7644 & 0.7635 & 0.7991 \\ 
+2020 & Non-UKR & Males & 0.8075 & 0.8294 & 0.8101 \\ 
+2021 & UKR & Females & 0.8666 & 0.8539 & 0.8071 \\ 
+2021 & UKR & Males & 0.9098 & 0.8980 & 0.8181 \\ 
+2021 & Non-UKR & Females & 0.9021 & 0.8796 & 0.7983 \\ 
+2021 & Non-UKR & Males & 0.9452 & 0.9167 & 0.8093 \\ 
+2022 & UKR & Females & 0.7080 & 0.6684 & 0.7355 \\ 
+2022 & UKR & Males & 0.7512 & 0.7522 & 0.7465 \\ 
+2022 & Non-UKR & Females & 0.8070 & 0.7628 & 0.8038 \\ 
+2022 & Non-UKR & Males & 0.8502 & 0.8289 & 0.8148 \\ 
+2023 & UKR & Females & 0.6845 & 0.6607 & 0.7062 \\ 
+2023 & UKR & Males & 0.7277 & 0.7458 & 0.7172 \\ 
+2023 & Non-UKR & Females & 0.8543 & 0.8594 & 0.8518 \\ 
+2023 & Non-UKR & Males & 0.8974 & 0.9020 & 0.8628 \\ 
+2024 & UKR & Females & 0.6781 & 0.6579 & 0.6610 \\ 
+2024 & UKR & Males & 0.7213 & 0.7434 & 0.6720 \\ 
+2024 & Non-UKR & Females & 0.9030 & 0.9389 & 0.8281 \\ 
+2024 & Non-UKR & Males & 0.9462 & 0.9586 & 0.8391 \\ 
 \bottomrule
 \end{tabular*}
 \end{table}
@@ -829,40 +901,39 @@ Year & Origin & Sex & NB & NB (constrained) & Poisson \\
   estimator and NB as a sensitivity bound.
 
 \clearpage
-\section{Estimates across different auxiliary counts ($n$)}\label{sec-appendix-auxiliary-counts}
+\subsection{Estimates across different auxiliary counts ($n$)}\label{sec-appendix-auxiliary-counts}
 
-S8 uses the police count as the auxiliary detection variable $n$. We refit S8 against the ZUS reference, replacing $n$ with each of three counts: all adult police records (police total), the subset whose subject held a PESEL number (police PESEL ID), and prison records. The three datasets share the same $m$, $N$ and cells, so any change in $\hat\xi$ comes from the auxiliary source alone. Table~\ref{tbl-nsource-aux} reports the two features that set how informative each $n$ is. All three correlate positively with $m$, but the rank correlation falls from $0.73$ (police total) to $0.62$ (prison). The detection slope $\beta$ is identified only from cells with $m_{it}n_{it}>0$, and the zero share rises from $30\%/69\%$ (males/females) for police total to $59\%/91\%$ for prison. With $91\%$ of female prison cells empty, the female slope rests on under a tenth of the data, the small-counts regime that destabilises NB-MLE (Section~\ref{sec-simulation}).
+We refit S8 against the ZUS reference, replacing $n$ with each of three counts: all adult police records (police total), the subset whose subject held a PESEL number (police PESEL ID), and prison records. The three datasets share the same $m$, $N$ and cells, so any change in $\hat\xi$ comes from the auxiliary source alone. 
 
+Table~\ref{tbl-nsource-aux} reports how informative each $n$ is. All three correlate positively with $m$, but the Spearman rank correlation falls from $0.75$ (police total) to $0.63$ (prison). The detection slope $\beta$ is identified only from cells with $m_{it}n_{it}>0$, and the zero share rises from $30\%/69\%$ (males/females) for police total to $58\%/91\%$ for prison. With $91\%$ of female prison cells empty, the small-counts destabilise NB-MLE (Section~\ref{sec-simulation}).
 
-Poisson PMLE, our primary estimator, is insensitive to this choice. Its yearly trajectory is stable across the three counts, with summed totals of $503$--$591$ thousand (Table~\ref{tbl-nsource-fit}) and broadly overlapping $80\%$ and $95\%$ percentile intervals (Figure~\ref{fig-nsource-year}), and the same agreement holds by Ukrainian origin (Figure~\ref{fig-nsource-ukr}). NB-MLE attains lower AIC and BIC, but, as in the main text, this reflects its accommodation of over-dispersion rather than a better mean structure: under all three counts it reproduces the implausible 2021 and 2024 spikes, so we report it only as a sensitivity bound. The one visible exception is the PESEL-ID estimate for 2021, which drops across all groups (Figures~\ref{fig-nsource-year}--\ref{fig-nsource-sex}): its yearly elasticity $\beta_{2021}$ flattens while the PESEL count rises relative to apprehensions, inflating the fitted detection rate and shrinking $\hat\xi = m/\rho$, and because $\beta_t$ is common across communities the dip is uniform over origin and sex; it rests on the year's fewest identifying cells ($m_{it}n_{it}>0$), so we read it as a small-counts artefact rather than a real decline. Away from those 2021 and 2024 spikes, the NB-MLE medians lie within the Poisson $95\%$ intervals, so the reported estimates are robust in this respect. The sex split (Figure~\ref{fig-nsource-sex}) is the stress test: female estimates are several times smaller and carry the widest relative intervals, the prison-female series is the least stable, and males drive the totals. The S8 estimates by Poisson PMLE thus hold across all three detection counts; prison, the weakest and sparsest proxy, is a corroborating check only.
+Poisson PMLE is insensitive to this choice. Its yearly trajectory is stable across the three counts, broadly overlapping $80\%$ and $95\%$ percentile intervals (Figure~\ref{fig-nsource-year}), and the same agreement holds by Ukrainian origin (Figure~\ref{fig-nsource-ukr}). NB-MLE under all three counts it reproduces the implausible 2021 and 2024 spikes, so we report it only as a sensitivity bound. The one visible exception is the PESEL-ID estimate for 2021, which drops across all groups.
   
  \begin{table}[H]
-  \centering
-  \caption{\label{tbl-nsource-aux}Auxiliary detection counts used in the S8 sensitivity check: Pearson and Spearman correlation with the apprehension count $m$ across
-  community--year--sex cells, and the share of cells with a zero auxiliary count by sex.}
-  \begin{tabular}{lrrrr} \toprule
-  Auxiliary count ($n$) & Pearson $r(m,n)$ & Spearman $\rho(m,n)$ & Zeros, Females (\%) & Zeros, Males (\%) \\ \midrule
-  Police (total) & 0.71 & 0.73 & 69 & 30 \\
-  Police (PESEL ID) & 0.53 & 0.71 & 79 & 37 \\
-  Prison & 0.66 & 0.62 & 91 & 59 \\
-  \bottomrule
-  \end{tabular}
-  \end{table}
+\centering
+\caption{\label{tbl-nsource-aux}Auxiliary detection counts used in the S8 sensitivity check: Pearson and Spearman correlation with the apprehension count $m$ across community--year--sex cells, and the share of cells with a zero auxiliary count by sex.}
+\begin{tabular}{lrrrr} \toprule
+Auxiliary count ($n$) & Pearson $r(m,n)$ & Spearman $\rho(m,n)$ & Zeros, Females (\%) & Zeros, Males (\%) \\ \midrule
+Police (total) & 0.71 & 0.75 & 69 & 30 \\
+Police (PESEL ID) & 0.53 & 0.73 & 79 & 37 \\
+Prison & 0.66 & 0.63 & 91 & 58 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
   
   \begin{table}[H]
-  \centering
-  \caption{\label{tbl-nsource-fit}Model fit and estimated population size under S8 with three auxiliary detection counts. AIC and BIC for Poisson PMLE and NB-MLE; $\hat\xi$ is the sum of the yearly point estimates (in thousands). Lower NB-MLE AIC/BIC reflects over-dispersion accommodation and is not grounds for preferring it
-  (Section~\ref{sec-cov-selection}).}
-  \begin{tabular}{lrrrr|rr} \toprule
-  & \multicolumn{2}{c}{Poisson PMLE} & \multicolumn{2}{c|}{NB-MLE} & \multicolumn{2}{c}{$\hat\xi$ (000s)} \\
-  Auxiliary count ($n$) & AIC & BIC & AIC & BIC & Po & NB \\ \midrule
-  Police (total) & 11,536 & 11,640 & 5,265 & 5,375 & 591 & 997 \\
-  Police (PESEL ID) & 13,214 & 13,319 & 5,438 & 5,548 & 503 & 777 \\
-  Prison & 13,510 & 13,614 & 5,355 & 5,465 & 583 & 894 \\
-  \bottomrule
-  \end{tabular}
-  \end{table}
+\centering
+\caption{\label{tbl-nsource-fit}Model fit and estimated population size under S8 with three auxiliary detection counts. AIC, BIC and QAIC for Poisson PMLE, AIC and BIC for NB-MLE; $\hat c$ is the Pearson dispersion of each Poisson PMLE fit and QAIC $= -2\ell/\hat c + 2(K+1)$ uses the dispersion of the primary fit, police total ($\hat c = 9.0$), for all three sources. $\hat\xi$ is the sum of the yearly point estimates (in thousands). Lower NB-MLE AIC/BIC reflects over-dispersion accommodation and is not grounds for preferring it (Section~\ref{sec-cov-selection}).}
+\begin{tabular}{lrrrrrr|rr} \toprule
+& \multicolumn{4}{c}{Poisson PMLE} & \multicolumn{2}{c|}{NB-MLE} & \multicolumn{2}{c}{$\hat\xi$ (000s)} \\
+Auxiliary count ($n$) & AIC & BIC & QAIC & $\hat c$ & AIC & BIC & Po & NB \\ \midrule
+Police (total) & 11,176 & 11,280 & 1,273 & 9.0 & 5,186 & 5,295 & 560 & 948 \\
+Police (PESEL ID) & 12,954 & 13,058 & 1,470 & 13.7 & 5,374 & 5,483 & 473 & 761 \\
+Prison & 13,241 & 13,345 & 1,502 & 10.8 & 5,288 & 5,398 & 552 & 878 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
   \begin{figure}[ht!]
       \centering
@@ -904,8 +975,7 @@ Poisson, leverage is concentrated in Belarus ($+64\%$) and Georgia
 ($-49\%$), with no other country above about $6\%$. Under NB the
 effects are smaller and more spread out, the largest being the
 unknown/stateless group ($+13\%$), Vietnam ($-9\%$), and Georgia
-($-8\%$). The main-text cluster fractional-weighted bootstrap clusters
-by country of origin precisely to absorb this dependence.
+($-8\%$). Cluster bootstrap SE takes this into account.
 
 \begin{figure}[ht!]
     \centering
@@ -916,11 +986,6 @@ origin under S8: change in $\hat\xi$ when each country is dropped, top
 NB influence is smaller and more evenly spread, reflecting its quadratic
 variance function.}
 \end{figure}
-
-Because Ukraine is the only country in the UKR stratum, country-level
-LOO is undefined for it. The observation-level analysis below instead
-drops individual country-by-year-by-sex cells, so Ukrainian cells can be
-removed one at a time. 
 
 \clearpage
 
@@ -935,8 +1000,7 @@ country-by-year-by-sex cell individually.
     \includegraphics[width=0.9\textwidth]{figs-appen/figA-loo-obs.pdf}
     \caption{\label{fig-loo-obs}Observation-level LOO sensitivity (S8),
 top 30 cells. Under Poisson, influence tracks $\mu$ (large cells
-dominate); under NB, the variance function $V(\mu) = \mu + \mu^2/\theta$
-caps large cells and lifts small-$\mu$ outliers.}
+dominate); under NB, the variance function $V(\mu) = \mu + \mu^2/\theta$ decrease large cells and lifts small-$\mu$ outliers.}
 \end{figure}
 
 Figure~\ref{fig-loo-obs} ranks individual cells by their influence on
@@ -961,9 +1025,7 @@ $\gamma$--$\theta$ confounding from the simulation study.}
 
 Under Poisson, the likelihood weight of cell $i$ scales with $\mu_i$,
 so large cells (high $N$ and $m$) dominate. Under NB, the variance
-function $V(\mu) = \mu + \mu^2/\theta$ caps the weight of high-$\mu$
-cells and gives relatively more leverage to small-$\mu$ cells (low
-$N$ but $m > 0$). This reflects the $\gamma$--$\theta$
+function $V(\mu) = \mu + \mu^2/\theta$ decrease the weight of high-$\mu$ cells and gives relatively more leverage to small-$\mu$ cells (low $N$ but $m > 0$). This reflects the $\gamma$--$\theta$
 confounding identified in the simulation study
 (Section~\ref{sec-appendix-sim-study}): small-$\mu$ cells are where
 $\gamma$ is hardest to separate from overdispersion.
@@ -1006,26 +1068,26 @@ $\alpha = \text{year} \times \text{UKR} + \text{sex}$ and
 $\beta = \text{year}$ (S8) and varying only the gamma specification.
 
 \begin{table}[ht!]
-\caption{\label{tbl-cov-gamma-aic}AIC and BIC by gamma specification and estimation method. All models use the S8 specification for alpha and beta with the ZUS reference population.} 
+\caption{\label{tbl-cov-gamma-aic}AIC, BIC and QAIC by gamma specification and estimation method. All models use the S8 specification for alpha and beta with the ZUS reference population.} 
 \fontsize{8.0pt}{10.0pt}\selectfont
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrr}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrrr}
 \toprule
- & \multicolumn{3}{c}{{Poisson PMLE}} & \multicolumn{3}{c}{{NB-MLE}} \\ 
-\cmidrule(lr){2-4} \cmidrule(lr){5-7}
-$\gamma$ specification & AIC & BIC & $k\_\gamma$ & AIC & BIC & $k\_\gamma$ \\ 
+ & \multicolumn{5}{c}{{Poisson PMLE}} & \multicolumn{3}{c}{{NB-MLE}} \\ 
+\cmidrule(lr){2-6} \cmidrule(lr){7-9}
+$\gamma$ specification & AIC & BIC & QAIC & $\hat c$ & $k_\gamma$ & AIC & BIC & $k_\gamma$ \\ 
 \midrule\addlinespace[2.5pt]
-constant & 11,535.6 & 11,640.2 & 1 & 5,265.2 & 5,375.0 & 1 \\ 
-$\gamma \sim \text{year}$ & 11,313.6 & 11,444.3 & 6 & 5,260.1 & 5,396.1 & 6 \\ 
-$\gamma \sim \text{sex}$ & 11,526.0 & 11,635.9 & 2 & 5,265.7 & 5,380.8 & 2 \\ 
-$\gamma \sim \text{UKR}$ & 11,512.1 & 11,622.0 & 2 & 5,267.0 & 5,382.1 & 2 \\ 
-$\gamma \sim \text{year} + \text{UKR}$ & 11,278.7 & 11,414.7 & 12 & 5,262.1 & 5,403.3 & 12 \\ 
-$\gamma \sim \text{year} + \text{sex}$ & 11,142.6 & 11,278.6 & 12 & 5,259.8 & 5,401.0 & 12 \\ 
-$\gamma \sim \text{year} + \text{sex} + \text{UKR}$ & 11,095.8 & 11,237.1 & 24 & 5,261.8 & 5,408.3 & 24 \\ 
+constant & 11,176.0 & 11,280.2 & 1,273.3 & 9.04 & 1 & 5,186.0 & 5,295.4 & 1 \\ 
+$\gamma \sim \text{year}$ & 10,976.4 & 11,106.6 & 1,260.1 & 9.71 & 6 & 5,179.3 & 5,314.8 & 6 \\ 
+$\gamma \sim \text{sex}$ & 11,169.3 & 11,278.7 & 1,274.3 & 8.95 & 2 & 5,186.5 & 5,301.1 & 2 \\ 
+$\gamma \sim \text{UKR}$ & 11,151.2 & 11,260.6 & 1,272.3 & 8.98 & 2 & 5,187.9 & 5,302.5 & 2 \\ 
+$\gamma \sim \text{year} + \text{UKR}$ & 10,935.5 & 11,071.0 & 1,257.4 & 9.72 & 7 & 5,181.3 & 5,322.0 & 7 \\ 
+$\gamma \sim \text{year} + \text{sex}$ & 10,816.4 & 10,951.9 & 1,244.2 & 9.00 & 7 & 5,178.9 & 5,319.6 & 7 \\ 
+$\gamma \sim \text{year} + \text{sex} + \text{UKR}$ & 10,763.6 & 10,904.3 & 1,240.1 & 8.80 & 8 & 5,180.9 & 5,326.8 & 8 \\ 
 \bottomrule
 \end{tabular*}
 \begin{minipage}{\linewidth}
 \vspace{.05em}
-Note: S8 specification: $\alpha \sim \text{year} \times \text{UKR} + \text{sex}$, $\beta \sim \text{year}$. ZUS reference population. $k\_\gamma$ = number of gamma parameters. Lower AIC/BIC is better.\\
+Note: S8 specification: $\alpha \sim \text{year} \times \text{UKR} + \text{sex}$, $\beta \sim \text{year}$. ZUS reference population. $k_\gamma$ = number of gamma parameters; $\hat c$ = Pearson dispersion of the Poisson PMLE fit; QAIC $= -2\ell/\hat c_{S8} + 2(K+1)$ with $\hat c_{S8}$ from the adopted specification, constant $\gamma$ ($\hat c_{S8} = 9.0$). Lower AIC/BIC/QAIC is better.\\
 \end{minipage}
 \end{table}
 
@@ -1072,8 +1134,7 @@ population by Ukrainian status: constant vs covariate-varying
 $\gamma$ (delta-method 95\% CI).}
 \end{figure}
   
-We keep constant $\gamma$ in the main results because it is
-parsimonious and well-identified under Poisson, leaves the NB fit (and
+We keep constant $\gamma$ in the main results because it is well-identified under Poisson, leaves the NB fit (and
 hence the Poisson--NB comparison) unchanged, and the resulting changes
 in population size fall within the bootstrap intervals.
 
@@ -1109,94 +1170,144 @@ in population size fall within the bootstrap intervals.
 
 \section{Simulation studies}\label{sec-appendix-sim-study}
 
+
+\subsection{Details about the simulation}\label{sec-simulation}
+
+We assess the properties of estimation methods by simulations motivated from the 2024 Polish data. The main objective is to choose the suitable estimator for the application later. 
+
+For each replication, we generate $(N_i, n_i, m_i)$ independently across the communities, where the number of communities is fixed at 100. First, let $N_i \sim \text{LogNormal}(5.5, 2.75)$, truncated to $N_i \geq 3$. Next, generate $n_i$ from either the Poisson or NB distribution, where $\log \mathbb{E}(n_i \mid N_i) = c_0 + c_1 \log N_i$, and the parameters of either distribution are derived from the police data $n_i$ and the ZUS register $N_i$ --- see Section \ref{auxiliary-detection-covariate} for details of these data sources. Finally, the mean of $m_i$ is given by \eqref{eq-xi-form} and \eqref{eq-rho-form} with $(\alpha, \beta, \gamma) = (0.7, 0.5, 0.005)$, and $m_i$ follows either the Poisson or NB distribution, derived from the Polish data --- see Supplementary Materials Section~\ref{sec-appendix-sim-study} for the details. Notice that the dispersion of $m_i$ under repeated simulation of $(N_i, n_i, m_i)$ in this way is actually larger than that observed in the 2024 Polish data, because $(N_i,n_i)$ are not constants in the simulation.
+ 
+Crossing the two data-generating processes of $n_i$ and $m_i$ yields four scenarios: 
+Po($n$)--Po($m$), Po($n$)--NB($m$), NB($n$)--Po($m$), NB($n$)--NB($m$). 
+In addition, we consider two estimation setups. 
+\begin{itemize} 
+\item In Setup-I, we apply regrouping to create an ad hoc `rest' community from all the data points with $m_i n_i =0$, such that the detection intensity is modeled without the offset, i.e. $\gamma \equiv 0$ in \eqref{eq-rho-form}. Notice that the mean structure of Poisson PMLE or NB-MLE is misspecified in this setup, since all the data are generated with $\gamma =0.005$. 
+\item In Setup-II, we allow for non-trivial offset $\gamma >0$ in \eqref{eq-rho-form}, such that the communities with $m_i n_i =0$ are used directly in estimation. Notice that the mean structure of Poisson PMLE or NB-MLE is correct in this setup, but neither the Poisson nor the NB likelihood is correct in any scenario since $(N_i,n_i)$ are not constants in the simulation.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{\label{tbl-sim-summary}Simulation results, 2000 replications. Bias relative to $\xi = \sum_{i=1}^{100} \xi_i$. RMSE, root mean squared error. Coverage of $\xi$. Confidence interval (CI) of $\xi$ by \eqref{eq-xi-confint}, CI width relative to $\xi$.}
+\begin{tabular}{llrrrr} \toprule
+& \multicolumn{5}{c}{Setup-I: $\gamma =0$, regrouped `rest' community to avoid $m_i n_i =0$} \\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po($n$)-Po($m$) & Po-PMLE & -0.4 & 7,599 & 95.7 & 54.2 \\
+Po($n$)-Po($m$) & NB-MLE & -2.1 & 7,752 & 93.5 & 47.4 \\
+NB($n$)-NB($m$) & Po-PMLE & 11.6 & 103,375 & 79.6 & 253.3 \\
+NB($n$)-NB($m$) & NB-MLE & -31.1 & 19,604 & 70.6 & 112.5 \\
+\bottomrule
+& \multicolumn{5}{c}{Setup-II: $\gamma >0$, communities with $m_i n_i =0$ allowed}\\ \cline{2-6}
+Data & Estimator & Bias (\%) & RMSE & Coverage (\%) & CI width (\%)\\ \midrule
+Po($n$)-Po($m$) & Po-PMLE & -0.4 & 3,899 & 95.1 & 40.3 \\
+Po($n$)-Po($m$) & NB-MLE & -3.9 & 9,076 & 77.4 & 33.7 \\
+NB($n$)-NB($m$) & Po-PMLE & 70.6 & 144,046 & 88.2 & 422.5 \\
+NB($n$)-NB($m$) & NB-MLE & 10.9 & 24,405 & 91.8 & 178.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Some simulation results based on 2000 replications are highlighted in Table \ref{tbl-sim-summary}; see Supplementary Materials Section~\ref{sec-appendix-sim1}--\ref{sec-appendix-sim-summary} for the full results. Both the Poisson PMLE (``Po-PMLE'' in Table \ref{tbl-sim-summary}) and the NB-MLE are calculated for each data generation scenario and estimation setup. 
+
+Consider the Poisson PMLE. First, given Po($n$)--Po($m$), it is essentially unbiased in Setup-II and has the correct coverage at the 95\% level; although the mean structure is misspecified in Setup-I, it causes little bias given an offset of the magnitude $\gamma =0.005$, such that the larger RMSE in Setup-I is rather due to the loss of efficiency from regrouping to create the `rest' community. 
+
+Next, given NB($n$)--NB($m$), Poisson PMLE does suffer from bias as well as a~very large variance (either in terms of the CI width or RMSE). This serves as a~warning that, despite the asymptotic consistency, the performance of Poisson PMLE can deteriorate greatly given small sample size, such as 100 here, and excessive over-dispersion, such as by LogN($N$)-NB($n$)--NB($m$). 
+
+Consider now the NB-MLE. First, given Po($n$)--Po($m$), it is biased despite the correct mean structure in Setup-II: in fact, the low coverage of 77.4\% suggests that the bias is relatively large compared to the standard error. It suffers a~loss of efficiency in Setup-I due to regrouping, just like Poisson PMLE. Meanwhile, its bias is somewhat reduced from -3.9\% in Setup-II to -2.1\% Setup-I, which suggests that the sensitivity of estimating $\gamma$ (in Setup-II) can possibly be more damaging to NB-MLE than mean-mis-specification (in Setup-I) which avoids the need to estimate $\gamma$. 
+
+Next, given NB($n$)–NB($m$), NB-MLE also suffers from bias but with a much smaller variance than Poisson PMLE; its bias is smaller in Setup-II (10.9\% vs -31.1\%) yet still large enough to lower the coverage, reflecting the sensitivity of estimating $\gamma$. This sensitivity is most severe when the data carry no over-dispersion: under Po($n$)–Po($m$), NB-MLE overestimates $\gamma = 0.005$ by a~factor of 24 ($\hat{\gamma}$ averages 0.12, hitting the upper boundary in 16\% of replications).
+
+In summary, these results point to the following choices for the application to the Polish data: (i) allow offset $\gamma >0$ to avoid ad hoc regrouping of data over time, and the associated loss of efficiency; (ii) adopt Poisson PMLE as the primary estimator, but be aware of any excessive over-dispersion; (iii) NB-MLE is unstable due to offset-Gamma confounding and small-counts sensitivity, although it can still provide sensitivity checks with or without non-trivial offset $\gamma$, i.e. whether the NB-MLE is included in the confidence intervals based on the Poisson PMLE. 
+
+
 We conduct two simulation studies to assess the finite-sample properties
 of the $\hat\xi$ estimator under known data-generating processes
 (DGPs). The summary in Section~\ref{sec-simulation} gives the main
 structure; here we report the full parameter values and the calibration
 procedure, along with both simulation studies in detail.
 
-\subsection{Data-generating process}\label{sec-appendix-sim-dgp}
+% \subsection{Detailed information about the simulation}\label{sec-appendix-sim-dgp}
 
-For each replicate the simulator draws $C = 100$ communities and
-proceeds in three stages.
+% For each replicate the simulator draws $C = 100$ communities and
+% proceeds in three stages.
 
-\textbf{Stage 1: reference population.} Each community $i$ is assigned
-a reference population size $N_i$ drawn from \[
-N_i \sim \text{LogNormal}(\mu_N = 5.5, \, \sigma_N = 2.75), \quad N_i \geq 3,
-\] with the lower truncation at 3 to avoid degenerate small-$N$ cases.
-The lognormal parameters are chosen so that the simulated distribution
-of $\log N_i$ matches the empirical distribution of $\log N_{it}$ in
-the 2024 Polish ZUS panel.
+% \textbf{Stage 1: reference population.} Each community $i$ is assigned
+% a reference population size $N_i$ drawn from \[
+% N_i \sim \text{LogNormal}(\mu_N = 5.5, \, \sigma_N = 2.75), \quad N_i \geq 3,
+% \] with the lower truncation at 3 to avoid degenerate small-$N$ cases.
+% The lognormal parameters are chosen so that the simulated distribution
+% of $\log N_i$ matches the empirical distribution of $\log N_{it}$ in
+% the 2024 Polish ZUS panel.
 
-\textbf{Stage 2: auxiliary count.} Given $N_i$, the auxiliary count
-$n_i$ is drawn from a count-regression model with log-linear mean \[
-\log \text{E}(n_i \mid N_i) = c_0 + c_1 \log N_i,
-\] under either Poisson ---
-$n_i \sim \text{Poisson}(\exp(c_0 + c_1 \log N_i))$ --- or Negative
-Binomial  ---
-$n_i \sim \text{NB}(\text{mean} = \exp(c_0 + c_1 \log N_i), \text{size} = \phi_n)$ distribution.
-The intercept and slope are calibrated to the empirical Police-on-ZUS
-regression in 2024:
+% \textbf{Stage 2: auxiliary count.} Given $N_i$, the auxiliary count
+% $n_i$ is drawn from a count-regression model with log-linear mean \[
+% \log \text{E}(n_i \mid N_i) = c_0 + c_1 \log N_i,
+% \] under either Poisson ---
+% $n_i \sim \text{Poisson}(\exp(c_0 + c_1 \log N_i))$ --- or Negative
+% Binomial  ---
+% $n_i \sim \text{NB}(\text{mean} = \exp(c_0 + c_1 \log N_i), \text{size} = \phi_n)$ distribution.
+% The intercept and slope are calibrated to the empirical Police-on-ZUS
+% regression in 2024:
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}lll@{}}
-\toprule\noalign{}
-Parameter & Poisson DGP & Negative Binomial DGP \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Intercept $c_0$ & $-3.8073$ & $-4.0507$ \\
-Slope $c_1$ & $0.9226$ & $0.9397$ \\
-Dispersion $\phi_n$ & --- & $1.887$ \\
-\end{longtable}
-}
+% {\def\LTcaptype{none} % do not increment counter
+% \begin{longtable}[]{@{}lll@{}}
+% \toprule\noalign{}
+% Parameter & Poisson DGP & Negative Binomial DGP \\
+% \midrule\noalign{}
+% \endhead
+% \bottomrule\noalign{}
+% \endlastfoot
+% Intercept $c_0$ & $-3.8073$ & $-4.0507$ \\
+% Slope $c_1$ & $0.9226$ & $0.9397$ \\
+% Dispersion $\phi_n$ & --- & $1.887$ \\
+% \end{longtable}
+% }
 
-The slopes are close to one because the Police-on-ZUS relationship is
-approximately proportional in the 2024 cross-section; the small
-differences across the two DGPs reflect that the Poisson and NB
-calibrations are fit separately to the same data.
+% The slopes are close to one because the Police-on-ZUS relationship is
+% approximately proportional in the 2024 cross-section; the small
+% differences across the two DGPs reflect that the Poisson and NB
+% calibrations are fit separately to the same data.
 
-\textbf{Stage 3: observed count.} Given $N_i$ and $n_i$, the
-observed apprehension count $m_i$ follows the same power-law mean
-structure that the estimators target: \[
-\text{E}(m_i \mid N_i, n_i) = N_i^{\alpha} \left(\gamma + \frac{n_i}{N_i}\right)^{\beta}, \quad \alpha = 0.70, \, \beta = 0.50, \, \gamma = 0.005.
-\] Again, $m_i$ is drawn under either Poisson ---
-$m_i \sim \text{Poisson}(\mu_{m,i})$ --- or Negative Binomial
----
-$m_i \sim \text{NB}(\text{mean} = \mu_{m,i}, \text{size} = \phi_m = 1.9229)$ distribution.
-The structural parameters $(\alpha, \beta, \gamma)$ and the NB
-dispersion $\phi_m$ are calibrated to the S8 fit on the 2024 Polish
-ZUS panel (Poisson PML for $\alpha$, $\beta$, $\gamma$; NB for
-$\phi_m$).
+% \textbf{Stage 3: observed count.} Given $N_i$ and $n_i$, the
+% observed apprehension count $m_i$ follows the same power-law mean
+% structure that the estimators target: \[
+% \text{E}(m_i \mid N_i, n_i) = N_i^{\alpha} \left(\gamma + \frac{n_i}{N_i}\right)^{\beta}, \quad \alpha = 0.70, \, \beta = 0.50, \, \gamma = 0.005.
+% \] Again, $m_i$ is drawn under either Poisson ---
+% $m_i \sim \text{Poisson}(\mu_{m,i})$ --- or Negative Binomial
+% ---
+% $m_i \sim \text{NB}(\text{mean} = \mu_{m,i}, \text{size} = \phi_m = 1.9229)$ distribution.
+% The structural parameters $(\alpha, \beta, \gamma)$ and the NB
+% dispersion $\phi_m$ are calibrated to the S8 fit on the 2024 Polish
+% ZUS panel (Poisson PML for $\alpha$, $\beta$, $\gamma$; NB for
+% $\phi_m$).
 
-\textbf{DGP scenarios.} Crossing the two distributions for $n$
-and $m$ yields four scenarios: Po($n$)--Po($m$),
-Po($n$)--NB($m$), NB($n$)--Po($m$), NB($n$)--NB($m$).
-Po($n$)--Po($m$) is the correctly specified case for Poisson PML;
-NB($n$)--NB($m$) is the correctly specified case for NB. The mixed
-scenarios test robustness to misspecification in one of the two count
-distributions.
+% \textbf{DGP scenarios.} Crossing the two distributions for $n$
+% and $m$ yields four scenarios: Po($n$)--Po($m$),
+% Po($n$)--NB($m$), NB($n$)--Po($m$), NB($n$)--NB($m$).
+% Po($n$)--Po($m$) is the correctly specified case for Poisson PML;
+% NB($n$)--NB($m$) is the correctly specified case for NB. The mixed
+% scenarios test robustness to misspecification in one of the two count
+% distributions.
 
-\textbf{Estimators.} Six estimators are run: OLS (on the log-linearised
-model), NLS, Poisson PML (unconstrained and constrained to
-$\alpha \in (0,1)$), and NB (unconstrained and constrained). Poisson
-PML requires only correct specification of $\text{E}(m \mid X)$ and is
-consistent regardless of the true variance function
-\citep{SantosSilvaTenreyro2006}. NB additionally specifies
-$\text{Var}(m \mid X) = \mu + \mu^2/\theta$, which can improve
-efficiency under overdispersion but introduces a dispersion parameter
-$\theta$ that confounds with the baseline exposure $\gamma$. NLS
-results are reported in full here for completeness but are omitted from
-the main-text summary tables because the estimator fails to converge (or
-returns degenerate estimates) under NB-generated data.
+% \textbf{Estimators.} Six estimators are run: OLS (on the log-linearised
+% model), NLS, Poisson PML (unconstrained and constrained to
+% $\alpha \in (0,1)$), and NB (unconstrained and constrained). Poisson
+% PML requires only correct specification of $\text{E}(m \mid X)$ and is
+% consistent regardless of the true variance function
+% \citep{SantosSilvaTenreyro2006}. NB additionally specifies
+% $\text{Var}(m \mid X) = \mu + \mu^2/\theta$, which can improve
+% efficiency under overdispersion but introduces a dispersion parameter
+% $\theta$ that confounds with the baseline exposure $\gamma$. NLS
+% results are reported in full here for completeness but are omitted from
+% the main-text summary tables because the estimator fails to converge (or
+% returns degenerate estimates) under NB-generated data.
 
-\textbf{Replications.} Each of the four scenarios is replicated
-$R = 2{,}000$ times with independent draws of
-$(N_1, \dots, N_C, n_1, \dots, n_C, m_1, \dots, m_C)$. The
-bias-correction analysis (see Section~\ref{sec-appendix-ommited-proofs})
-and bootstrap CI comparison (see below) use $R_{\text{boot}} = 499$
-bootstrap replicates per simulation replicate.
+% \textbf{Replications.} Each of the four scenarios is replicated
+% $R = 2{,}000$ times with independent draws of
+% $(N_1, \dots, N_C, n_1, \dots, n_C, m_1, \dots, m_C)$. The
+% bias-correction analysis (see Section~\ref{sec-appendix-ommited-proofs})
+% and bootstrap CI comparison (see below) use $R_{\text{boot}} = 499$
+% bootstrap replicates per simulation replicate.
 
 
 \clearpage
@@ -1526,7 +1637,7 @@ empirical analysis.
 
 \section{OLS and NLS estimation details}\label{sec-appendix-ols-nls}
 
-\textbf{OLS estimation.} The OLS estimator operates on the
+The OLS estimator operates on the
 log-linearised form of the model:
 
 \begin{equation}\protect\phantomsection\label{eq-ols-model}{
@@ -1549,7 +1660,7 @@ $m_{it} > 0$ and $n_{it} > 0$ (see
 Section~\ref{sec-appendix-sim-study}). As expected, the OLS approach is
 not well suited for sparse count data.
 
-\textbf{NLS estimation.} The nonlinear least squares estimator operates
+The nonlinear least squares estimator operates
 on the original scale:
 
 \begin{equation}\protect\phantomsection\label{eq-nls-model}{
@@ -1682,8 +1793,7 @@ biased. Moreover, $g$ is convex for $N_{it} > 1$, so Jensen's
 inequality implies $\text{E}[\hat{\xi}_t] \geq \xi_t$ when
 $\hat{\alpha}$ is unbiased.
 
-\textbf{Second-order Taylor approximation.} A Taylor expansion of $g$
-around the true $\alpha$ gives:
+A Taylor expansion of $g$ around the true $\alpha$ gives:
 
 \begin{equation}\protect\phantomsection\label{eq-bias-approx}{
 \text{Bias}[\hat\xi_t] \approx g'(\alpha) \cdot \text{Bias}[\hat\alpha] + \frac{1}{2} g''(\alpha) \cdot \left(\text{Var}[\hat\alpha] + \text{Bias}[\hat\alpha]^2\right),
@@ -1708,7 +1818,7 @@ relative to $\hat{\xi}$; (ii) approximation error grows for
 heavy-tailed $N$ distributions. In simulations, the Taylor correction
 reduces bias by about 88\%.
 
-\textbf{Multiplicative lognormal correction (recommended).} Since
+Since
 $N_i^{\hat{\alpha}} = \exp(\hat{\alpha} \ln N_i)$ and
 $\hat{\alpha} \sim N(\alpha, V)$, the moment generating function of
 the normal distribution gives
@@ -1723,7 +1833,7 @@ This estimator is exact under normality of $\hat{\alpha}$, always
 positive, and in simulations reduces bias by about 94\%. The
 \texttt{uncounted} package uses this form as the default.
 
-\textbf{Variance choice.} Both corrections use the model-based variance
+Both corrections use the model-based variance
 rather than HC-robust variance, because the latter can be inflated by
 high-leverage observations (e.g., Ukraine with $N > 400{,}000$),
 leading to overcorrection. The model-based variance is computed as

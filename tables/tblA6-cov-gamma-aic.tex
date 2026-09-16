@@ -1,24 +1,24 @@
 \begin{table}[ht!]
-\caption{\label{tbl-cov-gamma-aic}AIC and BIC by gamma specification and estimation method. All models use the S8 specification for alpha and beta with the ZUS reference population.} 
+\caption{\label{tbl-cov-gamma-aic}AIC, BIC and QAIC by gamma specification and estimation method. All models use the S8 specification for alpha and beta with the ZUS reference population.} 
 \fontsize{8.0pt}{10.0pt}\selectfont
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrr}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrrr}
 \toprule
- & \multicolumn{3}{c}{{Poisson PMLE}} & \multicolumn{3}{c}{{NB-MLE}} \\ 
-\cmidrule(lr){2-4} \cmidrule(lr){5-7}
-$\gamma$ specification & AIC & BIC & $k_\gamma$ & AIC & BIC & $k_\gamma$ \\ 
+ & \multicolumn{5}{c}{{Poisson PMLE}} & \multicolumn{3}{c}{{NB-MLE}} \\ 
+\cmidrule(lr){2-6} \cmidrule(lr){7-9}
+$\gamma$ specification & AIC & BIC & QAIC & $\hat c$ & $k_\gamma$ & AIC & BIC & $k_\gamma$ \\ 
 \midrule\addlinespace[2.5pt]
-constant & 11,535.6 & 11,640.2 & 1 & 5,265.2 & 5,375.0 & 1 \\ 
-$\gamma \sim \text{year}$ & 11,313.6 & 11,444.3 & 6 & 5,260.1 & 5,396.1 & 6 \\ 
-$\gamma \sim \text{sex}$ & 11,526.0 & 11,635.9 & 2 & 5,265.7 & 5,380.8 & 2 \\ 
-$\gamma \sim \text{UKR}$ & 11,512.1 & 11,622.0 & 2 & 5,267.0 & 5,382.1 & 2 \\ 
-$\gamma \sim \text{year} + \text{UKR}$ & 11,278.7 & 11,414.7 & 12 & 5,262.1 & 5,403.3 & 12 \\ 
-$\gamma \sim \text{year} + \text{sex}$ & 11,142.6 & 11,278.6 & 12 & 5,259.8 & 5,401.0 & 12 \\ 
-$\gamma \sim \text{year} + \text{sex} + \text{UKR}$ & 11,095.8 & 11,237.1 & 24 & 5,261.8 & 5,408.3 & 24 \\ 
+constant & 11,176.0 & 11,280.2 & 1,273.3 & 9.04 & 1 & 5,186.0 & 5,295.4 & 1 \\ 
+$\gamma \sim \text{year}$ & 10,976.4 & 11,106.6 & 1,260.1 & 9.71 & 6 & 5,179.3 & 5,314.8 & 6 \\ 
+$\gamma \sim \text{sex}$ & 11,169.3 & 11,278.7 & 1,274.3 & 8.95 & 2 & 5,186.5 & 5,301.1 & 2 \\ 
+$\gamma \sim \text{UKR}$ & 11,151.2 & 11,260.6 & 1,272.3 & 8.98 & 2 & 5,187.9 & 5,302.5 & 2 \\ 
+$\gamma \sim \text{year} + \text{UKR}$ & 10,935.5 & 11,071.0 & 1,257.4 & 9.72 & 7 & 5,181.3 & 5,322.0 & 7 \\ 
+$\gamma \sim \text{year} + \text{sex}$ & 10,816.4 & 10,951.9 & 1,244.2 & 9.00 & 7 & 5,178.9 & 5,319.6 & 7 \\ 
+$\gamma \sim \text{year} + \text{sex} + \text{UKR}$ & 10,763.6 & 10,904.3 & 1,240.1 & 8.80 & 8 & 5,180.9 & 5,326.8 & 8 \\ 
 \bottomrule
 \end{tabular*}
 \begin{minipage}{\linewidth}
 \vspace{.05em}
-Note: S8 specification: $\alpha \sim \text{year} \times \text{UKR} + \text{sex}$, $\beta \sim \text{year}$. ZUS reference population. $k_\gamma$ = number of gamma parameters. Lower AIC/BIC is better.\\
+Note: S8 specification: $\alpha \sim \text{year} \times \text{UKR} + \text{sex}$, $\beta \sim \text{year}$. ZUS reference population. $k_\gamma$ = number of gamma parameters; $\hat c$ = Pearson dispersion of the Poisson PMLE fit; QAIC $= -2\ell/\hat c_{S8} + 2(K+1)$ with $\hat c_{S8}$ from the adopted specification, constant $\gamma$ ($\hat c_{S8} = 9.0$). Lower AIC/BIC/QAIC is better.\\
 \end{minipage}
 \end{table}
 

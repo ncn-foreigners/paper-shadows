@@ -1,17 +1,17 @@
 \begin{table}[H]
 \centering
-\caption{\label{tbl-aic-specs}AIC and BIC by community anchor parameter $\alpha_{it}$, given yearly $\beta_t$ and constant $\gamma$.}
-\begin{tabular}{llrr|rr} \toprule
-& & \multicolumn{2}{c|}{Poisson PMLE} & \multicolumn{2}{c}{NB-MLE} \\
-Specification & Label & AIC & BIC & AIC & BIC \\ \midrule
-S1 & Intercept only & 22,769 & 22,785 & 5,398 & 5,419 \\
-S2 & Year & 16,871 & 16,939 & 5,283 & 5,356 \\
-S3 & Year + sex & 16,447 & 16,520 & 5,274 & 5,353 \\
-S4 & Year x UKR & 11,557 & 11,657 & 5,274 & 5,379 \\
-S5 & Year x simplified & 14,322 & 14,421 & 5,284 & 5,388 \\
-S6 & Year + continent & 12,860 & 12,954 & 5,246 & 5,345 \\
-S7 & Year + sex + UKR & 14,231 & 14,310 & 5,273 & 5,357 \\
-S8 & Year x UKR + sex & 11,536 & 11,640 & 5,265 & 5,375 \\
+\caption{\label{tbl-aic-specs}AIC, BIC and QAIC by community anchor parameter $\alpha_{it}$, given yearly $\beta_t$ and constant $\gamma$ (S1 is the time-invariant baseline with constant $\beta$ as well). $\hat c$ is the Pearson dispersion of each Poisson PMLE fit; QAIC $= -2\ell/\hat c_{S8} + 2(K+1)$, with $K$ the number of parameters, uses the dispersion of the most general specification, S8 ($\hat c_{S8} = 9.0$).}
+\begin{tabular}{llrrrr|rr} \toprule
+& & \multicolumn{4}{c|}{Poisson PMLE} & \multicolumn{2}{c}{NB-MLE} \\
+Specification & Label & AIC & BIC & QAIC & $\hat c$ & AIC & BIC \\ \midrule
+S1 & Intercept only & 22,406 & 22,421 & 2,485 & 18.5 & 5,329 & 5,350 \\
+S2 & Year & 16,471 & 16,539 & 1,846 & 14.1 & 5,206 & 5,279 \\
+S3 & Year + sex & 16,050 & 16,123 & 1,802 & 12.7 & 5,197 & 5,275 \\
+S4 & Year x UKR & 11,198 & 11,297 & 1,274 & 9.4 & 5,195 & 5,299 \\
+S5 & Year x simplified & 13,961 & 14,060 & 1,579 & 14.5 & 5,206 & 5,310 \\
+S6 & Year + continent & 12,628 & 12,722 & 1,430 & 10.2 & 5,176 & 5,275 \\
+S7 & Year + sex + UKR & 13,876 & 13,955 & 1,563 & 11.5 & 5,195 & 5,278 \\
+S8 & Year x UKR + sex & 11,176 & 11,280 & 1,273 & 9.0 & 5,186 & 5,295 \\
 \bottomrule
 \end{tabular}
 \end{table}

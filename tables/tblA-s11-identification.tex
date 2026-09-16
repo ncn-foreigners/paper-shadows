@@ -1,0 +1,17 @@
+\begin{table}[ht!]
+\caption{\label{tbl-s11-identification}S8 versus S11 (Poisson PMLE, ZUS reference): fit, the Ukrainian term in the exposure elasticity, the range of the fitted Ukrainian detection rate, and cluster-FWB estimates (median with 95\% percentile CI, thousands) by origin.} 
+\fontsize{8.0pt}{9.0pt}\selectfont
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrr}
+\toprule
+Spec & QAIC & $\hat\beta_{\text{UKR}}$ (SE) & $\hat\rho$, UKR cells & $\hat\xi$ UKR 2019 & $\hat\xi$ UKR 2024 & $\hat\xi$ non-UKR 2024 & Failed replicates \\ 
+\midrule\addlinespace[2.5pt]
+S8 & 1,273.3 & -- & 0.01--0.09 & 60 (16, 180) & 11 (4, 24) & 89 (25, 229) & 5 \\ 
+S11 & 1,261.8 & -0.54 (0.51) & 0.23--1.26 & 10 (2, 152) & 1 (0, 19) & 78 (27, 178) & 315 \\ 
+\bottomrule
+\end{tabular*}
+\begin{minipage}{\linewidth}
+\vspace{.05em}
+Note: QAIC with $\hat c$ from S8. SE = HC1 robust. $\hat\rho$ is admissible only if at most 1. Failed replicates = bootstrap draws (of 999) in which the fit did not converge. S8: $\alpha \sim$ year $\times$ UKR + sex, $\beta \sim$ year; S11: same $\alpha$, $\beta \sim$ year + sex + UKR.\\
+\end{minipage}
+\end{table}
+

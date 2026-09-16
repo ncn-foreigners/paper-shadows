@@ -21,6 +21,6 @@ library(gt)          # threeparttable LaTeX tables (tab_spanner, footnotes, as_l
 
 source("codes/1-functions.R")             # shared helpers (gt_to_tex, register_diag_plots)
 source("codes/2-prepare-data.R")          # read raw sources -> full_database_processed (+ data/*.csv)
-source("codes/3-simulation-study.R")      # simulation study (Table 1)
-source("codes/4-main-paper-analysis.R")   # modelling + main-text figures and tables
-source("codes/5-supplement.R")            # appendix figures and tables
+source("codes/3-main-paper-analysis.R")   # modelling + main-text figures and tables
+source("codes/4-simulation-study.R")      # simulation study (slow; outputs cached in results/simulation-results/)
+source("codes/5-supplement.R")            # appendix figures and tables, incl. the simulation tables

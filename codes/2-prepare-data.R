@@ -277,12 +277,17 @@ full_database[country_code %in% c("BGR","ROU") & year <  2025 & schengen == "Sch
 full_database_processed <- full_database[year %in% 2019:2024, lapply(.SD, sum, na.rm=T),
                                          .(year, sex, country_code=country_code2, country), .SDcols = border:pop_register]
 
-## Drop EU members HRV/BGR/ROU from the modelling/table population: here "non-Schengen"
+## Drop EU free-movement nationals from the modelling/table population: here "non-Schengen"
 ## means non-EU (genuine third countries). EU citizens have free movement and are absent
-## from the apprehension data (m ~ 0) while carrying large reference populations. The
-## schengen classification is kept intact in `full_database`; this exclusion (noted in the
-## paper) only applies to `full_database_processed` and everything built from it.
-full_database_processed <- full_database_processed[!country_code %in% c("HRV", "BGR", "ROU")]
+## from the apprehension data (m = 0) while carrying large reference populations. The rule
+## covers HRV/BGR/ROU and the EU members outside Schengen, IRL and CYP, throughout, and
+## GBR up to the end of the Brexit transition period (free movement through 2020; a
+## visa-free third country from 2021). The schengen classification is kept intact in
+## `full_database`; this exclusion (noted in the paper) only applies to
+## `full_database_processed` and everything built from it.
+EU_FREE_MOVEMENT <- c("HRV", "BGR", "ROU", "IRL", "CYP")
+full_database_processed <- full_database_processed[!country_code %in% EU_FREE_MOVEMENT]
+full_database_processed <- full_database_processed[!(country_code == "GBR" & year <= 2020)]
 
 full_database_processed[, continent := countrycode(country_code, "iso3c", "continent")]
 full_database_processed[, wbd_region7 := countrycode(country_code, "iso3c", "region")]

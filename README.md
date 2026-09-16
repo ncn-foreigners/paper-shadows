@@ -68,7 +68,7 @@ source("codes/0-run-all.R")
 ```
 
 This sources, in order: `1-functions.R`, `2-prepare-data.R` (builds `data/` from `data-raw/`),
-`3-simulation-study.R`, `4-main-paper-analysis.R`, `5-supplement.R`.
+`3-main-paper-analysis.R`, `4-simulation-study.R`, `5-supplement.R`.
 
 Notes:
 
@@ -77,10 +77,10 @@ Notes:
 - Expensive fits, bootstraps and leave-one-out runs are cached under `results/*.rds` and
   reused; set the `recompute_*` flags to `TRUE` to regenerate them. The cross-register caches
   are intentionally not shipped and are rebuilt (tax-free) on first run.
-- `3-simulation-study.R` runs 2000 replications and is **slow**; its results are provided in
-  `results/simulation-results/`. To skip the re-run, comment out the
-  `source("codes/3-simulation-study.R")` line in `0-run-all.R` and the provided outputs will
-  be used for Table 1.
+- `4-simulation-study.R` runs 2000 replications and is **slow**; its raw results are provided
+  in `results/simulation-results/`. To skip the re-run, comment out the
+  `source("codes/4-simulation-study.R")` line in `0-run-all.R`; `5-supplement.R` builds all
+  simulation tables (appendix) from the provided outputs.
 
 ## Manuscript
 
@@ -95,6 +95,12 @@ public package.
 + Cyprus and Ireland are EU members but not in Schengen
 + Iceland, Liechtenstein, Norway, and Switzerland are non-EU Schengen members
 + The United Kingdom was never in the Schengen Area; Brexit removed it from the EU
++ Modelling population: EU free-movement nationals are excluded from
+  `full_database_processed` and everything built from it, because they cannot be
+  unauthorised in the sense of the model and have zero apprehensions in every cell.
+  The rule (codes/2-prepare-data.R) drops Croatia, Bulgaria, Romania, Ireland and
+  Cyprus throughout, and the United Kingdom for 2019-2020 (free movement through the
+  end of the Brexit transition period; a visa-free third country from 2021)
 
 Country codes:
 

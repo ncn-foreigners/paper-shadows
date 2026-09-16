@@ -9,7 +9,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,m,CHN,4,China,Asia,East Asia & Pacific,non-Schengen
 2016,m,CYP,1,Cyprus,Asia,Europe & Central Asia,non-Schengen
 2016,m,CZE,7,Czechia,Europe,Europe & Central Asia,Schengen
-2016,m,EGY,2,Egypt,Africa,Middle East & North Africa,non-Schengen
+2016,m,EGY,2,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,EST,4,Estonia,Europe,Europe & Central Asia,Schengen
 2016,m,FIN,1,Finland,Europe,Europe & Central Asia,Schengen
 2016,m,FRA,2,France,Europe,Europe & Central Asia,Schengen
@@ -17,9 +17,9 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,m,GEO,19,Georgia,Asia,Europe & Central Asia,non-Schengen
 2016,m,ESP,1,Spain,Europe,Europe & Central Asia,Schengen
 2016,m,NLD,4,Netherlands,Europe,Europe & Central Asia,Schengen
-2016,m,IRQ,1,Iraq,Asia,Middle East & North Africa,non-Schengen
-2016,m,IRN,2,Iran,Asia,Middle East & North Africa,non-Schengen
-2016,m,ISR,5,Israel,Asia,Middle East & North Africa,non-Schengen
+2016,m,IRQ,1,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2016,m,IRN,2,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2016,m,ISR,5,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,CAN,2,Canada,Americas,North America,non-Schengen
 2016,m,KAZ,3,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2016,m,KEN,1,Kenya,Africa,Sub-Saharan Africa,non-Schengen
@@ -28,18 +28,18 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,m,LTU,26,Lithuania,Europe,Europe & Central Asia,Schengen
 2016,m,LVA,17,Latvia,Europe,Europe & Central Asia,Schengen
 2016,m,MKD,1,North Macedonia,Europe,Europe & Central Asia,non-Schengen
-2016,m,MAR,2,Morocco,Africa,Middle East & North Africa,non-Schengen
+2016,m,MAR,2,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,MDA,10,Moldova,Europe,Europe & Central Asia,non-Schengen
 2016,m,DEU,20,Germany,Europe,Europe & Central Asia,Schengen
 2016,m,NGA,15,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
-2016,m,PAK,5,Pakistan,Asia,South Asia,non-Schengen
+2016,m,PAK,5,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,RUS,55,Russia,Europe,Europe & Central Asia,non-Schengen
 2016,m,ROU,48,Romania,Europe,Europe & Central Asia,non-Schengen
 2016,m,SRB,5,Serbia,Europe,Europe & Central Asia,non-Schengen
 2016,m,SVK,9,Slovakia,Europe,Europe & Central Asia,Schengen
 2016,m,USA,2,United States,Americas,North America,non-Schengen
-2016,m,SYR,3,Syria,Asia,Middle East & North Africa,non-Schengen
-2016,m,TUN,1,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2016,m,SYR,3,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2016,m,TUN,1,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,TUR,10,Turkey,Asia,Europe & Central Asia,non-Schengen
 2016,m,UKR,173,Ukraine,Europe,Europe & Central Asia,non-Schengen
 2016,m,VEN,1,Venezuela,Americas,Latin America & Caribbean,non-Schengen
@@ -47,15 +47,15 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,m,VNM,24,Vietnam,Asia,East Asia & Pacific,non-Schengen
 2016,m,ITA,6,Italy,Europe,Europe & Central Asia,Schengen
 2016,m,XXX,11,Stateless,other/unknown,other/unknown,non-Schengen
-2016,m,DZA,3,Algeria,Africa,Middle East & North Africa,non-Schengen
+2016,m,DZA,3,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,AZE,1,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2016,m,HRV,2,Croatia,Europe,Europe & Central Asia,non-Schengen
 2016,m,DNK,1,Denmark,Europe,Europe & Central Asia,Schengen
 2016,m,GIN,1,Guinea,Africa,Sub-Saharan Africa,non-Schengen
 2016,m,IND,1,India,Asia,South Asia,non-Schengen
-2016,m,YEM,1,Yemen,Asia,Middle East & North Africa,non-Schengen
-2016,m,JOR,2,Jordan,Asia,Middle East & North Africa,non-Schengen
-2016,m,LBY,1,Libya,Africa,Middle East & North Africa,non-Schengen
+2016,m,YEM,1,Yemen,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2016,m,JOR,2,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2016,m,LBY,1,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,m,NPL,1,Nepal,Asia,South Asia,non-Schengen
 2016,m,PRT,2,Portugal,Europe,Europe & Central Asia,Schengen
 2016,m,ZAF,1,South Africa,Africa,Sub-Saharan Africa,non-Schengen
@@ -64,7 +64,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,f,BLR,1,Belarus,Europe,Europe & Central Asia,non-Schengen
 2016,f,BGR,1,Bulgaria,Europe,Europe & Central Asia,non-Schengen
 2016,f,CZE,1,Czechia,Europe,Europe & Central Asia,Schengen
-2016,f,IRQ,1,Iraq,Asia,Middle East & North Africa,non-Schengen
+2016,f,IRQ,1,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2016,f,SRB,1,Serbia,Europe,Europe & Central Asia,non-Schengen
 2016,f,SVK,1,Slovakia,Europe,Europe & Central Asia,Schengen
 2016,f,USA,1,United States,Americas,North America,non-Schengen
@@ -74,7 +74,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2016,f,RUS,1,Russia,Europe,Europe & Central Asia,non-Schengen
 2016,f,ROU,6,Romania,Europe,Europe & Central Asia,non-Schengen
 2016,f,VEN,1,Venezuela,Americas,Latin America & Caribbean,non-Schengen
-2017,m,DZA,6,Algeria,Africa,Middle East & North Africa,non-Schengen
+2017,m,DZA,6,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,ARM,21,Armenia,Asia,Europe & Central Asia,non-Schengen
 2017,m,AZE,2,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2017,m,BGD,1,Bangladesh,Asia,South Asia,non-Schengen
@@ -84,19 +84,19 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2017,m,CHN,7,China,Asia,East Asia & Pacific,non-Schengen
 2017,m,CZE,7,Czechia,Europe,Europe & Central Asia,Schengen
 2017,m,DNK,2,Denmark,Europe,Europe & Central Asia,Schengen
-2017,m,EGY,3,Egypt,Africa,Middle East & North Africa,non-Schengen
+2017,m,EGY,3,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,EST,3,Estonia,Europe,Europe & Central Asia,Schengen
 2017,m,FRA,1,France,Europe,Europe & Central Asia,Schengen
 2017,m,GRC,2,Greece,Europe,Europe & Central Asia,Schengen
 2017,m,GEO,44,Georgia,Asia,Europe & Central Asia,non-Schengen
 2017,m,ESP,1,Spain,Europe,Europe & Central Asia,Schengen
 2017,m,NLD,6,Netherlands,Europe,Europe & Central Asia,Schengen
-2017,m,IRN,1,Iran,Asia,Middle East & North Africa,non-Schengen
-2017,m,ISR,7,Israel,Asia,Middle East & North Africa,non-Schengen
+2017,m,IRN,1,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2017,m,ISR,7,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,KGZ,2,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
 2017,m,LTU,22,Lithuania,Europe,Europe & Central Asia,Schengen
 2017,m,LVA,14,Latvia,Europe,Europe & Central Asia,Schengen
-2017,m,MAR,3,Morocco,Africa,Middle East & North Africa,non-Schengen
+2017,m,MAR,3,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,MEX,2,Mexico,Americas,Latin America & Caribbean,non-Schengen
 2017,m,MDA,11,Moldova,Europe,Europe & Central Asia,non-Schengen
 2017,m,MNG,1,Mongolia,Asia,East Asia & Pacific,non-Schengen
@@ -104,16 +104,16 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2017,m,NGA,13,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2017,m,NOR,1,Norway,Europe,Europe & Central Asia,Schengen
 2017,m,NZL,1,New Zealand,Oceania,East Asia & Pacific,non-Schengen
-2017,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2017,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,PRT,3,Portugal,Europe,Europe & Central Asia,Schengen
 2017,m,BIH,1,Bosnia & Herzegovina,Europe,Europe & Central Asia,non-Schengen
 2017,m,RUS,68,Russia,Europe,Europe & Central Asia,non-Schengen
 2017,m,ROU,52,Romania,Europe,Europe & Central Asia,non-Schengen
 2017,m,SRB,6,Serbia,Europe,Europe & Central Asia,non-Schengen
 2017,m,SVK,7,Slovakia,Europe,Europe & Central Asia,Schengen
-2017,m,SYR,3,Syria,Asia,Middle East & North Africa,non-Schengen
+2017,m,SYR,3,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
-2017,m,TUN,3,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2017,m,TUN,3,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,TUR,9,Turkey,Asia,Europe & Central Asia,non-Schengen
 2017,m,UKR,260,Ukraine,Europe,Europe & Central Asia,non-Schengen
 2017,m,VEN,1,Venezuela,Americas,Latin America & Caribbean,non-Schengen
@@ -125,12 +125,12 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2017,m,AUT,1,Austria,Europe,Europe & Central Asia,Schengen
 2017,m,HRV,2,Croatia,Europe,Europe & Central Asia,non-Schengen
 2017,m,GIN,1,Guinea,Africa,Sub-Saharan Africa,non-Schengen
-2017,m,JOR,1,Jordan,Asia,Middle East & North Africa,non-Schengen
+2017,m,JOR,1,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,CAN,1,Canada,Americas,North America,non-Schengen
 2017,m,KAZ,1,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2017,m,KOR,1,South Korea,Asia,East Asia & Pacific,non-Schengen
-2017,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
-2017,m,PAK,2,Pakistan,Asia,South Asia,non-Schengen
+2017,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2017,m,PAK,2,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2017,m,ZAF,2,South Africa,Africa,Sub-Saharan Africa,non-Schengen
 2017,m,SEN,1,Senegal,Africa,Sub-Saharan Africa,non-Schengen
 2017,m,USA,1,United States,Americas,North America,non-Schengen
@@ -147,7 +147,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2017,f,VEN,2,Venezuela,Americas,Latin America & Caribbean,non-Schengen
 2017,f,XXX,3,Stateless,other/unknown,other/unknown,non-Schengen
 2018,m,ALB,4,Albania,Europe,Europe & Central Asia,non-Schengen
-2018,m,DZA,6,Algeria,Africa,Middle East & North Africa,non-Schengen
+2018,m,DZA,6,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,ARM,26,Armenia,Asia,Europe & Central Asia,non-Schengen
 2018,m,BEL,2,Belgium,Europe,Europe & Central Asia,Schengen
 2018,m,BEN,1,Benin,Africa,Sub-Saharan Africa,non-Schengen
@@ -157,7 +157,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,m,MNE,1,Montenegro,Europe,Europe & Central Asia,non-Schengen
 2018,m,CZE,9,Czechia,Europe,Europe & Central Asia,Schengen
 2018,m,DNK,2,Denmark,Europe,Europe & Central Asia,Schengen
-2018,m,EGY,4,Egypt,Africa,Middle East & North Africa,non-Schengen
+2018,m,EGY,4,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,EST,3,Estonia,Europe,Europe & Central Asia,Schengen
 2018,m,ETH,1,Ethiopia,Africa,Sub-Saharan Africa,non-Schengen
 2018,m,FRA,3,France,Europe,Europe & Central Asia,Schengen
@@ -166,7 +166,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,m,ESP,3,Spain,Europe,Europe & Central Asia,Schengen
 2018,m,NLD,5,Netherlands,Europe,Europe & Central Asia,Schengen
 2018,m,IND,5,India,Asia,South Asia,non-Schengen
-2018,m,ISR,5,Israel,Asia,Middle East & North Africa,non-Schengen
+2018,m,ISR,5,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,CMR,1,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2018,m,KAZ,1,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2018,m,KGZ,1,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
@@ -174,14 +174,14 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,m,LTU,31,Lithuania,Europe,Europe & Central Asia,Schengen
 2018,m,LVA,11,Latvia,Europe,Europe & Central Asia,Schengen
 2018,m,MKD,2,North Macedonia,Europe,Europe & Central Asia,non-Schengen
-2018,m,MLT,1,Malta,Europe,Middle East & North Africa,Schengen
-2018,m,MAR,6,Morocco,Africa,Middle East & North Africa,non-Schengen
+2018,m,MLT,1,Malta,Europe,"Middle East, North Africa, Afghanistan & Pakistan",Schengen
+2018,m,MAR,6,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,MDA,28,Moldova,Europe,Europe & Central Asia,non-Schengen
 2018,m,MNG,3,Mongolia,Asia,East Asia & Pacific,non-Schengen
 2018,m,NPL,1,Nepal,Asia,South Asia,non-Schengen
 2018,m,DEU,37,Germany,Europe,Europe & Central Asia,Schengen
 2018,m,NGA,7,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
-2018,m,PAK,3,Pakistan,Asia,South Asia,non-Schengen
+2018,m,PAK,3,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,PRY,2,Paraguay,Americas,Latin America & Caribbean,non-Schengen
 2018,m,PRT,2,Portugal,Europe,Europe & Central Asia,Schengen
 2018,m,RUS,68,Russia,Europe,Europe & Central Asia,non-Schengen
@@ -192,7 +192,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,m,TJK,1,Tajikistan,Asia,Europe & Central Asia,non-Schengen
 2018,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
 2018,m,TZA,2,Tanzania,Africa,Sub-Saharan Africa,non-Schengen
-2018,m,TUN,4,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2018,m,TUN,4,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,TUR,10,Turkey,Asia,Europe & Central Asia,non-Schengen
 2018,m,UKR,359,Ukraine,Europe,Europe & Central Asia,non-Schengen
 2018,m,VEN,1,Venezuela,Americas,Latin America & Caribbean,non-Schengen
@@ -205,12 +205,12 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,m,CHN,4,China,Asia,East Asia & Pacific,non-Schengen
 2018,m,KEN,1,Kenya,Africa,Sub-Saharan Africa,non-Schengen
 2018,m,COL,1,Colombia,Americas,Latin America & Caribbean,non-Schengen
-2018,m,LBN,1,Lebanon,Asia,Middle East & North Africa,non-Schengen
-2018,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
-2018,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2018,m,LBN,1,Lebanon,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2018,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2018,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,PER,1,Peru,Americas,Latin America & Caribbean,non-Schengen
 2018,m,ZAF,1,South Africa,Africa,Sub-Saharan Africa,non-Schengen
-2018,m,SYR,2,Syria,Asia,Middle East & North Africa,non-Schengen
+2018,m,SYR,2,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2018,m,SWE,1,Sweden,Europe,Europe & Central Asia,Schengen
 2018,m,GBR,1,United Kingdom,Europe,Europe & Central Asia,non-Schengen
 2018,m,TKM,1,Turkmenistan,Asia,Europe & Central Asia,non-Schengen
@@ -228,7 +228,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2018,f,ITA,2,Italy,Europe,Europe & Central Asia,Schengen
 2018,f,DEU,1,Germany,Europe,Europe & Central Asia,Schengen
 2018,f,VEN,2,Venezuela,Americas,Latin America & Caribbean,non-Schengen
-2019,m,SAU,1,Saudi Arabia,Asia,Middle East & North Africa,non-Schengen
+2019,m,SAU,1,Saudi Arabia,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,ARM,40,Armenia,Asia,Europe & Central Asia,non-Schengen
 2019,m,AUS,1,Australia,Oceania,East Asia & Pacific,non-Schengen
 2019,m,AUT,1,Austria,Europe,Europe & Central Asia,Schengen
@@ -241,7 +241,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2019,m,CHN,10,China,Asia,East Asia & Pacific,non-Schengen
 2019,m,CZE,12,Czechia,Europe,Europe & Central Asia,Schengen
 2019,m,DNK,1,Denmark,Europe,Europe & Central Asia,Schengen
-2019,m,EGY,2,Egypt,Africa,Middle East & North Africa,non-Schengen
+2019,m,EGY,2,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,EST,4,Estonia,Europe,Europe & Central Asia,Schengen
 2019,m,FRA,2,France,Europe,Europe & Central Asia,Schengen
 2019,m,GRC,3,Greece,Europe,Europe & Central Asia,Schengen
@@ -249,8 +249,8 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2019,m,ESP,4,Spain,Europe,Europe & Central Asia,Schengen
 2019,m,NLD,6,Netherlands,Europe,Europe & Central Asia,Schengen
 2019,m,IND,7,India,Asia,South Asia,non-Schengen
-2019,m,IRN,3,Iran,Asia,Middle East & North Africa,non-Schengen
-2019,m,ISR,4,Israel,Asia,Middle East & North Africa,non-Schengen
+2019,m,IRN,3,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2019,m,ISR,4,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,CAN,2,Canada,Americas,North America,non-Schengen
 2019,m,KAZ,3,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2019,m,COL,4,Colombia,Americas,Latin America & Caribbean,non-Schengen
@@ -263,7 +263,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2019,m,DEU,38,Germany,Europe,Europe & Central Asia,Schengen
 2019,m,NGA,11,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2019,m,NOR,1,Norway,Europe,Europe & Central Asia,Schengen
-2019,m,PAK,3,Pakistan,Asia,South Asia,non-Schengen
+2019,m,PAK,3,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,PAN,1,Panama,Americas,Latin America & Caribbean,non-Schengen
 2019,m,PRY,5,Paraguay,Americas,Latin America & Caribbean,non-Schengen
 2019,m,PRT,1,Portugal,Europe,Europe & Central Asia,Schengen
@@ -272,10 +272,10 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2019,m,SRB,9,Serbia,Europe,Europe & Central Asia,non-Schengen
 2019,m,SVK,8,Slovakia,Europe,Europe & Central Asia,Schengen
 2019,m,USA,3,United States,Americas,North America,non-Schengen
-2019,m,SYR,2,Syria,Asia,Middle East & North Africa,non-Schengen
+2019,m,SYR,2,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,SWE,3,Sweden,Europe,Europe & Central Asia,Schengen
 2019,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
-2019,m,TUN,2,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2019,m,TUN,2,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,TUR,12,Turkey,Asia,Europe & Central Asia,non-Schengen
 2019,m,UGA,1,Uganda,Africa,Sub-Saharan Africa,non-Schengen
 2019,m,UKR,468,Ukraine,Europe,Europe & Central Asia,non-Schengen
@@ -285,16 +285,16 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2019,m,VNM,56,Vietnam,Asia,East Asia & Pacific,non-Schengen
 2019,m,XXX,18,Stateless,other/unknown,other/unknown,non-Schengen
 2019,m,ALB,2,Albania,Europe,Europe & Central Asia,non-Schengen
-2019,m,DZA,6,Algeria,Africa,Middle East & North Africa,non-Schengen
+2019,m,DZA,6,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,HRV,1,Croatia,Europe,Europe & Central Asia,non-Schengen
 2019,m,KEN,1,Kenya,Africa,Sub-Saharan Africa,non-Schengen
 2019,m,KGZ,1,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
-2019,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
-2019,m,MAR,3,Morocco,Africa,Middle East & North Africa,non-Schengen
+2019,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2019,m,MAR,3,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,MNG,1,Mongolia,Asia,East Asia & Pacific,non-Schengen
 2019,m,NPL,1,Nepal,Asia,South Asia,non-Schengen
 2019,m,NZL,1,New Zealand,Oceania,East Asia & Pacific,non-Schengen
-2019,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2019,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2019,m,BIH,1,Bosnia & Herzegovina,Europe,Europe & Central Asia,non-Schengen
 2019,m,SVN,1,Slovenia,Europe,Europe & Central Asia,Schengen
 2019,m,TZA,1,Tanzania,Africa,Sub-Saharan Africa,non-Schengen
@@ -327,7 +327,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,m,BGR,56,Bulgaria,Europe,Europe & Central Asia,non-Schengen
 2020,m,CHN,15,China,Asia,East Asia & Pacific,non-Schengen
 2020,m,CZE,12,Czechia,Europe,Europe & Central Asia,Schengen
-2020,m,EGY,3,Egypt,Africa,Middle East & North Africa,non-Schengen
+2020,m,EGY,3,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,EST,2,Estonia,Europe,Europe & Central Asia,Schengen
 2020,m,FRA,2,France,Europe,Europe & Central Asia,Schengen
 2020,m,GRC,1,Greece,Europe,Europe & Central Asia,Schengen
@@ -335,16 +335,16 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,m,ESP,1,Spain,Europe,Europe & Central Asia,Schengen
 2020,m,NLD,6,Netherlands,Europe,Europe & Central Asia,Schengen
 2020,m,IND,11,India,Asia,South Asia,non-Schengen
-2020,m,IRQ,3,Iraq,Asia,Middle East & North Africa,non-Schengen
-2020,m,IRN,2,Iran,Asia,Middle East & North Africa,non-Schengen
-2020,m,JOR,2,Jordan,Asia,Middle East & North Africa,non-Schengen
+2020,m,IRQ,3,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2020,m,IRN,2,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2020,m,JOR,2,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,CMR,3,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2020,m,CAN,1,Canada,Americas,North America,non-Schengen
 2020,m,KAZ,4,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2020,m,KGZ,2,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
 2020,m,COL,4,Colombia,Americas,Latin America & Caribbean,non-Schengen
 2020,m,XKX,1,KOSOVO,Europe,Europe & Central Asia,non-Schengen
-2020,m,LBN,1,Lebanon,Asia,Middle East & North Africa,non-Schengen
+2020,m,LBN,1,Lebanon,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,LTU,35,Lithuania,Europe,Europe & Central Asia,Schengen
 2020,m,LVA,12,Latvia,Europe,Europe & Central Asia,Schengen
 2020,m,MDA,41,Moldova,Europe,Europe & Central Asia,non-Schengen
@@ -352,7 +352,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,m,DEU,26,Germany,Europe,Europe & Central Asia,Schengen
 2020,m,NGA,22,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2020,m,NOR,4,Norway,Europe,Europe & Central Asia,Schengen
-2020,m,PAK,3,Pakistan,Asia,South Asia,non-Schengen
+2020,m,PAK,3,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,PAN,1,Panama,Americas,Latin America & Caribbean,non-Schengen
 2020,m,PRT,2,Portugal,Europe,Europe & Central Asia,Schengen
 2020,m,BIH,1,Bosnia & Herzegovina,Europe,Europe & Central Asia,non-Schengen
@@ -362,7 +362,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,m,SVK,10,Slovakia,Europe,Europe & Central Asia,Schengen
 2020,m,SVN,2,Slovenia,Europe,Europe & Central Asia,Schengen
 2020,m,USA,2,United States,Americas,North America,non-Schengen
-2020,m,SYR,4,Syria,Asia,Middle East & North Africa,non-Schengen
+2020,m,SYR,4,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,SWE,2,Sweden,Europe,Europe & Central Asia,Schengen
 2020,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
 2020,m,TUR,5,Turkey,Asia,Europe & Central Asia,non-Schengen
@@ -375,22 +375,22 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,m,ZWE,1,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
 2020,m,XXX,27,Stateless,other/unknown,other/unknown,non-Schengen
 2020,m,ALB,1,Albania,Europe,Europe & Central Asia,non-Schengen
-2020,m,DZA,1,Algeria,Africa,Middle East & North Africa,non-Schengen
-2020,m,SAU,1,Saudi Arabia,Asia,Middle East & North Africa,non-Schengen
+2020,m,DZA,1,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2020,m,SAU,1,Saudi Arabia,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,AUT,1,Austria,Europe,Europe & Central Asia,Schengen
 2020,m,AZE,3,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2020,m,BEL,2,Belgium,Europe,Europe & Central Asia,Schengen
 2020,m,DNK,1,Denmark,Europe,Europe & Central Asia,Schengen
-2020,m,ISR,2,Israel,Asia,Middle East & North Africa,non-Schengen
+2020,m,ISR,2,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,KOR,1,South Korea,Asia,East Asia & Pacific,non-Schengen
 2020,m,CRI,1,Costa Rica,Americas,Latin America & Caribbean,non-Schengen
-2020,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
+2020,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,MKD,1,North Macedonia,Europe,Europe & Central Asia,non-Schengen
-2020,m,MAR,1,Morocco,Africa,Middle East & North Africa,non-Schengen
+2020,m,MAR,1,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,NZL,1,New Zealand,Oceania,East Asia & Pacific,non-Schengen
-2020,m,PSE,1,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2020,m,PSE,1,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,TZA,1,Tanzania,Africa,Sub-Saharan Africa,non-Schengen
-2020,m,TUN,1,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2020,m,TUN,1,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2020,m,TKM,2,Turkmenistan,Asia,Europe & Central Asia,non-Schengen
 2020,f,BLR,3,Belarus,Europe,Europe & Central Asia,non-Schengen
 2020,f,BRA,2,Brazil,Americas,Latin America & Caribbean,non-Schengen
@@ -412,9 +412,9 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2020,f,GBR,1,United Kingdom,Europe,Europe & Central Asia,non-Schengen
 2020,f,ITA,2,Italy,Europe,Europe & Central Asia,Schengen
 2020,f,XXX,1,Stateless,other/unknown,other/unknown,non-Schengen
-2021,m,AFG,2,Afghanistan,Asia,South Asia,non-Schengen
+2021,m,AFG,2,Afghanistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,ALB,2,Albania,Europe,Europe & Central Asia,non-Schengen
-2021,m,DZA,3,Algeria,Africa,Middle East & North Africa,non-Schengen
+2021,m,DZA,3,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,ARM,26,Armenia,Asia,Europe & Central Asia,non-Schengen
 2021,m,AUS,2,Australia,Oceania,East Asia & Pacific,non-Schengen
 2021,m,AUT,3,Austria,Europe,Europe & Central Asia,Schengen
@@ -433,25 +433,25 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2021,m,ESP,1,Spain,Europe,Europe & Central Asia,Schengen
 2021,m,NLD,10,Netherlands,Europe,Europe & Central Asia,Schengen
 2021,m,IND,14,India,Asia,South Asia,non-Schengen
-2021,m,IRQ,10,Iraq,Asia,Middle East & North Africa,non-Schengen
-2021,m,IRN,4,Iran,Asia,Middle East & North Africa,non-Schengen
-2021,m,ISR,3,Israel,Asia,Middle East & North Africa,non-Schengen
+2021,m,IRQ,10,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2021,m,IRN,4,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2021,m,ISR,3,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,CMR,4,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2021,m,CAN,2,Canada,Americas,North America,non-Schengen
 2021,m,KAZ,6,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2021,m,KGZ,2,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
 2021,m,COL,4,Colombia,Americas,Latin America & Caribbean,non-Schengen
-2021,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
+2021,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,LTU,33,Lithuania,Europe,Europe & Central Asia,Schengen
 2021,m,LVA,11,Latvia,Europe,Europe & Central Asia,Schengen
-2021,m,MAR,4,Morocco,Africa,Middle East & North Africa,non-Schengen
+2021,m,MAR,4,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,MDA,55,Moldova,Europe,Europe & Central Asia,non-Schengen
 2021,m,MNG,1,Mongolia,Asia,East Asia & Pacific,non-Schengen
 2021,m,DEU,31,Germany,Europe,Europe & Central Asia,Schengen
 2021,m,NGA,28,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2021,m,NOR,1,Norway,Europe,Europe & Central Asia,Schengen
-2021,m,PAK,2,Pakistan,Asia,South Asia,non-Schengen
-2021,m,PSE,3,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2021,m,PAK,2,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2021,m,PSE,3,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,PAN,1,Panama,Americas,Latin America & Caribbean,non-Schengen
 2021,m,PYF,1,French Polynesia,Oceania,East Asia & Pacific,non-Schengen
 2021,m,PRT,2,Portugal,Europe,Europe & Central Asia,Schengen
@@ -462,12 +462,12 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2021,m,SOM,2,Somalia,Africa,Sub-Saharan Africa,non-Schengen
 2021,m,LKA,3,Sri Lanka,Asia,South Asia,non-Schengen
 2021,m,USA,5,United States,Americas,North America,non-Schengen
-2021,m,SYR,20,Syria,Asia,Middle East & North Africa,non-Schengen
+2021,m,SYR,20,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,CHE,1,Switzerland,Europe,Europe & Central Asia,Schengen
 2021,m,SWE,3,Sweden,Europe,Europe & Central Asia,Schengen
 2021,m,TJK,6,Tajikistan,Asia,Europe & Central Asia,non-Schengen
 2021,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
-2021,m,TUN,4,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2021,m,TUN,4,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,TUR,13,Turkey,Asia,Europe & Central Asia,non-Schengen
 2021,m,UKR,698,Ukraine,Europe,Europe & Central Asia,non-Schengen
 2021,m,UZB,11,Uzbekistan,Asia,Europe & Central Asia,non-Schengen
@@ -478,7 +478,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2021,m,ZWE,2,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
 2021,m,XXX,29,Stateless,other/unknown,other/unknown,non-Schengen
 2021,m,DNK,1,Denmark,Europe,Europe & Central Asia,Schengen
-2021,m,EGY,1,Egypt,Africa,Middle East & North Africa,non-Schengen
+2021,m,EGY,1,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,m,GRC,2,Greece,Europe,Europe & Central Asia,Schengen
 2021,m,CRI,1,Costa Rica,Americas,Latin America & Caribbean,non-Schengen
 2021,m,BIH,1,Bosnia & Herzegovina,Europe,Europe & Central Asia,non-Schengen
@@ -493,7 +493,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2021,f,RUS,3,Russia,Europe,Europe & Central Asia,non-Schengen
 2021,f,ROU,3,Romania,Europe,Europe & Central Asia,non-Schengen
 2021,f,SVK,3,Slovakia,Europe,Europe & Central Asia,Schengen
-2021,f,SYR,1,Syria,Asia,Middle East & North Africa,non-Schengen
+2021,f,SYR,1,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2021,f,UKR,29,Ukraine,Europe,Europe & Central Asia,non-Schengen
 2021,f,ZWE,2,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
 2021,f,ARM,1,Armenia,Asia,Europe & Central Asia,non-Schengen
@@ -502,7 +502,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2021,f,VNM,2,Vietnam,Asia,East Asia & Pacific,non-Schengen
 2021,f,XXX,1,Stateless,other/unknown,other/unknown,non-Schengen
 2022,m,ALB,2,Albania,Europe,Europe & Central Asia,non-Schengen
-2022,m,DZA,4,Algeria,Africa,Middle East & North Africa,non-Schengen
+2022,m,DZA,4,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,ARM,29,Armenia,Asia,Europe & Central Asia,non-Schengen
 2022,m,AZE,12,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2022,m,BGD,3,Bangladesh,Asia,South Asia,non-Schengen
@@ -512,7 +512,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,m,CHN,8,China,Asia,East Asia & Pacific,non-Schengen
 2022,m,CZE,16,Czechia,Europe,Europe & Central Asia,Schengen
 2022,m,DNK,3,Denmark,Europe,Europe & Central Asia,Schengen
-2022,m,EGY,6,Egypt,Africa,Middle East & North Africa,non-Schengen
+2022,m,EGY,6,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,EST,6,Estonia,Europe,Europe & Central Asia,Schengen
 2022,m,FRA,5,France,Europe,Europe & Central Asia,Schengen
 2022,m,GRC,4,Greece,Europe,Europe & Central Asia,Schengen
@@ -520,9 +520,9 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,m,ESP,3,Spain,Europe,Europe & Central Asia,Schengen
 2022,m,NLD,4,Netherlands,Europe,Europe & Central Asia,Schengen
 2022,m,IND,14,India,Asia,South Asia,non-Schengen
-2022,m,IRQ,2,Iraq,Asia,Middle East & North Africa,non-Schengen
-2022,m,IRN,4,Iran,Asia,Middle East & North Africa,non-Schengen
-2022,m,ISR,3,Israel,Asia,Middle East & North Africa,non-Schengen
+2022,m,IRQ,2,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2022,m,IRN,4,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2022,m,ISR,3,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,XXX,36,Stateless,other/unknown,other/unknown,non-Schengen
 2022,m,CMR,5,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2022,m,CAN,2,Canada,Americas,North America,non-Schengen
@@ -532,12 +532,12 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,m,COG,1,Congo - Brazzaville,Africa,Sub-Saharan Africa,non-Schengen
 2022,m,LTU,33,Lithuania,Europe,Europe & Central Asia,Schengen
 2022,m,LVA,13,Latvia,Europe,Europe & Central Asia,Schengen
-2022,m,MAR,2,Morocco,Africa,Middle East & North Africa,non-Schengen
+2022,m,MAR,2,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,MDA,74,Moldova,Europe,Europe & Central Asia,non-Schengen
 2022,m,DEU,24,Germany,Europe,Europe & Central Asia,Schengen
 2022,m,NGA,14,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2022,m,NOR,2,Norway,Europe,Europe & Central Asia,Schengen
-2022,m,PAK,10,Pakistan,Asia,South Asia,non-Schengen
+2022,m,PAK,10,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,PRT,2,Portugal,Europe,Europe & Central Asia,Schengen
 2022,m,BIH,1,Bosnia & Herzegovina,Europe,Europe & Central Asia,non-Schengen
 2022,m,RUS,81,Russia,Europe,Europe & Central Asia,non-Schengen
@@ -548,12 +548,12 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,m,SVN,1,Slovenia,Europe,Europe & Central Asia,Schengen
 2022,m,USA,6,United States,Americas,North America,non-Schengen
 2022,m,SDN,1,Sudan,Africa,Sub-Saharan Africa,non-Schengen
-2022,m,SYR,4,Syria,Asia,Middle East & North Africa,non-Schengen
+2022,m,SYR,4,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,SWE,2,Sweden,Europe,Europe & Central Asia,Schengen
 2022,m,TJK,4,Tajikistan,Asia,Europe & Central Asia,non-Schengen
 2022,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
 2022,m,TZA,2,Tanzania,Africa,Sub-Saharan Africa,non-Schengen
-2022,m,TUN,3,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2022,m,TUN,3,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,TUR,14,Turkey,Asia,Europe & Central Asia,non-Schengen
 2022,m,TKM,7,Turkmenistan,Asia,Europe & Central Asia,non-Schengen
 2022,m,UKR,701,Ukraine,Europe,Europe & Central Asia,non-Schengen
@@ -561,14 +561,14 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,m,HUN,2,Hungary,Europe,Europe & Central Asia,Schengen
 2022,m,VNM,27,Vietnam,Asia,East Asia & Pacific,non-Schengen
 2022,m,ZWE,2,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
-2022,m,AFG,1,Afghanistan,Asia,South Asia,non-Schengen
+2022,m,AFG,1,Afghanistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,AUT,1,Austria,Europe,Europe & Central Asia,Schengen
-2022,m,JOR,1,Jordan,Asia,Middle East & North Africa,non-Schengen
-2022,m,LBN,1,Lebanon,Asia,Middle East & North Africa,non-Schengen
-2022,m,LBY,1,Libya,Africa,Middle East & North Africa,non-Schengen
-2022,m,MLT,1,Malta,Europe,Middle East & North Africa,Schengen
+2022,m,JOR,1,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2022,m,LBN,1,Lebanon,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2022,m,LBY,1,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2022,m,MLT,1,Malta,Europe,"Middle East, North Africa, Afghanistan & Pakistan",Schengen
 2022,m,MNG,1,Mongolia,Asia,East Asia & Pacific,non-Schengen
-2022,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2022,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2022,m,SRB,6,Serbia,Europe,Europe & Central Asia,non-Schengen
 2022,m,GBR,5,United Kingdom,Europe,Europe & Central Asia,non-Schengen
 2022,m,ITA,2,Italy,Europe,Europe & Central Asia,Schengen
@@ -590,9 +590,9 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2022,f,SVK,3,Slovakia,Europe,Europe & Central Asia,Schengen
 2022,f,CHE,1,Switzerland,Europe,Europe & Central Asia,Schengen
 2022,f,XXX,2,Stateless,other/unknown,other/unknown,non-Schengen
-2023,m,AFG,2,Afghanistan,Asia,South Asia,non-Schengen
+2023,m,AFG,2,Afghanistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,ALB,5,Albania,Europe,Europe & Central Asia,non-Schengen
-2023,m,DZA,3,Algeria,Africa,Middle East & North Africa,non-Schengen
+2023,m,DZA,3,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,ARM,34,Armenia,Asia,Europe & Central Asia,non-Schengen
 2023,m,AZE,12,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2023,m,BGD,5,Bangladesh,Asia,South Asia,non-Schengen
@@ -602,7 +602,7 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2023,m,CHN,4,China,Asia,East Asia & Pacific,non-Schengen
 2023,m,CZE,17,Czechia,Europe,Europe & Central Asia,Schengen
 2023,m,DNK,1,Denmark,Europe,Europe & Central Asia,Schengen
-2023,m,EGY,7,Egypt,Africa,Middle East & North Africa,non-Schengen
+2023,m,EGY,7,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,EST,7,Estonia,Europe,Europe & Central Asia,Schengen
 2023,m,ETH,1,Ethiopia,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,FIN,1,Finland,Europe,Europe & Central Asia,Schengen
@@ -612,22 +612,22 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2023,m,ESP,3,Spain,Europe,Europe & Central Asia,Schengen
 2023,m,NLD,12,Netherlands,Europe,Europe & Central Asia,Schengen
 2023,m,IND,14,India,Asia,South Asia,non-Schengen
-2023,m,IRN,2,Iran,Asia,Middle East & North Africa,non-Schengen
+2023,m,IRN,2,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,IRL,2,Ireland,Europe,Europe & Central Asia,non-Schengen
-2023,m,ISR,5,Israel,Asia,Middle East & North Africa,non-Schengen
+2023,m,ISR,5,Israel,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,CAN,2,Canada,Americas,North America,non-Schengen
 2023,m,KAZ,6,Kazakhstan,Asia,Europe & Central Asia,non-Schengen
 2023,m,COL,12,Colombia,Americas,Latin America & Caribbean,non-Schengen
 2023,m,KOR,1,South Korea,Asia,East Asia & Pacific,non-Schengen
 2023,m,LTU,25,Lithuania,Europe,Europe & Central Asia,Schengen
 2023,m,LVA,26,Latvia,Europe,Europe & Central Asia,Schengen
-2023,m,MAR,3,Morocco,Africa,Middle East & North Africa,non-Schengen
+2023,m,MAR,3,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,MDA,72,Moldova,Europe,Europe & Central Asia,non-Schengen
 2023,m,DEU,26,Germany,Europe,Europe & Central Asia,Schengen
 2023,m,NGA,16,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,NOR,4,Norway,Europe,Europe & Central Asia,Schengen
-2023,m,PAK,6,Pakistan,Asia,South Asia,non-Schengen
-2023,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2023,m,PAK,6,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2023,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,PRY,6,Paraguay,Americas,Latin America & Caribbean,non-Schengen
 2023,m,PER,3,Peru,Americas,Latin America & Caribbean,non-Schengen
 2023,m,PRT,4,Portugal,Europe,Europe & Central Asia,Schengen
@@ -636,11 +636,11 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2023,m,SEN,1,Senegal,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,SVK,15,Slovakia,Europe,Europe & Central Asia,Schengen
 2023,m,USA,5,United States,Americas,North America,non-Schengen
-2023,m,SYR,14,Syria,Asia,Middle East & North Africa,non-Schengen
+2023,m,SYR,14,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,SWE,3,Sweden,Europe,Europe & Central Asia,Schengen
 2023,m,TJK,6,Tajikistan,Asia,Europe & Central Asia,non-Schengen
 2023,m,TWN,1,Taiwan,Asia,East Asia & Pacific,non-Schengen
-2023,m,TUN,7,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2023,m,TUN,7,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,TUR,11,Turkey,Asia,Europe & Central Asia,non-Schengen
 2023,m,TKM,13,Turkmenistan,Asia,Europe & Central Asia,non-Schengen
 2023,m,UKR,1015,Ukraine,Europe,Europe & Central Asia,non-Schengen
@@ -652,13 +652,13 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2023,m,ZWE,2,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,XXX,49,Stateless,other/unknown,other/unknown,non-Schengen
 2023,m,AUT,1,Austria,Europe,Europe & Central Asia,Schengen
-2023,m,IRQ,1,Iraq,Asia,Middle East & North Africa,non-Schengen
-2023,m,JOR,1,Jordan,Asia,Middle East & North Africa,non-Schengen
+2023,m,IRQ,1,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2023,m,JOR,1,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2023,m,CMR,1,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,KGZ,1,Kyrgyzstan,Asia,Europe & Central Asia,non-Schengen
-2023,m,LBN,1,Lebanon,Asia,Middle East & North Africa,non-Schengen
-2023,m,LBY,1,Libya,Africa,Middle East & North Africa,non-Schengen
-2023,m,MLT,1,Malta,Europe,Middle East & North Africa,Schengen
+2023,m,LBN,1,Lebanon,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2023,m,LBY,1,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2023,m,MLT,1,Malta,Europe,"Middle East, North Africa, Afghanistan & Pakistan",Schengen
 2023,m,MNG,1,Mongolia,Asia,East Asia & Pacific,non-Schengen
 2023,m,RWA,1,Rwanda,Africa,Sub-Saharan Africa,non-Schengen
 2023,m,SRB,3,Serbia,Europe,Europe & Central Asia,non-Schengen
@@ -680,9 +680,9 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2023,f,USA,2,United States,Americas,North America,non-Schengen
 2023,f,CHE,1,Switzerland,Europe,Europe & Central Asia,Schengen
 2023,f,XXX,2,Stateless,other/unknown,other/unknown,non-Schengen
-2024,m,AFG,1,Afghanistan,Asia,South Asia,non-Schengen
+2024,m,AFG,1,Afghanistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,ALB,5,Albania,Europe,Europe & Central Asia,non-Schengen
-2024,m,DZA,4,Algeria,Africa,Middle East & North Africa,non-Schengen
+2024,m,DZA,4,Algeria,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,ARM,39,Armenia,Asia,Europe & Central Asia,non-Schengen
 2024,m,AZE,12,Azerbaijan,Asia,Europe & Central Asia,non-Schengen
 2024,m,BGD,3,Bangladesh,Asia,South Asia,non-Schengen
@@ -701,8 +701,8 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2024,m,ESP,2,Spain,Europe,Europe & Central Asia,Schengen
 2024,m,NLD,12,Netherlands,Europe,Europe & Central Asia,Schengen
 2024,m,IND,9,India,Asia,South Asia,non-Schengen
-2024,m,IRQ,3,Iraq,Asia,Middle East & North Africa,non-Schengen
-2024,m,IRN,1,Iran,Asia,Middle East & North Africa,non-Schengen
+2024,m,IRQ,3,Iraq,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2024,m,IRN,1,Iran,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,IRL,2,Ireland,Europe,Europe & Central Asia,non-Schengen
 2024,m,CMR,2,Cameroon,Africa,Sub-Saharan Africa,non-Schengen
 2024,m,CAN,3,Canada,Americas,North America,non-Schengen
@@ -711,19 +711,19 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2024,m,COL,18,Colombia,Americas,Latin America & Caribbean,non-Schengen
 2024,m,KOR,2,South Korea,Asia,East Asia & Pacific,non-Schengen
 2024,m,XKX,1,KOSOVO,Europe,Europe & Central Asia,non-Schengen
-2024,m,LBY,2,Libya,Africa,Middle East & North Africa,non-Schengen
+2024,m,LBY,2,Libya,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,LTU,44,Lithuania,Europe,Europe & Central Asia,Schengen
 2024,m,LVA,10,Latvia,Europe,Europe & Central Asia,Schengen
 2024,m,MKD,1,North Macedonia,Europe,Europe & Central Asia,non-Schengen
 2024,m,MYS,2,Malaysia,Asia,East Asia & Pacific,non-Schengen
-2024,m,MAR,3,Morocco,Africa,Middle East & North Africa,non-Schengen
+2024,m,MAR,3,Morocco,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,MEX,5,Mexico,Americas,Latin America & Caribbean,non-Schengen
 2024,m,MDA,87,Moldova,Europe,Europe & Central Asia,non-Schengen
 2024,m,NPL,1,Nepal,Asia,South Asia,non-Schengen
 2024,m,DEU,24,Germany,Europe,Europe & Central Asia,Schengen
 2024,m,NGA,21,Nigeria,Africa,Sub-Saharan Africa,non-Schengen
 2024,m,NOR,1,Norway,Europe,Europe & Central Asia,Schengen
-2024,m,PAK,4,Pakistan,Asia,South Asia,non-Schengen
+2024,m,PAK,4,Pakistan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,PRT,3,Portugal,Europe,Europe & Central Asia,Schengen
 2024,m,RUS,82,Russia,Europe,Europe & Central Asia,non-Schengen
 2024,m,ROU,43,Romania,Europe,Europe & Central Asia,non-Schengen
@@ -733,10 +733,10 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2024,m,SVN,2,Slovenia,Europe,Europe & Central Asia,Schengen
 2024,m,USA,5,United States,Americas,North America,non-Schengen
 2024,m,SDN,1,Sudan,Africa,Sub-Saharan Africa,non-Schengen
-2024,m,SYR,11,Syria,Asia,Middle East & North Africa,non-Schengen
+2024,m,SYR,11,Syria,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,SWE,4,Sweden,Europe,Europe & Central Asia,Schengen
 2024,m,TJK,4,Tajikistan,Asia,Europe & Central Asia,non-Schengen
-2024,m,TUN,8,Tunisia,Africa,Middle East & North Africa,non-Schengen
+2024,m,TUN,8,Tunisia,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,TUR,16,Turkey,Asia,Europe & Central Asia,non-Schengen
 2024,m,TKM,11,Turkmenistan,Asia,Europe & Central Asia,non-Schengen
 2024,m,UKR,1220,Ukraine,Europe,Europe & Central Asia,non-Schengen
@@ -747,13 +747,13 @@ year,sex,country_code,prison,country,continent,wbd_region7,schengen
 2024,m,ZWE,5,Zimbabwe,Africa,Sub-Saharan Africa,non-Schengen
 2024,m,XXX,57,Stateless,other/unknown,other/unknown,non-Schengen
 2024,m,BEL,2,Belgium,Europe,Europe & Central Asia,Schengen
-2024,m,EGY,2,Egypt,Africa,Middle East & North Africa,non-Schengen
+2024,m,EGY,2,Egypt,Africa,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,EST,5,Estonia,Europe,Europe & Central Asia,Schengen
 2024,m,ETH,1,Ethiopia,Africa,Sub-Saharan Africa,non-Schengen
 2024,m,GMB,1,Gambia,Africa,Sub-Saharan Africa,non-Schengen
-2024,m,JOR,2,Jordan,Asia,Middle East & North Africa,non-Schengen
-2024,m,LBN,1,Lebanon,Asia,Middle East & North Africa,non-Schengen
-2024,m,PSE,2,Palestinian Territories,Asia,Middle East & North Africa,non-Schengen
+2024,m,JOR,2,Jordan,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2024,m,LBN,1,Lebanon,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
+2024,m,PSE,2,Palestinian Territories,Asia,"Middle East, North Africa, Afghanistan & Pakistan",non-Schengen
 2024,m,RWA,1,Rwanda,Africa,Sub-Saharan Africa,non-Schengen
 2024,m,TZA,1,Tanzania,Africa,Sub-Saharan Africa,non-Schengen
 2024,f,AUT,1,Austria,Europe,Europe & Central Asia,Schengen

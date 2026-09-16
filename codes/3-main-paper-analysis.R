@@ -12,7 +12,7 @@ model_zus <- full_database_processed[pop_insured > 0,
     ukr, simplified_proc, continent)]
 
 
-## ---- Estimates for Figure 5 (fig5-init-estimates.pdf; plotted in Part B below) ----
+## ---- Estimates for the exploratory yearly-estimation figure (appendix: figs-appen/figA-init-estimates.pdf; plotted in Part B below) ----
 ## Separate yearly estimation of the unauthorised population total by NB-MLE without offset,
 ## Poisson PMLE with offset, and NB-MLE with offset. Two CIs (95% and 80%) reported per spec.
 ## Result (baseline_cmp) is kept in memory and saved to results/baseline-cmp.rds.
@@ -169,49 +169,8 @@ ps_sex_nb_bootstrap <- boot_or_load("results/boot-sex-nb.rds", fit_nb, ~ year + 
 ## Part B -- Main-text figures and tables
 ## ============================================================================
 
-# Table 1 Simulation results, 2000 replications. Bias relative to $\xi = \sum_{i=1}^{100} \xi_i$. RMSE, root mean squared error. Coverage of $\xi$. Confidence interval (CI) of $\xi$ by \eqref{eq-xi-confint}, CI width relative to $\xi$.
-## Built from the analytical-CI metrics written by 3-simulation-study.R:
-##   Setup-I  (gamma = 0, regrouped 'rest' community) -> sim1_metrics_analytical.csv
-##   Setup-II (gamma > 0, m_i n_i = 0 allowed)        -> sim2_metrics_analytical.csv
-## Shown: Po(n)-Po(m) and NB(n)-NB(m) scenarios; estimators poisson (Po-PMLE) and nb (NB-MLE).
-sim_dir  <- "results/simulation-results"
-sim1_m   <- fread(file.path(sim_dir, "sim1_metrics_analytical.csv"))
-sim2_m   <- fread(file.path(sim_dir, "sim2_metrics_analytical.csv"))
-
-## one body row per (scenario, estimator), ordered Po(n)-Po(m) then NB(n)-NB(m)
-sim_body <- function(dt) {
-  d <- dt[scenario %in% c("Po(n)-Po(m)", "NB(n)-NB(m)") & model %in% c("poisson", "nb")]
-  d[, Estimator := c(poisson = "Po-PMLE", nb = "NB-MLE")[model]]
-  d[, scen_ord := match(scenario, c("Po(n)-Po(m)", "NB(n)-NB(m)"))]
-  d[, est_ord  := match(model, c("poisson", "nb"))]
-  setorder(d, scen_ord, est_ord)   # Po(n)-Po(m) before NB(n)-NB(m); Po-PMLE before NB-MLE
-  d[, paste0(scenario, " & ", Estimator, " & ",
-             sprintf("%.1f", round(`Bias (%)`, 1)), " & ",
-             formatC(round(RMSE), format = "d", big.mark = ","), " & ",
-             sprintf("%.1f", round(`Coverage (%)`, 1)), " & ",
-             sprintf("%.1f", round(`CI width (%)`, 1)), " \\\\")]
-}
-
-sim_hdr <- "Data & Estimator & Bias (\\%) & RMSE & Coverage (\\%) & CI width (\\%)\\\\ \\midrule"
-sim_tex <- c(
-  "\\begin{table}[H]",
-  "\\centering",
-  paste0("\\caption{\\label{tbl-sim-summary}Simulation results, 2000 replications. Bias relative ",
-         "to $\\xi = \\sum_{i=1}^{100} \\xi_i$. RMSE, root mean squared error. Coverage of $\\xi$. ",
-         "Confidence interval (CI) of $\\xi$ by \\eqref{eq-xi-confint}, CI width relative to $\\xi$.}"),
-  "\\begin{tabular}{llrrrr} \\toprule",
-  "& \\multicolumn{5}{c}{Setup-I: $\\gamma =0$, regrouped `rest' community to void $m_i n_i =0$} \\\\ \\cline{2-6}",
-  sim_hdr,
-  sim_body(sim1_m),
-  "\\bottomrule",
-  "& \\multicolumn{5}{c}{Setup-II: $\\gamma >0$, communities with $m_i n_i =0$ allowed}\\\\ \\cline{2-6}",
-  sim_hdr,
-  sim_body(sim2_m),
-  "\\bottomrule",
-  "\\end{tabular}",
-  "\\end{table}"
-)
-writeLines(sim_tex, "tables/tbl1-sim-summary.tex")
+## (The simulation summary table was moved to 5-supplement.R: the simulation study is
+##  reported in the appendix and its tables are written from results/simulation-results/.)
 
 
 
@@ -361,19 +320,23 @@ ggplot(baseline_cmp, aes(x = as.factor(year),
   scale_color_brewer(type = "qual", palette = "Set1") +
   theme(text = element_text(size = 15)) -> p5
 
-ggsave(plot=p5, filename = "figs/fig5-init-estimates.pdf", width = 10, height = 5)
+ggsave(plot=p5, filename = "figs-appen/figA-init-estimates.pdf", width = 10, height = 5)   # reported in the appendix
 
 
 ## Table 3: AIC and BIC by community anchor parameter alpha_it, given yearly beta_t and constant gamma.
 ## Poisson PMLE (po) and NB-MLE (nb) fits per specification S1-S8 from fit_all (Part A).
 
-## one row per specification with the four information criteria
+## one row per specification with the information criteria. QAIC rescales the Poisson
+## pseudo-likelihood by the Pearson dispersion c-hat of the most general specification (S8);
+## see c_hat()/qaic() in 1-functions.R. c-hat of every fit is reported alongside.
+chat_tab3 <- c_hat(fit_all$S8$po)
 tab3 <- rbindlist(lapply(names(fit_all), function(s) {
   x <- fit_all[[s]]
   data.table(
     Specification = s,
     Label         = specs[[s]]$label,
     po_AIC = AIC(x$po), po_BIC = BIC(x$po),
+    po_QAIC = qaic(x$po, chat_tab3), po_chat = c_hat(x$po),
     nb_AIC = AIC(x$nb), nb_BIC = BIC(x$nb)
   )
 }))
@@ -383,17 +346,20 @@ fmt_ic <- function(v) formatC(round(v), format = "d", big.mark = ",")
 
 body_rows <- tab3[, paste0(
   Specification, " & ", Label, " & ",
-  fmt_ic(po_AIC), " & ", fmt_ic(po_BIC), " & ",
+  fmt_ic(po_AIC), " & ", fmt_ic(po_BIC), " & ", fmt_ic(po_QAIC), " & ", sprintf("%.1f", po_chat), " & ",
   fmt_ic(nb_AIC), " & ", fmt_ic(nb_BIC), " \\\\")]
 
 tab3_tex <- c(
   "\\begin{table}[H]",
   "\\centering",
-  paste0("\\caption{\\label{tbl-aic-specs}AIC and BIC by community anchor parameter $\\alpha_{it}$, ",
-         "given yearly $\\beta_t$ and constant $\\gamma$.}"),
-  "\\begin{tabular}{llrr|rr} \\toprule",
-  "& & \\multicolumn{2}{c|}{Poisson PMLE} & \\multicolumn{2}{c}{NB-MLE} \\\\",
-  "Specification & Label & AIC & BIC & AIC & BIC \\\\ \\midrule",
+  paste0("\\caption{\\label{tbl-aic-specs}AIC, BIC and QAIC by community anchor parameter $\\alpha_{it}$, ",
+         "given yearly $\\beta_t$ and constant $\\gamma$ (S1 is the time-invariant baseline with constant ",
+         "$\\beta$ as well). $\\hat c$ is the Pearson dispersion of each ",
+         "Poisson PMLE fit; QAIC $= -2\\ell/\\hat c_{S8} + 2(K+1)$, with $K$ the number of parameters, ",
+         sprintf("uses the dispersion of the most general specification, S8 ($\\hat c_{S8} = %.1f$).}", chat_tab3)),
+  "\\begin{tabular}{llrrrr|rr} \\toprule",
+  "& & \\multicolumn{4}{c|}{Poisson PMLE} & \\multicolumn{2}{c}{NB-MLE} \\\\",
+  "Specification & Label & AIC & BIC & QAIC & $\\hat c$ & AIC & BIC \\\\ \\midrule",
   body_rows,
   "\\bottomrule",
   "\\end{tabular}",
@@ -500,7 +466,7 @@ ukr_boot <- rbind(
   boot_to_dt(ps_ukr_po_bootstrap, "Poisson"),
   boot_to_dt(ps_ukr_nb_bootstrap, "NB")
 )
-ukr_boot[, ukr_label := fifelse(ukr == "1", "Ukraine", "Non-Ukraine")]
+ukr_boot[, ukr_label := fifelse(ukr == "1", "Ukrainian", "Non-Ukrainian")]
 ukr_boot[, year_num  := as.integer(year)]
 ukr_boot[, method    := factor(method, c("Poisson", "NB"))]
 
@@ -610,10 +576,12 @@ writeLines(xi_tex, "tables/tbl4-xi-estimates.tex")
 
 
 ## Table: estimated unauthorised population (Poisson PMLE cluster-FWB median) compared with
-## administrative refused-residence (Refusal) and return-obligation (Return) counts, by year and
-## Ukrainian origin. Estimate = cluster-FWB median from ps_ukr_po_bootstrap (year + ukr; Part A)
-## -- the same object and column plotted as the Poisson series in Figure 7, so the two agree.
-## Refusal and Return are external administrative figures entered as given.
+## administrative refused-residence (Refusal) counts, by year and Ukrainian origin.
+## Estimate = cluster-FWB median from ps_ukr_po_bootstrap (year + ukr; Part A) -- the same
+## object and column plotted as the Poisson series in Figure 7, so the two agree.
+## Refusal is an external administrative figure (Office for Foreigners) entered as given.
+## Return obligations are kept in admin_ukr for reference but are NOT tabulated: they are
+## Border Guard outcomes, hence not independent of the apprehension count m.
 
 est_ukr <- as.data.table(ps_ukr_po_bootstrap$popsize)
 est_ukr[, c("year", "ukr") := tstrsplit(group, ", ", fixed = TRUE)]
@@ -632,7 +600,7 @@ cmp_ukr <- merge(admin_ukr, est_ukr, by = c("year", "ukr"))
 
 ## one wide row per year: Ukrainian block (ukr 1) then non-Ukrainian block (ukr 0)
 r_h <- function(x) formatC(round(x / 100) * 100, format = "d", big.mark = ",")   # nearest hundred
-blk <- function(d) d[order(year), paste0(r_h(Estimate), " & ", r_h(Refusal), " & ", r_h(Return))]
+blk <- function(d) d[order(year), paste0(r_h(Estimate), " & ", r_h(Refusal))]
 
 body_ukr <- paste0(2019:2024, " & ",
                    blk(cmp_ukr[ukr == 1]), " & ", blk(cmp_ukr[ukr == 0]), " \\\\")
@@ -640,12 +608,12 @@ body_ukr <- paste0(2019:2024, " & ",
 ukr_tex <- c(
   "\\begin{table}[H]",
   "\\centering",
-  paste0("\\caption{\\label{tbl-comparison-ukr}Estimated unauthorised population size (Estimate), ",
-         "number of refused temporary residence decisions (Refusal) or foreigner return obligations ",
-         "(Return), by origin (Ukrainian vs non-Ukrainian).}"),
-  "\\begin{tabular}{lrrr|rrr} \\toprule",
-  "& \\multicolumn{3}{c|}{Ukrainian} & \\multicolumn{3}{c}{Non-Ukrainian} \\\\",
-  "Year & Estimate & Refusal & Return & Estimate & Refusal & Return \\\\ \\midrule",
+  paste0("\\caption{\\label{tbl-comparison-ukr}Estimated unauthorised population size (Estimate; ",
+         "bootstrap median) and number of refused temporary residence decisions (Refusal), ",
+         "by origin (Ukrainian vs non-Ukrainian).}"),
+  "\\begin{tabular}{lrr|rr} \\toprule",
+  "& \\multicolumn{2}{c|}{Ukrainian} & \\multicolumn{2}{c}{Non-Ukrainian} \\\\",
+  "Year & Estimate & Refusal & Estimate & Refusal \\\\ \\midrule",
   body_ukr,
   "\\bottomrule",
   "\\end{tabular}",

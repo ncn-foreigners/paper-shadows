@@ -53,7 +53,7 @@ gaps <- melt(cy, id.vars = c("year", "country_code", "country", "m", "n"),
 ## Hong Kong SAR (2023); ZUS has more gaps -- see table.
 print(gaps[Register == "PESEL", .(year, country_code, country, m, n)])
 
-gaps_tab <- gaps[, .(Countries = .N, `Sum m` = sum(m), `Sum n` = sum(n)),
+gaps_tab <- gaps[, .(Countries = uniqueN(country_code), `Sum m` = sum(m), `Sum n` = sum(n)),
                  by = .(Register, Year = year)]
 setorder(gaps_tab, Register, Year)
 
@@ -62,14 +62,17 @@ gap_gt <- gaps_tab |>
   tab_caption(paste0("Country-year cells with a zero reference count (N = 0) despite observed ",
                      "apprehensions (m > 0), for 18+ non-Schengen countries.")) |>
   fmt_number(columns = c(Countries, `Sum m`, `Sum n`), decimals = 0) |>
+  cols_label(Countries = "Number of Countries", `Sum m` = "Total apprehensions (Sum of $m$)",
+             `Sum n` = "Sum $n$ (Police)") |>
   cols_align(align = "left",  columns = Year) |>
   cols_align(align = "right", columns = c(Countries, `Sum m`, `Sum n`)) |>
   tab_source_note(source_note = paste0("Note: m = border apprehensions; n = police records; ",
-                                       "N = reference register count. Only Hong Kong (2023) is ",
-                                       "absent from the PESEL population register.")) |>
+                                       "N = reference register count. Missing countries -- PESEL ",
+                                       "register: Only Hong Kong (2023) is absent.")) |>
   tab_options(table.font.size = px(12), source_notes.font.size = px(12))
 
-gt_to_tex(gap_gt, "tables/tblA0-register-gaps.tex", label = "tbl-register-gaps")
+## label matches the manuscript (appendix, Model assumptions and details: Zero-count prevalence)
+gt_to_tex(gap_gt, "tables/tblA0-zero-counts-assumptions.tex", label = "tbl-zero-counts-assumptions")
 gap_gt
 
 
@@ -77,10 +80,21 @@ gap_gt
 
 zc <- full_database_processed[year %in% 2019:2024 & schengen == "non-Schengen" & pop_insured > 0]
 
+## one row per (year, country, sex) with a positive ZUS count, so within (year, sex) the
+## number of rows equals the number of countries. The Total rows aggregate over sex to the
+## country level first: a country counts as m = 0 (n = 0) only if it has no apprehensions
+## (police records) of either sex, and the denominator is the number of countries with a
+## positive ZUS count for at least one sex. Summing the sex-specific zero cells and dividing
+## by the number of countries would mix cells and countries and give shares above 100%.
 zc_sex <- zc[, .(m0 = sum(!(border > 0)), n0 = sum(!(police > 0)),
-                 both = sum(border > 0 & police > 0), Countries = .N), by = .(year, sex)]
-zc_tot <- zc[, .(m0 = sum(!(border > 0)), n0 = sum(!(police > 0)),
-                 both = sum(border > 0 & police > 0), Countries = .N, sex = "total"), by = year]
+                 both = sum(border > 0 & police > 0),
+                 Countries = uniqueN(country)), by = .(year, sex)]
+zc_cty <- zc[, .(border = sum(border), police = sum(police)), by = .(year, country)]
+zc_tot <- zc_cty[, .(m0 = sum(!(border > 0)), n0 = sum(!(police > 0)),
+                     both = sum(border > 0 & police > 0),
+                     Countries = uniqueN(country), sex = "total"), by = year]
+stopifnot(zc_sex[, all(m0 <= Countries & n0 <= Countries & both <= Countries)],
+          zc_tot[, all(m0 <= Countries & n0 <= Countries & both <= Countries)])
 
 zc_all <- rbind(zc_sex, zc_tot)
 zc_all[, ord := fifelse(sex == "m", 1L, fifelse(sex == "f", 2L, 3L))]
@@ -108,8 +122,14 @@ zc_gt <- zc_tab |>
             locations = cells_body(rows = Sex == "Total")) |>
   tab_source_note(source_note = paste0("Note: $m$ denotes border apprehensions; $n$ denotes ",
                                        "police records. Reference population: ZUS. C = number of ",
-                                       "countries. The last column denotes the total number of ",
-                                       "countries for a given sex in a given year.")) |>
+                                       "countries. The last column denotes the number of countries ",
+                                       "with a positive ZUS count for a given sex in a given year. ",
+                                       "Total rows aggregate $m$ and $n$ over sex within a country, ",
+                                       "so a country counts as $m=0$ ($n=0$) only if it has no ",
+                                       "apprehensions (police records) of either sex; the last ",
+                                       "column is then the number of countries with a positive ZUS ",
+                                       "count for at least one sex. Country includes also categories ",
+                                       "such as stateless or unknown.")) |>
   tab_options(table.font.size = px(12), source_notes.font.size = px(12))
 
 gt_to_tex(zc_gt, "tables/tblA1-zero-counts.tex", label = "tbl-zero-counts")
@@ -158,7 +178,7 @@ fitm <- function(d, method, a, b) tryCatch(
 alpha_vals <- function(fit) as.numeric(fit$X_alpha %*% fit$alpha_coefs)
 
 specs <- list(
-  S1 = list(a = ~ 1,                      b = ~ year, label = "Intercept only"),
+  S1 = list(a = ~ 1,                      b = ~ 1,    label = "Intercept only"),   # time-invariant baseline: constant beta too (as in 3-main-paper-analysis.R)
   S2 = list(a = ~ year,                   b = ~ year, label = "Year"),
   S3 = list(a = ~ year + sex,             b = ~ year, label = "Year + sex"),
   S4 = list(a = ~ year * ukr,             b = ~ year, label = "Year x UKR"),
@@ -167,50 +187,80 @@ specs <- list(
   S7 = list(a = ~ year + sex + ukr,       b = ~ year, label = "Year + sex + UKR"),
   S8 = list(a = ~ year * ukr + sex,       b = ~ year, label = "Year x UKR + sex"))
 
-## ---- Table: AIC/BIC across eight specifications and three registers ----------
-if (!recompute_appendix && file.exists("results/appendix-aic-full.rds")) {
+## ---- Table: AIC/BIC/QAIC across eight specifications and three registers ---------
+## QAIC uses, within each register, the Pearson dispersion c-hat of the most general Poisson
+## PMLE specification (S8); see c_hat()/qaic() in 1-functions.R. A cache written before the
+## QAIC columns existed is rebuilt.
+aic_cache_ok <- file.exists("results/appendix-aic-full.rds") &&
+  "QAIC_PO" %in% names(readRDS("results/appendix-aic-full.rds"))
+if (!recompute_appendix && aic_cache_ok) {
   aic_full <- readRDS("results/appendix-aic-full.rds")
 } else {
-  aic_full <- rbindlist(lapply(registers, function(reg) rbindlist(lapply(names(specs), function(sn) {
-    sp <- specs[[sn]]
-    po <- fitm(datasets[[reg]], "poisson", sp$a, sp$b)
-    nb <- fitm(datasets[[reg]], "nb",      sp$a, sp$b)
-    data.table(Register = reg, Spec = sn, Label = sp$label,
-               AIC_PO = if (!is.null(po)) round(AIC(po), 1) else NA_real_,
-               BIC_PO = if (!is.null(po)) round(BIC(po), 1) else NA_real_,
-               AIC_NB = if (!is.null(nb)) round(AIC(nb), 1) else NA_real_,
-               BIC_NB = if (!is.null(nb)) round(BIC(nb), 1) else NA_real_)
-  }))))
+  aic_full <- rbindlist(lapply(registers, function(reg) {
+    fits <- lapply(specs, function(sp) list(po = fitm(datasets[[reg]], "poisson", sp$a, sp$b),
+                                            nb = fitm(datasets[[reg]], "nb",      sp$a, sp$b)))
+    chat_reg <- if (!is.null(fits$S8$po)) c_hat(fits$S8$po) else NA_real_
+    rbindlist(lapply(names(specs), function(sn) {
+      po <- fits[[sn]]$po; nb <- fits[[sn]]$nb
+      data.table(Register = reg, Spec = sn, Label = specs[[sn]]$label,
+                 AIC_PO   = if (!is.null(po)) round(AIC(po), 1) else NA_real_,
+                 BIC_PO   = if (!is.null(po)) round(BIC(po), 1) else NA_real_,
+                 QAIC_PO  = if (!is.null(po)) round(qaic(po, chat_reg), 1) else NA_real_,
+                 chat_PO  = if (!is.null(po)) round(c_hat(po), 2) else NA_real_,
+                 chat_ref = round(chat_reg, 2),
+                 AIC_NB   = if (!is.null(nb)) round(AIC(nb), 1) else NA_real_,
+                 BIC_NB   = if (!is.null(nb)) round(BIC(nb), 1) else NA_real_)
+    }))
+  }))
   saveRDS(aic_full, "results/appendix-aic-full.rds")
 }
 
-aic_gt <- aic_full[, .(Spec, Label, AIC_PO, BIC_PO, AIC_NB, BIC_NB, Register)] |>
+chat_note_aic <- aic_full[Spec == "S8", paste0(Register, ": ", sprintf("%.1f", chat_ref), collapse = "; ")]
+aic_gt <- aic_full[, .(Spec, Label, AIC_PO, BIC_PO, QAIC_PO, chat_PO, AIC_NB, BIC_NB, Register)] |>
   gt(groupname_col = "Register") |>
-  tab_caption(paste0("AIC and BIC for eight covariate specifications (S1--S8) across three ",
+  tab_caption(paste0("AIC, BIC and QAIC for eight covariate specifications (S1--S8) across three ",
                      "registers and two estimation methods.")) |>
-  tab_spanner(label = "Poisson PMLE", columns = c(AIC_PO, BIC_PO)) |>
+  tab_spanner(label = "Poisson PMLE", columns = c(AIC_PO, BIC_PO, QAIC_PO, chat_PO)) |>
   tab_spanner(label = "NB-MLE",       columns = c(AIC_NB, BIC_NB)) |>
-  cols_label(AIC_PO = "AIC", BIC_PO = "BIC", AIC_NB = "AIC", BIC_NB = "BIC") |>
-  fmt_number(columns = c(AIC_PO, BIC_PO, AIC_NB, BIC_NB), decimals = 1) |>
+  cols_label(AIC_PO = "AIC", BIC_PO = "BIC", QAIC_PO = "QAIC", chat_PO = "$\\hat c$",
+             AIC_NB = "AIC", BIC_NB = "BIC") |>
+  fmt_number(columns = c(AIC_PO, BIC_PO, QAIC_PO, AIC_NB, BIC_NB), decimals = 1) |>
+  fmt_number(columns = chat_PO, decimals = 2) |>
+  tab_source_note(source_note = paste0("Note: $\\hat c$ = Pearson dispersion (chi-square over residual df) of the ",
+                  "Poisson PMLE fit. QAIC $= -2\\ell/\\hat c_{S8} + 2(K+1)$, with $K$ the number of parameters ",
+                  "(including $\\gamma$) and $\\hat c_{S8}$ the dispersion of the most general specification ",
+                  "in each register (", chat_note_aic, "). Not defined for NB-MLE, which models the dispersion.")) |>
   tab_options(table.font.size = px(11))
 gt_to_tex(aic_gt, "tables/tblA2-full-aic.tex", label = "tbl-full-aic")
 
 ## ---- Table: beta covariate selection (S8--S11), shared alpha = year x UKR + sex ----
 beta_forms  <- list(S8 = ~ year, S9 = ~ year + sex, S10 = ~ year + ukr, S11 = ~ year + sex + ukr)
 beta_labels <- c(S8 = "year", S9 = "year + sex", S10 = "year + UKR", S11 = "year + sex + UKR")
-if (!recompute_appendix && file.exists("results/appendix-beta-comp.rds")) {
+## QAIC (Poisson rows only) uses, within each register, the Pearson dispersion of the adopted
+## specification S8. S11 is the most general model of the set, but its lower dispersion partly
+## reflects an inadmissible Ukrainian detection rate (see tbl-s11-identification), so S8 is the
+## cleaner yardstick. A cache written with a different c-hat convention is rebuilt.
+beta_cache_ok <- file.exists("results/appendix-beta-comp.rds") &&
+  "chat_source" %in% names(readRDS("results/appendix-beta-comp.rds"))
+if (!recompute_appendix && beta_cache_ok) {
   beta_comp <- readRDS("results/appendix-beta-comp.rds")
 } else {
-  beta_comp <- rbindlist(lapply(registers, function(reg) rbindlist(lapply(names(beta_forms), function(bn)
-    rbindlist(lapply(c("poisson", "nb"), function(meth) {
-      fit <- fitm(datasets[[reg]], meth, ~ year * ukr + sex, beta_forms[[bn]])
+  beta_comp <- rbindlist(lapply(registers, function(reg) {
+    fits <- lapply(beta_forms, function(bf) lapply(c(poisson = "poisson", nb = "nb"), function(meth)
+      fitm(datasets[[reg]], meth, ~ year * ukr + sex, bf)))
+    chat_reg <- if (!is.null(fits$S8$poisson)) c_hat(fits$S8$poisson) else NA_real_
+    rbindlist(lapply(names(beta_forms), function(bn) rbindlist(lapply(c("poisson", "nb"), function(meth) {
+      fit <- fits[[bn]][[meth]]
       if (is.null(fit)) return(NULL)
       data.table(Register = reg, Spec = bn, `Covariates in beta` = beta_labels[bn],
                  Model = c(poisson = "Poisson PMLE", nb = "NB-MLE")[meth],
                  AIC = round(AIC(fit), 1), BIC = round(BIC(fit), 1),
-                 k = attr(logLik(fit), "df"),
-                 `alpha > 1` = fifelse(any(alpha_vals(fit) > 1, na.rm = TRUE), "Yes", "No"))
-    }))))))
+                 QAIC  = if (meth == "poisson") round(qaic(fit, chat_reg), 1) else NA_real_,
+                 c_hat = if (meth == "poisson") round(c_hat(fit), 2) else NA_real_,
+                 chat_ref = round(chat_reg, 2), chat_source = "S8",
+                 k = attr(logLik(fit), "df"))
+    }))))
+  }))
   setorder(beta_comp, Register, Model, AIC)
   saveRDS(beta_comp, "results/appendix-beta-comp.rds")
 }
@@ -221,14 +271,163 @@ beta_comp[Model == "NB",      Model := "NB-MLE"]
 beta_comp[, Spec     := factor(Spec, c("S8", "S9", "S10", "S11"))]
 beta_comp[, Register := factor(Register, registers)]
 setorder(beta_comp, Register, Model, Spec)
-beta_gt <- beta_comp[, .(Model, Spec, `Covariates in beta`, AIC, BIC, k, `alpha > 1`, Register)] |>
+chat_note_beta <- beta_comp[Spec == "S8" & Model == "Poisson PMLE",
+                            paste0(Register, ": ", sprintf("%.1f", chat_ref), collapse = "; ")]
+beta_gt <- beta_comp[, .(Model, Spec, `Covariates in beta`, AIC, BIC, QAIC, c_hat, k, Register)] |>
   gt(groupname_col = "Register") |>
-  tab_caption(paste0("Effect of beta specification on AIC across three registers. S8 is the primary ",
+  tab_caption(paste0("Effect of beta specification on AIC, BIC and QAIC across three registers. S8 is the primary ",
                      "specification. All specifications share alpha = year x UKR + sex; ",
                      "k = number of parameters.")) |>
-  fmt_number(columns = c(AIC, BIC), decimals = 1) |>
+  cols_label(c_hat = "$\\hat c$") |>
+  fmt_number(columns = c(AIC, BIC, QAIC), decimals = 1) |>
+  fmt_number(columns = c_hat, decimals = 2) |>
+  sub_missing(columns = c(QAIC, c_hat), missing_text = "") |>
+  tab_source_note(source_note = paste0("Note: $\\hat c$ = Pearson dispersion of the Poisson PMLE fit; ",
+                  "QAIC $= -2\\ell/\\hat c_{S8} + 2(k+1)$ with $\\hat c_{S8}$ the dispersion of the adopted ",
+                  "specification S8 in each register (", chat_note_beta, "). ",
+                  "Not defined for NB-MLE, which models the dispersion.")) |>
   tab_options(table.font.size = px(11))
 gt_to_tex(beta_gt, "tables/tblA3-beta-comparison.tex", label = "tbl-beta-comparison")
+
+## ---- Table: why S11 is not adopted -- identification of the Ukrainian decomposition ----
+## S11 adds sex and UKR to beta. Ukraine already carries its own anchor in every year (alpha =
+## year x UKR), so a UKR term in beta is identified from the same 12 Ukrainian cells: the fit
+## improves but the size/detection split for Ukraine is no longer identified. The table
+## contrasts S8 and S11 (Poisson PMLE, ZUS): fit, the beta:ukr coefficient, the range of the
+## fitted Ukrainian detection rate (admissible only if <= 1), the cluster-FWB estimates for
+## Ukrainians and non-Ukrainians, and the number of failed bootstrap replicates.
+## The S11 bootstrap (R = 999, cluster by country, seed 2026) is cached like the S8 one.
+fit_s11 <- fitm(model_zus, "poisson", ~ year * ukr + sex, ~ year + sex + ukr)
+boot_s11_file <- "results/boot-ukr-po-s11.rds"
+if (!recompute_appendix && file.exists(boot_s11_file)) {
+  boot_s11 <- readRDS(boot_s11_file)
+} else {
+  boot_s11 <- bootstrap_popsize(fit_s11, by = ~ year + ukr, R = 999, cluster = ~ country_code,
+                                level = 0.95, seed = 2026)
+  saveRDS(boot_s11, boot_s11_file)
+}
+boot_s8 <- readRDS("results/boot-ukr-po.rds")          # S8, same settings (3-main-paper-analysis.R)
+s11_row <- function(fit, boot, spec) {
+  d   <- as.data.table(fit$data); rho <- fit$rho_values
+  ps  <- as.data.table(boot$popsize); ps[, c("year", "ukr") := tstrsplit(group, ", ", fixed = TRUE)]
+  ci  <- function(y, u) ps[year == y & ukr == u, sprintf("%s (%s, %s)", formatC(round(estimate / 1e3), format = "d", big.mark = ","),
+                                                          formatC(round(pmax(lower, 0) / 1e3), format = "d", big.mark = ","),
+                                                          formatC(round(upper / 1e3), format = "d", big.mark = ","))]
+  b_ukr <- if ("beta:ukr" %in% names(coef(fit))) sprintf("%.2f (%.2f)", coef(fit)["beta:ukr"], sqrt(diag(fit$vcov))["beta:ukr"]) else "--"
+  data.table(Spec = spec,
+             QAIC = qaic(fit, c_hat(fit_po)),
+             `beta: UKR (SE)` = b_ukr,
+             `Ukrainian rho, range` = sprintf("%.2f--%.2f", min(rho[d$ukr == 1]), max(rho[d$ukr == 1])),
+             `UKR 2019` = ci("2019", "1"), `UKR 2024` = ci("2024", "1"), `Non-UKR 2024` = ci("2024", "0"),
+             `Failed rep.` = sum(!complete.cases(boot$t)))
+}
+s11_tab <- rbind(s11_row(fit_po, boot_s8, "S8"), s11_row(fit_s11, boot_s11, "S11"))
+s11_gt <- s11_tab |>
+  gt() |>
+  tab_caption(paste0("S8 versus S11 (Poisson PMLE, ZUS reference): fit, the Ukrainian term in the exposure ",
+                     "elasticity, the range of the fitted Ukrainian detection rate, and cluster-FWB ",
+                     "estimates (median with 95% percentile CI, thousands) by origin.")) |>
+  fmt_number(columns = QAIC, decimals = 1) |>
+  cols_label(`beta: UKR (SE)` = "$\\hat\\beta_{\\text{UKR}}$ (SE)",
+             `Ukrainian rho, range` = "$\\hat\\rho$, UKR cells",
+             `UKR 2019` = "$\\hat\\xi$ UKR 2019", `UKR 2024` = "$\\hat\\xi$ UKR 2024",
+             `Non-UKR 2024` = "$\\hat\\xi$ non-UKR 2024", `Failed rep.` = "Failed replicates") |>
+  tab_source_note(source_note = paste0("Note: QAIC with $\\hat c$ from S8. SE = HC1 robust. $\\hat\\rho$ is admissible ",
+                  "only if at most 1. Failed replicates = bootstrap draws (of 999) in which the fit did not ",
+                  "converge. S8: $\\alpha \\sim$ year $\\times$ UKR + sex, $\\beta \\sim$ year; S11: same $\\alpha$, ",
+                  "$\\beta \\sim$ year + sex + UKR.")) |>
+  tab_options(table.font.size = px(10))
+gt_to_tex(s11_gt, "tables/tblA-s11-identification.tex", label = "tbl-s11-identification")
+
+## ---- Figure: S8 vs S11 cluster-FWB estimates by origin (Figure 7 styling) ----
+## Same layout, palette (Set1) and CI encoding as Figure 7 in the main text: median with
+## 80% (thick) and 95% (thin) percentile CIs, facets by Ukrainian origin, S8 and S11 dodged.
+s11_boot_dt <- function(boot, spec) {
+  ps  <- as.data.table(boot$popsize)
+  q80 <- apply(boot$t, 2, quantile, probs = c(0.10, 0.90), na.rm = TRUE)
+  ps[, `:=`(lower_80 = q80[1, ], upper_80 = q80[2, ], spec = spec)]
+  ps[, c("year", "ukr") := tstrsplit(group, ", ", fixed = TRUE)]
+  ps[]
+}
+s11_plot_dt <- rbind(s11_boot_dt(boot_s8, "S8"), s11_boot_dt(boot_s11, "S11"))
+s11_plot_dt[, ukr_label := factor(fifelse(ukr == "1", "Ukraine", "Non-Ukraine"), c("Ukraine", "Non-Ukraine"))]
+s11_plot_dt[, spec := factor(spec, c("S8", "S11"))]
+pd_s11 <- position_dodge(width = 0.5)
+ggplot(s11_plot_dt, aes(x = as.factor(year), y = estimate, colour = spec)) +
+  geom_linerange(aes(ymin = pmax(lower, 0),    ymax = upper,    linewidth = "95%"), position = pd_s11) +
+  geom_linerange(aes(ymin = pmax(lower_80, 0), ymax = upper_80, linewidth = "80%"), position = pd_s11) +
+  geom_point(position = pd_s11, size = 2, shape = 21, fill = "white", stroke = 0.7) +
+  facet_wrap(~ ukr_label, scales = "free_y") +
+  scale_linewidth_manual(name = "CI", breaks = c("80%", "95%"), values = c("80%" = 1.6, "95%" = 0.5)) +
+  scale_y_continuous(labels = scales::label_comma()) +
+  labs(x = "Year", y = expression(hat(xi)), colour = NULL) +
+  scale_color_brewer(type = "qual", palette = "Set1") +
+  guides(colour = guide_legend(order = 1), linewidth = guide_legend(order = 2)) +   # fixed legend order (reproducible output)
+  theme(text = element_text(size = 15)) -> pA_s11
+ggsave(plot = pA_s11, filename = "figs-appen/figA-s11-ukr-estimates.pdf", width = 10, height = 5)
+
+## ---- Figure: all specifications S1-S11 by year and origin, S8 as reference ----
+## One panel per specification (3 columns), Poisson PMLE cluster-FWB median with 80% (thick)
+## and 95% (thin) percentile CIs by Ukrainian origin (Set1 colours as in Figure 7), with the
+## S8 median (line) and 80% CI (band) repeated in every panel as the reference. Log scale.
+## Bootstraps: R = 999, cluster by country, seed 2026 -- the paper's settings. S8 and S11
+## reuse the caches above; the other nine are cached as results/boot-ukr-po-<spec>.rds.
+all_specs <- c(lapply(specs, function(sp) list(a = sp$a, b = sp$b)),
+               list(S9  = list(a = ~ year * ukr + sex, b = ~ year + sex),
+                    S10 = list(a = ~ year * ukr + sex, b = ~ year + ukr),
+                    S11 = list(a = ~ year * ukr + sex, b = ~ year + sex + ukr)))
+spec_labels <- c(
+  S1  = "S1: alpha = intercept only, beta = constant",
+  S2  = "S2: alpha = year, beta = year",
+  S3  = "S3: alpha = year + sex, beta = year",
+  S7  = "S7: alpha = year + sex + UKR, beta = year",
+  S4  = "S4: alpha = year x UKR, beta = year",
+  S5  = "S5: alpha = year x simplified, beta = year",
+  S6  = "S6: alpha = year + continent, beta = year",
+  S8  = "S8: alpha = year x UKR + sex, beta = year",
+  S9  = "S9: alpha = year x UKR + sex, beta = year + sex",
+  S10 = "S10: alpha = year x UKR + sex, beta = year + UKR",
+  S11 = "S11: alpha = year x UKR + sex, beta = year + sex + UKR")   # nested order: alpha chain, then beta chain
+boot_all <- lapply(names(spec_labels), function(sn) {
+  f <- switch(sn, S8 = "results/boot-ukr-po.rds", S11 = "results/boot-ukr-po-s11.rds",
+              sprintf("results/boot-ukr-po-%s.rds", sn))
+  if (!recompute_appendix && file.exists(f)) return(readRDS(f))
+  fit <- fitm(model_zus, "poisson", all_specs[[sn]]$a, all_specs[[sn]]$b)
+  b <- bootstrap_popsize(fit, by = ~ year + ukr, R = 999, cluster = ~ country_code, level = 0.95, seed = 2026)
+  saveRDS(b, f); b
+})
+names(boot_all) <- names(spec_labels)
+## strip labels: formulas on line 1, AIC and BIC of the Poisson PMLE fit (rounded) on line 2
+fits_all <- lapply(names(spec_labels), function(sn) fitm(model_zus, "poisson", all_specs[[sn]]$a, all_specs[[sn]]$b))
+ic_all   <- vapply(fits_all, function(f) sprintf("AIC = %s, BIC = %s", formatC(round(AIC(f)), format = "d", big.mark = ","),
+                                                  formatC(round(BIC(f)), format = "d", big.mark = ",")), character(1))
+strip_labels <- setNames(paste0(spec_labels, "\n", ic_all), names(spec_labels))
+all_dt <- rbindlist(lapply(names(boot_all), function(sn) s11_boot_dt(boot_all[[sn]], sn)))
+all_dt[, origin := factor(fifelse(ukr == "1", "Ukraine", "Non-Ukraine"), c("Ukraine", "Non-Ukraine"))]
+all_dt[, spec := factor(spec, names(strip_labels), strip_labels)]
+all_dt[, year := as.integer(year)]
+all_dt[, `:=`(est_k = estimate / 1e3, l95 = pmax(lower, 1) / 1e3, u95 = upper / 1e3,
+              l80 = pmax(lower_80, 1) / 1e3, u80 = upper_80 / 1e3)]
+ref_s8 <- all_dt[spec == strip_labels["S8"], .(year, origin, s8 = est_k, s8_l80 = l80, s8_u80 = u80)]
+all_dt <- merge(all_dt, ref_s8, by = c("year", "origin"))
+pd_all <- position_dodge(width = 0.45)
+ggplot(all_dt, aes(x = year)) +
+  geom_ribbon(aes(ymin = s8_l80, ymax = s8_u80, group = origin), fill = "grey80", alpha = 0.5) +
+  geom_line(aes(y = s8, group = origin, linetype = origin), colour = "grey40") +
+  geom_linerange(aes(ymin = l95, ymax = u95, colour = origin, linewidth = "95%"), position = pd_all) +
+  geom_linerange(aes(ymin = l80, ymax = u80, colour = origin, linewidth = "80%"), position = pd_all) +
+  geom_point(aes(y = est_k, colour = origin), shape = 21, fill = "white", size = 1.8, stroke = 0.7, position = pd_all) +
+  facet_wrap(~ spec, ncol = 3) +
+  scale_y_log10(labels = scales::label_comma()) +
+  scale_x_continuous(breaks = 2019:2024) +
+  scale_colour_brewer(type = "qual", palette = "Set1", name = NULL) +
+  scale_linetype_manual(values = c(Ukraine = "solid", `Non-Ukraine` = "22"), name = "S8 reference (median, 80% CI)") +
+  scale_linewidth_manual(name = "CI", breaks = c("80%", "95%"), values = c("80%" = 1.6, "95%" = 0.5)) +
+  labs(x = NULL, y = expression(hat(xi) ~ "(thousands, log scale)")) +
+  guides(colour = guide_legend(order = 1), linewidth = guide_legend(order = 2), linetype = guide_legend(order = 3)) +
+  theme(text = element_text(size = 13), legend.position = "bottom",
+        strip.text = element_text(size = 8.5, lineheight = 0.95)) -> pA_all_specs
+ggsave(plot = pA_all_specs, filename = "figs-appen/figA-all-specs-ukr-estimates.pdf", width = 12, height = 12)
 
 ## ---- Figure: UKR vs non-UKR alpha trajectories across S4, S8, S11 and registers ----
 specs_app <- list(S4  = list(a = ~ year * ukr,       b = ~ year),
@@ -290,11 +489,15 @@ bmap <- c(
   "beta:year2022" = "Year 2022", "beta:year2023" = "Year 2023", "beta:year2024" = "Year 2024")
 mk_block <- function(map, blk) data.table(block = blk, Term = unname(map),
                                           Poisson = cp[names(map)], NB = cn[names(map)])
-gof <- data.table(block = "Fit statistics", Term = c("Num.Obs.", "AIC", "BIC", "Log.Lik."),
+## QAIC and the Pearson dispersion c-hat are reported for the Poisson PMLE only (c-hat of
+## the S8 fit itself; NB-MLE models the dispersion).
+gof <- data.table(block = "Fit statistics",
+  Term = c("Num.Obs.", "AIC", "BIC", "QAIC", "Dispersion ($\\hat c$)", "Log.Lik."),
   Poisson = c(format(nobs(fit_po), big.mark = ","), sprintf("%.1f", AIC(fit_po)),
-              sprintf("%.1f", BIC(fit_po)), sprintf("%.3f", as.numeric(logLik(fit_po)))),
+              sprintf("%.1f", BIC(fit_po)), sprintf("%.1f", qaic(fit_po, c_hat(fit_po))),
+              sprintf("%.2f", c_hat(fit_po)), sprintf("%.3f", as.numeric(logLik(fit_po)))),
   NB      = c(format(nobs(fit_nb), big.mark = ","), sprintf("%.1f", AIC(fit_nb)),
-              sprintf("%.1f", BIC(fit_nb)), sprintf("%.3f", as.numeric(logLik(fit_nb)))))
+              sprintf("%.1f", BIC(fit_nb)), "", "", sprintf("%.3f", as.numeric(logLik(fit_nb)))))
 coef_tab <- rbind(mk_block(amap, "Community anchor ($\\hat{\\alpha}$)"),
                   mk_block(bmap, "Exposure elasticity ($\\hat{\\beta}$)"), gof)
 coef_gt <- coef_tab |>
@@ -428,7 +631,7 @@ ggsave(pA_share, filename = "figs-appen/figA-popsize-share.pdf", width = 10, hei
 recompute_nsource <- FALSE
 
 ## three ZUS-reference modelling datasets that differ only in the auxiliary count n
-## (model_zus, n = police total, is defined in 4-main-paper-analysis.R; add the two variants)
+## (model_zus, n = police total, is defined in 3-main-paper-analysis.R; add the two variants)
 model_zus_police <- full_database_processed[pop_insured > 0,
   .(year = as.factor(year), sex, country_code, m = border, n = police_id_yes,
     N = pop_insured, ukr, simplified_proc, continent)]
@@ -440,7 +643,7 @@ n_sources <- list("Police (total)"    = model_zus,         # n = police (police_
                   "Police (PESEL ID)" = model_zus_police,  # n = police_id_yes (person had a PESEL number)
                   "Prison"            = model_zus_prison)  # n = prison
 
-## S8 main-paper specification (see codes/4-main-paper-analysis.R)
+## S8 main-paper specification (see codes/3-main-paper-analysis.R)
 s8_alpha <- ~ year * ukr + sex
 s8_beta  <- ~ year
 
@@ -452,14 +655,19 @@ fits_n <- lapply(n_sources, function(d)
                         countries = ~ country_code),
     error = function(e) NULL)))
 
-## fit-quality comparison (AIC / BIC) per n source and method
+## fit-quality comparison (AIC / BIC / QAIC) per n source and method. QAIC uses one c-hat
+## for all three sources: the Pearson dispersion of the primary fit (police total).
+chat_nsrc <- if (!is.null(fits_n[["Police (total)"]]$poisson))
+  c_hat(fits_n[["Police (total)"]]$poisson) else NA_real_
 cmp_ic <- rbindlist(lapply(names(fits_n), function(nm) {
   f <- fits_n[[nm]]
   data.table(n_source = nm,
-    po_AIC = if (!is.null(f$poisson)) AIC(f$poisson) else NA_real_,
-    po_BIC = if (!is.null(f$poisson)) BIC(f$poisson) else NA_real_,
-    nb_AIC = if (!is.null(f$nb))      AIC(f$nb)      else NA_real_,
-    nb_BIC = if (!is.null(f$nb))      BIC(f$nb)      else NA_real_)
+    po_AIC  = if (!is.null(f$poisson)) AIC(f$poisson) else NA_real_,
+    po_BIC  = if (!is.null(f$poisson)) BIC(f$poisson) else NA_real_,
+    po_QAIC = if (!is.null(f$poisson)) qaic(f$poisson, chat_nsrc) else NA_real_,
+    po_chat = if (!is.null(f$poisson)) c_hat(f$poisson) else NA_real_,
+    nb_AIC  = if (!is.null(f$nb))      AIC(f$nb)      else NA_real_,
+    nb_BIC  = if (!is.null(f$nb))      BIC(f$nb)      else NA_real_)
 }))
 ## yearly point estimates and summed-yearly totals per n source and method
 cmp_ps <- rbindlist(lapply(names(fits_n), function(nm)
@@ -581,6 +789,7 @@ writeLines(aux_tex, "tables/tblA-nsource-aux.tex")
 ## ---- Table: fit (AIC/BIC) and summed-yearly point total xi-hat per source ----
 order_src <- c("Police (total)", "Police (PESEL ID)", "Prison")
 poA <- nv(cmp_ic, "po_AIC"); poB <- nv(cmp_ic, "po_BIC")
+poQ <- nv(cmp_ic, "po_QAIC"); poC <- nv(cmp_ic, "po_chat")
 nbA <- nv(cmp_ic, "nb_AIC"); nbB <- nv(cmp_ic, "nb_BIC")
 totPo <- nv(cmp_tot, "Poisson PMLE"); totNb <- nv(cmp_tot, "NB-MLE")
 fmt_ic <- function(v) formatC(round(v), format = "d", big.mark = ",")
@@ -588,16 +797,20 @@ fmt_k  <- function(v) formatC(round(v / 1e3), format = "d", big.mark = ",")
 fit_tex <- c(
   "\\begin{table}[H]", "\\centering",
   paste0("\\caption{\\label{tbl-nsource-fit}Model fit and estimated population size under S8 ",
-         "with three auxiliary detection counts. AIC and BIC for Poisson PMLE and NB-MLE; ",
+         "with three auxiliary detection counts. AIC, BIC and QAIC for Poisson PMLE, AIC and BIC ",
+         "for NB-MLE; $\\hat c$ is the Pearson dispersion of each Poisson PMLE fit and QAIC ",
+         "$= -2\\ell/\\hat c + 2(K+1)$ uses the dispersion of the primary fit, police total ",
+         sprintf("($\\hat c = %.1f$), for all three sources. ", chat_nsrc),
          "$\\hat\\xi$ is the sum of the yearly point estimates (in thousands). Lower NB-MLE ",
          "AIC/BIC reflects over-dispersion accommodation and is not grounds for preferring it ",
          "(Section~\\ref{sec-cov-selection}).}"),
-  "\\begin{tabular}{lrrrr|rr} \\toprule",
-  "& \\multicolumn{2}{c}{Poisson PMLE} & \\multicolumn{2}{c|}{NB-MLE} & \\multicolumn{2}{c}{$\\hat\\xi$ (000s)} \\\\",
-  "Auxiliary count ($n$) & AIC & BIC & AIC & BIC & Po & NB \\\\ \\midrule",
+  "\\begin{tabular}{lrrrrrr|rr} \\toprule",
+  "& \\multicolumn{4}{c}{Poisson PMLE} & \\multicolumn{2}{c|}{NB-MLE} & \\multicolumn{2}{c}{$\\hat\\xi$ (000s)} \\\\",
+  "Auxiliary count ($n$) & AIC & BIC & QAIC & $\\hat c$ & AIC & BIC & Po & NB \\\\ \\midrule",
   vapply(order_src, function(s) paste0(
     s, " & ",
-    fmt_ic(poA[s]), " & ", fmt_ic(poB[s]), " & ", fmt_ic(nbA[s]), " & ", fmt_ic(nbB[s]), " & ",
+    fmt_ic(poA[s]), " & ", fmt_ic(poB[s]), " & ", fmt_ic(poQ[s]), " & ", sprintf("%.1f", poC[s]), " & ",
+    fmt_ic(nbA[s]), " & ", fmt_ic(nbB[s]), " & ",
     fmt_k(totPo[s]), " & ", fmt_k(totNb[s]), " \\\\"), character(1)),
   "\\bottomrule", "\\end{tabular}", "\\end{table}")
 writeLines(fit_tex, "tables/tblA-nsource-fit.tex")
@@ -747,38 +960,48 @@ if (!recompute_appendix && file.exists("results/appendix-cov-gamma-fits.rds")) {
   saveRDS(fits_cg, "results/appendix-cov-gamma-fits.rds")
 }
 
-## summary stats derived from the fitted models
+## summary stats derived from the fitted models. QAIC (Poisson only) uses the Pearson
+## dispersion of the adopted specification (constant gamma = S8), the same yardstick as in
+## Table 3 and the beta-comparison table.
 stats_cg_dt <- rbindlist(lapply(names(fits_cg), function(key) {
   fit <- fits_cg[[key]]
   data.table(cov_gamma = sub("_(poisson|nb)$", "", key),
              method    = toupper(sub(".*_(poisson|nb)$", "\\1", key)),
              AIC = round(AIC(fit), 1), BIC = round(BIC(fit), 1),
-             k_gamma = length(unique(fit$gamma_values)),
+             k_gamma = fit$p_gamma,   # number of gamma parameters (not distinct fitted values)
+             c_hat = if (grepl("_poisson$", key)) c_hat(fit) else NA_real_,
              theta = if (!is.null(fit$theta)) fit$theta else NA_real_)
 }))
+chat_cg <- stats_cg_dt[method == "POISSON" & cov_gamma == "constant", c_hat]
+stats_cg_dt[method == "POISSON",
+            QAIC := round(sapply(paste0(cov_gamma, "_poisson"), function(key) qaic(fits_cg[[key]], chat_cg)), 1)]
 
 ## Poisson | NB side by side, ordered by the gamma-specification list
-cg_po <- stats_cg_dt[method == "POISSON", .(cov_gamma, AIC_PO = AIC, BIC_PO = BIC, k_PO = k_gamma)]
+cg_po <- stats_cg_dt[method == "POISSON", .(cov_gamma, AIC_PO = AIC, BIC_PO = BIC, QAIC_PO = QAIC,
+                                            chat_PO = round(c_hat, 2), k_PO = k_gamma)]
 cg_nb <- stats_cg_dt[method == "NB",      .(cov_gamma, AIC_NB = AIC, BIC_NB = BIC, k_NB = k_gamma)]
 cg_display <- merge(cg_po, cg_nb, by = "cov_gamma")
 cg_display[, Spec := gamma_labels[cov_gamma]]
 cg_display[, cov_gamma := factor(cov_gamma, names(gamma_specs_cg))]
 setorder(cg_display, cov_gamma)
-cg_display <- cg_display[, .(Spec, AIC_PO, BIC_PO, k_PO, AIC_NB, BIC_NB, k_NB)]
+cg_display <- cg_display[, .(Spec, AIC_PO, BIC_PO, QAIC_PO, chat_PO, k_PO, AIC_NB, BIC_NB, k_NB)]
 
 cg_gt <- cg_display |>
   gt() |>
-  tab_caption(paste0("AIC and BIC by gamma specification and estimation method. All models use ",
+  tab_caption(paste0("AIC, BIC and QAIC by gamma specification and estimation method. All models use ",
                      "the S8 specification for alpha and beta with the ZUS reference population.")) |>
-  tab_spanner(label = "Poisson PMLE", columns = c(AIC_PO, BIC_PO, k_PO)) |>
+  tab_spanner(label = "Poisson PMLE", columns = c(AIC_PO, BIC_PO, QAIC_PO, chat_PO, k_PO)) |>
   tab_spanner(label = "NB-MLE",       columns = c(AIC_NB, BIC_NB, k_NB)) |>
   cols_label(Spec = "$\\gamma$ specification",
-             AIC_PO = "AIC", BIC_PO = "BIC", k_PO = "$k_\\gamma$",
+             AIC_PO = "AIC", BIC_PO = "BIC", QAIC_PO = "QAIC", chat_PO = "$\\hat c$", k_PO = "$k_\\gamma$",
              AIC_NB = "AIC", BIC_NB = "BIC", k_NB = "$k_\\gamma$") |>
-  fmt_number(columns = c(AIC_PO, BIC_PO, AIC_NB, BIC_NB), decimals = 1) |>
+  fmt_number(columns = c(AIC_PO, BIC_PO, QAIC_PO, AIC_NB, BIC_NB), decimals = 1) |>
+  fmt_number(columns = chat_PO, decimals = 2) |>
   tab_source_note(source_note = paste0("Note: S8 specification: $\\alpha \\sim \\text{year} ",
                   "\\times \\text{UKR} + \\text{sex}$, $\\beta \\sim \\text{year}$. ZUS reference ",
-                  "population. $k_\\gamma$ = number of gamma parameters. Lower AIC/BIC is better.")) |>
+                  "population. $k_\\gamma$ = number of gamma parameters; $\\hat c$ = Pearson dispersion ",
+                  "of the Poisson PMLE fit; QAIC $= -2\\ell/\\hat c_{S8} + 2(K+1)$ with $\\hat c_{S8}$ from the ",
+                  sprintf("adopted specification, constant $\\gamma$ ($\\hat c_{S8} = %.1f$). Lower AIC/BIC/QAIC is better.", chat_cg))) |>
   tab_options(table.font.size = px(11))
 gt_to_tex(cg_gt, "tables/tblA6-cov-gamma-aic.tex", label = "tbl-cov-gamma-aic")
 
@@ -893,7 +1116,7 @@ ggsave(pA_profile_ab, filename = "figs-appen/figA-profile-alpha-beta.pdf", width
 
 
 ## ============================================================================
-## Simulation-study tables (from results/simulation-results/, written by 3-simulation-study.R)
+## Simulation-study tables (from results/simulation-results/, written by 4-simulation-study.R)
 ## ============================================================================
 sim_dir <- "results/simulation-results"
 sim_ml  <- c(nb = "NB", nb_c = "NB (c)", nls = "NLS", ols = "OLS",
@@ -901,6 +1124,50 @@ sim_ml  <- c(nb = "NB", nb_c = "NB (c)", nls = "NLS", ols = "OLS",
 sim_f1  <- function(x) sprintf("%.1f", round(x, 1))
 sim_rf  <- function(x) formatC(round(x), format = "d", big.mark = ",")
 sim_f4  <- function(x) sprintf("%.4f", x)
+
+## ---- Table: simulation summary (Setup-I and Setup-II, Po-PMLE vs NB-MLE) ----
+## Simulation results, 2000 replications. Bias relative to $\xi = \sum_{i=1}^{100} \xi_i$. RMSE, root mean squared error. Coverage of $\xi$. Confidence interval (CI) of $\xi$ by \eqref{eq-xi-confint}, CI width relative to $\xi$.
+## Built from the analytical-CI metrics written by 4-simulation-study.R:
+##   Setup-I  (gamma = 0, regrouped 'rest' community) -> sim1_metrics_analytical.csv
+##   Setup-II (gamma > 0, m_i n_i = 0 allowed)        -> sim2_metrics_analytical.csv
+## Shown: Po(n)-Po(m) and NB(n)-NB(m) scenarios; estimators poisson (Po-PMLE) and nb (NB-MLE).
+sim1_m   <- fread(file.path(sim_dir, "sim1_metrics_analytical.csv"))
+sim2_m   <- fread(file.path(sim_dir, "sim2_metrics_analytical.csv"))
+
+## one body row per (scenario, estimator), ordered Po(n)-Po(m) then NB(n)-NB(m)
+sim_body <- function(dt) {
+  d <- dt[scenario %in% c("Po(n)-Po(m)", "NB(n)-NB(m)") & model %in% c("poisson", "nb")]
+  d[, Estimator := c(poisson = "Po-PMLE", nb = "NB-MLE")[model]]
+  d[, scen_ord := match(scenario, c("Po(n)-Po(m)", "NB(n)-NB(m)"))]
+  d[, est_ord  := match(model, c("poisson", "nb"))]
+  setorder(d, scen_ord, est_ord)   # Po(n)-Po(m) before NB(n)-NB(m); Po-PMLE before NB-MLE
+  d[, paste0(scenario, " & ", Estimator, " & ",
+             sprintf("%.1f", round(`Bias (%)`, 1)), " & ",
+             formatC(round(RMSE), format = "d", big.mark = ","), " & ",
+             sprintf("%.1f", round(`Coverage (%)`, 1)), " & ",
+             sprintf("%.1f", round(`CI width (%)`, 1)), " \\\\")]
+}
+
+sim_hdr <- "Data & Estimator & Bias (\\%) & RMSE & Coverage (\\%) & CI width (\\%)\\\\ \\midrule"
+sim_tex <- c(
+  "\\begin{table}[H]",
+  "\\centering",
+  paste0("\\caption{\\label{tbl-sim-summary}Simulation results, 2000 replications. Bias relative ",
+         "to $\\xi = \\sum_{i=1}^{100} \\xi_i$. RMSE, root mean squared error. Coverage of $\\xi$. ",
+         "Confidence interval (CI) of $\\xi$ by \\eqref{eq-xi-confint}, CI width relative to $\\xi$.}"),
+  "\\begin{tabular}{llrrrr} \\toprule",
+  "& \\multicolumn{5}{c}{Setup-I: $\\gamma =0$, regrouped `rest' community to void $m_i n_i =0$} \\\\ \\cline{2-6}",
+  sim_hdr,
+  sim_body(sim1_m),
+  "\\bottomrule",
+  "& \\multicolumn{5}{c}{Setup-II: $\\gamma >0$, communities with $m_i n_i =0$ allowed}\\\\ \\cline{2-6}",
+  sim_hdr,
+  sim_body(sim2_m),
+  "\\bottomrule",
+  "\\end{tabular}",
+  "\\end{table}"
+)
+writeLines(sim_tex, "tables/tblA-sim-summary.tex")
 
 ## ---- Table: Simulation 1 (aggregation, gamma = 0) ----
 s1 <- fread(file.path(sim_dir, "sim1_metrics_analytical.csv"))[, Model := sim_ml[model]]
